@@ -1,0 +1,16 @@
+{
+  "name": "laurentcazanove",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev content",
+    "build": "vuepress build content"
+  },
+  "author": "Strift",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^0.7.4",
+    "vuepress": "^0.14.9"
+  }
+}
