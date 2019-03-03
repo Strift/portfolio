@@ -1,26 +1,32 @@
 <template>
-  <div>
-    <Content/>
+  <div class="absolute h-full w-full">
+    <Navbar/>
+    <component :is="layout"></component>
   </div>
 </template>
 
 <script>
+import Navbar from './components/Navbar'
+
+import HomeLayout from './layouts/HomeLayout'
+
 export default {
   name: 'Layout',
-  props: {
-
+  components: {
+    Navbar,
+    HomeLayout
   },
-  data () {
-    return {
-
+  computed: {
+    layout () {
+      return this.$page.frontmatter.layout
     }
   },
   mounted () {
-    console.log('hey')
+    console.log('Layout')
   }
 }
 </script>
 
-<style lang="stylus">
-@import './styles/theme.styl'
+<style lang="scss">
+@import './styles/theme.scss'
 </style>
