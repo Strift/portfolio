@@ -20,13 +20,23 @@ export default {
     layout () {
       return this.$page.frontmatter.layout
     }
-  },
-  mounted () {
-    console.log('Layout')
   }
 }
 </script>
 
 <style lang="scss">
-@import './styles/theme.scss'
+@import './styles/theme.scss';
+
+.homepage {
+  h1 {
+    @apply .font-sans .mb-6 .text-4xl .font-semibold;
+    a {
+      @apply .hidden;
+    }
+  }
+
+  p {
+    @apply .font-serif .leading-normal .text-lg .text-black .mb-3;
+  }
+}
 </style>

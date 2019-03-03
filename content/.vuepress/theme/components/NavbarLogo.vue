@@ -20,7 +20,7 @@ export default {
   },
   mounted () {
     this.updateLogoVisibility()
-    // this.$store.commit('setNavbarLogo', this.$refs.wrapper)
+    this.$store.commit('setNavbarLogo', this.$refs.wrapper)
   },
   methods: {
     updateLogoVisibility () {

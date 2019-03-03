@@ -1,4 +1,4 @@
-import Vuex from 'vuex'
+// import Vuex from 'vuex'
 import store from './store'
 
 export default ({
@@ -8,8 +8,5 @@ export default ({
   siteData // site metadata
 }) => {
   // ...apply enhancements to the app
-  // console.log(router)
-  // Vue.use(Vuex)
-  // Vue.prototype.$store = new Vuex.Store({})
-  // Vue.prototype.$store = new Vuex.Store(store)
+  Vue.prototype.$store = store
 }
