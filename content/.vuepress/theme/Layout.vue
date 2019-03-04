@@ -20,23 +20,20 @@ export default {
     layout () {
       return this.$page.frontmatter.layout
     }
+  },
+  mounted () {
+    console.log('path', this.$page.path)
+  },
+  beforeRouteLeave (to, from, next) {
+    console.log('leaving...')
+    setTimeout(() => {
+      next()
+    }, 980)
   }
 }
 </script>
 
 <style lang="scss">
 @import './styles/theme.scss';
-
-.homepage {
-  h1 {
-    @apply .font-sans .mb-6 .text-4xl .font-semibold;
-    a {
-      @apply .hidden;
-    }
-  }
-
-  p {
-    @apply .font-serif .leading-normal .text-lg .text-black .mb-3;
-  }
-}
+@import './styles/home.scss';
 </style>

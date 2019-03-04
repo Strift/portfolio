@@ -8,5 +8,10 @@ export default ({
   siteData // site metadata
 }) => {
   // ...apply enhancements to the app
+
   Vue.prototype.$store = store
+  // router.beforeEach((to, from, next) => {
+  //   console.log('leaving')
+  //   next()
+  // })
 }
