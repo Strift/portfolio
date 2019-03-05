@@ -9,27 +9,26 @@
 import Navbar from './components/Navbar'
 
 import HomeLayout from './layouts/HomeLayout'
+import ArticleLayout from './layouts/ArticleLayout'
 
 export default {
   name: 'Layout',
   components: {
     Navbar,
-    HomeLayout
+    HomeLayout,
+    ArticleLayout
   },
   computed: {
     layout () {
       return this.$page.frontmatter.layout
     }
   },
-  mounted () {
-    console.log('path', this.$page.path)
-  },
-  beforeRouteLeave (to, from, next) {
-    console.log('leaving...')
-    setTimeout(() => {
-      next()
-    }, 980)
-  }
+  // beforeRouteLeave (to, from, next) {
+  //   console.log('leaving...')
+  //   setTimeout(() => {
+  //     next()
+  //   }, 980)
+  // }
 }
 </script>
 

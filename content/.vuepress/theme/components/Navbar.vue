@@ -5,7 +5,7 @@
       <ul class="h-10 flex items-center list-reset uppercase font-sans tracking-wide font-semibold ml-auto text-black">
         <!-- <li class="inline px-10">Work</li> -->
         <li class="inline px-10">
-          <router-link to="/articles" class="">Articles</router-link>
+          <router-link to="/articles/" class="">Articles</router-link>
         </li>
         <li class="inline px-10">
           <a href="mailto:lau.cazanove@gmail.com" class="">Contact</a>

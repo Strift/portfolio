@@ -38,12 +38,14 @@ export default {
       return `transform: translate3d(${xDiff}px, ${yDiff}px, 0) scale(0.104)`
     }
   },
-  beforeRouteLeave (to, from, next) {
-    this.introVisible = false
-    this.portraitVisible = false
-    setTimeout(() => {
-      next()
-    }, 980)
+  mounted () {
+    this.$router.beforeEach((to, from, next) => {
+      this.introVisible = false
+      this.portraitVisible = false
+      setTimeout(() => {
+        next()
+      }, 980)
+    })
   }
 }
 </script>

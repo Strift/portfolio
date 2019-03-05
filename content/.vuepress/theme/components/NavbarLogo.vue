@@ -1,7 +1,7 @@
 <template>
   <div ref="wrapper">
     <router-link v-if="logoVisible" to="/">
-      <img :src="$page.frontmatter.heroImage" class="h-10 w-10">
+      <img src="/images/me.jpg" class="h-10 w-10">
     </router-link>
   </div>
 </template>
