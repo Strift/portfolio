@@ -23,7 +23,7 @@ export default {
   },
   data () {
     return {
-      currentPath: ''
+      currentPath: this.$router.currentRoute.path
     }
   },
   watch: {

@@ -1,10 +1,7 @@
 <template>
   <div class="relative">
     <Navbar/>
-    <div class="h-screen w-full">
-      <component :is="layout"></component>
-    </div>
-
+    <component :is="layout"></component>
   </div>
 </template>
 

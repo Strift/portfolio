@@ -1,6 +1,4 @@
 ---
-home: true
-heroImage: /images/me.jpg
 actionText: Get in touch →
 actionLink: /contact/
 layout: HomeLayout
