@@ -1,9 +1,8 @@
 <template>
-  <header class="absolute z-10 w-full p-6">
+  <header :class="`${positionClass} pin-t z-10 w-full p-6`">
     <nav class="flex">
-      <NavbarLogo />
+      <NavbarLogo :show-logo="isLogoVisible" />
       <ul class="h-10 flex items-center list-reset uppercase font-sans tracking-wide font-semibold ml-auto text-black">
-        <!-- <li class="inline px-10">Work</li> -->
         <li class="inline px-10">
           <router-link to="/articles/" class="">Articles</router-link>
         </li>
@@ -21,6 +20,24 @@ import NavbarLogo from './NavbarLogo'
 export default {
   components: {
     NavbarLogo
+  },
+  data () {
+    return {
+      currentPath: ''
+    }
+  },
+  watch: {
+    $route (to, from) {
+      this.currentPath = to.path
+    }
+  },
+  computed: {
+    positionClass () {
+      return this.currentPath === '/' ? 'absolute' : 'sticky'
+    },
+    isLogoVisible () {
+      return this.currentPath !== '/'
+    }
   }
 }
 </script>

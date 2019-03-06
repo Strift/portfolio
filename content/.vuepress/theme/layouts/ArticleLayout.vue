@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <Content/>
+  <div class="article-page">
+    <div class="max-w-md mx-auto">
+      <Content/>
+    </div>
   </div>
 </template>
 

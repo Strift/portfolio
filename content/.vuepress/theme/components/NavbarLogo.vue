@@ -1,6 +1,6 @@
 <template>
   <div ref="wrapper">
-    <router-link v-if="logoVisible" to="/">
+    <router-link v-show="showLogo" to="/">
       <img src="/images/me.jpg" class="h-10 w-10">
     </router-link>
   </div>
@@ -8,24 +8,14 @@
 
 <script>
 export default {
-  data () {
-    return {
-      logoVisible: false
-    }
-  },
-  watch: {
-    $route (to, from) {
-      this.updateLogoVisibility()
+  props: {
+    showLogo: {
+      type: Boolean,
+      required: true
     }
   },
   mounted () {
-    this.updateLogoVisibility()
     this.$store.commit('setNavbarLogo', this.$refs.wrapper)
-  },
-  methods: {
-    updateLogoVisibility () {
-      this.logoVisible = (this.$route.path !== '/')
-    }
   }
 }
 </script>

@@ -1,0 +1,31 @@
+.article-page {
+  @apply .mt-32;
+
+  h1 {
+    @apply .text-5xl .mb-10;
+
+    .header-anchor {
+      @apply .hidden;
+    }
+  }
+
+  h2 {
+    @apply .font-sans .text-3xl .mb-6 .mt-10;
+  }
+
+  p {
+    @apply .font-serif .leading-loose .text-black .mb-6 .text-left;
+  }
+
+  .comment {
+    @apply .italic .border-l-4;
+
+    p {
+      @apply .ml-6;
+    }
+  }
+
+  a {
+    @apply .text-black;
+  }
+}

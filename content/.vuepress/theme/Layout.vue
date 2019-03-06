@@ -1,11 +1,15 @@
 <template>
-  <div class="absolute h-full w-full">
+  <div class="relative">
     <Navbar/>
-    <component :is="layout"></component>
+    <div class="h-screen w-full">
+      <component :is="layout"></component>
+    </div>
+
   </div>
 </template>
 
 <script>
+import { Fragment } from 'vue-fragment'
 import Navbar from './components/Navbar'
 
 import HomeLayout from './layouts/HomeLayout'
@@ -14,6 +18,7 @@ import ArticleLayout from './layouts/ArticleLayout'
 export default {
   name: 'Layout',
   components: {
+    Fragment,
     Navbar,
     HomeLayout,
     ArticleLayout
@@ -34,5 +39,4 @@ export default {
 
 <style lang="scss">
 @import './styles/theme.scss';
-@import './styles/home.scss';
 </style>
