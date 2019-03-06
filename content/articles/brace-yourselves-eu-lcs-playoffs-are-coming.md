@@ -10,9 +10,7 @@ I originally wrote this article in French for O'Gaming TV. I translated it follo
 
 After ten weeks of Summer Split regular season, six teams have succeeded in qualifying for playoffs. Those teams are now in the home stretch: the last chance to amass championship points and keep their hopes of qualifying for Worlds alive.
 
-![Header of the original article](/images/articles/eulcs-2017-got-header.jpg)
-
-Header of the original article, made by [Moufff](https://twitter.com/kohaGames).
+![Header of the original article. Credits [Moufff](https://twitter.com/kohaGames)](/images/articles/eulcs-2017-got-header.jpg "Header of the original article")
 
 Six teams means six different identities. It means six families of players aspiring to hold their colours ever higher, and even more fans. The determinant nature of the Summer Split will hit them hard when it will put an end to the dreams of greatness of their favorite team… But like Cersei Lannister from Game of Thrones used to say, “When you play the game of thrones, you win or you die. There is no middle ground”. The six remaining squads will now have to give the best of themselves to triumph over their rivals. Let us see together which resources each one of them has to overcome the Summer Split and which one of those great families will conquer the EU LCS throne.
 
@@ -24,9 +22,7 @@ While Trevor “Quickshot” Henry was pleasing himself to liken them to fallen 
 
 Everyone has a soft spot for the Starks. In Europe, Unicorns of Love are not exactly lacking fans. Just look at the most die-hard from the LCS Studio, despite the team never having reached the very top level of competition. Was it due to bad decision-making? Well, it was certainly the case for the Stark family… Today however, the tides have turned somewhat in the favor of the unicorns and the team has shown during this split that they are amongst the bests in Europe. But even if they did secude the second place of group B, they will need to perform incredibly well to defeat the fearsome opponents that G2 and Fnatic are, especially in best-of-fives. The war dances from Romain Bigeard, the team’s manager, and its “Love Hurts Crew” could however have a certain role to play in motivating the team for the incoming matches at the Accor Hotels Arena.
 
-![Romain Bigeard, waving the Unicorns of Love flag](/images/articles/eulcs-2017-uol-romain-flag.jpg "Romain Bigeard, waving the Unicorns of Love flag")
-
-In Hamburg earlier this year, Romain Bigeard had all the crowd cheering for UoL. Credits: Lolesports.
+![In Hamburg earlier this year, Romain Bigeard had all the crowd cheering for UoL. © Lolesports](/images/articles/eulcs-2017-uol-romain-flag.jpg "Romain Bigeard, waving the Unicorns of Love flag")
 
 ## G2 Esports, of House Lannister
 
@@ -36,9 +32,7 @@ Who better than house Lannister to represent the “bad boys” of EU LCS? Even 
 
 The last ones arrived in EU LCS, even if they look to fall short compared to others -- notably G2 Esports and Fnatic -- are not to be taken lightly. Having reached the fourth place during the Spring Split, Misfits have had great results throughout the year, especially considering that they were in Challenger Series only one year ago. By doing so, the team have already gathered a lot of supporters. Furthermore, the points collected during the previous split can always allow them to obtain a better seeding in Regional Qualifiers than Splyce or H2K. Their story might not be over yet.
 
-![Lyanna Mormont](/images/articles/eulcs-2017-lyanna-mormont.jpg)
-
-Despite her youth, Lady Lyanna Mormont already displayed her great courage many times. Credits: HBO.
+![Despite her youth, Lady Lyanna Mormont already displayed her great courage many times. © HBO](/images/articles/eulcs-2017-lyanna-mormont.jpg)
 
 ## H2K Gaming, of House Arryn
 

@@ -1,5 +1,8 @@
 .article-page {
-  // @apply .mt-32;
+
+  h1, h2, p, .comment {
+    @apply .max-w-md .mx-auto;
+  }
 
   h1 {
     @apply .text-5xl .mb-10;
@@ -11,10 +14,36 @@
 
   h2 {
     @apply .font-sans .text-3xl .mb-6 .mt-10;
+
+    .header-anchor {
+      @apply .-ml-7 .no-underline .opacity-0 .font-normal;
+    }
+  }
+
+  h2:hover {
+    .header-anchor {
+      @apply .opacity-75;
+    }
   }
 
   p {
     @apply .font-serif .leading-loose .text-black .mb-6 .text-left;
+  }
+
+  figure {
+    @apply .flex .flex-col .mb-8;
+
+    img {
+      @apply .mx-auto;
+    }
+
+    figcaption {
+      @apply .mx-auto .mt-5 .font-sans .text-grey-darker;
+
+      a {
+        @apply .text-grey-darker;
+      }
+    }
   }
 
   .comment {
