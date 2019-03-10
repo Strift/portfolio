@@ -33,7 +33,7 @@
   figure {
     @apply .flex .flex-col .mb-8;
 
-    img {
+    img, iframe {
       @apply .mx-auto;
     }
 
@@ -51,6 +51,12 @@
 
     p {
       @apply .ml-6;
+    }
+  }
+
+  .legend {
+    p {
+      @apply .mt-5 .font-sans .text-grey-darker;
     }
   }
 

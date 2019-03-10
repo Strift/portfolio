@@ -3,10 +3,10 @@
     <nav class="flex">
       <NavbarLogo :show-logo="isLogoVisible" />
       <ul class="h-10 flex items-center list-reset uppercase font-sans tracking-wide font-semibold ml-auto text-black">
-        <li class="inline px-10">
+        <li class="inline px-5 sm:px-10">
           <router-link to="/articles/" class="">Articles</router-link>
         </li>
-        <li class="inline px-10">
+        <li class="inline px-5 sm:px-10">
           <a href="mailto:lau.cazanove@gmail.com" class="">Contact</a>
         </li>
       </ul>

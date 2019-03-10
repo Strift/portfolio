@@ -25,9 +25,9 @@
 
 <script>
 export default {
-  computed: {
-    fillGreyDarkest () {
-      return `fill: #3d4852`
+  data () {
+    return {
+      fillGreyDarkest: 'fill: #3d4852'
     }
   }
 }
