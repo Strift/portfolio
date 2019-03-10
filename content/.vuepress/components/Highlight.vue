@@ -1,6 +1,6 @@
 <template>
   <div class="font-sans max-w-md mx-auto mb-6 shadow-md">
-    <div class="bg-seo-primary p-4 text-grey-lightest flex justify-between">
+    <div :class="`bg-${teamSlug}-primary p-4 text-grey-lightest flex justify-between`">
       <div>
         <span class="font-semibold">Highlight:</span> {{ player }}'s {{ hero }}
       </div>
@@ -10,30 +10,33 @@
         @toggle="isDetailsVisible = !isDetailsVisible"
       />
     </div>
-    <div class="bg-seo-secondary flex p-4 border-l-16 border-grey-light">
-      <img :src="heroImage" class="h-24 w-24 mr-6">
+    <div :class="`bg-${teamSlug}-secondary flex p-4 border-l-16 border-grey-light`">
+      <img :src="heroImage" class="h-24 w-24 mr-6 rounded-full border-2 border-grey-light">
       <div class="text-grey-lightest flex-grow">
         <slot name="default"></slot>
       </div>
     </div>
     <div v-show="isDetailsVisible" class="border-l-16 border-grey-light">
       <div class="flex p-4">
-        <img :src="playerImage" class="h-24 w-24 mr-6">
+        <img :src="playerImage" class="h-24 w-24 mr-4">
         <div class="flex flex-col">
           <slot name="details"></slot>
           <ul class="list-reset flex mt-auto">
             <li v-if="twitchUrl">
-              <a :href="twitchUrl" target="_blank"><img src="/icons/twitch.svg" class="h-5 w-5"/></a>
+              <a :href="twitchUrl" target="_blank"><img src="/icons/twitch.svg" class="h-4 w-4"/></a>
             </li>
             <li v-if="youtubeUrl" class="ml-3">
-              <a :href="youtubeUrl" target="_blank"><img src="/icons/youtube.svg" class="h-5 w-5"/></a>
+              <a :href="youtubeUrl" target="_blank"><img src="/icons/youtube.svg" class="h-4 w-4"/></a>
             </li>
             <li v-if="twitterUrl" class="ml-3">
-              <a :href="twitterUrl" target="_blank"><img src="/icons/twitter.svg" class="h-5 w-5"/></a>
+              <a :href="twitterUrl" target="_blank"><img src="/icons/twitter.svg" class="h-4 w-4"/></a>
+            </li>
+            <li v-if="facebookUrl" class="ml-3">
+              <a :href="facebookUrl" target="_blank"><img src="/icons/facebook.svg" class="h-4 w-4"/></a>
             </li>
           </ul>
         </div>
-        <img :src="teamImage" class="h-24 w-24 ml-6">
+        <img :src="teamImage" class="h-24 w-24 ml-4">
       </div>
       <div class="text-sm text-grey-dark italic text-right border-t px-4 py-1">
         <slot name="source"></slot>
@@ -55,7 +58,8 @@ export default {
     teamAcronym: { type: String, required: true },
     twitchUrl: { type: String, default: null },
     youtubeUrl: { type: String, default: null },
-    twitterUrl: { type: String, default: null }
+    twitterUrl: { type: String, default: null },
+    facebookUrl: { type: String, default: null }
   },
   data() {
     return {
@@ -70,7 +74,10 @@ export default {
       return `/images/overwatch-${this.player.toLowerCase()}.png`
     },
     teamImage () {
-      return `/images/overwatch-logo-${this.teamAcronym.toLowerCase()}.png`
+      return `/images/overwatch-logo-${this.teamSlug}.png`
+    },
+    teamSlug () {
+      return this.teamAcronym.toLowerCase()
     }
   },
   methods: {
