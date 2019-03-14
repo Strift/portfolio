@@ -1,8 +1,9 @@
 ---
-layout: ArticleLayout
+date: 2018-02-13
+thumbnail: /images/articles/thumbnails/overwatch-fleta.jpg
 ---
 
-# Part 1: Seoul Dynasty's Fleta with Pharah
+# Overwatch League highlights: Fleta's Pharah
 
 *Five weeks after the inaugural season launch, the Overwatch League's first stage is completed. While some players proved their reputation, others just started to build their own. Let us see together which player-hero pairs from stage one have been the most memorable.*
 

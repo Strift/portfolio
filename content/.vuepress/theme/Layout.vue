@@ -11,6 +11,7 @@ import Navbar from './components/Navbar'
 
 import HomeLayout from './layouts/HomeLayout'
 import ArticleLayout from './layouts/ArticleLayout'
+import ArticleListLayout from './layouts/ArticleListLayout'
 
 export default {
   name: 'Layout',
@@ -18,11 +19,12 @@ export default {
     Fragment,
     Navbar,
     HomeLayout,
-    ArticleLayout
+    ArticleLayout,
+    ArticleListLayout
   },
   computed: {
     layout () {
-      return this.$page.frontmatter.layout
+      return this.$page.frontmatter.layout || 'ArticleLayout'
     }
   },
   // beforeRouteLeave (to, from, next) {

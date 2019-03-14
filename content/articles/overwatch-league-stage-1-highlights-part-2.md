@@ -1,8 +1,9 @@
 ---
-layout: ArticleLayout
+date: 2018-02-14
+thumbnail: /images/articles/thumbnails/overwatch-pine.jpg
 ---
 
-# Part 2: New York Exclesior's Pine with McCree
+# Overwatch League highlights: Pine's McCree
 
 Five weeks after the inaugural season lauch, the Overwatch League's first stage is completed. While some players proved their reputation, others just started to build their own. Let us see together which player-hero pairs from stage one have been the most memorable.
 
