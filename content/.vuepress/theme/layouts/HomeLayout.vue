@@ -32,9 +32,9 @@ export default {
   computed: {
     portraitStyles () {
       if (this.portraitVisible) return ''
-      const destination = this.$store.state.navbarLogo
-      const xDiff = destination.getBoundingClientRect().x - this.$refs.photo.getBoundingClientRect().x
-      const yDiff = destination.getBoundingClientRect().y - this.$refs.photo.getBoundingClientRect().y
+      const destination = this.$store.state.navbarLogo.getBoundingClientRect()
+      const xDiff = destination.x - this.$refs.photo.getBoundingClientRect().x
+      const yDiff = destination.y - this.$refs.photo.getBoundingClientRect().y
       return `transform: translate3d(${xDiff}px, ${yDiff}px, 0) scale(0.104)`
     }
   },
@@ -47,7 +47,7 @@ export default {
       this.portraitVisible = false
       setTimeout(() => {
         next()
-      }, 980)
+      }, 480)
     })
   }
 }
@@ -55,7 +55,7 @@ export default {
 
 <style lang="scss" scoped>
 .moveable {
-  transition: 1000ms;
+  transition: 500ms;
   transform-origin: 0 0;
   // transition-delay: 250ms;
 }

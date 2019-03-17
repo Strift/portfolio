@@ -5,7 +5,7 @@
 .button:before {
   content: '';
   @apply .bg-black .absolute .w-0 .pin-t .pin-l .h-full;
-  transition: all 350ms linear;
+  transition: all 150ms linear;
   z-index: -1;
 }
 

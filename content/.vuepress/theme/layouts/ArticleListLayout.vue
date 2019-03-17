@@ -9,7 +9,7 @@
             <div class="font-semibold leading-tight mb-3">
               {{ article.title }}
             </div>
-            <div class="text-grey text-sm">
+            <div class="text-grey text-sm font-sans">
               {{ article.frontmatter.date | humanReadable }}
             </div>
           </div>
