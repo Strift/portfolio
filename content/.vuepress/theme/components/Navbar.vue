@@ -49,7 +49,8 @@ a {
 
 .router-link-active:before {
   content: "";
-  @apply .absolute .w-full .h-1 .pin-l .bg-black;
+  @apply .absolute .w-full .h-1 .pin-l .bg-black .visible;
+  transform: scaleX(1);
   bottom: -5px;
 }
 

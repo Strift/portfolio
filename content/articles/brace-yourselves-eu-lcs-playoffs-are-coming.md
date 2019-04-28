@@ -1,6 +1,7 @@
 ---
 date: 2017-08-14
 thumbnail: /images/articles/eulcs-2017-got-header.jpg
+highlight: true
 ---
 
 # Brace yourselves, EU LCS playoffs are coming!

@@ -53,10 +53,14 @@ export default {
             thumbnail: `/images/articles/og-thumbnails/${a.image}`,
             title: a.title,
             date: a.date,
-            external: true
+            external: true,
+            highlight: a.highlight
           }
         }))
         .sort(sortByDate)
+    },
+    highlights () {
+      return this.articles.filter(article => article.highlight || (article.frontmatter && article.frontmatter.highlight))
     }
   }
 }
