@@ -47,12 +47,18 @@ a {
   @apply .relative .no-underline .text-black;
 }
 
+.router-link-active:before {
+  content: "";
+  @apply .absolute .w-full .h-1 .pin-l .bg-black;
+  bottom: -5px;
+}
+
 a:before {
   content: "";
   @apply .absolute .w-full .h-1 .pin-l .bg-white .invisible;
   bottom: -5px;
   transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 150ms ease-in-out 0s;
 }
 
 a:hover:before {

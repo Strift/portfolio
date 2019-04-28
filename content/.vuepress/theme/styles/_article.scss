@@ -4,6 +4,10 @@
     @apply .max-w-md .mx-auto;
   }
 
+  p {
+    @apply .font-serif .leading-loose .text-black .mb-6 .text-left;
+  }
+
   h1 {
     @apply .text-5xl .mb-10;
 
@@ -24,10 +28,6 @@
     .header-anchor {
       @apply .opacity-75;
     }
-  }
-
-  p {
-    @apply .font-serif .leading-loose .text-black .mb-6 .text-left;
   }
 
   figure {
