@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev content",
-    "build": "vuepress build content"
+    "build": "vuepress build content",
+    "deploy": "firebase deploy --only hosting"
   },
   "author": "Strift",
   "license": "ISC",
   "devDependencies": {
     "animate.css": "^3.7.0",
+    "firebase-tools": "^9.2.2",
     "markdown-it-implicit-figures": "^0.9.0",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
