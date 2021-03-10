@@ -6,7 +6,7 @@ highlight: true
 
 # My commitment to writing
 
-At the end of last year, my dad had a cancer relapse. My head was swirling with thoughts. It was so difficult to cope with it all that my initial cure was simply to sleep through it—14 hours a day if needed. After a rough week or so, I began to accept reality as it was. I was as ready as I would ever be to continue with my life.
+At the end of last year, my dad had a cancer recurrence. My head was swirling with thoughts. It was so difficult to cope with it all that my initial cure was simply to sleep through it—14 hours a day if needed. After a rough week or so, I began to accept reality as it was. I was as ready as I would ever be to continue with my life.
 
 Still, the event shook me so profoundly I had to find ways to evacuate the stress and keep my thoughts clear. One way was meditating, the other was writing; it’s the latter I want to talk about. Although I come from a fairly technical education, I always considered myself somewhat of a words person. As far as I remember, I always was writing stories.
 
