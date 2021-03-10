@@ -1,5 +1,7 @@
 .article-page {
 
+  @apply .pb-12;
+
   h1, h2, p, .comment {
     @apply .max-w-md .mx-auto;
   }

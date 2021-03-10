@@ -1,5 +1,5 @@
 <template>
-  <div class="article-page">
+  <div class="article-page mx-5 lg:mx-0">
     <Content/>
   </div>
 </template>
