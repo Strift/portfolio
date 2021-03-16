@@ -1,14 +1,13 @@
 ---
 title: '« Arrête de parler franglais ! »'
-date: 2021-03-16
+date: 2021-03-15
 thumbnail: /images/articles/arrete-de-parler-franglais-header.jpg
 highlight: true
 ---
 
-
 <h1>«&nbsp;Arrête de parler <em>franglais</em>&nbsp;!&nbsp;»</h1>
 
-<span class="text-grey-dark mt-2">March 16th, 2021</span>
+<span class="text-grey-dark mt-2">March 15th, 2021</span>
 
 Quand j’étais enfant, ma tante m’avait offert un mini-dictionnaire _Harrap’s_. Elle l’ignorait peut-être, mais ce petit livre contenait une section dédiée aux gros mots. C’est ainsi que dès l’âge de huit ans, je fis la découverte de quelques expressions familières et surtout de nombreuses nuances de _fucks_. Merci tatie ! 
 
