@@ -32,3 +32,8 @@ M’étant [récemment remis à écrire](/articles/my-commitment-to-writing.md) 
 _LOL, jk._
 
 _PS : Je consomme majoritairement du contenu en anglais et dans mon métier, je n’écris ou parle que très rarement le français. Depuis maintenant six jours que je me suis livré le défi d’écrire une fois par jour, l’anglais m’est toujours venu plus naturellement que ma langue natale. Ce n’est pas une mauvaise chose, mais je déplore un peu mon manque d’aisance avec ma propre langue — et ce n’est pas comme si j’étais devenu un auteur hors pair en anglais ! J’ai un peu l’impression d’avoir perdu au change._
+
+**Lire plus**
+
+- [Suivez-moi sur Twitter](https://twitter.com/lau_cazanove) pour lire mes publications quotidiennes
+- [Pourquoi j'ai décidé d'écrire quotidiennement](/articles/my-commitment-to-writing.md) (en anglais)
