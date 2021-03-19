@@ -4,22 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev content",
-    "build": "vuepress build content",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start",
     "deploy": "firebase deploy --only hosting"
   },
   "author": "Strift",
   "license": "ISC",
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^4.0.1",
     "animate.css": "^3.7.0",
     "firebase-tools": "^9.2.2",
     "markdown-it-implicit-figures": "^0.9.0",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
+    "postcss": "^8.2.8",
     "sass-loader": "^7.1.0",
-    "tailwindcss": "^0.7.4",
     "vue-fragment": "^1.5.0",
     "vuepress": "^0.14.9",
     "vuex": "^3.1.0"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.14.0",
+    "nuxt": "^2.15.3"
   }
 }

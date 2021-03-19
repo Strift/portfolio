@@ -7,7 +7,7 @@
           <router-link to="/articles/" class="">Articles</router-link>
         </li>
         <li class="inline px-5 sm:px-10">
-          <a href="mailto:lau.cazanove@gmail.com" class="">Contact</a>
+          <a href="mailto:laucazanove@gmail.com" class="">Contact</a>
         </li>
       </ul>
     </nav>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import NavbarLogo from './NavbarLogo'
+import NavbarLogo from '~/components/NavbarLogo.vue'
 
 export default {
   components: {
@@ -42,28 +42,28 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 a {
-  @apply .relative .no-underline .text-black;
+  @apply relative no-underline text-black;
 }
 
 .router-link-active:before {
   content: "";
-  @apply .absolute .w-full .h-1 .pin-l .bg-black .visible;
+  @apply absolute w-full h-1 left-0 bg-black visible;
   transform: scaleX(1);
   bottom: -5px;
 }
 
 a:before {
   content: "";
-  @apply .absolute .w-full .h-1 .pin-l .bg-white .invisible;
+  @apply absolute w-full h-1 left-0 bg-white invisible;
   bottom: -5px;
   transform: scaleX(0);
   transition: all 150ms ease-in-out 0s;
 }
 
 a:hover:before {
-  @apply .visible;
+  @apply visible;
   transform: scaleX(1);
 }
 </style>
