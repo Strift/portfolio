@@ -3,6 +3,7 @@ title: '« Arrête de parler franglais ! »'
 date: 2021-03-15
 thumbnail: /images/articles/arrete-de-parler-franglais-header.jpg
 highlight: true
+lang: 'fr'
 ---
 
 <h1>«&nbsp;Arrête de parler <em>franglais</em>&nbsp;!&nbsp;»</h1>
