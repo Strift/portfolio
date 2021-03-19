@@ -1,5 +1,18 @@
 export default {
   target: 'static',
+  trailingSlash: true,
+  /*
+  ** Content
+  */
+  content: {
+    liveEdit: false
+  },
+  /*
+  ** Components
+  */
+  components: [
+    '~/components/global'
+  ],
   /*
   ** Global CSS
   */

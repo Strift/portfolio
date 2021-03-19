@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-screen-lg mx-auto mt-10 md:mt-16">
-    <div class="grid grid-cols-3 gap-x-12 gap-y-12">
+    <div class="grid grid-cols-3 gap-x-10 gap-y-12">
         <div 
           v-for="article in articles" 
           :key="article.path"
