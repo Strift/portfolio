@@ -1,4 +1,5 @@
 ---
+title: "Overwatch League highlights: Pine's McCree"
 date: 2018-02-14
 thumbnail: /images/articles/thumbnails/overwatch-pine.jpg
 ---

@@ -1,4 +1,5 @@
 ---
+title: 'My commitment to writing'
 date: 2021-03-10
 thumbnail: /images/articles/my-commitment-to-writing-header.jpeg
 highlight: true

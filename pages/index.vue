@@ -1,6 +1,5 @@
 <template>
     <div class="h-screen flex flex-col">
-      <Navbar/>
       <div class="mx-6 lg:mx-0 flex flex-col lg:flex-row mt-auto">
         <img src="~assets/images/me.jpg" class="mt-24 mb-12 lg:my-auto lg:ml-24 xl:ml-32 mx-auto lg:mx-0 moveable lg:h-64 xl:h-96 lg:w-64 xl:w-96" :style="portraitStyles" ref="photo">
         <div class="lg:w-1/2 lg:ml-20 lg:pr-12 xl:pr-32 lg:flex">

@@ -1,4 +1,5 @@
 ---
+title: "Overwatch League highlights: Fleta's Pharah"
 date: 2018-02-13
 thumbnail: /images/articles/thumbnails/overwatch-fleta.jpg
 highlight: true
