@@ -13,6 +13,7 @@
   "author": "Strift",
   "license": "ISC",
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/tailwindcss": "^4.0.1",
     "animate.css": "^3.7.0",
     "fibers": "^5.0.0",

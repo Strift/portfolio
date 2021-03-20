@@ -40,7 +40,8 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics'
   ],
   /*
   ** Nuxt.js modules
@@ -53,5 +54,11 @@ export default {
   */
   content: {
     liveEdit: false
+  },
+  /*
+  ** Google Analytics
+  */
+  googleAnalytics: {
+    id: 'UA-99085502-2'
   }
 }
