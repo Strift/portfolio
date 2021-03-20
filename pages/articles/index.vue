@@ -1,25 +1,28 @@
 <template>
-  <div class="container mx-auto mt-10 md:mt-16">
-    <div class="flex flex-wrap">
-      <div v-for="article in articles" class="w-full md:w-1/2 lg:w-1/3 flex-none px-6 mb-10 md:mb-16" :key="article.path">
-        <div class="card block shadow hover:shadow-lg ">
-          <a v-if="article.external" class="text-black no-underline" :href="article.path" target="_blank">
+  <div class="max-w-screen-lg mx-auto mt-10 md:mt-16">
+    <div class="grid grid-cols-3 gap-x-10 gap-y-12">
+        <div 
+          v-for="article in articles" 
+          :key="article.path"
+        >
+          <a v-if="article.external" class="text-black no-underline" :href="linkToArticle(article)" target="_blank">
             <ArticleCard
               :title="article.title"
               :thumbnail-url="article.thumbnail"
               :date="article.date"
               :lang="article.lang"
+              class="card block shadow hover:shadow-lg"
             />
           </a>
-          <router-link v-else :to="article.path" class="text-black no-underline">
+          <router-link v-else :to="linkToArticle(article)" class="text-black no-underline">
             <ArticleCard
               :title="article.title"
-              :thumbnail-url="article.frontmatter.thumbnail"
-              :date="article.frontmatter.date"
+              :thumbnail-url="article.thumbnail"
+              :date="article.date"
+              class="card block shadow hover:shadow-lg"
             />
           </router-link>
         </div>
-      </div>
     </div>
     <SocialsFooter class="mt-10"/>
   </div>
@@ -27,11 +30,11 @@
 
 <script>
 import moment from 'moment'
-import ogArticles from '../../ogamingArticles.json'
-import mediumArticles from '../../mediumArticles.json'
+import ogArticles from '~/data/ogamingArticles.json'
+import mediumArticles from '~/data/mediumArticles.json'
 
-import ArticleCard from '../components/ArticleCard'
-import SocialsFooter from '../components/SocialsFooter'
+import ArticleCard from '~/components/ArticleCard.vue'
+import SocialsFooter from '~/components/SocialsFooter.vue'
 
 const sortByDate = (articleA, articleB) => {
   const dateA = moment(articleA.date || articleA.frontmatter.date, 'YYYY-MM-DD')
@@ -44,10 +47,15 @@ export default {
     ArticleCard,
     SocialsFooter
   },
+  async asyncData ({ $content }) {
+    const pages = await $content('articles').fetch()
+    return {
+      pages
+    }
+  },
   computed: {
     articles () {
-      return this.$site.pages
-        .filter(page => page.path !== '/articles/' && page.path.startsWith('/articles/'))
+      return this.pages
         .concat(ogArticles.map(a => {
           return {
             path: a.url,
@@ -73,6 +81,19 @@ export default {
     },
     highlights () {
       return this.articles.filter(article => article.highlight || (article.frontmatter && article.frontmatter.highlight))
+    }
+  },
+  methods: {
+    linkToArticle (article) {
+      if (article.external && !article.path.endsWith('/')) {
+        return  `${article.path}/`
+      }
+      return article.path
+    }
+  },
+  head () {
+    return {
+      title: 'Articles | Laurent Cazanove'
     }
   }
 }

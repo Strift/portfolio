@@ -1,4 +1,5 @@
 ---
+title: "Overwatch League highlights: Fleta's Pharah"
 date: 2018-02-13
 thumbnail: /images/articles/thumbnails/overwatch-fleta.jpg
 highlight: true
@@ -13,7 +14,13 @@ Byung-Sun "**Fleta**" Kim is one of the many players that have been hyped before
 And what better way to start than watch him take a double kill?
 
 <figure>
-    <iframe src="https://clips.twitch.tv/embed?clip=LuckyStrangeGuanacoTwitchRaid&autoplay=false" frameborder="0" allowfullscreen="true" height="390" width="640"></iframe>
+    <iframe
+        src="https://clips.twitch.tv/embed?clip=LuckyStrangeGuanacoTwitchRaid&autoplay=false&parent=laurentcazanove.com"
+        frameborder="0" 
+        allowfullscreen="true" 
+        height="390" 
+        width="640"
+    ></iframe>
     <figcaption>
         Since its week 2 match against Florida Mayhem, Fleta started demonstrating his prowess in air-to-air matchups.
     </figcaption>
@@ -23,19 +30,23 @@ Fleta was especially powerful with Pharah in the stage one meta because of the o
 
 As an example, in the match opposing Seoul Dynasty to the Valiants, Fleta killed silkthread *seven* times on Eichenwalde only while both of them were playing **Pharah**; the Valiant DPS only returned the favor *once*, according to [Winston's Lab](https://www.winstonslab.com). Nonetheless, the LA representatives managed to win the map, notably thanks to French players Benjamin "**Unkoe**" Chevasson and Terence "**Soon**" Tarlier finding decisive kills on Fleta's Pharah. I cannot wait for stage two to start and see how the South Korean DPS will adapt its Pharah play to the heavy upcoming meta shift.
 
-<highlight player="Fleta" hero="Pharah" team-acronym="SEO" twitch-url="https://twitch.tv/fleta92" youtube-url="https://www.youtube.com/channel/UCDAsL2omMivGL-oTKEJcKxA" twitter-url="https://twitter.com/ow_fleta" :expand-default="true">
-    <ul class="h-full flex flex-col justify-center pl-2">
-        <li class="mb-2">22% pickrate during stage one</li>
-        <li class="mb-2">Top 5 in final blows/10 min.</li>
-        <li>Master of air-to-air battles</li>
-    </ul>
-    <div slot="details" class="text-grey-darkest leading-tight">
-        Byung-sun "<strong>Fleta</strong>" Kim (South Korea) is currently playing DPS for Seoul Dynasty. He previously played in APEX for Lunatic-Hai and Flash Lux.
-    </div>
-    <template slot="source">
+<Highlight player="Fleta" hero="Pharah" team-acronym="SEO" twitch-url="https://twitch.tv/fleta92" youtube-url="https://www.youtube.com/channel/UCDAsL2omMivGL-oTKEJcKxA" twitter-url="https://twitter.com/ow_fleta" :expand-default="true">
+    <template v-slot:default>
+        <ul class="text-gray-300">
+            <li>22% pickrate during stage one</li>
+            <li>Top 5 in final blows/10 min.</li>
+            <li>Master of air-to-air battles</li>
+        </ul>
+    </template>
+    <template v-slot:details>
+        <div slot="details" class="text-gray-600 leading-tight">
+            Byung-sun "<strong>Fleta</strong>" Kim (South Korea) is currently playing DPS for Seoul Dynasty. He previously played in APEX for Lunatic-Hai and Flash Lux.
+        </div>
+    </template>
+    <template v-slot:source>
         Source: Blizzard and Winston's Lab
     </template>
-</highlight>
+</Highlight>
 
 
 **Thanks for reading! Stay tuned to see what other players and heroes shaped the first stage of the Overwatch League. By the way, I would love to know what you thought about this type of content, so please <a href="https://twitter.com/intent/tweet?text=@lau_cazanove%20I%20just%20read%20your%20article,%20it%20was%20great!%20#OWL2018" target="_blank">let me know</a>!**

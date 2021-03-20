@@ -1,13 +1,14 @@
 <template>
   <div ref="wrapper">
     <router-link v-show="showLogo" to="/">
-      <img src="/images/me.jpg" class="h-10 w-10">
+      <img src="~/assets/images/me.jpg" class="h-10 w-10">
     </router-link>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'NavbarLogo',
   props: {
     showLogo: {
       type: Boolean,
