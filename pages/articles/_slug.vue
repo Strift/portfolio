@@ -1,12 +1,20 @@
 <template>
-  <div class="article-page mx-5 lg:mx-0">
+  <div class="pb-5">
+    <div class="article-page">
 
-    <nuxt-content :document="article" class="pb-12 max-w-screen-md mx-auto text-black leading-loose font-serif text-left space-y-6 text-lg"/>
+      <nuxt-content :document="article" class="max-w-screen-md mx-auto text-black leading-loose font-serif text-left space-y-6 text-lg"/>
+    </div>
+    <SocialsFooter class="mt-10"/>
   </div>
 </template>
 
 <script>
+import SocialsFooter from '~/components/SocialsFooter.vue'
+
 export default {
+  components: {
+    SocialsFooter
+  },
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
 
@@ -78,5 +86,4 @@ export default {
     @apply underline;
   }
 }
-
 </style>
