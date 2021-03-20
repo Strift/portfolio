@@ -1,8 +1,13 @@
 <template>
-    <div class="h-screen flex flex-col">
-      <div class="mx-6 lg:mx-0 flex flex-col lg:flex-row mt-auto">
-        <img src="~assets/images/me.jpg" class="mt-24 mb-12 lg:my-auto lg:ml-24 xl:ml-32 mx-auto lg:mx-0 moveable lg:h-64 xl:h-96 lg:w-64 xl:w-96" :style="portraitStyles" ref="photo">
-        <div class="lg:w-1/2 lg:ml-20 lg:pr-12 xl:pr-32 lg:flex">
+    <div class="sm:min-h-screen sm:flex sm:flex-col pt-24 pb-6">
+      <div class="sm:flex-grow sm:flex sm:flex-col sm:justify-center xl:flex-row xl:space-x-32 xl:items-center xl:justify-center">
+        <img 
+          :style="portraitStyles" 
+          src="~assets/images/me.jpg" 
+          ref="photo"
+          class="mb-10 h-48 sm:h-64 sm:mx-auto sm:mb-16 xl:mx-0 xl:h-96 " 
+        >
+        <div class="max-w-screen-md">
           <transition
             :duration="480"
             leave-active-class="animated fadeOut"
@@ -14,7 +19,7 @@
           </transition>
         </div>
       </div>
-      <SocialsFooter class="mt-10 lg:mt-auto"/>
+      <SocialsFooter class="mt-10 sm:mt-auto"/>
     </div>
 </template>
 

@@ -1,12 +1,12 @@
 <template>
-  <header :class="`${positionClass} pin-t z-10 w-full p-6`">
-    <nav class="flex">
+  <header :class="`${positionClass} pin-t z-10 w-full py-6`">
+    <nav class="flex uppercase font-sans tracking-wide font-semibold text-black">
       <NavbarLogo :show-logo="isLogoVisible" />
-      <ul class="h-10 flex items-center list-reset uppercase font-sans tracking-wide font-semibold ml-auto text-black">
-        <li class="inline px-5 sm:px-10">
+      <ul class="h-10 flex items-center list-reset ml-auto space-x-20">
+        <li>
           <router-link to="/articles/" class="">Articles</router-link>
         </li>
-        <li class="inline px-5 sm:px-10">
+        <li>
           <a href="mailto:laucazanove@gmail.com" class="">Contact</a>
         </li>
       </ul>
