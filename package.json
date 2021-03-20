@@ -8,6 +8,7 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "start": "nuxt start",
+    "serve": "firebase emulators:start --only hosting",
     "deploy": "firebase deploy --only hosting"
   },
   "author": "Strift",
