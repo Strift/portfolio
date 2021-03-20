@@ -85,9 +85,15 @@ export default {
   },
   methods: {
     linkToArticle (article) {
-      return article.path.endsWith('/') 
-        ? article.path 
-        : `${article.path}/`
+      if (article.external && !article.path.endsWith('/')) {
+        return  `${article.path}/`
+      }
+      return article.path
+    }
+  },
+  head () {
+    return {
+      title: 'Articles | Laurent Cazanove'
     }
   }
 }

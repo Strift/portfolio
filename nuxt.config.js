@@ -13,7 +13,7 @@ export default {
     htmlAttrs: {
       lang: 'fr'
     },
-    titleTemplate: '%s - Laurent Cazanove',
+    title: 'Laurent Cazanove',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -33,6 +33,7 @@ export default {
   ** Global CSS
   */
   css: [
+    'animate.css',
     '~/assets/css/base.css'
   ],
   /*
