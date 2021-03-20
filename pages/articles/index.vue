@@ -85,7 +85,7 @@ export default {
   },
   methods: {
     linkToArticle (article) {
-      if (article.external && !article.path.endsWith('/')) {
+      if (!article.external && !article.path.endsWith('/')) {
         return  `${article.path}/`
       }
       return article.path
