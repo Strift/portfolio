@@ -8,7 +8,7 @@ lang: 'fr'
 
 <h1>«&nbsp;Arrête de parler <em>franglais</em>&nbsp;!&nbsp;»</h1>
 
-<span class="text-grey-dark mt-2">15 Mars 2021</span>
+<span class="article-date">15 Mars 2021</span>
 
 Quand j’étais enfant, ma tante m’avait offert un mini-dictionnaire _Harrap’s_. Elle l’ignorait peut-être, mais ce petit livre contenait une section dédiée aux gros mots. C’est ainsi que dès l’âge de huit ans, je fis la découverte de quelques expressions familières et surtout de nombreuses nuances de _fucks_. Merci tatie ! 
 

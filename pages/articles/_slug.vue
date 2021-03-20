@@ -1,6 +1,7 @@
 <template>
   <div class="article-page mx-5 lg:mx-0">
-    <nuxt-content :document="article" class="space-y-6"/>
+
+    <nuxt-content :document="article" class="pb-12 max-w-screen-md mx-auto text-black leading-loose font-serif text-left space-y-6 text-lg"/>
   </div>
 </template>
 
@@ -16,15 +17,8 @@ export default {
 
 <style lang="scss">
 .article-page {
-
-  @apply pb-12 max-w-screen-md mx-auto text-black leading-loose font-serif text-left space-y-6;
-
-  h1, h2, p, .comment, ul {
-    @apply mx-auto;
-  }
-
   ul {
-    @apply pl-4;
+    @apply list-disc pl-4;
   }
 
   h1 {
@@ -49,15 +43,18 @@ export default {
     }
   }
 
+  img {
+    @apply mx-auto;
+  }
+
   figure {
-    @apply flex flex-col mb-8;
 
     img, iframe {
       @apply mx-auto;
     }
 
     figcaption {
-      @apply mx-auto mt-5 font-sans text-gray-700;
+      @apply mx-auto mt-5 font-sans text-gray-700 text-center text-base;
 
       a {
         @apply text-gray-700;
@@ -65,7 +62,7 @@ export default {
     }
   }
 
-  .comment {
+  blockquote {
     @apply italic border-l-4;
 
     p {
@@ -73,14 +70,12 @@ export default {
     }
   }
 
-  .legend {
-    p {
-      @apply mt-5 font-sans text-gray-700;
-    }
+  .article-date {
+    @apply text-gray-700 mt-2;
   }
 
   a {
-    @apply text-black;
+    @apply underline;
   }
 }
 

@@ -5,7 +5,7 @@
           v-for="article in articles" 
           :key="article.path"
         >
-          <a v-if="article.external" class="text-black no-underline" :href="article.path" target="_blank">
+          <a v-if="article.external" class="text-black no-underline" :href="linkToArticle(article)" target="_blank">
             <ArticleCard
               :title="article.title"
               :thumbnail-url="article.thumbnail"
@@ -14,7 +14,7 @@
               class="card block shadow hover:shadow-lg"
             />
           </a>
-          <router-link v-else :to="article.path" class="text-black no-underline">
+          <router-link v-else :to="linkToArticle(article)" class="text-black no-underline">
             <ArticleCard
               :title="article.title"
               :thumbnail-url="article.thumbnail"
@@ -81,6 +81,13 @@ export default {
     },
     highlights () {
       return this.articles.filter(article => article.highlight || (article.frontmatter && article.frontmatter.highlight))
+    }
+  },
+  methods: {
+    linkToArticle (article) {
+      return article.path.endsWith('/') 
+        ? article.path 
+        : `${article.path}/`
     }
   }
 }

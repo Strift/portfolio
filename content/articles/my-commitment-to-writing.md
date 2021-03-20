@@ -7,7 +7,7 @@ highlight: true
 
 # My commitment to writing
 
-<span class="text-grey-dark mt-2">March 10th, 2021</span>
+<span class="article-date">March 10th, 2021</span>
 
 At the end of last year, my dad had a cancer recurrence. My head was swirling with thoughts. It was so difficult to cope with it all that my initial cure was simply to sleep through it—14 hours a day if needed. After a rough week or so, I began to accept reality as it was. I was as ready as I would ever be to continue with my life.
 
