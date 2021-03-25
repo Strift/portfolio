@@ -1,8 +1,11 @@
 <template>
   <div class="pb-5">
-    <div class="article-page">
+    <div class="article-page mt-10">
 
-      <nuxt-content :document="article" class="max-w-screen-md mx-auto text-black leading-loose font-serif text-left space-y-6 text-lg"/>
+      <nuxt-content 
+        :document="article" 
+        class="max-w-screen-md mx-auto leading-loose font-serif text-left space-y-6 text-lg text-gray-900"
+      />
     </div>
     <SocialsFooter class="mt-10"/>
   </div>
