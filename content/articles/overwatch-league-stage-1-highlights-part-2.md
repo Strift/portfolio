@@ -1,5 +1,6 @@
 ---
 title: "Overwatch League highlights: Pine's McCree"
+description: "Highlighting the player-hero pairs from stage one that have been the most memorable. In this edition: Pine's McCree."
 date: 2018-02-14
 thumbnail: /images/articles/thumbnails/overwatch-pine.jpg
 ---

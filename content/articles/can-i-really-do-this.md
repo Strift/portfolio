@@ -1,7 +1,9 @@
 ---
 title: Can I really do this?
 date: 2021-03-25
+description: "I often fear that I will fail. So I'm trying things to go beyond that fear and take action. Maybe this could help you too."
 thumbnail: /images/articles/thumbnails/can-i-really-do-this.jpg
+thumbnailAlt: 'A train in the mist'
 source: https://unsplash.com/photos/opNIQ-bx_4M
 highlight: true
 ---

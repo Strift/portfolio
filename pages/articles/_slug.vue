@@ -25,7 +25,18 @@ export default {
   },
   head () {
     return {
-      title: `${this.article.title} | Laurent Cazanove`
+      title: `${this.article.title} | Laurent Cazanove`,
+      meta: [
+      { name: 'author', content: 'Laurent Cazanove' },
+      { name: 'description', content: this.article.description, hid: 'description' },
+      { property: 'og:title', content: this.article.title },
+      { property: 'og:description', content: this.article.description },
+      { property: 'og:image', content: `${this.$config.baseURL}${this.article.thumbnail}` },
+      { property: 'og:url', content: `${this.$config.baseURL}${this.$route.path}` },
+      { property: 'og:site_name', content: 'Laurent Cazanove' },
+      { name: 'twitter:image:alt', content: this.article.thumbnailAlt },
+      { name: 'twitter:card', content: 'summary_large_image' }
+      ]
     }
   }
 }

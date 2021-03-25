@@ -6,6 +6,12 @@ export default {
   target: 'static',
   trailingSlash: true,
   /*
+  ** Runtime config
+  */
+  publicRuntimeConfig: {
+    baseURL: process.env.NODE_ENV === 'production' ? 'https://laurentcazanove.com' : 'localhost:3000'
+  },
+  /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
   */
@@ -17,7 +23,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Freelance engineer, teacher, and writer specialized in esports' }
+      { name: 'description', content: 'Freelance software engineer specialized in esports.', hid: 'description' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

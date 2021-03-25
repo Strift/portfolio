@@ -1,5 +1,6 @@
 ---
 title: 'Brace yourselves, EU LCS playoffs are coming!'
+description: "After ten weeks of Summer Split regular season, six teams have succeeded in qualifying for playoffs. Those teams are now in the home stretch: the last chance to amass championship points and keep their hopes of qualifying for Worlds alive."
 date: 2017-08-14
 thumbnail: /images/articles/eulcs-2017-got-header.jpg
 highlight: true
