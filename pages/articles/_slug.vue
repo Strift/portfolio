@@ -18,10 +18,13 @@ export default {
   components: {
     SocialsFooter
   },
-  async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch()
-
-    return { article }
+  async asyncData({ $content, params, error }) {
+    try {
+      const article = await $content('articles', params.slug).fetch()
+      return { article }
+    } catch (err) {
+      error({ statusCode: 404, message: 'Page not found' })
+    }
   },
   head () {
     return {
