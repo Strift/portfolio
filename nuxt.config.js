@@ -40,7 +40,8 @@ export default {
   */
   css: [
     'animate.css',
-    '~/assets/css/base.css'
+    '~/assets/css/base.css',
+    '~/assets/css/fonts.css'
   ],
   /*
   ** Nuxt.js dev-modules

@@ -5,7 +5,7 @@
           :style="portraitStyles" 
           src="~assets/images/me.jpg" 
           ref="photo"
-          class="mb-10 h-48 sm:h-64 sm:mx-auto sm:mb-16 xl:mx-0 xl:h-96 " 
+          class="mb-10 h-48 sm:h-64 sm:mx-auto sm:mb-16 lg:mb-0 xl:mx-0 xl:h-96 " 
         >
         <div class="max-w-screen-md">
           <transition
@@ -87,7 +87,7 @@ export default {
   }
   
   p {
-    @apply font-serif leading-normal text-xl text-gray-900 mb-3;
+    @apply font-serif leading-relaxed text-lg text-gray-900 mb-3;
   }
 }
 
