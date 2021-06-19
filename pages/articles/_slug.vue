@@ -107,5 +107,9 @@ export default {
   a {
     @apply underline;
   }
+
+  code {
+    @apply bg-red-300 bg-opacity-25 p-1 rounded text-red-900 border border-opacity-25 font-normal;
+  }
 }
 </style>
