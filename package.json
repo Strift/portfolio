@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
+    "@nuxtjs/composition-api": "^0.24.4",
     "nuxt": "^2.15.3"
   }
 }

@@ -1,25 +1,25 @@
 <template>
-  <header class="flex justify-between py-16 text-2xl w-full">
-    <NuxtLink to="/" title="Home" class="flex items-center space-x-1 text-gray-700">
-      <ChevronDoubleRightIcon />
-      <span>hello</span>
-    </NuxtLink>
+  <header class="flex items-baseline justify-between py-16 text-2xl w-full">
+    <NavbarLink to="/" title="Home" class="text-gray-700">
+      <span v-if="$route.fullPath === '/'">hello</span>
+      <span v-else>home</span>
+    </NavbarLink>
     <nav>
       <ul class="flex font-semibold space-x-16">
         <li>
-          <NuxtLink to="/about/" class="hover:text-sky-600 text-sky-900">
+          <NavbarLink to="/about/">
             About
-          </NuxtLink>
+          </NavbarLink>
         </li>
         <li>
-          <NuxtLink to="/projects/" class="hover:text-sky-600 text-sky-900">
+          <NavbarLink to="/projects/">
             Projects
-          </NuxtLink>
+          </NavbarLink>
         </li>
         <li>
-          <NuxtLink to="/articles/" class="hover:text-sky-600 text-sky-900">
+          <NavbarLink to="/articles/">
             Articles
-          </NuxtLink>
+          </NavbarLink>
         </li>
       </ul>
     </nav>
@@ -28,7 +28,12 @@
 
 <script>
 import ChevronDoubleRightIcon from '~/components/icons/outline/ChevronDoubleRightIcon.vue'
+import NavbarLink from '~/components/NavbarLink.vue'
+
 export default {
-  components: { ChevronDoubleRightIcon }
+  components: {
+    ChevronDoubleRightIcon,
+    NavbarLink
+  }
 }
 </script>
