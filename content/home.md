@@ -4,10 +4,15 @@ actionLink: /contact/
 layout: HomeLayout
 ---
 
-# Esports and Internet hustling
+# I'm Laurent,
 
-Hey, my name is **Laurent Cazanove** but people online just call me Strift.
+## Software engineer specialized in esports.
 
-I am currently working as **Customer Success & DX Engineer** at Pandascore.  I sometimes happen to work as a freelance teacher or web developer. One day, I'd like to publish an interactive novel.
+My name is **Laurent Cazanove** but people online just call me Strift.
 
-Outside of esports or gaming-related activities, I enjoy medieval history, chinese food and rap music.
+I am currently working as **Customer Success & Developer Experience Engineer** at Pandascore.
+
+These past two years, my life has mostly been about:
+- managing a 25-people remote team,
+- running my Classic WoW guild, and
+- teaching Computer Sciences.
