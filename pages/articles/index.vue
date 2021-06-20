@@ -1,30 +1,35 @@
 <template>
-  <div class="max-w-screen-lg mx-auto mt-10 md:mt-16">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
-        <div 
-          v-for="article in articles" 
-          :key="article.path"
-        >
-          <a v-if="article.external" class="text-black no-underline" :href="linkToArticle(article)" target="_blank">
-            <ArticleCard
-              :title="article.title"
-              :thumbnail-url="article.thumbnail"
-              :date="article.date"
-              :lang="article.lang"
-              class="card block shadow hover:shadow-lg"
-            />
-          </a>
-          <router-link v-else :to="linkToArticle(article)" class="text-black no-underline">
-            <ArticleCard
-              :title="article.title"
-              :thumbnail-url="article.thumbnail"
-              :date="article.date"
-              class="card block shadow hover:shadow-lg"
-            />
-          </router-link>
-        </div>
+  <div class="container md:mt-16 mt-10 mx-auto">
+    <div class="gap-16 grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2">
+      <div
+        v-for="article in articles"
+        :key="article.path"
+      >
+        <a v-if="article.external" class="no-underline text-black" :href="linkToArticle(article)" target="_blank">
+          <ArticleCard
+            :title="article.title"
+            :description="article.description"
+            :thumbnail-url="article.thumbnail"
+            :date="article.date"
+            :lang="article.lang"
+            :tags="article.tags"
+            class="card"
+          />
+        </a>
+        <router-link v-else :to="linkToArticle(article)" class="no-underline text-black">
+          <ArticleCard
+            :title="article.title"
+            :description="article.description"
+            :thumbnail-url="article.thumbnail"
+            :date="article.date"
+            :lang="article.lang"
+            :tags="article.tags"
+            class="card"
+          />
+        </router-link>
+      </div>
     </div>
-    <SocialsFooter class="mt-10"/>
+    <SocialsFooter class="mt-10" />
   </div>
 </template>
 
@@ -48,15 +53,20 @@ export default {
     SocialsFooter
   },
   async asyncData ({ $content }) {
-    const pages = await $content('articles').fetch()
+    const markdownArticles = await $content('articles').fetch()
     return {
-      pages
+      markdownArticles
+    }
+  },
+  head () {
+    return {
+      title: 'Articles | Laurent Cazanove'
     }
   },
   computed: {
     articles () {
-      return this.pages
-        .concat(ogArticles.map(a => {
+      return this.markdownArticles
+        .concat(ogArticles.map((a) => {
           return {
             path: a.url,
             thumbnail: `/images/articles/og-thumbnails/${a.image}`,
@@ -64,17 +74,20 @@ export default {
             date: a.date,
             external: true,
             lang: 'fr',
-            highlight: a.highlight
+            highlight: a.highlight,
+            tags: ['esports']
           }
         }))
-        .concat(mediumArticles.map(a => {
+        .concat(mediumArticles.map((a) => {
           return {
             path: a.url,
             thumbnail: `/images/articles/medium-thumbnails/${a.image}`,
             title: a.title,
+            description: a.description,
             date: a.date,
             external: true,
-            highlight: a.highlight
+            highlight: a.highlight,
+            tags: a.tags
           }
         }))
         .sort(sortByDate)
@@ -86,14 +99,9 @@ export default {
   methods: {
     linkToArticle (article) {
       if (!article.external && !article.path.endsWith('/')) {
-        return  `${article.path}/`
+        return `${article.path}/`
       }
       return article.path
-    }
-  },
-  head () {
-    return {
-      title: 'Articles | Laurent Cazanove'
     }
   }
 }

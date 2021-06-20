@@ -7,17 +7,17 @@
     <nav>
       <ul class="flex font-semibold space-x-16">
         <li>
-          <NavbarLink to="/about/">
+          <NavbarLink to="/about/" title="About">
             About
           </NavbarLink>
         </li>
         <li>
-          <NavbarLink to="/projects/">
+          <NavbarLink to="/projects/" title="Projects">
             Projects
           </NavbarLink>
         </li>
         <li>
-          <NavbarLink to="/articles/">
+          <NavbarLink to="/articles/" title="Articles">
             Articles
           </NavbarLink>
         </li>
