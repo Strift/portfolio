@@ -10,7 +10,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+      sans: ['Fira Sans', ...defaultTheme.fontFamily.sans],
       serif: ['Merriweather', ...defaultTheme.fontFamily.serif],
     },
     extend: {

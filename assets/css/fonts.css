@@ -1,1 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@300;600&display=swap');
+/*
+ * Fira Sans
+ */
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('FiraSans'), local('FiraSans-Regular'), url(../fonts/FiraSans-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('FiraSans-Italic'), url(../fonts/FiraSans-Italic.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('FiraSans-SemiBold'), url(../fonts/FiraSans-SemiBold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('FiraSans-SemiBoldItalic'), url(../fonts/FiraSans-SemiBoldItalic.ttf) format('ttf');
+}
+
+/*
+ * Merriweather
+ */
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather'), local('Merriweather-Regular'), url(../fonts/Merriweather-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Merriweather-Italic'), url(../fonts/Merriweather-Italic.ttf) format('ttf');
+}
