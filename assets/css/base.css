@@ -1,7 +1,7 @@
-html, body {
+/* html, body {
   margin: 0;
   height: 100%;
-}
+} */
 
 .shadow-thin {
   filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.25));

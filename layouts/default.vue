@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen mx-24 pb-16">
+  <div class="flex flex-col lg:mx-24 min-h-screen mx-6 pb-16">
     <Navbar />
     <Nuxt />
   </div>

@@ -1,12 +1,12 @@
 <template>
-  <header class="flex items-baseline justify-between py-16 text-2xl w-full">
+  <header class="flex items-center justify-between py-16 text-2xl w-full">
     <NavbarLink to="/" title="Home" class="text-gray-700">
       <span v-if="$route.fullPath === '/'">hello</span>
       <span v-else>home</span>
     </NavbarLink>
     <nav>
       <ul class="flex font-semibold space-x-16">
-        <li>
+        <!-- <li>
           <NavbarLink to="/about/" title="About">
             About
           </NavbarLink>
@@ -15,7 +15,7 @@
           <NavbarLink to="/projects/" title="Projects">
             Projects
           </NavbarLink>
-        </li>
+        </li> -->
         <li>
           <NavbarLink to="/articles/" title="Articles">
             Articles

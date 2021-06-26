@@ -1,8 +1,8 @@
 <template>
   <a
     href="mailto:lau.cazanove@gmail.com"
-    class="bg-sky-600 block hover:shadow-xl py-3 shadow-lg text-2xl text-center text-white w-64"
+    class="bg-indigo-500 block hover:shadow-xl py-3 shadow-lg text-2xl text-center text-white w-64"
   >
-    Get in touch
+    Contact via email
   </a>
 </template>

@@ -7,7 +7,7 @@ highlight: true
 lang: 'fr'
 tags:
   - writing
-  - offtopic
+  - off-topic
 ---
 
 <h1>«&nbsp;Arrête de parler <em>franglais</em>&nbsp;!&nbsp;»</h1>

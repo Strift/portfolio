@@ -1,41 +1,50 @@
 <template>
-  <div class="flex flex-grow">
-    <HomeContent :page="page" class="my-auto" style="width: 900px" />
-    <div class="ml-auto mr-16 my-auto">
+  <div class="lg:flex lg:flex-grow">
+    <img
+      src="~/assets/images/me.jpg"
+      alt="Me"
+      class="h-64 lg:hidden mb-16 mx-auto rounded-full shadow-lg"
+    >
+    <div>
+      <h2 class="lg:mb-20 mb-12">
+        <div class="font-semibold lg:text-7xl mb-2 text-5xl text-gray-700 tracking-tight">
+          I'm Laurent,
+        </div>
+        <div class="font-semibold lg:text-5xl text-4xl text-gray-400 tracking-tight">
+          Software engineer specialized in esports.
+        </div>
+      </h2>
+      <HomeContent :page="page" class="font-sans lg:max-w-screen-md my-auto text-gray-400" />
+      <!-- <HomeContent :page="page" class="my-auto" style="width: 900px" /> -->
+      <div class="flex justify-center mt-16">
+        <ContactButton />
+      </div>
+    </div>
+    <div class="lg:m-auto">
       <img
         src="~/assets/images/me.jpg"
         alt="Me"
-        class="rounded-sm shadow-lg shadow-thin"
-        style="height: 530px; width: 530px"
+        class="h-96 hidden lg:block rounded-sm shadow-lg shadow-thin w-96"
       >
-      <div class="flex justify-center mt-9 space-x-8 text-gray-400">
-        <a href="https://twitter.com/lau_cazanove" target="_blank" title="Twitter" class="hover:text-sky-600">
-          <TwitterIcon />
-        </a>
-        <a href="https://github.com/Strift" target="_blank" title="GitHub" class="hover:text-sky-600">
-          <GithubIcon />
-        </a>
-        <a href="https://linkedin.com/in/laurentcazanove" target="_blank" title="LinkedIn" class="hover:text-sky-600">
-          <LinkedInIcon />
-        </a>
+      <div class="font-sans mb-8 mt-16 text-center text-gray-400 text-xl">
+        Let's get in touch
       </div>
+      <SocialsLinks />
     </div>
   </div>
 </template>
 
 <script>
 import HomeContent from '~/components/HomeContent.vue'
-import GithubIcon from '~/components/icons/GithubIcon.vue'
-import TwitterIcon from '~/components/icons/TwitterIcon.vue'
-import LinkedInIcon from '~/components/icons/LinkedInIcon.vue'
+import ContactButton from '~/components/ContactButton.vue'
+import SocialsLinks from '~/components/SocialsLinks.vue'
 
 export default {
   name: 'Home',
   components: {
     HomeContent,
-    GithubIcon,
-    TwitterIcon,
-    LinkedInIcon
+    ContactButton,
+    SocialsLinks
   },
   async asyncData ({ $content }) {
     const page = await $content('home').fetch()

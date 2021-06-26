@@ -1,6 +1,6 @@
 <template>
-  <div class="container md:mt-16 mt-10 mx-auto">
-    <div class="gap-16 grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2">
+  <div class="container mx-auto">
+    <div class="gap-10 grid grid-cols-1 lg:gap-16 lg:grid-cols-3 sm:grid-cols-2">
       <div
         v-for="article in articles"
         :key="article.path"

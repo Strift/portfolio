@@ -4,10 +4,6 @@ actionLink: /contact/
 layout: HomeLayout
 ---
 
-# I'm Laurent,
-
-## Software engineer specialized in esports.
-
 My name is **Laurent Cazanove** but people online just call me Strift.
 
 I am currently working as **Customer Success & Developer Experience Engineer** at Pandascore.
