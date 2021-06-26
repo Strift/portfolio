@@ -6,6 +6,8 @@ thumbnail: /images/articles/thumbnails/raid-helper.png
 thumbnailAlt: 'Screenshot of Raid-Helper'
 source: https://raid-helper.com/
 highlight: true
+tags:
+  - video games
 ---
 
 # Organiser ses raids avec Raid-Helper
