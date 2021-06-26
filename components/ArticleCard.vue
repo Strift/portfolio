@@ -29,7 +29,7 @@
 
 <script>
 import { defineComponent, computed } from '@nuxtjs/composition-api'
-import { arrayValidator } from 'vue-props-validation'
+import PropTypes from '@znck/prop-types'
 import moment from 'moment'
 
 export default defineComponent({
@@ -54,13 +54,7 @@ export default defineComponent({
       type: String,
       default: ''
     },
-    tags: {
-      type: Array,
-      validator: arrayValidator({
-        type: String
-      }),
-      required: true
-    }
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired
   },
   setup (props) {
     const humanReadableDate = computed(() => moment(props.date).format('LL'))
