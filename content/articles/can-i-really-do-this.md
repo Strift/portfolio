@@ -6,6 +6,9 @@ thumbnail: /images/articles/thumbnails/can-i-really-do-this.jpg
 thumbnailAlt: 'A train in the mist'
 source: https://unsplash.com/photos/opNIQ-bx_4M
 highlight: true
+tags:
+  - writing
+  - personal growth
 ---
 
 # Can I really do this?

@@ -4,6 +4,8 @@ description: "Highlighting the player-hero pairs from stage one that have been t
 date: 2018-02-13
 thumbnail: /images/articles/thumbnails/overwatch-fleta.jpg
 highlight: true
+tags:
+  - esports
 ---
 
 # Overwatch League highlights: Fleta's Pharah
