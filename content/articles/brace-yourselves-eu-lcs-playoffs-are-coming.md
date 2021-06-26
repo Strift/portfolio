@@ -4,6 +4,8 @@ description: "After ten weeks of Summer Split regular season, six teams have suc
 date: 2017-08-14
 thumbnail: /images/articles/eulcs-2017-got-header.jpg
 highlight: true
+tags:
+  - esports
 ---
 
 # Brace yourselves, EU LCS playoffs are coming!

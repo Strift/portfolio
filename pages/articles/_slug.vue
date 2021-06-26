@@ -1,24 +1,23 @@
 <template>
   <div class="pb-5">
     <div class="article-page mt-10">
-
-      <nuxt-content 
-        :document="article" 
-        class="max-w-screen-md mx-auto leading-loose font-serif text-left space-y-6 text-lg text-gray-900"
+      <nuxt-content
+        :document="article"
+        class="font-serif leading-loose max-w-screen-md mx-auto space-y-8 text-gray-700 text-left text-xl"
       />
     </div>
-    <SocialsFooter class="mt-10"/>
+    <SocialsLinks class="mt-16" />
   </div>
 </template>
 
 <script>
-import SocialsFooter from '~/components/SocialsFooter.vue'
+import SocialsLinks from '~/components/SocialsLinks.vue'
 
 export default {
   components: {
-    SocialsFooter
+    SocialsLinks
   },
-  async asyncData({ $content, params, error }) {
+  async asyncData ({ $content, params, error }) {
     try {
       const article = await $content('articles', params.slug).fetch()
       return { article }
@@ -30,15 +29,15 @@ export default {
     return {
       title: `${this.article.title} | Laurent Cazanove`,
       meta: [
-      { name: 'author', content: 'Laurent Cazanove' },
-      { name: 'description', content: this.article.description, hid: 'description' },
-      { property: 'og:title', content: this.article.title },
-      { property: 'og:description', content: this.article.description },
-      { property: 'og:image', content: `${this.$config.baseURL}${this.article.thumbnail}` },
-      { property: 'og:url', content: `${this.$config.baseURL}${this.$route.path}` },
-      { property: 'og:site_name', content: 'Laurent Cazanove' },
-      { name: 'twitter:image:alt', content: this.article.thumbnailAlt },
-      { name: 'twitter:card', content: 'summary_large_image' }
+        { name: 'author', content: 'Laurent Cazanove' },
+        { name: 'description', content: this.article.description, hid: 'description' },
+        { property: 'og:title', content: this.article.title },
+        { property: 'og:description', content: this.article.description },
+        { property: 'og:image', content: `${this.$config.baseURL}${this.article.thumbnail}` },
+        { property: 'og:url', content: `${this.$config.baseURL}${this.$route.path}` },
+        { property: 'og:site_name', content: 'Laurent Cazanove' },
+        { name: 'twitter:image:alt', content: this.article.thumbnailAlt },
+        { name: 'twitter:card', content: 'summary_large_image' }
       ]
     }
   }
@@ -52,25 +51,11 @@ export default {
   }
 
   h1 {
-    @apply text-5xl mb-10;
-
-    .header-anchor {
-      @apply hidden;
-    }
+    @apply font-serif font-semibold text-5xl mb-10 ;
   }
 
   h2 {
-    @apply font-sans text-3xl mb-6 mt-10;
-
-    .header-anchor {
-      @apply -ml-7 no-underline opacity-0 font-normal;
-    }
-  }
-
-  h2:hover {
-    .header-anchor {
-      @apply opacity-75;
-    }
+    @apply font-sans text-3xl mb-6 mt-10 font-semibold text-indigo-500;
   }
 
   img {
@@ -106,6 +91,10 @@ export default {
 
   a {
     @apply underline;
+  }
+
+  code {
+    @apply bg-red-300 bg-opacity-25 p-1 rounded text-red-900 border border-opacity-25 font-normal;
   }
 }
 </style>

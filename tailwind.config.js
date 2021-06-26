@@ -1,3 +1,6 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [
     './components/**/*.vue',
@@ -7,20 +10,25 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Fira Sans', ...defaultTheme.fontFamily.sans],
+      serif: ['Merriweather', ...defaultTheme.fontFamily.serif]
+    },
     extend: {
       colors: {
+        sky: colors.sky,
         'nye-primary': '#171c38',
         'nye-secondary': '#0f57ea',
         'seo-primary': '#aa8a00',
-        'seo-secondary': '#000000',
+        'seo-secondary': '#000000'
       },
       borderWidth: {
-        '16': '16px',
-      },
-    },
+        16: '16px'
+      }
+    }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }

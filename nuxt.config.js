@@ -40,14 +40,17 @@ export default {
   */
   css: [
     'animate.css',
-    '~/assets/css/base.css'
+    '~/assets/css/base.css',
+    '~/assets/css/fonts.css'
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/composition-api/module'
   ],
   /*
   ** Nuxt.js modules

@@ -5,6 +5,9 @@ date: 2021-03-10
 thumbnail: /images/articles/my-commitment-to-writing-header.jpeg
 thumbnailAlt: 'Notebook and a pen'
 highlight: true
+tags:
+  - writing
+  - personal growth
 ---
 
 # My commitment to writing
