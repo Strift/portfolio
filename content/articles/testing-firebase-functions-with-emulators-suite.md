@@ -118,7 +118,7 @@ So, how do we get this working? Well, we use the Firebase emulators suite. Like 
 yarn add --dev firebase-tools # or `npm install -save-dev firebase-tools`
 ```
 
-We will use the emulator `emulators:exec` command to launch the Auth service emulator and run our tests. For convenience, I included it in my package.json.
+We will use the emulator `emulators:exec` command to launch the Auth service emulator and run our tests. For convenience, I included it in my `package.json`.
 
 ```json
 // package.json 

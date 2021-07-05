@@ -4,7 +4,9 @@ export default {
   ** See https://nuxtjs.org/api/configuration-target
   */
   target: 'static',
-  trailingSlash: true,
+  router: {
+    trailingSlash: true
+  },
   /*
   ** Runtime config
   */
