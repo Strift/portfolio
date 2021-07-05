@@ -5,7 +5,10 @@
         "image": "launching-a-recruitment-platform-for-classic-guilds.jpg",
         "description": "Recruitment never stops when you're running a Classic guild. I created an app to help guild leaders recruit new members.",
         "date": "2021-03-11",
-        "tags": ["video games", "engineering"]
+        "tags": [
+            "video games",
+            "engineering"
+        ]
     },
     {
         "title": "My go-to stack to minimize side-projects costs",
@@ -13,7 +16,9 @@
         "image": "my-go-to-stack-to-minimze-side-projects-costs.jpeg",
         "description": "How the JAMstack allows me to minimize monthly fees and maximize the time spent developing features.",
         "date": "2021-03-12",
-        "tags": ["engineering"]
+        "tags": [
+            "engineering"
+        ]
     },
     {
         "title": "Quit reading",
@@ -21,7 +26,9 @@
         "image": "quit-reading-header.jpg",
         "description": "I often found friends feeling bad for not reading as much as others. That's okay. Reading is not the end goal.",
         "date": "2021-03-17",
-        "tags": ["off-topic"]
+        "tags": [
+            "off-topic"
+        ]
     },
     {
         "title": "Handling schema evolution with Cloud Firestore",
@@ -29,7 +36,9 @@
         "image": "cloud-firestore-header.jpg",
         "description": "Migrations are great to version database schema and maintain integrity. But what if you're running on Firebase?",
         "date": "2021-03-22",
-        "tags": ["engineering"]
+        "tags": [
+            "engineering"
+        ]
     },
     {
         "title": "Video games was my creative hobby",
@@ -37,7 +46,9 @@
         "image": "video-games-was-my-creative-hobby.jpg",
         "description": "The story of how a niche game development software called RPG Maker changed my life.",
         "date": "2021-04-01",
-        "tags": ["video games"]
+        "tags": [
+            "video games"
+        ]
     },
     {
         "title": "Shut the ph**e up!",
@@ -45,14 +56,8 @@
         "image": "shut-the-phone-up.jpg",
         "description": "How often do you find yourself scrolling on your phone and be like, \"Wtf am I doing exactly?\"",
         "date": "2021-04-14",
-        "tags": ["personal growth"]
-    },
-    {
-        "title": "Bedtime procrastination is probably not helping",
-        "url": "https://strift.medium.com/revenge-bedtime-procrastination-d41075bc6a45",
-        "image": "bedtime-procrastination-is-probably-not-helping.jpg",
-        "description": "Pursuing revenge is often deemed self-destructive. And guess what — revenge bedtime procrastination is no different.",
-        "date": "2021-04-23",
-        "tags": ["personal growth"]
+        "tags": [
+            "personal growth"
+        ]
     }
 ]
