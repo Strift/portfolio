@@ -94,7 +94,13 @@ export default {
   }
 
   code {
-    @apply bg-red-300 bg-opacity-25 p-1 rounded text-red-900 border border-opacity-25 font-normal;
+    @apply text-base;
+  }
+
+  p {
+    code {
+      @apply bg-indigo-200 bg-opacity-25 p-1 rounded text-indigo-500 border border-opacity-25 font-normal;
+    }
   }
 }
 </style>
