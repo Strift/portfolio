@@ -5,7 +5,7 @@
         v-for="article in articles"
         :key="article.path"
       >
-        <a v-if="article.external" class="no-underline text-black" :href="linkToArticle(article)" target="_blank">
+        <a v-if="article.external" class="no-underline text-black" :href="linkToArticle(article)" target="_blank" rel="noopener">
           <ArticleCard
             :title="article.title"
             :description="article.description"
