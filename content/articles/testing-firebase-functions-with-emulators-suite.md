@@ -136,6 +136,8 @@ Ta-da! Your tests should now run without any connection issues. This example onl
 
 Until next time,
 
+---
+
 **Read more**
 
 - [Handling schema evolution with Cloud Firestore](https://strift.medium.com/handling-schema-evolution-with-cloud-firestore-22d94fb9722f)

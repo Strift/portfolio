@@ -38,7 +38,8 @@ And a lack of self-control will hardly translate into a healthier lifestyle �
 
 Sorry, I dont have any advice on how to address these issues yet. I'm just starting with trying to fix my own sleeping schedule. 😜
 
-**Read more from me:**
+**Read more**
+
 - [Shut the ph**e up!](https://strift.medium.com/shut-the-ph-e-up-7187a4274177), about being less distracted by your phone
 - [All my articles](/articles/)
 
