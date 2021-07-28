@@ -11,7 +11,7 @@ tags:
 
 # My go-to stack to minimize side-projects costs
 
-My most recent side-project was a [recruitment platform](https://strift.medium.com/launching-a-recruitment-platform-for-classic-guilds-5542bac1208). As with most side-projects, it's likely that my interest will decrease over time. So I tried to envision what it'd be like to maintain it in six months. Before starting, I set myself two goals.
+My most recent side-project was a [recruitment platform](/articles/launching-a-recruitment-platform-for-classic-guilds/). As with most side-projects, it's likely that my interest will decrease over time. So I tried to envision what it'd be like to maintain it in six months. Before starting, I set myself two goals.
  
 The first was **minimizing monthly fees**. The second goal was to **maximize the time spent developing features**. Luckily, I found one common solution to these two constraints: **serverless applications**.
  
