@@ -1,12 +1,12 @@
 <template>
   <div class="group">
-    <div class="bg-center bg-cover group-hover:shadow-lg h-60 mb-6 rounded-lg shadow-md" :style="`background-image: url('${thumbnailUrl}')`" />
+    <ImageCard :image-url="thumbnailUrl" class="mb-6" />
     <div class="flex justify-between mb-4">
       <div class="space-x-2">
         <span
           v-for="tag in tags"
           :key="tag"
-          class="bg-indigo-300 px-2 py-1 rounded-sm text-white text-xs tracking-wide uppercase"
+          class="px-2 py-1 text-xs tracking-wide text-white uppercase bg-indigo-300 rounded-sm"
         >
           {{ tag }}
         </span>
@@ -15,49 +15,33 @@
         {{ humanReadableDate }}
       </div>
     </div>
-    <div class="font-sans font-semibold group-hover:text-indigo-500 mb-2 text-gray-700 text-xl">
+    <div class="mb-2 font-sans text-xl font-semibold text-gray-700 group-hover:text-indigo-500">
       {{ title }}
     </div>
     <div class="text-gray-500">
       {{ description }}
     </div>
-    <!-- <div class="mt-4 text-right">
-      <span class="group-hover:text-sky-700">Read article</span>
-    </div> -->
   </div>
 </template>
 
 <script>
-import { defineComponent, computed } from '@nuxtjs/composition-api'
 import PropTypes from '@znck/prop-types'
-import moment from 'moment'
+import { defineComponent, computed } from '@nuxtjs/composition-api'
+import ImageCard from '~/components/Base/ImageCard.vue'
+import parseDate from '~/data/parsers/parseDate'
 
 export default defineComponent({
+  components: { ImageCard },
   props: {
-    thumbnailUrl: {
-      type: String,
-      required: true
-    },
-    title: {
-      type: String,
-      required: true
-    },
-    description: {
-      type: String,
-      default: null
-    },
-    date: {
-      type: String,
-      required: true
-    },
-    lang: {
-      type: String,
-      default: ''
-    },
+    thumbnailUrl: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.defaultValue(''),
+    date: PropTypes.string.isRequired,
+    lang: PropTypes.string.defaultValue(''),
     tags: PropTypes.arrayOf(PropTypes.string).isRequired
   },
   setup (props) {
-    const humanReadableDate = computed(() => moment(props.date).format('LL'))
+    const humanReadableDate = computed(() => parseDate(props.date))
     return {
       humanReadableDate
     }

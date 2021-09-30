@@ -24,11 +24,17 @@ module.exports = {
       },
       borderWidth: {
         16: '16px'
+      },
+      zIndex: {
+        '-1': '-1',
+        '-2': '-2'
       }
     }
   },
   variants: {
-    extend: {}
+    extend: {
+      translate: ['group-hover']
+    }
   },
   plugins: []
 }

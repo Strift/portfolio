@@ -1,13 +1,13 @@
 <template>
   <div class="flex justify-center space-x-8 text-gray-400">
     <a href="https://twitter.com/lau_cazanove" target="_blank" rel="noopener" title="Twitter" class="hover:text-indigo-400">
-      <TwitterIcon />
+      <TwitterIcon class="h-9 w-9" />
     </a>
     <a href="https://github.com/Strift" target="_blank" rel="noopener" title="GitHub" class="hover:text-indigo-400">
-      <GithubIcon />
+      <GithubIcon class="h-9 w-9" />
     </a>
     <a href="https://linkedin.com/in/laurentcazanove" target="_blank" rel="noopener" title="LinkedIn" class="hover:text-indigo-400">
-      <LinkedInIcon />
+      <LinkedInIcon class="h-9 w-9" />
     </a>
   </div>
 </template>

@@ -1,11 +1,11 @@
 <template>
-  <div class="container mx-auto">
-    <div class="gap-10 grid grid-cols-1 lg:gap-16 lg:grid-cols-3 sm:grid-cols-2">
+  <Container>
+    <GridLayout>
       <div
         v-for="article in articles"
         :key="article.path"
       >
-        <a v-if="article.external" class="no-underline text-black" :href="linkToArticle(article)" target="_blank" rel="noopener">
+        <a v-if="article.external" class="text-black no-underline" :href="linkToArticle(article)" target="_blank" rel="noopener">
           <ArticleCard
             :title="article.title"
             :description="article.description"
@@ -13,10 +13,10 @@
             :date="article.date"
             :lang="article.lang"
             :tags="article.tags"
-            class="card"
+            class="transition-transform duration-200 hover:float"
           />
         </a>
-        <router-link v-else :to="linkToArticle(article)" class="no-underline text-black">
+        <router-link v-else :to="linkToArticle(article)" class="text-black no-underline">
           <ArticleCard
             :title="article.title"
             :description="article.description"
@@ -24,13 +24,13 @@
             :date="article.date"
             :lang="article.lang"
             :tags="article.tags"
-            class="card"
+            class="transition-transform duration-200 hover:float"
           />
         </router-link>
       </div>
-    </div>
+    </GridLayout>
     <SocialsFooter class="mt-10" />
-  </div>
+  </Container>
 </template>
 
 <script>
@@ -38,6 +38,8 @@ import moment from 'moment'
 import ogArticles from '~/data/ogamingArticles.json'
 import mediumArticles from '~/data/mediumArticles.json'
 
+import Container from '~/components/Base/Container.vue'
+import GridLayout from '~/components/Layouts/GridLayout.vue'
 import ArticleCard from '~/components/ArticleCard.vue'
 import SocialsFooter from '~/components/SocialsFooter.vue'
 
@@ -49,6 +51,8 @@ const sortByDate = (articleA, articleB) => {
 
 export default {
   components: {
+    Container,
+    GridLayout,
     ArticleCard,
     SocialsFooter
   },
@@ -106,13 +110,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.card {
-  transition: 250ms;
-
-  &:hover {
-    transform: translate3d(0px, -6px, 0);
-  }
-}
-</style>

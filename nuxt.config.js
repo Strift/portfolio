@@ -35,7 +35,8 @@ export default {
   ** Components
   */
   components: [
-    '~/components/global'
+    // Register components to be used in `/content/articles/*.md`
+    '~/components/Markdown'
   ],
   /*
   ** Global CSS
@@ -49,6 +50,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxt/image',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',
     '@nuxtjs/google-analytics',

@@ -1,21 +1,21 @@
 <template>
-  <header class="flex items-center justify-between py-16 text-2xl w-full">
+  <header class="flex items-center justify-between w-full py-16 text-2xl">
     <NavbarLink to="/" title="Home" class="text-gray-700">
       <span v-if="$route.fullPath === '/'">hello</span>
       <span v-else>home</span>
     </NavbarLink>
     <nav>
-      <ul class="flex font-semibold space-x-16">
+      <ul class="flex space-x-16 font-semibold">
         <!-- <li>
           <NavbarLink to="/about/" title="About">
             About
           </NavbarLink>
-        </li>
+        </li> -->
         <li>
           <NavbarLink to="/projects/" title="Projects">
             Projects
           </NavbarLink>
-        </li> -->
+        </li>
         <li>
           <NavbarLink to="/articles/" title="Articles">
             Articles
@@ -27,12 +27,10 @@
 </template>
 
 <script>
-import ChevronDoubleRightIcon from '~/components/icons/outline/ChevronDoubleRightIcon.vue'
 import NavbarLink from '~/components/NavbarLink.vue'
 
 export default {
   components: {
-    ChevronDoubleRightIcon,
     NavbarLink
   }
 }
