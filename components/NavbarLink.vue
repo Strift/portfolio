@@ -5,7 +5,7 @@
     :title="title"
   >
     <span
-      :class="{ 'text-gray-700 hover:text-indigo-500': !isExactActive, 'text-gray-700': isExactActive }"
+      :class="{ 'text-gray-700 hover:text-indigo-400': !isExactActive, 'text-gray-700': isExactActive }"
       class="flex items-center space-x-1"
     >
       <ChevronDoubleRightIcon v-if="isExactActive" />

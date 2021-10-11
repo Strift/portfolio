@@ -9,27 +9,37 @@
       <div class="absolute inset-0 transition-transform duration-150 transform translate-x-2 translate-y-2 bg-indigo-100 shadow-lg rounded-2xl -z-2 group-hover:translate-x-2 group-hover:translate-y-2" />
     </div>
     <div class="my-auto space-y-6">
-      <div class="font-sans text-xl font-semibold text-gray-700 group-hover:text-indigo-400">
+      <div class="font-sans text-xl font-semibold text-gray-700 group-hover:text-indigo-500">
         <slot name="header" />
       </div>
       <BaseText>
         <slot name="description" />
       </BaseText>
       <BaseText class="flex space-x-12 text-gray-500">
-        <a
-          v-if="websiteUrl"
-          :href="websiteUrl"
-          target="_blank"
-          class="flex items-center space-x-2 hover:text-indigo-500"
-        >
-          <WebsiteIcon />
-          <span>{{ cleanUrl(websiteUrl) }}</span>
-        </a>
+        <span v-if="websiteUrl" class="">
+          <nuxt-link
+            v-if="isInnerLink(websiteUrl)"
+            :to="websiteUrl"
+            class="flex items-center space-x-2 hover:text-indigo-400"
+          >
+            <WebsiteIcon />
+            <span>{{ cleanUrl(websiteUrl) }}</span>
+          </nuxt-link>
+          <a
+            v-else
+            :href="websiteUrl"
+            target="_blank"
+            class="flex items-center space-x-2 hover:text-indigo-400"
+          >
+            <WebsiteIcon />
+            <span>{{ cleanUrl(websiteUrl) }}</span>
+          </a>
+        </span>
         <a
           v-if="githubUrl"
           href="https://github.com/Strift/sulfuron-guilds"
           target="_blank"
-          class="flex items-center space-x-2 hover:text-indigo-500"
+          class="flex items-center space-x-2 w-60 hover:text-indigo-400"
         >
           <div class="flex w-5 h-5">
             <GithubIcon class="w-4 h-4 m-auto " />
@@ -62,7 +72,10 @@ export default {
   },
   methods: {
     cleanUrl,
-    githubRepository
+    githubRepository,
+    isInnerLink (url) {
+      return url.startsWith('/')
+    }
   }
 }
 </script>

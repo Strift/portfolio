@@ -35,7 +35,10 @@
   "dependencies": {
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/composition-api": "^0.24.4",
+    "@octokit/core": "^3.5.1",
+    "@octokit/plugin-rest-endpoint-methods": "^5.11.4",
     "@znck/prop-types": "^0.6.3",
+    "marked": "^3.0.4",
     "nuxt": "^2.15.3"
   }
 }
