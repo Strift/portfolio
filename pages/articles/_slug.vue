@@ -1,9 +1,9 @@
 <template>
   <div class="pb-5">
-    <div class="article-page mt-10">
+    <div class="mt-10 article-page">
       <nuxt-content
         :document="article"
-        class="font-serif leading-loose max-w-screen-md mx-auto space-y-8 text-gray-700 text-left text-xl"
+        class="max-w-screen-md mx-auto space-y-8 font-serif text-xl leading-loose text-left text-gray-700"
       />
     </div>
     <SocialsLinks class="mt-16" />

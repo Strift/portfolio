@@ -46,6 +46,8 @@ Imaginons qu'un membre de votre roster vous ait prévenu de son absence, mais n'
 
 Cette commande permet en réalité de simuler l'inscription d'un autre utilisateur Discord. Il est donc possible de remplacer _Absence_ par tous les types de réactions : celles liées aux classes mais aussi les autres, et donc le bench ! Pour _bencher_ un utilisateur, il suffit donc d'utiliser la commande `!addUser ID Bench utilisateur`.
 
+<SulfuronAd></SulfuronAd>
+
 ## Clôturer les inscriptions
 
 Une fois vos benchs réalisés, vous pouvez décider de clôturer les inscriptions à votre évènement en utilisant la commande `!endEvent ID`. Et toc, tant pis pour les retardataires ! L'avantage, c'est que vous pouvez toujours mettre à jour les inscriptions manuellement via la commande `!addUser`.
