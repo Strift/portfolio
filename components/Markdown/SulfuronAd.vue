@@ -11,12 +11,12 @@
           <a
             target="_blank"
             href="https://guildes.sulfuron.eu/"
-            class="inline-flex items-center space-x-2 font-semibold text-indigo-500"
+            class="inline-flex items-center space-x-1 font-semibold text-indigo-500"
           >
             <span>
               Rejoignez le portail des guildes
             </span>
-          <!-- <ArrowRightIcon /> -->
+            <ArrowRightIcon />
           </a>
         </div>
         <div class="flex mr-5">
