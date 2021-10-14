@@ -1,12 +1,12 @@
 <template>
   <div class="group">
-    <ImageCard :image-url="thumbnailUrl" class="mb-6" />
-    <div class="flex justify-between mb-4">
+    <ImageCard :image-url="thumbnailUrl" width="470" height="264" class="mb-8" />
+    <div class="flex justify-between mb-6">
       <div class="space-x-2">
         <span
           v-for="tag in tags"
           :key="tag"
-          class="px-2 py-1 text-xs tracking-wide text-white uppercase bg-indigo-300 rounded-sm"
+          class="px-2 py-1 text-xs tracking-wide text-white uppercase bg-indigo-300"
         >
           {{ tag }}
         </span>
@@ -15,10 +15,10 @@
         {{ humanReadableDate }}
       </div>
     </div>
-    <div class="mb-2 font-sans text-xl font-semibold text-gray-700 group-hover:text-indigo-500">
+    <div class="mb-3 font-sans text-xl font-semibold text-gray-700 group-hover:text-indigo-500">
       {{ title }}
     </div>
-    <div class="text-gray-500">
+    <div v-if="description.length" class="text-gray-500">
       {{ description }}
     </div>
   </div>

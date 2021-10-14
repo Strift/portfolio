@@ -13,7 +13,6 @@
             :date="article.date"
             :lang="article.lang"
             :tags="article.tags"
-            class="transition-transform duration-200 hover:float"
           />
         </a>
         <router-link v-else :to="linkToArticle(article)" class="text-black no-underline">
@@ -24,7 +23,6 @@
             :date="article.date"
             :lang="article.lang"
             :tags="article.tags"
-            class="transition-transform duration-200 hover:float"
           />
         </router-link>
       </div>

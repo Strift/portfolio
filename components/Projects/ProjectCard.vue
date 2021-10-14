@@ -1,13 +1,6 @@
 <template>
   <article class="flex space-x-16 group">
-    <div class="relative flex-shrink-0 w-80">
-      <nuxt-img
-        :src="imageUrl"
-        class="z-10 transition-transform duration-150 transform shadow-lg rounded-2xl group-hover:-translate-x-2 group-hover:-translate-y-2"
-      />
-      <div class="absolute inset-0 bg-indigo-300 shadow-lg rounded-2xl -z-1" />
-      <div class="absolute inset-0 transition-transform duration-150 transform translate-x-2 translate-y-2 bg-indigo-100 shadow-lg rounded-2xl -z-2 group-hover:translate-x-2 group-hover:translate-y-2" />
-    </div>
+    <ImageCard :image-url="imageUrl" class="flex-shrink-0 w-80" />
     <div class="my-auto space-y-6">
       <div class="font-sans text-xl font-semibold text-gray-700 group-hover:text-indigo-500">
         <slot name="header" />
@@ -53,6 +46,7 @@
 
 <script>
 import PropTypes from '@znck/prop-types'
+import ImageCard from '../Base/ImageCard.vue'
 import BaseText from '~/components/Base/Text.vue'
 import WebsiteIcon from '~/components/icons/solid/WebsiteIcon.vue'
 import GithubIcon from '~/components/icons/GithubIcon.vue'
@@ -63,7 +57,8 @@ export default {
   components: {
     BaseText,
     WebsiteIcon,
-    GithubIcon
+    GithubIcon,
+    ImageCard
   },
   props: {
     imageUrl: PropTypes.string.isRequired,
