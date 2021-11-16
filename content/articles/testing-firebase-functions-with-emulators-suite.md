@@ -1,7 +1,7 @@
 ---
 title: Testing Firebase Functions with the emulators suite
 date: 2021-07-05
-description: Integrations tests can be hard to write, especially when using external services. Here's how to use the Firebase emulators suite to test your serverless Functions.
+description: How to use the Firebase emulators suite to test your serverless Functions.
 thumbnail: /images/articles/thumbnails/firebase-functions.png
 lang: 'en'
 tags:
