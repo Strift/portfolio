@@ -35,7 +35,7 @@
     "@octokit/core": "^3.5.1",
     "@octokit/plugin-rest-endpoint-methods": "^5.11.4",
     "@znck/prop-types": "^0.6.3",
-    "marked": "^3.0.4",
+    "marked": "^4.0.10",
     "nuxt": "^2.15.3"
   }
 }
