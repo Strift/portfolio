@@ -14,7 +14,6 @@
     </ProjectCard>
     <ProjectCard
       image-url="/images/projects/awesome-esports.png"
-      website-url="/awesome-esports/"
       github-url="https://github.com/Strift/awesome-esports"
     >
       <template slot="header">
