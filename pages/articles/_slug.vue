@@ -3,7 +3,7 @@
     <div class="mt-10 article-page">
       <nuxt-content
         :document="article"
-        class="max-w-screen-md mx-auto space-y-8 font-serif text-xl leading-loose text-left text-gray-700"
+        class="max-w-screen-md mx-auto font-serif text-xl leading-loose text-left text-gray-700"
       />
     </div>
     <SocialsLinks class="mt-16" />
@@ -51,11 +51,19 @@ export default {
   }
 
   h1 {
-    @apply font-serif font-semibold text-5xl mb-10 ;
+    @apply font-serif font-semibold text-5xl mb-10;
   }
 
   h2 {
     @apply font-sans text-3xl mb-6 mt-10 font-semibold text-indigo-500;
+  }
+
+  p {
+    @apply mb-8;
+
+    code {
+      @apply bg-indigo-200 bg-opacity-25 p-1 rounded text-indigo-500 border border-opacity-25 font-normal;
+    }
   }
 
   img {
@@ -63,8 +71,8 @@ export default {
   }
 
   figure {
-
-    img, iframe {
+    img,
+    iframe {
       @apply mx-auto;
     }
 
@@ -78,7 +86,7 @@ export default {
   }
 
   blockquote {
-    @apply italic border-l-4;
+    @apply italic border-l-4 mb-8;
 
     p {
       @apply ml-6;
@@ -97,10 +105,8 @@ export default {
     @apply text-base;
   }
 
-  p {
-    code {
-      @apply bg-indigo-200 bg-opacity-25 p-1 rounded text-indigo-500 border border-opacity-25 font-normal;
-    }
+  .component {
+    @apply mt-10 mb-12;
   }
 }
 </style>

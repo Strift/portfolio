@@ -5,9 +5,9 @@
     >
       <div class="flex justify-between">
         <div class="p-5 text-lg">
-          <p class="mb-1 text-gray-500">
+          <div class="mb-1 text-gray-500">
             Vous gérez une guilde sur le serveur Classic Sulfuron ?
-          </p>
+          </div>
           <a
             target="_blank"
             href="https://guildes.sulfuron.eu/"
