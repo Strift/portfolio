@@ -6,15 +6,29 @@
         class="max-w-screen-md mx-auto font-serif text-xl leading-loose text-left text-gray-700"
       />
     </div>
+    <template v-if="true">
+      <div class="container mx-auto text-center">
+        <div class="my-12 text-4xl tracking-widest text-center text-gray-200 eading-none">
+          &bull; &bull; &bull;
+        </div>
+        <p class="text-xl italic leading-9 text-gray-400">
+          I also write <em class="font-semibold">Esports Tech News</em>—a newsletter that comes out every two weeks.<br>
+          Subscribe if you like code, esports, and the creative things in between.
+        </p>
+      </div>
+      <RevueEmbed class="mt-16" />
+    </template>
     <SocialsLinks class="mt-16" />
   </div>
 </template>
 
 <script>
+import RevueEmbed from '~/components/RevueEmbed.vue'
 import SocialsLinks from '~/components/SocialsLinks.vue'
 
 export default {
   components: {
+    RevueEmbed,
     SocialsLinks
   },
   async asyncData ({ $content, params, error }) {
