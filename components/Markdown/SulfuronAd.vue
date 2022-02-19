@@ -10,7 +10,7 @@
           </div>
           <a
             target="_blank"
-            href="https://guildes.sulfuron.eu/"
+            :href="referralUrl"
             class="inline-flex items-center space-x-1 font-semibold text-indigo-500"
           >
             <span>
@@ -32,13 +32,14 @@
 <script>
 import ArrowRightIcon from '~/components/icons/solid/ArrowRightIcon.vue'
 
+const REFERRAL_URL = 'https://guildes.sulfuron.eu?utm_source=strift&utm_medium=banner&utm_campaign=raid-helper-tutorial'
+
 export default {
   components: {
     ArrowRightIcon
-  }
+  },
+  data: () => ({
+    referralUrl: REFERRAL_URL
+  })
 }
 </script>
-
-<style>
-
-</style>
