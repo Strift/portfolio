@@ -1,5 +1,27 @@
 <template>
-  <div class="pb-5">
+  <div class="bg-black">
+    <div class="h-screen bg-center bg-cover" style="background-image: url('/images/articles/covers/sunwell.jpg');">
+      <!-- <nuxt-img
+        src="/images/articles/covers/sunwell.jpg"
+        class="z-0 min-w-screen"
+      /> -->
+    </div>
+    <div class="-mt-24">
+      <div class="relative max-w-screen-md mx-auto bg-white">
+        <ArticleHeader
+          :title="article.title"
+          :description="article.description"
+          published="Mis à jour le 19 Août, 2021"
+          class="absolute w-full px-6 pb-12 transform -translate-y-full"
+        />
+        <nuxt-content
+          :document="article"
+          class="px-6 py-12 font-serif text-xl leading-loose text-left text-gray-700"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- <div class="pb-5">
     <div class="mt-10 article-page">
       <nuxt-content
         :document="article"
@@ -19,18 +41,21 @@
       <RevueEmbed class="mt-16" />
     </template>
     <SocialsLinks class="mt-16" />
-  </div>
+  </div> -->
 </template>
 
 <script>
 import RevueEmbed from '~/components/RevueEmbed.vue'
 import SocialsLinks from '~/components/SocialsLinks.vue'
+import ArticleHeader from '~/components/Blog/ArticleHeader.vue'
 
 export default {
   components: {
     RevueEmbed,
-    SocialsLinks
+    SocialsLinks,
+    ArticleHeader
   },
+  layout: 'article',
   async asyncData ({ $content, params, error }) {
     try {
       const article = await $content('articles', params.slug).fetch()
