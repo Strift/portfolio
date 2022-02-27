@@ -12,8 +12,8 @@
           &bull; &bull; &bull;
         </div>
         <p class="text-xl italic leading-9 text-gray-400">
-          I also write <em class="font-semibold">Esports Tech News</em>—a newsletter that comes out every two weeks.<br>
-          Subscribe if you like code, esports, and the creative things in between.
+          <span class="">My <em class="font-semibold text-indigo-400">Esports & Tech Newsletter</em> comes out every two weeks.<br></span>
+          <span class="text-gray-400">Subscribe if you like code, esports, and the creative things in between.</span>
         </p>
       </div>
       <RevueEmbed class="mt-16" />
@@ -72,12 +72,20 @@ export default {
     @apply font-sans text-3xl mb-6 mt-10 font-semibold text-indigo-500;
   }
 
+  hr {
+    @apply mb-8;
+  }
+
   p {
     @apply mb-8;
 
     code {
       @apply bg-indigo-200 bg-opacity-25 p-1 rounded text-indigo-500 border border-opacity-25 font-normal;
     }
+  }
+
+  ul {
+    @apply mb-8;
   }
 
   img {

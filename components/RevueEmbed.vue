@@ -1,5 +1,8 @@
 <template>
   <div id="revue-embed">
+    <div class="z-10 -mb-3 font-serif text-2xl font-semibold text-center text-indigo-400 ">
+      <span class="px-4 py-2 italic bg-white border border-indigo-500 rounded shadow-md">Esports Tech News</span>
+    </div>
     <form id="revue-form" action="https://www.getrevue.co/profile/esports-tech-news/add_subscriber" method="post" name="revue-form" target="_blank">
       <div class="revue-form-group">
         <label for="member_email">Email address</label>
@@ -25,7 +28,7 @@
 
 <style lang="scss" scoped>
 #revue-form {
-  @apply py-6 px-6 max-w-sm mx-auto shadow-lg border border-indigo-500;
+  @apply pt-10 pb-6 px-6 max-w-sm mx-auto shadow-lg border border-indigo-500 rounded-md;
 
   .revue-form-group {
     @apply mb-4;
