@@ -93,13 +93,15 @@ export default {
   }
 
   figure {
+    @apply mb-8;
+
     img,
     iframe {
       @apply mx-auto;
     }
 
     figcaption {
-      @apply mx-auto mt-5 font-sans text-gray-700 text-center text-base;
+      @apply mx-auto mt-5 font-sans text-gray-500 text-center text-base;
 
       a {
         @apply text-gray-700;

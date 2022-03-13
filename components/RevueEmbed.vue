@@ -8,14 +8,14 @@
         <label for="member_email">Email address</label>
         <input id="member_email" class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]">
       </div>
-      <div class="revue-form-group">
+      <!-- <div class="revue-form-group">
         <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
         <input id="member_first_name" class="revue-form-field" placeholder="First name..." type="text" name="member[first_name]">
       </div>
       <div class="revue-form-group">
         <label for="member_last_name">Last name <span class="optional">(Optional)</span></label>
         <input id="member_last_name" class="revue-form-field" placeholder="Last name..." type="text" name="member[last_name]">
-      </div>
+      </div> -->
       <div class="revue-form-actions">
         <input id="member_submit" type="submit" value="Subscribe" name="member[subscribe]">
       </div>
