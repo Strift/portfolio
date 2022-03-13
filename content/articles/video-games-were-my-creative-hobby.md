@@ -28,7 +28,7 @@ So when given the opportunity to create what I liked most, I couldn’t resist. 
 
 Now, creating games is very time-consuming. So as an amateur, you’re essentially a one-person studio. It takes a lot of different crafts to make even a basic video game. So by middle school, I was spending my days writing stories, creating all sorts of graphics, and even trying to make music.
 
-That’s actually how I started spending so much time on computers in the first place. This video game-making hobby would eventually lead me to learn programming. Hadn't I did that, I don't think I would be software engineer today. Talk about a _life-changing_ afternoon.
+That’s actually how I started spending so much time on computers in the first place. This video game-making hobby would eventually lead me to learn programming. Hadn't I did that, I don't think I would be a software engineer today. Talk about a _life-changing_ afternoon.
 
 I often come across people thinking that they haven't found “_their thing_.” My advice would be to try and pick something they like—art, games, sports, whatever makes you happy. But now, instead of only consuming it, try to create some of it (or to practice it, if it's a physical activity.) 
 
