@@ -19,7 +19,7 @@
           <ArticleCard
             :title="article.title"
             :description="article.description"
-            :thumbnail-url="article.thumbnail"
+            :thumbnail-url="article.cover"
             :date="article.date"
             :lang="article.lang"
             :tags="article.tags"

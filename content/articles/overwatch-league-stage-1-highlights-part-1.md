@@ -2,7 +2,7 @@
 title: "Overwatch League highlights: Fleta's Pharah"
 description: "Highlighting the player-hero pairs from stage one that have been the most memorable. In this edition: Fleta's Pharah."
 date: 2018-02-13
-thumbnail: /images/articles/thumbnails/overwatch-fleta.jpg
+cover: /images/articles/covers/overwatch-fleta.jpg
 highlight: true
 tags:
   - esports

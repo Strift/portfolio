@@ -1,8 +1,8 @@
 ---
 title: On Revenge bedtime procrastination
 date: 2021-04-23
-description: Pursuing revenge is often deemed self-destructive. Guess what? Revenge bedtime procrastination is no different.
-thumbnail: /images/articles/thumbnails/revenge-bedtime-procrastination.jpg
+description: Pursuing revenge is often deemed self-destructive. Guess what? Revenge bedtime procrastination is no different.
+cover: /images/articles/covers/on-revenge-bedtime-procastination.jpg
 lang: 'en'
 tags:
   - personal growth

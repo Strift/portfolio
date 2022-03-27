@@ -1,36 +1,75 @@
 <template>
-  <div class="pb-5">
-    <div class="mt-10 article-page">
-      <nuxt-content
-        :document="article"
-        class="max-w-screen-md mx-auto font-serif text-xl leading-loose text-left text-gray-700"
-      />
+  <div class="relative bg-gray-100">
+    <Banner
+      class="sticky top-0 z-50"
+      :visible="isBannerVisible"
+      :style="`margin-bottom: -${headerNegativeMargin}px`"
+      @close="isBannerVisible = false"
+    />
+    <div class="absolute top-0 left-0 right-0 z-10 pt-8 mx-6 lg:mx-24">
+      <Navbar link-class="text-white shadow-thin" />
+    </div>
+
+    <div class="relative h-screen">
+      <div
+        class="h-full bg-center bg-cover"
+        :style="`background-image: url(${coverUrl});`"
+      >
+      <!-- Full screen image -->
+      </div>
+      <div class="absolute inset-0 from-black to-transparent bg-gradient-to-t">
+        <!-- Overlay -->
+      </div>
+    </div>
+    <div class="border-t-8 border-indigo-400" />
+    <div class="relative -mt-40 sm:-mt-32">
+      <div class="relative max-w-sm mx-auto bg-white shadow-lg sm:max-w-screen-lg">
+        <ArticleHeader
+          :title="article.title"
+          :description="article.description"
+          :tags="article.tags"
+          :published="publishText"
+          class="absolute w-full px-6 pb-12 transform -translate-y-full sm:px-24 xl:px-0"
+        />
+        <nuxt-content
+          :document="article"
+          class="px-6 py-12 font-serif text-xl leading-loose text-left text-gray-700 sm:px-24 article-page"
+        />
+      </div>
     </div>
     <template v-if="true">
       <div class="container mx-auto text-center">
-        <div class="my-12 text-4xl tracking-widest text-center text-gray-200 eading-none">
-          &bull; &bull; &bull;
-        </div>
-        <p class="text-xl italic leading-9 text-gray-400">
+        <p class="mt-16 text-xl italic leading-9 text-gray-400">
           <span class="">My <em class="font-semibold text-indigo-400">Esports & Tech Newsletter</em> comes out every two weeks.<br></span>
-          <span class="text-gray-400">Subscribe if you like code, esports, and the creative things in between.</span>
+          <span class="text-gray-400">Subscribe if you like code, esports, and all the creative things in between. ✨</span>
         </p>
       </div>
       <RevueEmbed class="mt-16" />
     </template>
-    <SocialsLinks class="mt-16" />
+    <SocialsLinks class="pb-16 mt-16" />
   </div>
 </template>
 
 <script>
+import parseDate from '../../data/parsers/parseDate'
+import Banner from '~/components/Banner.vue'
+import Navbar from '~/components/Navbar.vue'
 import RevueEmbed from '~/components/RevueEmbed.vue'
 import SocialsLinks from '~/components/SocialsLinks.vue'
+import ArticleHeader from '~/components/Blog/ArticleHeader.vue'
+
+const BANNER_HEIGHT = 40
+// const NAVBAR_HEIGHT = 160
 
 export default {
   components: {
+    Banner,
+    Navbar,
     RevueEmbed,
-    SocialsLinks
+    SocialsLinks,
+    ArticleHeader
   },
+  layout: 'article',
   async asyncData ({ $content, params, error }) {
     try {
       const article = await $content('articles', params.slug).fetch()
@@ -39,6 +78,9 @@ export default {
       error({ statusCode: 404, message: 'Page not found' })
     }
   },
+  data: () => ({
+    isBannerVisible: true
+  }),
   head () {
     return {
       title: `${this.article.title} | Laurent Cazanove`,
@@ -54,83 +96,24 @@ export default {
         { name: 'twitter:card', content: 'summary_large_image' }
       ]
     }
+  },
+  computed: {
+    coverUrl () {
+      return this.article.cover
+    },
+    headerNegativeMargin () {
+      return (this.isBannerVisible ? BANNER_HEIGHT : 0)
+    },
+    publishText () {
+      return (this.article.edited
+        ? 'Edited '
+        : ''
+      ) + parseDate(this.article.date)
+    }
+  },
+  methods: {
   }
 }
 </script>
 
-<style lang="scss">
-.article-page {
-  ul {
-    @apply list-disc pl-4;
-  }
-
-  h1 {
-    @apply font-serif font-semibold text-5xl mb-10;
-  }
-
-  h2 {
-    @apply font-sans text-3xl mb-6 mt-10 font-semibold text-indigo-500;
-  }
-
-  hr {
-    @apply mb-8;
-  }
-
-  p {
-    @apply mb-8;
-
-    code {
-      @apply bg-indigo-200 bg-opacity-25 p-1 rounded text-indigo-500 border border-opacity-25 font-normal;
-    }
-  }
-
-  ul {
-    @apply mb-8;
-  }
-
-  img {
-    @apply mx-auto;
-  }
-
-  figure {
-    @apply mb-8;
-
-    img,
-    iframe {
-      @apply mx-auto;
-    }
-
-    figcaption {
-      @apply mx-auto mt-5 font-sans text-gray-500 text-center text-base;
-
-      a {
-        @apply text-gray-700;
-      }
-    }
-  }
-
-  blockquote {
-    @apply italic border-l-4 mb-8;
-
-    p {
-      @apply ml-6;
-    }
-  }
-
-  .article-date {
-    @apply text-gray-700 mt-2;
-  }
-
-  a {
-    @apply underline;
-  }
-
-  code {
-    @apply text-base;
-  }
-
-  .component {
-    @apply mt-10 mb-12;
-  }
-}
-</style>
+<style src="~/assets/css/article.scss" lang="scss"/>
