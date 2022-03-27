@@ -1,18 +1,21 @@
 <template>
   <div id="revue-embed">
+    <div class="z-10 -mb-3 font-serif text-2xl font-semibold text-center text-indigo-400 ">
+      <span class="px-4 py-2 italic bg-white border border-indigo-500 rounded shadow-md">Esports Tech News</span>
+    </div>
     <form id="revue-form" action="https://www.getrevue.co/profile/esports-tech-news/add_subscriber" method="post" name="revue-form" target="_blank">
       <div class="revue-form-group">
         <label for="member_email">Email address</label>
         <input id="member_email" class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]">
       </div>
-      <div class="revue-form-group">
+      <!-- <div class="revue-form-group">
         <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
         <input id="member_first_name" class="revue-form-field" placeholder="First name..." type="text" name="member[first_name]">
       </div>
       <div class="revue-form-group">
         <label for="member_last_name">Last name <span class="optional">(Optional)</span></label>
         <input id="member_last_name" class="revue-form-field" placeholder="Last name..." type="text" name="member[last_name]">
-      </div>
+      </div> -->
       <div class="revue-form-actions">
         <input id="member_submit" type="submit" value="Subscribe" name="member[subscribe]">
       </div>
@@ -25,7 +28,7 @@
 
 <style lang="scss" scoped>
 #revue-form {
-  @apply py-6 px-6 max-w-sm mx-auto shadow-lg border border-indigo-500;
+  @apply pt-10 pb-6 px-6 max-w-sm mx-auto shadow-lg border border-indigo-500 rounded-md;
 
   .revue-form-group {
     @apply mb-4;
