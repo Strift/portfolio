@@ -2,7 +2,7 @@
 title: Video Games Were My Creative Hobby
 date: 2021-04-01
 description: The story of how a niche game development software called RPG Maker changed my life.
-thumbnail: /images/articles/rpg-maker-mv-world-map.jpg
+cover: /images/articles/rpg-maker-mv-world-map.jpg
 highlight: true
 lang: 'fr'
 tags:

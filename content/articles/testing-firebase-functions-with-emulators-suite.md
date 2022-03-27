@@ -2,7 +2,7 @@
 title: Testing Firebase Functions with the emulators suite
 date: 2021-07-05
 description: How to use the Firebase emulators suite to test your serverless Functions.
-thumbnail: /images/articles/thumbnails/firebase-functions.png
+cover: /images/articles/covers/firebase-functions.png
 lang: 'en'
 tags:
   - engineering

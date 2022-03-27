@@ -2,7 +2,7 @@
 title: 'My go-to stack to minimize side-projects costs'
 description: How the JAMstack allows me to minimize monthly fees and maximize the time spent developing features.
 date: 2021-03-12
-thumbnail: /images/articles/thumbnails/my-go-to-stack-to-minimize-side-projects-costs.jpeg
+cover: /images/articles/covers/my-go-to-stack-to-minimize-side-projects-costs.jpeg
 thumbnailAlt: 'A computer displaying a code editor'
 highlight: true
 tags:

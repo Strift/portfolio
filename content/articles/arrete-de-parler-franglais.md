@@ -2,7 +2,7 @@
 title: '« Arrête de parler franglais ! »'
 date: 2021-03-15
 description: Comment mon intérêt pour le gaming et l'IT m'a mené à être incapable de faire une phrase en français. 🤦
-thumbnail: /images/articles/arrete-de-parler-franglais-header.jpg
+cover: /images/articles/arrete-de-parler-franglais-header.jpg
 highlight: true
 lang: 'fr'
 tags:
