@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="flex mb-8 space-x-8">
+    <div class="flex mb-8 space-x-6">
       <span
         v-for="tag in tags"
         :key="tag"
-        class="px-2 py-1 text-sm font-semibold tracking-wider text-white uppercase bg-indigo-400 shadow-sm lg:text-base lg:px-4 lg:py-3"
+        class="text-sm font-semibold tracking-wider text-indigo-300 uppercase shadow-sm lg:text-base"
       >
-        {{ tag }}
+        #{{ tag }}
       </span>
     </div>
     <!-- <h1 class="mb-8 font-serif text-5xl font-semibold text-white shadow-thin">
@@ -28,7 +28,9 @@
           {{ published }}
         </div>
       </div>
-      <TwitterIcon class="w-6 h-6 ml-6 text-white" />
+      <a href="https://twitter.com/lau_cazanove" target="_blank">
+        <TwitterIcon class="w-6 h-6 ml-6 text-white" />
+      </a>
     </div>
   </div>
 </template>

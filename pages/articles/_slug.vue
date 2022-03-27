@@ -6,15 +6,20 @@
       :style="`margin-bottom: -${headerNegativeMargin}px`"
       @close="isBannerVisible = false"
     />
-    <div class="absolute top-0 left-0 right-0 pt-8 mx-6 lg:mx-24">
-      <Navbar link-class="text-white" />
+    <div class="absolute top-0 left-0 right-0 z-10 pt-8 mx-6 lg:mx-24">
+      <Navbar link-class="text-white shadow-thin" />
     </div>
 
-    <div
-      class="h-screen bg-center bg-cover"
-      :style="`background-image: url(${coverUrl});`"
-    >
+    <div class="relative h-screen">
+      <div
+        class="h-full bg-center bg-cover"
+        :style="`background-image: url(${coverUrl});`"
+      >
       <!-- Full screen image -->
+      </div>
+      <div class="absolute inset-0 from-black to-transparent bg-gradient-to-t">
+        <!-- Overlay -->
+      </div>
     </div>
     <div class="border-t-8 border-indigo-400" />
     <div class="relative -mt-40 sm:-mt-32">
@@ -23,7 +28,7 @@
           :title="article.title"
           :description="article.description"
           :tags="article.tags"
-          published="Mis à jour le 19 Août, 2021"
+          :published="publishText"
           class="absolute w-full px-6 pb-12 transform -translate-y-full sm:px-24 xl:px-0"
         />
         <nuxt-content
@@ -46,6 +51,7 @@
 </template>
 
 <script>
+import parseDate from '../../data/parsers/parseDate'
 import Banner from '~/components/Banner.vue'
 import Navbar from '~/components/Navbar.vue'
 import RevueEmbed from '~/components/RevueEmbed.vue'
@@ -97,7 +103,15 @@ export default {
     },
     headerNegativeMargin () {
       return (this.isBannerVisible ? BANNER_HEIGHT : 0)
+    },
+    publishText () {
+      return (this.article.edited
+        ? 'Edited '
+        : ''
+      ) + parseDate(this.article.date)
     }
+  },
+  methods: {
   }
 }
 </script>

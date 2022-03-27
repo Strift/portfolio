@@ -1,15 +1,17 @@
 ---
 title: Video Games Were My Creative Hobby
-date: 2021-04-01
+date: 2022-03-13
 description: The story of how a niche game development software called RPG Maker changed my life.
 cover: /images/articles/rpg-maker-mv-world-map.jpg
 highlight: true
+edited: true
 lang: 'fr'
 tags:
   - video games
   - creativity
 ---
 
+# Video Games Were My Creative Hobby
 
 Down + B. Pressing these buttons when throwing a Poké Ball increased its capture rate—supposedly. Come to think of it, it might just have been a myth. But I still did it anyway. Every single time. Like many other 90s kids, video games played a big part in my childhood. But for me, it was not only playing games. It was also making them.
 
