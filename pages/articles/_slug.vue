@@ -1,16 +1,24 @@
 <template>
-  <div class="bg-black">
-    <div class="h-screen bg-center bg-cover" style="background-image: url('/images/articles/covers/sunwell.jpg');">
-      <!-- <nuxt-img
-        src="/images/articles/covers/sunwell.jpg"
-        class="z-0 min-w-screen"
-      /> -->
+  <div class="">
+    <div class="sticky top-0 z-50" :style="`margin-bottom: -${headerNegativeMargin}px`">
+      <Banner
+        :visible="isBannerVisible"
+        @close="isBannerVisible = false"
+      />
+      <div class="mx-6 lg:mx-24">
+        <Navbar link-class="text-white" />
+      </div>
+    </div>
+
+    <div class="h-screen bg-center bg-cover" :style="`background-image: url(${coverUrl});`">
+      <!-- Full screen image -->
     </div>
     <div class="-mt-24">
-      <div class="relative max-w-screen-md mx-auto bg-white">
+      <div class="relative max-w-screen-lg mx-auto bg-white">
         <ArticleHeader
           :title="article.title"
           :description="article.description"
+          :tags="article.tags"
           published="Mis à jour le 19 Août, 2021"
           class="absolute w-full px-6 pb-12 transform -translate-y-full"
         />
@@ -45,14 +53,21 @@
 </template>
 
 <script>
-import RevueEmbed from '~/components/RevueEmbed.vue'
-import SocialsLinks from '~/components/SocialsLinks.vue'
+import Banner from '~/components/Banner.vue'
+import Navbar from '~/components/Navbar.vue'
+// import RevueEmbed from '~/components/RevueEmbed.vue'
+// import SocialsLinks from '~/components/SocialsLinks.vue'
 import ArticleHeader from '~/components/Blog/ArticleHeader.vue'
+
+const BANNER_HEIGHT = 40
+const NAVBAR_HEIGHT = 160
 
 export default {
   components: {
-    RevueEmbed,
-    SocialsLinks,
+    Banner,
+    Navbar,
+    // RevueEmbed,
+    // SocialsLinks,
     ArticleHeader
   },
   layout: 'article',
@@ -64,6 +79,9 @@ export default {
       error({ statusCode: 404, message: 'Page not found' })
     }
   },
+  data: () => ({
+    isBannerVisible: true
+  }),
   head () {
     return {
       title: `${this.article.title} | Laurent Cazanove`,
@@ -78,6 +96,14 @@ export default {
         { name: 'twitter:image:alt', content: this.article.thumbnailAlt },
         { name: 'twitter:card', content: 'summary_large_image' }
       ]
+    }
+  },
+  computed: {
+    coverUrl () {
+      return this.article.cover
+    },
+    headerNegativeMargin () {
+      return NAVBAR_HEIGHT + (this.isBannerVisible ? BANNER_HEIGHT : 0)
     }
   }
 }

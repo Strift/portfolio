@@ -5,7 +5,7 @@
     :title="title"
   >
     <span
-      :class="{ 'text-gray-700 hover:text-indigo-400': !isExactActive, 'text-gray-700': isExactActive }"
+      :class="textClasses(isExactActive)"
       class="flex items-center space-x-1"
     >
       <ChevronDoubleRightIcon v-if="isExactActive" />
@@ -18,6 +18,7 @@
 
 <script>
 import { defineComponent } from '@nuxtjs/composition-api'
+import PropTypes from '@znck/prop-types'
 import ChevronDoubleRightIcon from '~/components/icons/outline/ChevronDoubleRightIcon.vue'
 
 export default defineComponent({
@@ -25,13 +26,16 @@ export default defineComponent({
     ChevronDoubleRightIcon
   },
   props: {
-    to: {
-      type: String,
-      required: true
-    },
-    title: {
-      type: String,
-      required: true
+    to: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    textClass: PropTypes.string.isRequired,
+    textHoverClass: PropTypes.string.isRequired
+  },
+  methods: {
+    textClasses (isExactActive) {
+      return isExactActive
+        ? this.textClass
+        : `${this.textClass} hover:${this.textHoverClass}`
     }
   }
 })
