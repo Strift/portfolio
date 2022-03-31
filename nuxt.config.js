@@ -73,14 +73,14 @@ export default {
   */
   googleAnalytics: {
     id: 'UA-99085502-2'
-  },
+  }
   /*
   ** Image
   */
-  image: {
-    provider: 'twicpics',
-    twicpics: {
-      baseURL: 'https://vy8wjkde.twic.pics'
-    }
-  }
+  // image: {
+  //   provider: 'twicpics',
+  //   twicpics: {
+  //     baseURL: 'https://vy8wjkde.twic.pics'
+  //   }
+  // }
 }
