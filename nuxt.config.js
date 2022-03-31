@@ -78,9 +78,9 @@ export default {
   ** Image
   */
   image: {
-    // provider: 'twicpics',
-    // twicpics: {
-    //   baseURL: 'https://vy8wjkde.twic.pics'
-    // }
+    provider: 'twicpics',
+    twicpics: {
+      baseURL: 'https://vy8wjkde.twic.pics'
+    }
   }
 }
