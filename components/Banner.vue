@@ -19,8 +19,12 @@
 
 <script>
 import PropTypes from '@znck/prop-types'
+import ArrowRightIconVue from './icons/solid/ArrowRightIcon.vue'
 
 export default {
+  components: {
+    ArrowRightIconVue
+  },
   props: {
     visible: PropTypes.bool.isRequired
   },
