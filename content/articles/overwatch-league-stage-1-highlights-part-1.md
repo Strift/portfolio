@@ -3,6 +3,7 @@ title: "Overwatch League highlights: Fleta's Pharah"
 description: "Highlighting the player-hero pairs from stage one that have been the most memorable. In this edition: Fleta's Pharah."
 date: 2018-02-13
 cover: /images/articles/covers/overwatch-fleta.jpg
+coverAlt: Overwatch player Fleta
 highlight: true
 tags:
   - esports
@@ -42,7 +43,7 @@ As an example, in the match opposing Seoul Dynasty to the Valiants, Fleta killed
         </ul>
     </template>
     <template v-slot:details>
-        <div slot="details" class="text-gray-600 leading-tight">
+        <div slot="details" class="leading-tight text-gray-600">
             Byung-sun "<strong>Fleta</strong>" Kim (South Korea) is currently playing DPS for Seoul Dynasty. He previously played in APEX for Lunatic-Hai and Flash Lux.
         </div>
     </template>

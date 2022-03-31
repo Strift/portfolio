@@ -3,6 +3,7 @@ title: "Overwatch League highlights: Pine's McCree"
 description: "Highlighting the player-hero pairs from stage one that have been the most memorable. In this edition: Pine's McCree."
 date: 2018-02-14
 cover: /images/articles/covers/overwatch-pine.jpg
+coverAlt: Overwatch player Pine
 tags:
   - esports
 ---
@@ -39,7 +40,7 @@ Albeit McCree can be played to protect the backline from flankers, it is not the
         </ul>
     </template>
     <template v-slot:details>
-        <div class="text-gray-600 leading-normal">
+        <div class="leading-normal text-gray-600">
         Do-Hyeon "<strong>Pine</strong>" Kim (South Korea) is currently playing DPS for New York Excelsior. He previously played in APEX for both LW teams, Red and Blue.
         </div>
     </template>

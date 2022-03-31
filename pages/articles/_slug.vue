@@ -13,7 +13,7 @@
     <div class="relative h-screen">
       <div
         class="h-full bg-center bg-cover"
-        :style="`background-image: url(${coverUrl});`"
+        :style="backgroundStyles"
       >
       <!-- Full screen image -->
       </div>
@@ -92,14 +92,17 @@ export default {
         { property: 'og:image', content: `${this.$config.baseURL}${this.article.thumbnail}` },
         { property: 'og:url', content: `${this.$config.baseURL}${this.$route.path}` },
         { property: 'og:site_name', content: 'Laurent Cazanove' },
-        { name: 'twitter:image:alt', content: this.article.thumbnailAlt },
+        { name: 'twitter:image:alt', content: this.article.coverAlt },
         { name: 'twitter:card', content: 'summary_large_image' }
       ]
     }
   },
   computed: {
-    coverUrl () {
-      return this.article.cover
+    backgroundStyles () {
+      const imgUrl = this.$img(this.article.cover)
+      return {
+        backgroundImage: `url('${imgUrl}')`
+      }
     },
     headerNegativeMargin () {
       return (this.isBannerVisible ? BANNER_HEIGHT : 0)

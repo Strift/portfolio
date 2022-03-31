@@ -1,7 +1,7 @@
 <template>
   <div ref="wrapper">
     <router-link v-show="showLogo" to="/">
-      <img src="~/assets/images/me.jpg" class="h-10 w-10">
+      <nuxt-img src="/images/me.jpg" class="w-10 h-10" />
     </router-link>
   </div>
 </template>

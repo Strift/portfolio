@@ -13,13 +13,13 @@
       {{ title }}
     </h1> -->
     <div class="flex items-center">
-      <img
-        src="~/assets/images/me.jpg"
+      <nuxt-img
+        src="/images/me.jpg"
         alt="Me"
         width="64"
         height="64"
         class="flex-shrink-0 rounded-full shadow"
-      >
+      />
       <div class="ml-6 ">
         <div class="font-semibold text-gray-100 lg:text-lg shadow-thin">
           Laurent "Strift" Cazanove
@@ -28,9 +28,11 @@
           {{ published }}
         </div>
       </div>
-      <a href="https://twitter.com/lau_cazanove" target="_blank">
-        <TwitterIcon class="w-6 h-6 ml-6 text-white" />
-      </a>
+      <div class="ml-6">
+        <a href="https://twitter.com/lau_cazanove" target="_blank" title="Twitter">
+          <TwitterIcon class="w-6 h-6 text-white" />
+        </a>
+      </div>
     </div>
   </div>
 </template>

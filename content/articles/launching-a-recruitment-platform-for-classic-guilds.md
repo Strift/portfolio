@@ -3,7 +3,7 @@ title: Launching a recruitment platform for Classic guilds
 description: Recruitment never stops when you're running a Classic guild. I created an app to help guild leaders recruit new members.
 date: 2021-03-11
 cover: /images/articles/classic-wow-onyxia-raiding.jpg
-thumbnailAlt: Players fighting against Onyxia, a WoW raid boss
+coverAlt: Players fighting against Onyxia, a WoW raid boss
 highlight: true
 tags:
   - engineering

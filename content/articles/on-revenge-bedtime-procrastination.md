@@ -3,6 +3,7 @@ title: Revenge Bedtime Procrastination Is F**king Up Your Sleep Schedule
 date: 2022-03-27
 description: Pursuing revenge is often deemed self-destructive. Guess what? Revenge bedtime procrastination is no different.
 cover: /images/articles/covers/on-revenge-bedtime-procastination.jpg
+coverAlt: Someone watching at a computer screen at night
 lang: 'en'
 tags:
   - personal growth

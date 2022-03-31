@@ -3,7 +3,7 @@ title: Organiser ses raids avec Raid-Helper
 date: 2020-05-15
 description: Notre guide pour organiser au mieux vos raids WoW Classic grâce au bot Discord Raid-Helper.
 cover: /images/articles/covers/raid-helper.png
-thumbnailAlt: 'Screenshot of Raid-Helper'
+coverAlt: 'Screenshot of Raid-Helper'
 source: https://raid-helper.com/
 highlight: true
 tags:
