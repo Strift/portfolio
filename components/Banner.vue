@@ -1,5 +1,5 @@
 <template>
-  <div v-if="visible" class="relative w-full py-2 bg-indigo-400 shadow-md">
+  <div v-if="visible" class="relative w-full py-2 bg-indigo-600 shadow-md">
     <a href="https://www.getrevue.co/profile/esports-tech-news" target="_blank" class="container block mx-auto text-center text-white">
       <span class="lg:hidden">
         🚀 I'm launching <span class="inline-flex items-center space-x-1 "><strong>Esports Tech News</strong><ArrowRightIconVue /></span>
