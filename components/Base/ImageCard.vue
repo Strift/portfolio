@@ -2,6 +2,7 @@
   <div class="relative">
     <div class="relative z-10 transition-transform duration-150 transform shadow-lg group-hover:-translate-x-2 group-hover:-translate-y-2">
       <nuxt-img
+        :alt="imageAlt"
         :src="imageUrl"
         :width="width"
         :height="height"
@@ -17,6 +18,7 @@ import PropTypes from '@znck/prop-types'
 
 export default {
   props: {
+    imageAlt: PropTypes.string.isRequired,
     imageUrl: PropTypes.string.isRequired,
     height: PropTypes.string,
     width: PropTypes.string

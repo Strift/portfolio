@@ -3,7 +3,7 @@ title: 'My commitment to writing'
 description: I want to build a writing habit, so I will try to publish regularly to increase my accountability. Here's why I decided to pick up a pen again.
 date: 2021-03-10
 cover: /images/articles/my-commitment-to-writing-header.jpeg
-thumbnailAlt: 'Notebook and a pen'
+coverAlt: 'Notebook and a pen'
 highlight: true
 tags:
   - writing

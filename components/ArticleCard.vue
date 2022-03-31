@@ -1,6 +1,12 @@
 <template>
   <div class="group">
-    <ImageCard :image-url="thumbnailUrl" width="470" height="264" class="mb-8" />
+    <ImageCard
+      :image-url="thumbnailUrl"
+      :image-alt="thumbnailAlt"
+      width="470"
+      height="264"
+      class="mb-8"
+    />
     <div class="flex justify-between mb-6">
       <div class="space-x-2">
         <span
@@ -34,6 +40,7 @@ export default defineComponent({
   components: { ImageCard },
   props: {
     thumbnailUrl: PropTypes.string.isRequired,
+    thumbnailAlt: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.defaultValue(''),
     date: PropTypes.string.isRequired,
