@@ -28,9 +28,11 @@
           {{ published }}
         </div>
       </div>
-      <a href="https://twitter.com/lau_cazanove" target="_blank">
-        <TwitterIcon class="w-6 h-6 ml-6 text-white" />
-      </a>
+      <div class="ml-6">
+        <a href="https://twitter.com/lau_cazanove" target="_blank" title="Twitter">
+          <TwitterIcon class="w-6 h-6 text-white" />
+        </a>
+      </div>
     </div>
   </div>
 </template>
