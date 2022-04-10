@@ -30,7 +30,7 @@ The other brain-exploding moment for me happened when I internalized this: **wha
 <figure>
   <img src="https://c.tenor.com/Oc4nf8N08jIAAAAd/mind-blow-galaxy.gif" alt="Mind Blow Galaxy GIF" title="Mind Blow Galaxy GIF" />
   <figcaption>
-    MFW I had the realization
+    Me having a very late realization
   </figcaption>
 </figure>
 
