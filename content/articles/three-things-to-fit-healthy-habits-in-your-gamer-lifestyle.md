@@ -6,8 +6,7 @@ cover: /images/articles/covers/seedling.jpg
 coverAlt: A French flag
 lang: 'en'
 tags:
-  - writing
-  - wellness
+  - personal growth
 ---
 
 # Three Things To Fit Healthy Habits in Your Gamer Lifestyle
