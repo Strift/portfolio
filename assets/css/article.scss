@@ -8,7 +8,7 @@
   }
 
   h2 {
-    @apply font-sans text-3xl mb-6 mt-10 font-semibold text-indigo-500;
+    @apply font-sans text-3xl mb-8 mt-12 font-semibold text-indigo-500;
   }
 
   hr {
@@ -36,7 +36,7 @@
   }
 
   figure {
-    @apply mb-8;
+    @apply my-16;
 
     img,
     iframe {
