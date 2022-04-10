@@ -10,7 +10,7 @@ tags:
   - wellness
 ---
 
-# Three Things To Fit Gaming in Your Gamer Lifestyle
+# Three Things To Fit Healthy Habits in Your Gamer Lifestyle
 
 We know the story. Exercise, good sleep, and a balanced diet. Together, they are the Triforce of wellness. But knowing and implementing are two distinct things. Anyway, I always saw myself as more of an indoor — read: gaming chair — person. Brains over brawn, right?
 
