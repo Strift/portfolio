@@ -1,6 +1,6 @@
 ---
-title: Optimizing Side-Projects Costs With Serverless and JAMstack
-description: How I'm using the JAMstack to minimize monthly fees and optimize for time spent shipping features.
+title: Optimizing Side-Projects Costs With Serverless and the Jamstack
+description: How I'm using the Jamstack to minimize monthly fees and optimize for time spent shipping features.
 date: 2022-05-10
 cover: /images/articles/covers/my-go-to-stack-to-minimize-side-projects-costs.jpeg
 coverAlt: 'A computer displaying a code editor'
@@ -9,7 +9,7 @@ tags:
   - engineering
 ---
 
-# Optimizing Side-Projects Costs With Serverless and JAMstack
+# Optimizing Side-Projects Costs With Serverless & Jamstack
 
 I'm running a [recruitment platform](/articles/launching-a-recruitment-platform-for-classic-guilds/) for WoW guilds that has been online for more than a year. As with most side-projects, I knew my investment could change over time. So before starting, I tried envisioning what it would be like to maintain it six months later. 
 
