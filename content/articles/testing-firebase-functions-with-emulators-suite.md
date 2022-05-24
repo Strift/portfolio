@@ -143,4 +143,4 @@ Until next time,
 
 - [Handling schema evolution with Cloud Firestore](https://strift.medium.com/handling-schema-evolution-with-cloud-firestore-22d94fb9722f)
 - [All my articles](/articles/) about code, esports, and writing
-- I post my thoughts about code and other stuff [on my Twitter](https://twitter.com/lau_cazanove)
+- I post my thoughts about code and other stuff [on my Twitter](https://twitter.com/StriftCodes)

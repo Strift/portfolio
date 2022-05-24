@@ -52,4 +52,4 @@ The best part? These third-party services fees often scale by usage too! So we'v
 - [Testing Firebase Functions with the emulators suite](/articles/testing-firebase-functions-with-emulators-suite/)
 - [Handling schema evolution with Cloud Firestore](https://strift.medium.com/handling-schema-evolution-with-cloud-firestore-22d94fb9722f)
 
-You can also [read all articles](/articles/), follow me [on Twitter](https://twitter.com/lau_cazanove), or subscribe 💌 to the newsletter below for more.
+You can also [read all articles](/articles/), follow me [on Twitter](https://twitter.com/StriftCodes), or subscribe 💌 to the newsletter below for more.

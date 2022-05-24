@@ -49,6 +49,6 @@ Suddenly, I wasn’t fearing failure just as much. Now that I had a plan — a l
 
 **Read more**
 
-- I post all my writing and share this journey on [my Twitter](https://twitter.com/lau_cazanove)
+- I post all my writing and share this journey on [my Twitter](https://twitter.com/StriftCodes)
 - [Why I decided to build a daily writing habit](/articles/my-commitment-to-writing/)
 - [All my articles](/articles/) — about writing, tech, or esports

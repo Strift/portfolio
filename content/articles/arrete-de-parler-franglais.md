@@ -41,5 +41,5 @@ _PS : Je consomme majoritairement du contenu en anglais et dans mon métier, je 
 
 **Lire plus**
 
-- [Suivez-moi sur Twitter](https://twitter.com/lau_cazanove) pour lire mes publications quotidiennes
+- [Suivez-moi sur Twitter](https://twitter.com/StriftCodes) pour lire mes publications quotidiennes
 - [Pourquoi j'ai décidé d'écrire quotidiennement](/articles/my-commitment-to-writing/) (en anglais)

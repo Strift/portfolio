@@ -57,10 +57,10 @@ PS: My Classic guild was [Astral](https://classic.warcraftlogs.com/guild/eu/sulf
 
 --- 
 
-If you want to know more, [let me know](https://twitter.com/lau_cazanove)! It can be about the design process behind the product or the tech I used to build a scalable website at low cost. Or maybe you just want more Classic stories? Just tell me. ;)
+If you want to know more, [let me know](https://twitter.com/StriftCodes)! It can be about the design process behind the product or the tech I used to build a scalable website at low cost. Or maybe you just want more Classic stories? Just tell me. ;)
 
 **Read more**
 
 - [The tech stack I used to build this website](/articles/my-go-to-stack-to-minimize-side-projects-costs/)
 - [All my articles](/articles/) about code, esports, and writing
-- I post my thoughts about code and other stuff [on my Twitter](https://twitter.com/lau_cazanove)
+- I post my thoughts about code and other stuff [on my Twitter](https://twitter.com/StriftCodes)
