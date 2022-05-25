@@ -11,7 +11,8 @@ export default {
   ** Runtime config
   */
   publicRuntimeConfig: {
-    baseURL: process.env.NODE_ENV === 'production' ? 'https://laurentcazanove.com' : 'localhost:3000'
+    baseURL: process.env.NODE_ENV === 'production' ? 'https://laurentcazanove.com' : 'localhost:3000',
+    useLocalImages: process.env.NODE_ENV === 'development'
   },
   /*
   ** Headers of the page
@@ -28,7 +29,11 @@ export default {
       { name: 'description', content: 'Freelance software engineer specialized in esports.', hid: 'description' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://vy8wjkde.twic.pics' }
+    ],
+    script: [
+      { src: 'https://vy8wjkde.twic.pics/?v1', async: true, defer: true }
     ]
   },
   /*

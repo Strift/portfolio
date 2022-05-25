@@ -1,7 +1,7 @@
 <template>
   <div class="lg:flex lg:flex-grow">
-    <nuxt-img
-      src="/images/me.jpg"
+    <BaseImage
+      url="/images/me.jpg"
       alt="Me"
       width="256"
       height="256"
@@ -41,6 +41,7 @@
 </template>
 
 <script>
+import BaseImage from '~/components/Base/Image.vue'
 import HomeContent from '~/components/HomeContent.vue'
 import ContactButton from '~/components/ContactButton.vue'
 import SocialsLinks from '~/components/SocialsLinks.vue'
@@ -48,6 +49,7 @@ import SocialsLinks from '~/components/SocialsLinks.vue'
 export default {
   name: 'Home',
   components: {
+    BaseImage,
     HomeContent,
     ContactButton,
     SocialsLinks
