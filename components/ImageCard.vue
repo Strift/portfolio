@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <div class="relative z-10 transition-transform duration-150 transform shadow-lg group-hover:-translate-x-2 group-hover:-translate-y-2">
-      <nuxt-img
+      <BaseImage
         :alt="imageAlt"
         :src="imageUrl"
         :width="width"
@@ -15,8 +15,12 @@
 
 <script>
 import PropTypes from '@znck/prop-types'
+import BaseImage from '~/components/Base/Image.vue'
 
 export default {
+  components: {
+    BaseImage
+  },
   props: {
     imageAlt: PropTypes.string.isRequired,
     imageUrl: PropTypes.string.isRequired,

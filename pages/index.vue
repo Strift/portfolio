@@ -1,8 +1,8 @@
 <template>
   <div class="lg:flex lg:flex-grow">
     <BaseImage
-      url="/images/me.jpg"
-      alt="Me"
+      src="/images/me.jpg"
+      alt="Picture of me"
       width="256"
       height="256"
       class="mx-auto mb-16 rounded-full shadow-lg lg:hidden"

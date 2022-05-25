@@ -33,7 +33,7 @@
 <script>
 import PropTypes from '@znck/prop-types'
 import { defineComponent, computed } from '@nuxtjs/composition-api'
-import ImageCard from '~/components/Base/ImageCard.vue'
+import ImageCard from '~/components/ImageCard.vue'
 import parseDate from '~/data/parsers/parseDate'
 
 export default defineComponent({

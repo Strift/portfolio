@@ -1,7 +1,7 @@
 <template>
   <img
     v-if="$config.useLocalImages"
-    :src="url"
+    :src="src"
     alt="alt"
     :width="width"
     :height="height"
@@ -21,13 +21,13 @@ import PropTypes from '@znck/prop-types'
 export default {
   props: {
     alt: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired,
     height: PropTypes.string,
     width: PropTypes.string
   },
   computed: {
     twicpicsSrc () {
-      return `image:${this.url}`
+      return `image:${this.src}`
     }
   }
 }
