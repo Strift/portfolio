@@ -1,12 +1,15 @@
 <template>
-  <div :style="containerStyle">
+  <div
+    class="w-full h-full bg-center bg-cover"
+    :style="`background-image: url('${previewUrl}'`"
+  >
     <img
       v-if="$config.useLocalImages"
       :src="src"
       :alt="alt"
       :height="height"
       :width="width"
-      class="object-fill w-full h-full"
+      class="object-cover w-full h-full"
     >
     <img
       v-else
@@ -14,7 +17,7 @@
       :alt="alt"
       :height="height"
       :width="width"
-      class="object-fill w-full h-full"
+      class="object-cover w-full h-full"
     >
   </div>
 </template>
@@ -28,7 +31,9 @@ export default {
     src: PropTypes.string.isRequired,
     imageClass: PropTypes.string,
     height: PropTypes.string,
-    width: PropTypes.string
+    width: PropTypes.string,
+    maxHeight: PropTypes.string,
+    maxWidth: PropTypes.string
   },
   computed: {
     // An issue currently prevents using dynamic attributes
@@ -43,10 +48,31 @@ export default {
     //     ? this.src
     //     : `image:${this.src}`
     // },
-    containerStyle () {
-      return (this.height ? `height: ${this.height}px;` : '') +
-        (this.width ? `width: ${this.width}px` : '')
+    cleanPath () {
+      return this.src.startsWith('/')
+        ? this.src.substring(1)
+        : this.src
+    },
+    previewUrl () {
+      const height = this.height || this.maxHeight
+      const width = this.width || this.maxWidth
+
+      const resizeTransformation = (height && width)
+        ? `contain=${width}x${height}/`
+        : ''
+
+      return `${this.$config.twicpicsDomain}/${this.cleanPath}?twic=v1/${resizeTransformation}output=preview`
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+img {
+  @apply opacity-0 transition-opacity duration-300 ease-in;
+
+  &.twic-done{
+    @apply opacity-100;
+  }
+}
+</style>

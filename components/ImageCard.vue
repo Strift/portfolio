@@ -5,6 +5,8 @@
       :src="imageUrl"
       :width="width"
       :height="height"
+      :max-width="maxWidth"
+      :max-height="maxHeight"
       class="relative z-10 transition-transform duration-150 transform shadow-lg group-hover:-translate-x-2 group-hover:-translate-y-2"
       :class="imageClass"
     />
@@ -26,7 +28,9 @@ export default {
     imageUrl: PropTypes.string.isRequired,
     imageClass: PropTypes.string,
     height: PropTypes.string,
-    width: PropTypes.string
+    width: PropTypes.string,
+    maxHeight: PropTypes.string,
+    maxWidth: PropTypes.string
   }
 }
 </script>

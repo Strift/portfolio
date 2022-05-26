@@ -1,3 +1,5 @@
+const TWICPICS_DOMAIN = process.env.TWICPICS_DOMAIN
+
 export default {
   /*
   ** Nuxt target
@@ -12,7 +14,8 @@ export default {
   */
   publicRuntimeConfig: {
     baseURL: process.env.NODE_ENV === 'production' ? 'https://laurentcazanove.com' : 'localhost:3000',
-    useLocalImages: process.env.NODE_ENV === 'development'
+    twicpicsDomain: TWICPICS_DOMAIN,
+    useLocalImages: false // process.env.NODE_ENV === 'development'
   },
   /*
   ** Headers of the page
@@ -30,10 +33,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'preconnect', href: 'https://vy8wjkde.twic.pics' }
+      { rel: 'preconnect', href: TWICPICS_DOMAIN }
     ],
     script: [
-      { src: 'https://vy8wjkde.twic.pics/?v1', async: true, defer: true }
+      { src: `${TWICPICS_DOMAIN}/?v1`, async: true, defer: true }
     ]
   },
   /*

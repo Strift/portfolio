@@ -3,7 +3,10 @@
     <ImageCard
       :image-alt="title"
       :image-url="imageUrl"
+      height="148"
+      width="320"
       class="flex-shrink-0 w-80"
+      image-class="aspect-video"
     />
     <div class="my-auto space-y-6">
       <div class="font-sans text-xl font-semibold text-gray-700 group-hover:text-indigo-500">

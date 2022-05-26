@@ -3,6 +3,8 @@
     <ImageCard
       :image-url="thumbnailUrl"
       :image-alt="thumbnailAlt"
+      max-width="470"
+      max-height="264"
       image-class="aspect-video"
       class="mb-8"
     />
