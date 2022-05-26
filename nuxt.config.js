@@ -88,7 +88,7 @@ export default {
   image: {
     provider: 'twicpics',
     twicpics: {
-      baseURL: 'https://vy8wjkde.twic.pics'
+      baseURL: TWICPICS_DOMAIN
     }
   }
 }

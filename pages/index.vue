@@ -5,7 +5,7 @@
       alt="Picture of me"
       width="256"
       height="256"
-      class="mx-auto mb-16 rounded-full shadow-lg lg:hidden"
+      class="mx-auto mb-16 overflow-hidden rounded-full shadow-lg lg:hidden aspect-square"
     />
     <div class="lg:mr-16">
       <h2 class="mb-12 lg:mb-20">
@@ -25,12 +25,12 @@
       </div>
     </div>
     <div class="flex-shrink-0 lg:m-auto">
-      <nuxt-img
+      <BaseImage
         src="/images/me.jpg"
-        alt="Me"
+        alt="Picture of me"
         width="384"
         height="384"
-        class="hidden rounded-sm shadow-lg lg:block shadow-thin"
+        class="hidden rounded-sm shadow-lg lg:block shadow-thin aspect-square"
       />
       <div class="mt-16 mb-8 font-sans text-xl text-center text-gray-500">
         Let's get in touch

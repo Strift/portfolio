@@ -11,12 +11,13 @@
     </div>
 
     <div class="relative h-screen">
-      <div
-        class="h-full bg-center bg-cover"
-        :style="backgroundStyles"
-      >
-      <!-- Full screen image -->
-      </div>
+      <BaseImage
+        :alt="article.coverAlt"
+        :src="article.cover"
+        max-width="1920"
+        max-height="1080"
+        class="w-full h-full"
+      />
       <div class="absolute inset-0 from-black to-transparent bg-gradient-to-t">
         <!-- Overlay -->
       </div>
@@ -52,6 +53,7 @@
 
 <script>
 import parseDate from '../../data/parsers/parseDate'
+import BaseImage from '~/components/Base/Image.vue'
 import Banner from '~/components/Banner.vue'
 import Navbar from '~/components/Navbar.vue'
 import RevueEmbed from '~/components/RevueEmbed.vue'
@@ -63,6 +65,7 @@ const BANNER_HEIGHT = 40
 
 export default {
   components: {
+    BaseImage,
     Banner,
     Navbar,
     RevueEmbed,

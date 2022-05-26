@@ -5,8 +5,7 @@
       :image-url="imageUrl"
       height="148"
       width="320"
-      class="flex-shrink-0 w-80"
-      image-class="aspect-video"
+      image-class="aspect-project"
     />
     <div class="my-auto space-y-6">
       <div class="font-sans text-xl font-semibold text-gray-700 group-hover:text-indigo-500">

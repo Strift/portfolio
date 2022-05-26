@@ -26,3 +26,7 @@
 .aspect-project {
   aspect-ratio: 320 / 148;
 }
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}

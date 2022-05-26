@@ -1,7 +1,7 @@
 <template>
   <div
-    class="w-full h-full bg-center bg-cover"
-    :style="`background-image: url('${previewUrl}'`"
+    class="bg-center bg-cover"
+    :style="containerStyle"
   >
     <img
       v-if="$config.useLocalImages"
@@ -10,6 +10,7 @@
       :height="height"
       :width="width"
       class="object-cover w-full h-full"
+      :class="imageClass"
     >
     <img
       v-else
@@ -18,6 +19,7 @@
       :height="height"
       :width="width"
       class="object-cover w-full h-full"
+      :class="imageClass"
     >
   </div>
 </template>
@@ -36,18 +38,6 @@ export default {
     maxWidth: PropTypes.string
   },
   computed: {
-    // An issue currently prevents using dynamic attributes
-    // https://github.com/nuxt/nuxt.js/issues/9317
-    // dynamicSrcAttribute () {
-    //   return this.$config.useLocalImages
-    //     ? 'src'
-    //     : 'data-twic-src'
-    // },
-    // dynamicSrcValue () {
-    //   return this.$config.useLocalImages
-    //     ? this.src
-    //     : `image:${this.src}`
-    // },
     cleanPath () {
       return this.src.startsWith('/')
         ? this.src.substring(1)
@@ -62,6 +52,21 @@ export default {
         : ''
 
       return `${this.$config.twicpicsDomain}/${this.cleanPath}?twic=v1/${resizeTransformation}output=preview`
+    },
+    containerStyle () {
+      return (this.height
+        ? `height: ${this.height}px;`
+        : '') +
+        (this.width
+          ? `width: ${this.width}px;`
+          : '') +
+        (this.maxHeight
+          ? `max-height: ${this.maxHeight}px;`
+          : '') +
+        (this.maxWidth
+          ? `max-width: ${this.maxWidth}px;`
+          : '') +
+      `background-image: url('${this.previewUrl}'`
     }
   }
 }
