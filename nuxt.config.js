@@ -58,7 +58,6 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxt/image',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',
     '@nuxtjs/google-analytics',
@@ -81,14 +80,5 @@ export default {
   */
   googleAnalytics: {
     id: 'UA-99085502-2'
-  },
-  /*
-  ** Image
-  */
-  image: {
-    provider: 'twicpics',
-    twicpics: {
-      baseURL: TWICPICS_DOMAIN
-    }
   }
 }
