@@ -24,7 +24,13 @@ export default {
   }
 
   ul {
-    @apply list-disc pl-6 text-2xl
+    @apply list-disc pl-6 text-2xl space-y-1;
+  }
+
+  a {
+    @apply underline;
+
+    text-decoration-color: currentColor;
   }
 }
 </style>

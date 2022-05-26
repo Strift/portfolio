@@ -12,8 +12,8 @@
         <div class="mb-2 text-5xl font-semibold tracking-tight text-gray-700 lg:text-7xl">
           I'm Laurent,
         </div>
-        <div class="text-4xl font-semibold tracking-tight text-gray-500 lg:text-5xl">
-          Software engineer specialized in esports.
+        <div class="text-4xl font-semibold tracking-tight text-indigo-400 lg:text-5xl">
+          Engineer & Writer
         </div>
       </h2>
       <HomeContent :page="page" class="my-auto font-sans text-gray-500 lg:max-w-screen-md" />
@@ -32,10 +32,10 @@
         height="384"
         class="hidden rounded-sm shadow-lg lg:block shadow-thin aspect-square"
       />
-      <div class="mt-16 mb-8 font-sans text-xl text-center text-gray-500">
-        Let's get in touch
-      </div>
-      <SocialsLinks />
+      <!-- <div class="mt-16 mb-8 font-sans text-xl text-center text-gray-500">
+        Get in contact
+      </div> -->
+      <SocialsLinks class="mt-16" />
     </div>
   </div>
 </template>
