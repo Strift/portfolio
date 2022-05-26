@@ -1,12 +1,5 @@
 <template>
   <div class="group">
-    <!-- <ImageCard
-      :image-url="thumbnailUrl"
-      :image-alt="thumbnailAlt"
-      width="470"
-      height="264"
-      class="mb-8"
-    /> -->
     <ImageCard
       :image-url="thumbnailUrl"
       :image-alt="thumbnailAlt"
