@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center space-x-8 text-gray-400">
-    <a href="https://twitter.com/lau_cazanove" target="_blank" rel="noopener" title="Twitter" class="hover:text-indigo-400">
+    <a href="https://twitter.com/StriftCodes" target="_blank" rel="noopener" title="Twitter" class="hover:text-indigo-400">
       <TwitterIcon class="h-9 w-9" />
     </a>
     <a href="https://github.com/Strift" target="_blank" rel="noopener" title="GitHub" class="hover:text-indigo-400">

@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="ml-6">
-        <a href="https://twitter.com/lau_cazanove" target="_blank" title="Twitter">
+        <a href="https://twitter.com/StriftCodes" target="_blank" title="Twitter">
           <TwitterIcon class="w-6 h-6 text-white" />
         </a>
       </div>

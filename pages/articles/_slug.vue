@@ -92,7 +92,7 @@ export default {
         { name: 'description', content: this.article.description, hid: 'description' },
         { property: 'og:title', content: this.article.title },
         { property: 'og:description', content: this.article.description },
-        { property: 'og:image', content: `${this.$config.baseURL}${this.article.thumbnail}` },
+        { property: 'og:image', content: `${this.$config.baseURL}${this.article.cover}` },
         { property: 'og:url', content: `${this.$config.baseURL}${this.$route.path}` },
         { property: 'og:site_name', content: 'Laurent Cazanove' },
         { name: 'twitter:image:alt', content: this.article.coverAlt },

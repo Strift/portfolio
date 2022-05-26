@@ -57,6 +57,6 @@ So I’m trying to fix my own sleep schedule. [Let me know if you have advice!](
 - [Shut the ph**e up!](https://strift.medium.com/shut-the-ph-e-up-7187a4274177), about being less distracted by your phone
 - [All my articles](/articles/)
 
-I'm on a journey to build a daily writing habit. You can [follow me on Twitter](https://twitter.com/lau_cazanove) where I'm sharing my articles and what I'm learning along the way.
+I'm on a journey to build a daily writing habit. You can [follow me on Twitter](https://twitter.com/StriftCodes) where I'm sharing my articles and what I'm learning along the way.
 
 See you,

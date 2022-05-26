@@ -36,5 +36,5 @@ I guess the documenting started as a way of reassuring me that writing was a hob
 
 **Read more**
 
-- I post all my writing and share this journey on [my Twitter](https://twitter.com/lau_cazanove)
+- I post all my writing and share this journey on [my Twitter](https://twitter.com/StriftCodes)
 - [All my articles](/articles/) — about writing, tech, or esports
