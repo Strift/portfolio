@@ -15,7 +15,7 @@ export default {
   publicRuntimeConfig: {
     baseURL: process.env.NODE_ENV === 'production' ? 'https://laurentcazanove.com' : 'localhost:3000',
     twicpicsDomain: TWICPICS_DOMAIN,
-    useLocalImages: false // process.env.NODE_ENV === 'development'
+    useLocalImages: process.env.NODE_ENV === 'development'
   },
   /*
   ** Headers of the page

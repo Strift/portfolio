@@ -18,7 +18,7 @@
       :alt="alt"
       :height="height"
       :width="width"
-      class="object-cover w-full h-full"
+      class="object-cover w-full h-full twicpics"
       :class="imageClass"
     >
   </div>
@@ -73,7 +73,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
+img.twicpics {
   @apply opacity-0 transition-opacity duration-300 ease-in;
 
   &.twic-done{
