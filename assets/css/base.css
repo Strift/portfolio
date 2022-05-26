@@ -17,3 +17,16 @@
     transform: translate3d(0px, -6px, 0);
   }
 }
+
+/* To remove when upgrading to Tailwind 3.x -- Included by default */
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-project {
+  aspect-ratio: 320 / 148;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}

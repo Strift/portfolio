@@ -1,9 +1,15 @@
 <template>
   <article class="flex space-x-16 group">
-    <ImageCard :image-url="imageUrl" class="flex-shrink-0 w-80" />
+    <ImageCard
+      :image-alt="title"
+      :image-url="imageUrl"
+      height="148"
+      width="320"
+      image-class="aspect-project"
+    />
     <div class="my-auto space-y-6">
       <div class="font-sans text-xl font-semibold text-gray-700 group-hover:text-indigo-500">
-        <slot name="header" />
+        {{ title }}
       </div>
       <BaseText>
         <slot name="description" />
@@ -46,8 +52,8 @@
 
 <script>
 import PropTypes from '@znck/prop-types'
-import ImageCard from '../Base/ImageCard.vue'
 import BaseText from '~/components/Base/Text.vue'
+import ImageCard from '~/components/ImageCard.vue'
 import WebsiteIcon from '~/components/icons/solid/WebsiteIcon.vue'
 import GithubIcon from '~/components/icons/GithubIcon.vue'
 import cleanUrl from '~/data/formatters/cleanUrl'
@@ -61,6 +67,7 @@ export default {
     ImageCard
   },
   props: {
+    title: PropTypes.string.isRequired,
     imageUrl: PropTypes.string.isRequired,
     websiteUrl: PropTypes.string,
     githubUrl: PropTypes.string

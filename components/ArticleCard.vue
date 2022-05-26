@@ -3,8 +3,9 @@
     <ImageCard
       :image-url="thumbnailUrl"
       :image-alt="thumbnailAlt"
-      width="470"
-      height="264"
+      max-width="470"
+      max-height="264"
+      image-class="aspect-video"
       class="mb-8"
     />
     <div class="flex justify-between mb-6">
@@ -33,7 +34,7 @@
 <script>
 import PropTypes from '@znck/prop-types'
 import { defineComponent, computed } from '@nuxtjs/composition-api'
-import ImageCard from '~/components/Base/ImageCard.vue'
+import ImageCard from '~/components/ImageCard.vue'
 import parseDate from '~/data/parsers/parseDate'
 
 export default defineComponent({
