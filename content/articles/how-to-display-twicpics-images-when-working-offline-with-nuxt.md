@@ -64,10 +64,10 @@ Your `BaseImage` component will load your local image whenever  `enableOptimizat
 
 ---
 
-Going further
+To go further:
 - [Nuxt.js docs](https://nuxtjs.org/)
 - [TwicPics docs](https://www.twicpics.com/docs/getting-started/overview)
-- Ask a question [on Twitter](https://twitter.com/StriftCodes)
+- Ask me a question [on Twitter](https://twitter.com/StriftCodes)
 
 I’m a web developer working with Nuxt.js & serverless. I’m writing about the stuff I learn. Follow [@StriftCodes](https://twitter.com/StriftCodes) for more related content. :)
 

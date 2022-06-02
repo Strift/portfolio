@@ -13,12 +13,12 @@
       {{ title }}
     </h1> -->
     <div class="flex items-center">
-      <nuxt-img
+      <BaseImage
         src="/images/me.jpg"
-        alt="Me"
+        alt="Laurent Cazanove"
         width="64"
         height="64"
-        class="flex-shrink-0 rounded-full shadow"
+        class="rounded-full shadow"
       />
       <div class="ml-6 ">
         <div class="font-semibold text-gray-100 lg:text-lg shadow-thin">
@@ -40,9 +40,10 @@
 <script>
 import PropTypes from '@znck/prop-types'
 import TwitterIcon from '../icons/TwitterIcon.vue'
+import BaseImage from '../Base/Image.vue'
 
 export default {
-  components: { TwitterIcon },
+  components: { TwitterIcon, BaseImage },
   props: {
     title: PropTypes.string.isRequired,
     published: PropTypes.string.isRequired,
