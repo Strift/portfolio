@@ -66,8 +66,12 @@
 
   a {
     @apply underline;
-    // text-decoration-color: rgb(99, 102, 241);
     text-underline-offset: 0.1rem;
+
+    &:hover {
+      // @apply text-indigo-500;
+      text-decoration-color: rgb(99, 102, 241);
+    }
   }
 
   code {
