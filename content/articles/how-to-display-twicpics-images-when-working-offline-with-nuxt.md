@@ -31,7 +31,7 @@ export default {
 
 In this example, we configure the app to default to local images when we’re in development mode. But we could choose any conditions we like or use a specific environment variable.
 
-## Wrapping our image components
+## Wrapping our image in a component
 
 Now that we have a configuration toggle, let’s create an component that makes use of it. We’ll go with the straightforward approach: when `enableOptimization` is `false`, we’ll simply display the image; otherwise, we’ll process it with TwicPics.
 
@@ -62,6 +62,8 @@ And that’s it!
 
 Your `BaseImage` component will load your local image whenever  `enableOptimization` is false. You don’t have to change your code to keep using TwicPics in production.
 
+Of course, that's a simplified example. In reality, you'd probably be wrapping a `<TwicImage/>` component instead of base `<img>`. Read more on `@twicpics/components` on [the documentation](https://www.npmjs.com/package/@twicpics/components).
+
 ---
 
 To go further:
@@ -69,5 +71,7 @@ To go further:
 - [TwicPics docs](https://www.twicpics.com/docs/getting-started/overview)
 - Ask me a question [on Twitter](https://twitter.com/StriftCodes)
 
-I’m a web developer working with Nuxt.js & serverless. I’m writing about the stuff I learn. Follow [@StriftCodes](https://twitter.com/StriftCodes) for more related content. :)
+I’m a web developer working with Nuxt.js & serverless. I’m writing about the stuff I learn. Follow [@StriftCodes](https://twitter.com/StriftCodes) on Twitter for more!
+
+Cheers,
 
