@@ -62,7 +62,7 @@ And that’s it!
 
 Your `BaseImage` component will load your local image whenever  `enableOptimization` is false. You don’t have to change your code to keep using TwicPics in production.
 
-Obviously, that's a simplified example. In reality, you'd probably be wrapping a `<TwicImage/>` component instead of base `<img>`. But the overall logic is the same. Read more about `@twicpics/components` in [the documentation](https://www.npmjs.com/package/@twicpics/components).
+Obviously, that's a simplified example. In reality, you'd probably be wrapping a `<TwicImage/>` component instead of base `<img>`. But the overall logic is the same. Read more about `@twicpics/components` in [the documentation](https://www.twicpics.com/docs/components/overview).
 
 ---
 
