@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-center bg-cover"
+    class="overflow-hidden bg-center bg-cover"
     :style="containerStyle"
   >
     <img
@@ -9,7 +9,7 @@
       :alt="alt"
       :height="height"
       :width="width"
-      class="object-cover w-full h-full"
+      class="object-cover object-center w-full h-full"
       :class="imageClass"
     >
     <img
@@ -18,7 +18,7 @@
       :alt="alt"
       :height="height"
       :width="width"
-      class="object-cover w-full h-full twicpics"
+      class="object-cover object-center w-full h-full twicpics"
       :class="imageClass"
     >
   </div>
