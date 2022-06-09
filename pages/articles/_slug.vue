@@ -14,8 +14,6 @@
       <BaseImage
         :alt="article.coverAlt"
         :src="article.cover"
-        max-width="1920"
-        max-height="1080"
         class="w-full h-full"
       />
       <div class="absolute inset-0 from-black to-transparent bg-gradient-to-t">
