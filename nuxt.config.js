@@ -1,4 +1,5 @@
 const TWICPICS_DOMAIN = process.env.TWICPICS_DOMAIN
+const IS_DEVELOPMENT = process.env.NODE_ENV === 'development'
 
 export default {
   /*
@@ -15,7 +16,7 @@ export default {
   publicRuntimeConfig: {
     baseURL: process.env.NODE_ENV === 'production' ? 'https://laurentcazanove.com' : 'localhost:3000',
     twicpicsDomain: TWICPICS_DOMAIN,
-    useLocalImages: process.env.NODE_ENV === 'development'
+    useLocalImages: false // IS_DEVELOPMENT
   },
   /*
   ** Headers of the page
@@ -79,6 +80,7 @@ export default {
   ** Google Analytics
   */
   googleAnalytics: {
-    id: 'UA-99085502-2'
+    id: 'UA-99085502-2',
+    dev: IS_DEVELOPMENT
   }
 }

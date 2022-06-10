@@ -12,6 +12,7 @@
 
     <div class="relative h-screen">
       <BaseImage
+        :preload="true"
         :alt="article.coverAlt"
         :src="article.cover"
         max-width="1920"

@@ -25,9 +25,10 @@
 </template>
 
 <script>
+import { computed, defineComponent, useContext, useMeta } from '@nuxtjs/composition-api'
 import PropTypes from '@znck/prop-types'
 
-export default {
+export default defineComponent({
   props: {
     alt: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
@@ -35,41 +36,65 @@ export default {
     height: PropTypes.string,
     width: PropTypes.string,
     maxHeight: PropTypes.string,
-    maxWidth: PropTypes.string
+    maxWidth: PropTypes.string,
+    preload: PropTypes.bool
   },
-  computed: {
-    cleanPath () {
-      return this.src.startsWith('/')
-        ? this.src.substring(1)
-        : this.src
-    },
-    previewUrl () {
-      const height = this.height || this.maxHeight
-      const width = this.width || this.maxWidth
+  setup (props) {
+    const { $config } = useContext()
+    const { meta } = useMeta()
+
+    const cleanPath = computed(() => {
+      return props.src.startsWith('/')
+        ? props.src.substring(1)
+        : props.src
+    })
+
+    const previewUrl = computed(() => {
+      const height = props.height || props.maxHeight
+      const width = props.width || props.maxWidth
 
       const resizeTransformation = (height && width)
         ? `contain=${width}x${height}/`
         : ''
 
-      return `${this.$config.twicpicsDomain}/${this.cleanPath}?twic=v1/${resizeTransformation}output=preview`
-    },
-    containerStyle () {
-      return (this.height
-        ? `height: ${this.height}px;`
+      return `${$config.twicpicsDomain}/${cleanPath.value}?twic=v1/${resizeTransformation}output=preview`
+    })
+
+    const containerStyle = computed(() => {
+      return (props.height
+        ? `height: ${props.height}px;`
         : '') +
-        (this.width
-          ? `width: ${this.width}px;`
+        (props.width
+          ? `width: ${props.width}px;`
           : '') +
-        (this.maxHeight
-          ? `max-height: ${this.maxHeight}px;`
+        (props.maxHeight
+          ? `max-height: ${props.maxHeight}px;`
           : '') +
-        (this.maxWidth
-          ? `max-width: ${this.maxWidth}px;`
+        (props.maxWidth
+          ? `max-width: ${props.maxWidth}px;`
           : '') +
-      `background-image: url('${this.previewUrl}'`
+      `background-image: url('${previewUrl.value}'`
+    })
+
+    if (props.preload) {
+      meta.value.push({
+        rel: 'preload',
+        as: 'image',
+        href: previewUrl.value
+        // media: '',
+        // imagesrcset: '',
+        // imagesizes: ''
+      })
     }
-  }
-}
+
+    return {
+      cleanPath,
+      previewUrl,
+      containerStyle
+    }
+  },
+  head: {}
+})
 </script>
 
 <style lang="scss" scoped>
