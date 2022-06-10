@@ -97,3 +97,6 @@ functions/.runtimeconfig.json
 
 # Service account
 functions/.service-account.json
+
+# Local Netlify folder
+.netlify
