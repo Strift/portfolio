@@ -1,7 +1,7 @@
 ---
 title: "State of Vue 2022: Amsterdam recap"
 date: 2022-06-14
-description: Everything you need to know about Evan You's ‘State of the Vuenion’ talk at Vue Amsterdam.
+description: Everything you need to know about Evan You's State of the Vuenion talk at Vue Amsterdam.
 cover: /images/articles/covers/state-of-vue-2022-amsterdam-recap.jpg
 coverAlt: Firebase functions
 lang: 'en'
@@ -13,21 +13,22 @@ tags:
 
 Since v3.0 became the fault this February, Vue 3 adoption has grown steadily. NPM downloads have known a 4x increase to reach an average of 800k/week.
 
-Since then, the Vue 3 team has been at work on fixing issues with v3 and improving the SFC playground. Meanwhile, the ecosystem is finally catching up. Let's recap what Evan You discussed during the ‘State of the Vuenion’ in Amsterdam two weeks ago.
+Since then, the Vue 3 team has been at work on fixing issues with v3 and improving the SFC playground. Meanwhile, the ecosystem is finally catching up. Let's recap what Evan You discussed during the *State of the Vuenion* talk in Amsterdam two weeks ago.
 
-Jump to specific section:
-- **The ecosystem catches up**
+## Table of contents
+
+- State of the ecosystem
   - [Nuxt 3](#nuxt-3)
   - [Vuetify 3](#vuetify-3)
   - [VitePress 1](#vitepress-1)
   - [Volar](#volar)
-- **What’s on the horizon for Vue?**
+- What's coming for Vue?
   - [Back-porting features to Vue 2.7](#back-porting-features-to-vue-27)
   - [Next minor version: Vue 3.3](#next-minor-version-vue-33)
   - [A note on Vite 3](#a-note-on-vite-3)
-  - [Experimenting with new compilation strategies](#experimenting-with-new-compilation-strategies)
+  - [Experimental: new compilation strategies](#experimental-new-compilation-strategies)
 
-## The ecosystem catches up
+## State of the ecosystem
 
 ### Nuxt 3
 
@@ -53,7 +54,7 @@ Johnson Chu, developer of the [Volar VS Code extension](https://marketplace.visu
 
 This is a welcome news. With the integration of TypeScript, setup syntax, compile-time macros, and Nuxt 3 auto-imports, tooling is now paramount.
 
-## What’s on the horizon for Vue?
+## What's coming for Vue?
 
 ### Back-porting features to Vue 2.7
 
@@ -75,9 +76,9 @@ The next major of Vite is development. Although the updates can be considered mi
 
 The biggest internal update is [moving Vite itself to full ESM](https://github.com/vitejs/vite/pull/8178) and thus dropping support for Node.js 12. The server-side rendering build will [now default to ESM output](https://github.com/vitejs/vite/pull/8348). With these changes, Vite aims to forward the ecosystem migration to ES modules. Also, Vite will now use esbuild for both dev and prod bundling, to reduce friction when deploying.
 
-### Experimenting with new compilation strategies
+### Experimental: new compilation strategies
 
-⚠ This is experimental and may never land.
+**⚠️ This is experimental and may never land.**
 
 The team has started experimenting with a new compilation strategy inspired by SolidJS. The idea is moving to a no-virtual DOM approach. This will significantly improve memory usage on top of reducing the runtime size.
 
