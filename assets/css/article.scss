@@ -11,6 +11,10 @@
     @apply font-sans text-3xl mb-8 mt-12 font-semibold text-indigo-500;
   }
 
+  h3 {
+    @apply font-sans text-2xl mb-8 mt-8 font-semibold text-indigo-400;
+  }
+
   hr {
     @apply mb-8;
   }
@@ -29,6 +33,10 @@
 
   ul {
     @apply mb-8;
+  }
+
+  li ul {
+    @apply mb-0;
   }
 
   img {
@@ -69,7 +77,7 @@
     text-underline-offset: 0.1rem;
 
     &:hover {
-      // @apply text-indigo-500;
+      @apply text-indigo-500;
       text-decoration-color: rgb(99, 102, 241);
     }
   }
