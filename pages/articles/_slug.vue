@@ -45,7 +45,10 @@
       </div>
       <RevueEmbed class="mt-16" />
     </template>
-    <SocialsLinks class="pb-16 mt-16" />
+    <div class="mt-16 mb-8 font-sans text-xl italic leading-9 text-center text-gray-400">
+      Get in touch
+    </div>
+    <SocialsLinks class="pb-16" />
   </div>
 </template>
 
