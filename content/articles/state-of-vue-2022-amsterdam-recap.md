@@ -11,7 +11,7 @@ tags:
 
 # State of Vue 2022: Amsterdam recap
 
-Since v3.0 became the fault this February, Vue 3 adoption has grown steadily. NPM downloads have known a 4x increase to reach an average of 800k/week.
+Since v3.0 became the default this February, Vue 3 adoption has grown steadily. NPM downloads have known a 4x increase to reach an average of 800k/week.
 
 Since then, the Vue 3 team has been at work on fixing issues with v3 and improving the SFC playground. Meanwhile, the ecosystem is finally catching up. Let's recap what Evan You discussed during the *State of the Vuenion* talk in Amsterdam two weeks ago.
 
@@ -72,7 +72,7 @@ Finally, the teams keeps on improving server-side rendering with lazy/conditiona
 
 ### A note on Vite 3
 
-The next major of Vite is development. Although the updates can be considered minor, many will introduce breaking changes. Still, those will be invisible for most end users. Only tools that use Vite directly will need to update, eg. Nuxt, Vitest, etc.
+The next major of Vite is in development. Although the updates can be considered minor, many will introduce breaking changes. Still, those will be invisible for most end users. Only tools that use Vite directly will need to update, eg. Nuxt, Vitest, etc.
 
 The biggest internal update is [moving Vite itself to full ESM](https://github.com/vitejs/vite/pull/8178) and thus dropping support for Node.js 12. The server-side rendering build will [now default to ESM output](https://github.com/vitejs/vite/pull/8348). With these changes, Vite aims to forward the ecosystem migration to ES modules. Also, Vite will now use esbuild for both dev and prod bundling, to reduce friction when deploying.
 
