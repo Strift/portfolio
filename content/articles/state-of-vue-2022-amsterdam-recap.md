@@ -44,9 +44,9 @@ The Material Design framework is currently in beta. The third beta release has b
 
 ### VitePress 1
 
-The Vue team has long been dog-fooding VitePress with the new Vue.js docs. To prepare for the v1.0 release, core team member Kia worked on a providing a higher-level API for end users. VitePress is now the recommended solution for Vue 3-powered Static Site Generation.
+The Vue team has long been dog-fooding VitePress with the new Vue.js docs. To prepare for the v1.0 release, core team member Kia worked on a providing a higher-level API for end users. VitePress is now the recommended solution for Vue 3-powered Static Site Generation. Read the [docs](https://vitepress.vuejs.org/).
 
-However, discussion remains on the name and the coexistence with VuePress. Simply put, the question is whether VitePress should replace VuePress 3 or not.
+However, [discussion remains](https://github.com/vuejs/vitepress/discussions/548) on the name and the coexistence with VuePress. Simply put, the question is whether VitePress should replace VuePress 3 or not.
 
 ### Volar
 
