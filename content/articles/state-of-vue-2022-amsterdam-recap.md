@@ -62,7 +62,7 @@ Vue 2.7 aims at back-porting the built-in composition API, the `<script setup>` 
 
 Regarding the latter, the team aims at making vue/compiler-sfc adhere to the same interface as its Vue 3 counterpart. The goal is to make it compatible with `vue-loader` 16+ and `@vitejs/plugin-vue` so as to unify loaders across Vue 2 and Vue 3.
 
-**Vue 2.7 will be the last minor release of Vue 2.x.** It will have 18 months of LTS starting from the the 2.7 stable release. Companies can notify interest for extended supported [via this link](https://link.vuejs.org/xlts).
+**Vue 2.7 will be the last minor release of Vue 2.x.** It will have 18 months of LTS starting from the 2.7 stable release. Companies can notify interest for extended supported [via this link](https://link.vuejs.org/xlts).
 
 ### Next minor version: Vue 3.3
 
