@@ -11,11 +11,7 @@
     </div>
 
     <div class="relative h-screen">
-      <BaseImage
-        :alt="article.coverAlt"
-        :src="article.cover"
-        class="w-full h-full"
-      />
+      <BaseImage :alt="article.coverAlt" :src="article.cover" class="w-full h-full" />
       <div class="absolute inset-0 from-black to-transparent bg-gradient-to-t">
         <!-- Overlay -->
       </div>
@@ -37,10 +33,13 @@
       </div>
     </div>
     <template v-if="true">
-      <div class="container mx-auto text-center">
-        <p class="mt-16 text-xl italic leading-9 text-gray-400">
-          <span class="">My <em class="font-semibold text-indigo-400">Esports & Tech Newsletter</em> comes out every two weeks.<br></span>
-          <span class="text-gray-400">Subscribe if you like code, esports, and all the creative things in between. ✨</span>
+      <div class="container mx-auto text-center text-xl italic leading-9 text-gray-400">
+        <p class="mt-16 mb-8">
+          <em class="font-semibold text-indigo-400">Esports Tech News</em> is a tech-focused newsletter for developers,
+          designers, and product managers working in esports.<br>
+        </p>
+        <p class="text-gray-400">
+          Delivered every two weeks. ✨
         </p>
       </div>
       <RevueEmbed class="mt-16" />
@@ -86,6 +85,10 @@ export default {
     isBannerVisible: true
   }),
   head () {
+    const link = this.article.canonicalUrl
+      ? [{ rel: 'canonical', href: this.article.canonicalUrl }]
+      : []
+
     return {
       title: `${this.article.title} | Laurent Cazanove`,
       meta: [
@@ -98,7 +101,8 @@ export default {
         { property: 'og:site_name', content: 'Laurent Cazanove' },
         { name: 'twitter:image:alt', content: this.article.coverAlt },
         { name: 'twitter:card', content: 'summary_large_image' }
-      ]
+      ],
+      link
     }
   },
   computed: {

@@ -3,7 +3,7 @@ title: "State of Vue 2022: Amsterdam recap"
 date: 2022-06-14
 description: Everything you need to know about Evan You's State of the Vuenion talk at Vue Amsterdam.
 cover: /images/articles/covers/state-of-vue-2022-amsterdam-recap.jpg
-coverAlt: Firebase functions
+coverAlt: Evan You at the Vue Amsterdam 2022 conference
 lang: 'en'
 tags:
   - engineering
