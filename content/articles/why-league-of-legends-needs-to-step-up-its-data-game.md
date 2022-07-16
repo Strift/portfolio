@@ -7,6 +7,7 @@ coverAlt: League of Legends Worlds Championship Cup
 lang: 'en'
 tags:
   - esports
+  - engineering
 canonicalUrl: 'https://www.linkedin.com/pulse/why-league-legends-esports-needs-step-up-its-data-game-cazanove/'
 ---
 
