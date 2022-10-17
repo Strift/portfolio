@@ -1,31 +1,15 @@
 <template>
   <BaseContainer class="max-w-screen-lg space-y-24">
     <ProjectCard
-      title="🎮 Sulfuron Guilds Portal"
-      image-url="/images/projects/sulfuron-guilds.jpg"
-      website-url="https://guildes.sulfuron.eu/"
-      github-url="https://github.com/Strift/sulfuron-guilds"
+      v-for="(project, i) in projects"
+      :key="i"
+      :title="project.name"
+      :image-url="project.imageUrl"
+      :website-url="project.websiteUrl"
+      :github-url="project.githubUrl"
     >
       <template slot="description">
-        When running a World of Warcraft guild, recruitment never stops. This app is the dedicated recruitment platform for players from Sulfuron.
-      </template>
-    </ProjectCard>
-    <ProjectCard
-      title="👨‍💻 Awesome Esports"
-      image-url="/images/projects/awesome-esports.png"
-      github-url="https://github.com/Strift/awesome-esports"
-    >
-      <template slot="description">
-        A curated list of open-source projects related to esports.
-      </template>
-    </ProjectCard>
-    <ProjectCard
-      title="🇷🇪 La Kaz Créole"
-      image-url="/images/projects/la-kaz-creole.jpg"
-      website-url="https://lakazcreole.fr"
-    >
-      <template slot="description">
-        Cooking traditional dishes from Reunion Island, La Kaz Créole offers catering and food delivery services in Paris.
+        {{ project.description }}
       </template>
     </ProjectCard>
   </BaseContainer>
@@ -40,6 +24,29 @@ export default {
     BaseContainer,
     ProjectCard
   },
-  layout: 'default'
+  layout: 'default',
+  data: () => ({
+    projects: [
+      {
+        name: '🎮 Sulfuron Guilds Portal',
+        imageUrl: '/images/projects/sulfuron-guilds.jpg',
+        websiteUrl: 'https://guildes.sulfuron.eu/',
+        githubUrl: 'https://github.com/Strift/sulfuron-guilds',
+        description: 'When running a World of Warcraft guild, recruitment never stops. This app is the dedicated recruitment platform for players from Sulfuron.'
+      },
+      {
+        name: '👨‍💻 Awesome Esports',
+        imageUrl: '/images/projects/awesome-esports.png',
+        githubUrl: 'https://github.com/Strift/awesome-esports',
+        description: 'A curated list of open-source projects related to esports.'
+      },
+      {
+        name: '🇷🇪 La Kaz Créole',
+        imageUrl: '/images/projects/la-kaz-creole.jpg',
+        websiteUrl: 'https://lakazcreole.fr',
+        description: 'Cooking traditional dishes from Reunion Island, La Kaz Créole offers catering and food delivery services in Paris.'
+      }
+    ]
+  })
 }
 </script>

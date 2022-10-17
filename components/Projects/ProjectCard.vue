@@ -36,7 +36,7 @@
         </span>
         <a
           v-if="githubUrl"
-          href="https://github.com/Strift/sulfuron-guilds"
+          :href="githubUrl"
           target="_blank"
           class="flex items-center space-x-2 w-60 hover:text-indigo-400"
         >
