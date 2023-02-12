@@ -79,6 +79,6 @@ export default {
   ** Google Analytics
   */
   googleAnalytics: {
-    id: 'UA-99085502-2'
+    id: 'G-F8QVHZM08H'
   }
 }
