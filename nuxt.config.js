@@ -60,7 +60,6 @@ export default {
   buildModules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',
-    '@nuxtjs/google-analytics',
     '@nuxtjs/composition-api/module'
   ],
   /*
@@ -74,11 +73,5 @@ export default {
   */
   content: {
     liveEdit: false
-  },
-  /*
-  ** Google Analytics
-  */
-  googleAnalytics: {
-    id: 'UA-99085502-2'
   }
 }
