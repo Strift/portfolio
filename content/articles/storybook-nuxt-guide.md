@@ -1,7 +1,7 @@
 ---
-title: How to setup Storybook for Nuxt 3, Vite, and TypeScript
+title: How to setup Storybook for Nuxt 3 and Vite
 date: 2023-02-10
-description: The configuration you need to make Storybook 7 work with Nuxt 3.
+description: Learn to configure Storybook 7 to work with Nuxt 3, Vite, and TypeScript.
 cover: /images/articles/covers/storybook-nuxt-guide.jpg
 coverAlt: Storybook + Nuxt
 lang: 'en'
