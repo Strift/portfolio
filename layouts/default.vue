@@ -1,6 +1,7 @@
 <template>
   <div class="h-min-screen">
     <Banner
+      v-if="$config.enableBanner"
       :visible="isBannerVisible"
       class="sticky top-0 z-50"
       @close="isBannerVisible = false"
