@@ -33,7 +33,7 @@
       </div>
     </div>
     <template v-if="true">
-      <div class="container mx-auto text-center text-xl italic leading-9 text-gray-400">
+      <div class="container mx-auto text-xl italic leading-9 text-center text-gray-400">
         <p class="mt-16 mb-8">
           <em class="font-semibold text-indigo-400">Esports Tech News</em> is a tech-focused newsletter for developers,
           designers, and product managers working in esports.<br>
@@ -82,7 +82,7 @@ export default {
     }
   },
   data: () => ({
-    isBannerVisible: true
+    isBannerVisible: false
   }),
   head () {
     const link = this.article.canonicalUrl
