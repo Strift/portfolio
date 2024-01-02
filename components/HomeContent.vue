@@ -16,7 +16,7 @@ export default {
 <style lang="scss">
 .home-page {
   p {
-    @apply  leading-relaxed text-2xl mb-3;
+    @apply  leading-relaxed text-xl mb-3;
 
     strong {
       @apply text-indigo-500 font-semibold
@@ -24,7 +24,7 @@ export default {
   }
 
   ul {
-    @apply list-disc pl-6 text-2xl space-y-1;
+    @apply list-disc pl-6 text-xl space-y-1 mb-3;
   }
 
   a {
