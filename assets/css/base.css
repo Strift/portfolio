@@ -9,7 +9,8 @@
 
 
 .float-on-hover {
-  transition: 250ms;
+  transition-timing-function: ease-in-out;
+  transition-duration: 250ms;
 }
 
 @variants hover {
