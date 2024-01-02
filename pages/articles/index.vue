@@ -1,34 +1,6 @@
 <template>
   <Container>
-    <GridLayout>
-      <div
-        v-for="article in articles"
-        :key="article.path"
-      >
-        <a v-if="article.external" class="text-black no-underline" :href="linkToArticle(article)" target="_blank" rel="noopener">
-          <ArticleCard
-            :title="article.title"
-            :description="article.description"
-            :thumbnail-url="article.thumbnail"
-            :thumbnail-alt="article.title"
-            :date="article.date"
-            :lang="article.lang"
-            :tags="article.tags"
-          />
-        </a>
-        <router-link v-else :to="linkToArticle(article)" class="text-black no-underline">
-          <ArticleCard
-            :title="article.title"
-            :description="article.description"
-            :thumbnail-url="article.cover"
-            :thumbnail-alt="article.coverAlt"
-            :date="article.date"
-            :lang="article.lang"
-            :tags="article.tags"
-          />
-        </router-link>
-      </div>
-    </GridLayout>
+    <ArticleList :articles="articles" />
     <SocialsFooter class="mt-10" />
   </Container>
 </template>
@@ -39,8 +11,7 @@ import ogArticles from '~/data/ogamingArticles.json'
 import mediumArticles from '~/data/mediumArticles.json'
 
 import Container from '~/components/Base/Container.vue'
-import GridLayout from '~/components/Layouts/GridLayout.vue'
-import ArticleCard from '~/components/ArticleCard.vue'
+import ArticleList from '~/components/organisms/ArticleList.vue'
 import SocialsFooter from '~/components/SocialsFooter.vue'
 
 const sortByDate = (articleA, articleB) => {
@@ -52,8 +23,7 @@ const sortByDate = (articleA, articleB) => {
 export default {
   components: {
     Container,
-    GridLayout,
-    ArticleCard,
+    ArticleList,
     SocialsFooter
   },
   async asyncData ({ $content }) {
@@ -98,14 +68,6 @@ export default {
     },
     highlights () {
       return this.articles.filter(article => article.highlight || (article.frontmatter && article.frontmatter.highlight))
-    }
-  },
-  methods: {
-    linkToArticle (article) {
-      if (!article.external && !article.path.endsWith('/')) {
-        return `${article.path}/`
-      }
-      return article.path
     }
   }
 }

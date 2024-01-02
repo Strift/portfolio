@@ -32,7 +32,7 @@
         />
       </div>
     </div>
-    <template v-if="true">
+    <template v-if="false">
       <div class="container mx-auto text-xl italic leading-9 text-center text-gray-400">
         <p class="mt-16 mb-8">
           <em class="font-semibold text-indigo-400">Esports Tech News</em> is a tech-focused newsletter for developers,
@@ -44,6 +44,12 @@
       </div>
       <RevueEmbed class="mt-16" />
     </template>
+    <!-- <ArticleList :articles="featuredArticles" /> -->
+    <div class="max-w-screen-sm mx-auto mt-16 text-xl text-center">
+      <nuxt-link to="/articles/" class="text-indigo-600">
+        ← back to articles
+      </nuxt-link>
+    </div>
     <div class="mt-16 mb-8 font-sans text-xl italic leading-9 text-center text-gray-400">
       Get in touch
     </div>
@@ -59,6 +65,7 @@ import Navbar from '~/components/Navbar.vue'
 import RevueEmbed from '~/components/RevueEmbed.vue'
 import SocialsLinks from '~/components/SocialsLinks.vue'
 import ArticleHeader from '~/components/Blog/ArticleHeader.vue'
+import ArticleList from '~/components/organisms/ArticleList.vue'
 
 const BANNER_HEIGHT = 40
 // const NAVBAR_HEIGHT = 160
@@ -70,13 +77,16 @@ export default {
     Navbar,
     RevueEmbed,
     SocialsLinks,
-    ArticleHeader
+    ArticleHeader,
+    ArticleList
   },
   layout: 'article',
   async asyncData ({ $content, params, error }) {
     try {
       const article = await $content('articles', params.slug).fetch()
-      return { article }
+      return {
+        article
+      }
     } catch (err) {
       error({ statusCode: 404, message: 'Page not found' })
     }
