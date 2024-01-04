@@ -1,6 +1,6 @@
 ---
 actionText: Book a meeting
-actionLink: https://calendly.com/laurent-cazanove/30min
+actionUrl: https://calendly.com/laurent-cazanove/30min
 ---
 
 My name is **Laurent Cazanove**. People online call me Strift.
