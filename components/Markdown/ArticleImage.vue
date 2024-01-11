@@ -6,7 +6,7 @@
       :title="title"
       :width="`${width}`"
       :height="`${height}`"
-      class="mx-auto"
+      class="max-w-full mx-auto rounded-lg lg:max-w-2xl"
     />
     <figcaption v-if="$slots.default">
       <slot />
@@ -29,9 +29,6 @@ export default {
     caption: PropTypes.string,
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-  },
-  mounted () {
-    console.log(this.height, this.width)
   }
 }
 </script>
