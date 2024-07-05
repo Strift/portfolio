@@ -6,7 +6,7 @@ export type HomePageContent = ParsedContent & {
 }
 
 export type ProjectsPageContent = ParsedContent & {
-  body: Array<{
+  projects: Array<{
     name: string
     description: string
     image_url: string

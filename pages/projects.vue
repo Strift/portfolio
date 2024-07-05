@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import type { ProjectsPageContent } from '~/types'
 
-const { data, status } = await useAsyncData('projects', () => queryContent<ProjectsPageContent>('projects').findOne())
+const { data } = await useAsyncData('projects', () => queryContent<ProjectsPageContent>('projects').findOne())
 </script>
 
 <template>
-  <div v-if="status === 'success' && data">
-    <div v-for="project in data.body" :key="project.name">
+  <div v-if="data">
+    <div v-for="project in data.projects" :key="project.name">
       <img :src="project.image_url" :alt="project.name" height="148" width="320" />
       <h2>{{ project.name }}</h2>
       <p>{{ project.description }}</p>
