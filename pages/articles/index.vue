@@ -1,5 +1,7 @@
 <script lang="ts" setup>
+import dayjs from 'dayjs'
 import type { ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types'
+import { compareFromString } from '~/utils/date'
 
 type ArticleNav = MarkdownArticleNav | OgamingArticleNav | MediumArticleNav
 // const { data: allArticles } = await useAsyncData('articles', () => {
@@ -33,7 +35,7 @@ const navItems = computed(() => {
       }
       return nav
     }, [])
-    .sort((a, b) => toMilliseconds(b.date) - toMilliseconds(a.date))
+    .sort((a, b) => compareFromString(a.date, b.date))
 })
 </script>
 
@@ -41,7 +43,7 @@ const navItems = computed(() => {
   <div>
     <div v-for="nav in navItems" :key="nav.title">
       <NuxtLink v-if="'_path' in nav" :to="nav._path">{{ nav.title }}</NuxtLink>
-      <NuxtLink v-else :to="nav.url">{{ nav.title }}</NuxtLink>
+      <NuxtLink v-else :to="nav.url" target="_blank">{{ nav.title }}</NuxtLink>
     </div>
   </div>
 </template>

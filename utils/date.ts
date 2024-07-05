@@ -1,5 +1,7 @@
 import dayjs from "dayjs"
 
-export function toMilliseconds(date: string) {
-  return dayjs(date).millisecond()
+export function compareFromString(a: string, b: string) {
+  const aDate = dayjs(a)
+  const bDate = dayjs(b)
+  return aDate.isBefore(bDate) ? 1 : -1
 }
