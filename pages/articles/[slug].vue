@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { BlogArticleImage, BlogOverwatchHighlight } from '#components'
+import { BlogArticleImage, BlogOverwatchHighlight, BlogSulfuronAd } from '#components'
 
 const route = useRoute()
 
@@ -12,6 +12,7 @@ const { data } = await useAsyncData(
 
 const components = {
   'article-image': BlogArticleImage,
+  'sulfuron-ad': BlogSulfuronAd,
   'highlight': BlogOverwatchHighlight
 }
 </script>
