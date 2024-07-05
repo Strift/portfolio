@@ -23,4 +23,7 @@ export default defineNuxtConfig({
       { name: 'Poppins', weights: ['600', '800'] },
     ],
   },
+  tailwindcss: {
+    cssPath: '~/assets/css/base.css',
+  },
 })
