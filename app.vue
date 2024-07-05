@@ -1,5 +1,5 @@
 <template>
-	<div class="max-w-2xl mx-auto px-4 py-8">
+	<div class="max-w-2xl mx-auto px-4 py-8 font-sans">
 		<div class="mb-8">
 			<NuxtLink
 				class="flex space-x-4 items-center"

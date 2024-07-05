@@ -1,6 +1,4 @@
-import type { ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types';
-
-type ArticleNav = MarkdownArticleNav | OgamingArticleNav | MediumArticleNav;
+import type { ArticleNav, ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types';
 
 export const useArticles = async () => {
 	const { data: allContent, status } = await useAsyncData('articles', () => {
