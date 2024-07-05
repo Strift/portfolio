@@ -27,18 +27,18 @@ Unfortunately, the state of data access in the League of Legends ecosystem doesn
 
 In February, GameWard coach Nicolas Perez complained about a **competitive disadvantage in the European Regional Leagues**. Currently, only organization owning teams in the LEC have access to Bayes data, whereas the other teams simply don’t have the ability to analyze their matches and scrims. Bayes and Riot are now working on [expanding the LoL Data Portal](https://esportsinsider.com/2022/06/riot-games-bayes-expand-lol-data-portal/) to address this issue.
 
-Although Riot deprecated their *Match History* website, they seemed to have reviewed their position regarding community websites. The same data is now available via Leaguepedia. In [her response](https://twitter.com/lol_arailla/status/1491390613408858120) to the GameWard coach tweet, LEC Analyst Flora “Arailla” Parmentier cited Leaguepedia’s API and Factor.gg as **viable solutions for teams lacking access** to Bayes. 
+Although Riot deprecated their *Match History* website, they seemed to have reviewed their position regarding community websites. The same data is now available via Leaguepedia. In [her response](https://twitter.com/lol_arailla/status/1491390613408858120) to the GameWard coach tweet, LEC Analyst Flora “Arailla” Parmentier cited Leaguepedia’s API and Factor.gg as **viable solutions for teams lacking access** to Bayes.
 
 Earlier this year, Evil Geniuses launched the [v2 of Factor.gg](https://www.factor.gg/article/factorgg-20-release-notes). Thanks to support for more local leagues, the stats platform will help bridging the gap in ERLs. Through the related Discord community, EG is taking a more open approach to data analysis, having already organized conferences showcasing their work. This is a **good step toward furthering the tech discussion in the industry**.
 
-If you're curious about this topic, make sure subscribe to [Esports Tech News](https://www.getrevue.co/profile/esports-tech-news). 
+If you're curious about this topic, make sure subscribe to [Esports Tech News](https://www.getrevue.co/profile/esports-tech-news).
 
 ---
 
 Read More:
 - [Get ready for the VCT Champions with PandaScore Valorant post-game stats](https://medium.com/pandascore-stories/get-ready-for-the-vct-champions-with-pandascore-valorant-post-game-stats-cddad78f3923)
-- [Three Things To Fit Healthy Habits in Your Gamer Lifestyle](three-things-to-fit-healthy-habits-in-your-gamer-lifestyle.md)
-- [Video Games Were My Creative Hobby](video-games-were-my-creative-hobby.md)
+- [Three Things To Fit Healthy Habits in Your Gamer Lifestyle](/articles/three-things-to-fit-healthy-habits-in-your-gamer-lifestyle)
+- [Video Games Were My Creative Hobby](/articles/video-games-were-my-creative-hobby)
 
 Follow [@StriftCodes](https://twitter.com/StriftCodes) on Twitter for more.
 
