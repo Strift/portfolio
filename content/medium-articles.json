@@ -1,43 +1,45 @@
-[
-    {
-        "title": "Quit reading",
-        "url": "https://strift.medium.com/quit-reading-5740310d8607",
-        "image": "quit-reading-header.jpg",
-        "description": "I often found friends feeling bad for not reading as much as others. That's okay. Reading is not the end goal.",
-        "date": "2021-03-17",
-        "tags": [
-            "off-topic"
-        ]
-    },
-    {
-        "title": "Handling schema evolution with Cloud Firestore",
-        "url": "https://strift.medium.com/handling-schema-evolution-with-cloud-firestore-22d94fb9722f",
-        "image": "cloud-firestore-header.jpg",
-        "description": "Migrations are great to version database schema and maintain integrity. But what if you're running on Firebase?",
-        "date": "2021-03-22",
-        "tags": [
-            "engineering"
-        ]
-    },
-    {
-        "title": "Shut the ph**e up!",
-        "url": "https://strift.medium.com/shut-the-ph-e-up-7187a4274177",
-        "image": "shut-the-phone-up.jpg",
-        "description": "How often do you find yourself scrolling on your phone and be like, \"Wtf am I doing exactly?\"",
-        "date": "2021-04-14",
-        "tags": [
-            "personal growth"
-        ]
-    },
-    {
-        "title": "Get ready for the VCT Champions with PandaScore Valorant post-game stats",
-        "url": "https://medium.com/pandascore-stories/get-ready-for-the-vct-champions-with-pandascore-valorant-post-game-stats-cddad78f3923",
-        "image": "pandascore-valorant-api-launch.jpg",
-        "description": "Discover what you can build with the PandaScore Valorant stats API.",
-        "date": "2021-11-16",
-        "tags": [
-            "engineering",
-            "esports"
-        ]
-    }
-]
+{
+    "articles": [
+        {
+            "title": "Quit reading",
+            "url": "https://strift.medium.com/quit-reading-5740310d8607",
+            "image": "quit-reading-header.jpg",
+            "description": "I often found friends feeling bad for not reading as much as others. That's okay. Reading is not the end goal.",
+            "date": "2021-03-17",
+            "tags": [
+                "off-topic"
+            ]
+        },
+        {
+            "title": "Handling schema evolution with Cloud Firestore",
+            "url": "https://strift.medium.com/handling-schema-evolution-with-cloud-firestore-22d94fb9722f",
+            "image": "cloud-firestore-header.jpg",
+            "description": "Migrations are great to version database schema and maintain integrity. But what if you're running on Firebase?",
+            "date": "2021-03-22",
+            "tags": [
+                "engineering"
+            ]
+        },
+        {
+            "title": "Shut the ph**e up!",
+            "url": "https://strift.medium.com/shut-the-ph-e-up-7187a4274177",
+            "image": "shut-the-phone-up.jpg",
+            "description": "How often do you find yourself scrolling on your phone and be like, \"Wtf am I doing exactly?\"",
+            "date": "2021-04-14",
+            "tags": [
+                "personal growth"
+            ]
+        },
+        {
+            "title": "Get ready for the VCT Champions with PandaScore Valorant post-game stats",
+            "url": "https://medium.com/pandascore-stories/get-ready-for-the-vct-champions-with-pandascore-valorant-post-game-stats-cddad78f3923",
+            "image": "pandascore-valorant-api-launch.jpg",
+            "description": "Discover what you can build with the PandaScore Valorant stats API.",
+            "date": "2021-11-16",
+            "tags": [
+                "engineering",
+                "esports"
+            ]
+        }
+    ]
+}

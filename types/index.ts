@@ -25,7 +25,7 @@ export interface MarkdownArticleNav {
 }
 
 export type ExternalArticleNavContent<T> = ParsedContent & {
-  body: Array<T>
+  articles: Array<T>
 }
 export interface OgamingArticleNav {
   title: string

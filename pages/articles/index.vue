@@ -28,7 +28,7 @@ const { data: ogamingArticles } = await useAsyncData(
 )
 
 const navItems = computed(() => {
-  return [markdownArticles.value, mediumArticles.value?.body, ogamingArticles.value?.body]
+  return [markdownArticles.value, mediumArticles.value?.articles, ogamingArticles.value?.articles]
     .reduce<ArticleNav[]>((nav, articles) => {
       if (articles) {
         return nav.concat(articles)

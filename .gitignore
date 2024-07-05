@@ -103,3 +103,7 @@ functions/.service-account.json
 
 # Vscode
 .vscode
+
+# Nuxt 3
+.nuxt
+.output
