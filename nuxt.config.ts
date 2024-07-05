@@ -26,4 +26,9 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: '~/assets/css/base.css',
   },
+  content: {
+    highlight: {
+      theme: 'one-light',
+    },
+  },
 })

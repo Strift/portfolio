@@ -7,3 +7,6 @@
     --header-height: 104px;
   }
 }
+
+@layer utilities {
+}
