@@ -13,7 +13,7 @@ tags:
 
 Last week, I spent a lot of time configuring Storybook to work with Nuxt 3 and Vite. So I wrote a little guide so you don’t have to go digging through Github issues to find the answers.
 
-### Project setup 
+## Project setup
 
 First, let’s setup your Vue project:
 
@@ -25,7 +25,7 @@ cd nuxt3-storybook-guide
 yarn install
 ```
 
-As storybook does not support Nuxt 3 for now, you need to specify the configuration. 
+As storybook does not support Nuxt 3 for now, you need to specify the configuration.
 
 Install Storybook for Vue 3 & Vite:
 
@@ -37,9 +37,9 @@ That's all for the initial installation . Your Storybook should be working—at 
 
 Let's get into the Nuxt 3 configuration!
 
-### Handling auto-imports
+## Handling auto-imports
 
-Nuxt 3 makes a heavy use of auto imports for both components and composables. By default, Storybook will not be able to perform the same magic. Writing stories for components that use auto-imports will trigger runtime errors. 
+Nuxt 3 makes a heavy use of auto imports for both components and composables. By default, Storybook will not be able to perform the same magic. Writing stories for components that use auto-imports will trigger runtime errors.
 
 To work around, we'll make sure the Storybook builder has the same configuration as our Nuxt app.
 
@@ -67,7 +67,7 @@ And update our `app.vue` to use it:
 ```
 
 Now that we have the example, let's write a story for our App.
-   
+
 ```ts
 // stories/app.stories.ts
 
@@ -169,7 +169,7 @@ _Et voilà!_ Storybook should now be able to load your story. Open your Storyboo
 yarn storybook
 ```
 
-### Installing Vue plugins
+## Installing Vue plugins
 
 Another source of code that Storybook couldn't load are Vue plugins. Nuxt modules often install Vue plugins under the hood, so it's likely that you'll have to handle this.
 
@@ -193,7 +193,7 @@ setup(app => {
 
 You'll notice that this code sample use an environment variable. Plugin often require settings that can vary from one environment to another, e.g. domain URLs. You can make environment variables accessible to Storybook by prefixing them with `STORYBOOK_`.
 
-### Going further
+## Going further
 
 This solution currently has an annoying limitation.  You will need to maintain a Vite config that replicates the configuration used by Nuxt. Ideally, you’d want that to be handled automatically.
 
