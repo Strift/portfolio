@@ -1,6 +1,8 @@
 <script lang="ts" setup>
-import { BlogArticleImage } from '#components';
+import { BlogArticleImage, BlogOverwatchHighlight } from '#components'
+
 const route = useRoute()
+
 const { data } = await useAsyncData(
   `article-${route.params.slug}`,
   () => queryContent('articles',
@@ -9,7 +11,8 @@ const { data } = await useAsyncData(
 )
 
 const components = {
-  'article-image': BlogArticleImage
+  'article-image': BlogArticleImage,
+  'highlight': BlogOverwatchHighlight
 }
 </script>
 
