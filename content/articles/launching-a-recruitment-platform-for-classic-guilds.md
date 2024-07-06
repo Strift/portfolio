@@ -27,7 +27,7 @@ End game content is even more challenging. End-game dungeons require 40 people �
   </figcaption>
 </figure>
 
-You think that is constraining? Oh. Hang on. 
+You think that is constraining? Oh. Hang on.
 
 To progress, the 40 people need to agree on a defined schedule to meet and play. While the best guilds clear the dungeons in one night, some need several play sessions to do it — if they even manage to. Because rewards are limited, only 25% of the raid will receive something for their participation. The rest will have to pray the gods of RNG for one more week. Yes, raid dungeons are on a weekly reset.
 
@@ -65,12 +65,12 @@ PS. My Classic guild was [Astral](https://classic.warcraftlogs.com/guild/eu/sulf
 
 PPS. June 2022 — The platform has been successfully running for 1.5 years now. 🎉
 
---- 
+---
 
-I'm an engineer & writer who loves video games. Follow [@StriftCodes](https://twitter.com/StriftCodes) on Twitter for more tech & esports-related content! 
+I'm an engineer & writer who loves video games. Follow [@StriftCodes](https://twitter.com/StriftCodes) on Twitter for more tech & esports-related content!
 
 **Read more**
 
 - How I built this website: [Optimizing Side-Projects Costs With Serverless and the Jamstack](/articles/my-go-to-stack-to-minimize-side-projects-costs/)
-- Why gaming changed my life: [Video Games Were My Creative Hobby](articles/video-games-were-my-creative-hobby/)
+- Why gaming changed my life: [Video Games Were My Creative Hobby](/articles/video-games-were-my-creative-hobby/)
 - [All my articles](/articles/) about code, esports, and digital wellbeing

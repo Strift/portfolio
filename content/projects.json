@@ -1,0 +1,23 @@
+{
+  "projects": [
+    {
+      "name": "🎮 Sulfuron Guilds Portal",
+      "description": "When running a World of Warcraft guild, recruitment never stops. This app is the dedicated recruitment platform for players from Sulfuron.",
+      "image_url": "/images/projects/sulfuron-guilds.jpg",
+      "website_url": "https://guildes.sulfuron.eu/",
+      "github_url": "https://github.com/Strift/sulfuron-guilds"
+    },
+    {
+      "name": "👨‍💻 Awesome Esports",
+      "description": "A curated list of open-source projects related to esports.",
+      "image_url": "/images/projects/awesome-esports.png",
+      "github_url": "https://github.com/Strift/awesome-esports"
+    },
+    {
+      "name": "🇷🇪 La Kaz Créole",
+      "description": "Cooking traditional dishes from Reunion Island, La Kaz Créole offers catering and food delivery services in Paris.",
+      "image_url": "/images/projects/la-kaz-creole.jpg",
+      "website_url": "https://lakazcreole.fr/"
+    }
+  ]
+}

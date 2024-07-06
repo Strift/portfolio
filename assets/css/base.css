@@ -1,33 +1,27 @@
-/* html, body {
-  margin: 0;
-  height: 100%;
-} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.shadow-thin {
-  filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.25));
-}
-
-
-.float-on-hover {
-  transition-timing-function: ease-in-out;
-  transition-duration: 250ms;
-}
-
-@variants hover {
-  .float {
-    transform: translate3d(0px, -6px, 0);
+@layer base {
+  :root {
+    --header-height: 104px;
   }
 }
 
-/* To remove when upgrading to Tailwind 3.x -- Included by default */
-.aspect-video {
-  aspect-ratio: 16 / 9;
-}
+@layer utilities {
+  .text-color {
+    @apply text-slate-700;
+  }
 
-.aspect-project {
-  aspect-ratio: 320 / 148;
-}
+  .text-color-emphasis {
+    @apply text-slate-900;
+  }
 
-.aspect-square {
-  aspect-ratio: 1 / 1;
+  .heading-2 {
+    @apply text-2xl font-title font-semibold;
+  }
+
+  .link {
+    @apply text-color-emphasis underline;
+  }
 }

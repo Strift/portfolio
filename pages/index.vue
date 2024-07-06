@@ -1,23 +1,45 @@
+<script lang="ts" setup>
+import type { HomePageContent } from '~/types'
+
+const { data, status } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
+
+const { navItems } = await useArticles()
+</script>
+
 <template>
-  <HomeTemplate :content="page" />
+  <div v-if="status === 'success' && data">
+    <ContentRenderer :value="data" />
+    <div>
+      👉 <NuxtLink
+        :href="data.actionUrl"
+        class="link"
+      >
+        {{ data.actionText }}
+      </NuxtLink>
+    </div>
+    <div class="mt-6">
+      <h2 class="heading-2 mb-6">
+        Latest posts
+      </h2>
+      <div class="space-y-8">
+        <BlogPostCard
+          v-for="nav in navItems"
+          :key="nav.title"
+          :post="nav"
+        />
+      </div>
+    </div>
+  </div>
 </template>
 
-<script>
-import HomeTemplate from '~/components/templates/HomeTemplate.vue'
+<style scoped>
+[data-content-id="content:home.md"] {
+  :deep(p) {
+    @apply mb-2 text-color leading-relaxed;
+  }
 
-export default {
-  name: 'Home',
-  components: {
-    HomeTemplate
-  },
-  async asyncData ({ $content }) {
-    const page = await $content('home').fetch()
-    return {
-      page
-    }
-  },
-  data () {
-    return {}
+  :deep(strong) {
+    @apply text-color-emphasis;
   }
 }
-</script>
+</style>

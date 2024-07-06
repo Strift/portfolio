@@ -1,52 +1,21 @@
-<template>
-  <BaseContainer class="max-w-screen-lg space-y-24">
-    <ProjectCard
-      v-for="(project, i) in projects"
-      :key="i"
-      :title="project.name"
-      :image-url="project.imageUrl"
-      :website-url="project.websiteUrl"
-      :github-url="project.githubUrl"
-    >
-      <template slot="description">
-        {{ project.description }}
-      </template>
-    </ProjectCard>
-  </BaseContainer>
-</template>
+<script lang="ts" setup>
+import type { ProjectsPageContent } from '~/types'
 
-<script>
-import BaseContainer from '~/components/Base/Container.vue'
-import ProjectCard from '~/components/Projects/ProjectCard.vue'
-
-export default {
-  components: {
-    BaseContainer,
-    ProjectCard
-  },
-  layout: 'default',
-  data: () => ({
-    projects: [
-      {
-        name: '🎮 Sulfuron Guilds Portal',
-        imageUrl: '/images/projects/sulfuron-guilds.jpg',
-        websiteUrl: 'https://guildes.sulfuron.eu/',
-        githubUrl: 'https://github.com/Strift/sulfuron-guilds',
-        description: 'When running a World of Warcraft guild, recruitment never stops. This app is the dedicated recruitment platform for players from Sulfuron.'
-      },
-      {
-        name: '👨‍💻 Awesome Esports',
-        imageUrl: '/images/projects/awesome-esports.png',
-        githubUrl: 'https://github.com/Strift/awesome-esports',
-        description: 'A curated list of open-source projects related to esports.'
-      },
-      {
-        name: '🇷🇪 La Kaz Créole',
-        imageUrl: '/images/projects/la-kaz-creole.jpg',
-        websiteUrl: 'https://lakazcreole.fr',
-        description: 'Cooking traditional dishes from Reunion Island, La Kaz Créole offers catering and food delivery services in Paris.'
-      }
-    ]
-  })
-}
+const { data } = await useAsyncData('projects', () => queryContent<ProjectsPageContent>('projects').findOne())
 </script>
+
+<template>
+  <div v-if="data">
+    <div v-for="project in data.projects" :key="project.name">
+      <img :src="project.image_url" :alt="project.name" height="148" width="320" />
+      <h2>{{ project.name }}</h2>
+      <p>{{ project.description }}</p>
+      <div v-if="project.website_url">
+        <a :href="project.website_url">{{ project.website_url }}</a>
+      </div>
+      <div v-if="project.github_url">
+        <a :href="project.github_url">{{ project.github_url }}</a>
+      </div>
+    </div>
+  </div>
+</template>
