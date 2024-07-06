@@ -9,7 +9,7 @@
           >
             <NuxtImg
               src="/images/me.jpg"
-              alt="Laurent Cazanove"
+              alt="Picture of Laurent Cazanove"
               height="40"
               width="40"
               class="rounded-full"

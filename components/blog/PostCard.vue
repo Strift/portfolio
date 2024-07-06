@@ -26,7 +26,7 @@ const getNuxtImgProps = (nav: ArticleNav) => {
   }
   return {
     src: nav.image,
-    alt: nav.title,
+    alt: `Illustration with the title "${nav.title}"`,
   }
 }
 </script>
