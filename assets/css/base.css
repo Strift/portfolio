@@ -107,11 +107,3 @@
     @apply my-6;
   }
 }
-
-img.twicpics {
-  @apply opacity-0 transition-opacity duration-300 ease-in;
-
-  &.twic-done{
-    @apply opacity-100;
-  }
-}
