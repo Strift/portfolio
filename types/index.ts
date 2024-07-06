@@ -45,5 +45,7 @@ export interface MediumArticleNav {
 export type ArticleNav = MarkdownArticleNav | OgamingArticleNav | MediumArticleNav
 
 export type BlogPostContent = ParsedContent & {
+  title: string
+  description: string
   date: string
 }

@@ -1,0 +1,13 @@
+.home-content {
+  p {
+    @apply mb-2 text-color leading-relaxed;
+  }
+
+  strong {
+    @apply text-color-emphasis;
+  }
+
+  a {
+    @apply link;
+  }
+}

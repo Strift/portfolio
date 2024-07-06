@@ -5,11 +5,23 @@ import type { BlogPostContent } from '~/types'
 const route = useRoute()
 
 const { data } = await useAsyncData(
-  `article-${route.params.slug}`,
-  () => queryContent<BlogPostContent>('articles',
+  `post-${route.params.slug}`,
+  () => queryContent<BlogPostContent>('blog',
     Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug,
   ).findOne(),
 )
+
+useServerSeoMeta({
+  title: data.value?.title,
+  description: data.value?.description,
+  ogDescription: data.value?.description,
+  ogTitle: data.value?.title,
+})
+
+defineOgImageComponent('BlogPost', {
+  title: data.value?.title,
+  description: data.value?.description,
+})
 
 const components = {
   'article-image': BlogArticleImage,
@@ -21,19 +33,10 @@ const components = {
 <template>
   <div>
     <div class="mb-6">
-      <NuxtLink
-        to="/"
-        class="flex items-center space-x-2 text-slate-500 hover:text-slate-700"
-      >
-        <Icon
-          name="heroicons:arrow-left"
-          class="w-5 h-5"
-        />
-        <span>Back</span>
-      </NuxtLink>
+      <BackButton />
     </div>
     <div v-if="data">
-      <article class="blog-post">
+      <article class="blog-post-content">
         <ContentRenderer :value="data">
           <ContentRendererMarkdown
             :value="data"
@@ -41,8 +44,12 @@ const components = {
           />
         </ContentRenderer>
       </article>
-      <div class="my-12 border rounded-lg px-4 py-2 text-color text-sm">
-        Last updated on {{ toLocaleDateString(data.date) }}.
+      <div class="my-12 border rounded-lg px-4 py-2 text-slate-500 text-sm flex items-center space-x-2">
+        <Icon
+          name="heroicons:pencil"
+          class="w-4 h-4"
+        />
+        <span>Last updated on {{ toLocaleDateString(data.date) }}.</span>
       </div>
       <BlogReadMore
         v-if="data._path"
@@ -51,5 +58,3 @@ const components = {
     </div>
   </div>
 </template>
-
-<style src="~/assets/css/blog-post.css" scoped />

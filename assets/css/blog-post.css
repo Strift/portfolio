@@ -1,31 +1,31 @@
-.blog-post {
+.blog-post-content {
   @apply text-color text-pretty;
 
-  :deep(h1) {
+  h1 {
     @apply font-title font-bold text-2xl mb-4 text-slate-900;
   }
 
-  :deep(h2) {
+  h2 {
     @apply font-title font-bold text-xl mt-4 mb-4 text-slate-900;
   }
 
-  :deep(h3) {
+  h3 {
     @apply font-title font-bold text-lg mt-4 mb-4 text-slate-900;
   }
 
-  :deep(strong) {
-    @apply font-semibold text-slate-900;
+  strong {
+    @apply font-semibold text-color-emphasis;
   }
 
-  :deep(p) {
+  p {
     @apply mb-4 leading-loose;
   }
 
-  :deep(:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a) {
-    @apply underline text-slate-900;
+  :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a {
+    @apply link;
   }
 
-  :deep(figure) {
+  figure {
     @apply my-8;
 
     & > img {
@@ -41,7 +41,7 @@
     }
   }
 
-  :deep(pre) {
+  pre {
     @apply rounded-lg p-5 overflow-x-auto my-6 -m-5 bg-slate-100;
 
     & code {
@@ -49,19 +49,19 @@
     }
   }
 
-  :deep(p > code) {
+  p > code {
     @apply border text-sm px-1 py-1 rounded-md text-nowrap;
   }
 
-  :deep(ul) {
+  ul {
     @apply list-disc pl-4;
   }
 
-  :deep(ul > li) {
+  ul > li {
     @apply mb-2 leading-loose;
   }
 
-  :deep(hr) {
+  hr {
     @apply my-6;
   }
 }

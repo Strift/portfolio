@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/fonts',
     '@nuxt/scripts',
-    "@nuxt/icon"
+    '@nuxt/icon',
+    'nuxt-og-image',
   ],
   compatibilityDate: '2024-07-05',
   eslint: {
@@ -26,7 +27,7 @@ export default defineNuxtConfig({
     ],
   },
   tailwindcss: {
-    cssPath: '~/assets/css/base.css',
+    cssPath: ['~/assets/css/base.css', { injectPosition: 'first' }],
   },
   content: {
     highlight: {
@@ -43,5 +44,34 @@ export default defineNuxtConfig({
           },
         }
       : {},
+  },
+  app: {
+    head: {
+      title: 'Laurent Cazanove',
+      titleTemplate: '%s - Laurent Cazanove',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Laurent Cazanove' },
+        { name: 'format-detection', content: 'telephone=no' },
+      ],
+    },
+  },
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL,
+  },
+  ogImage: {
+    defaults: {
+      renderer: 'chromium',
+    },
+    fonts: [
+      'Poppins:800',
+      'Noto+Sans:400',
+      'Noto+Sans:700',
+    ],
+  },
+  routeRules: {
+    '/articles': { redirect: '/' },
+    '/articles/**': { redirect: '/blog/**' },
   },
 })

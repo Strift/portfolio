@@ -3,19 +3,25 @@ import type { HomePageContent } from '~/types'
 
 const { data, status } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
 
-const { navItems } = await useArticles()
+defineOgImageComponent('Default', {
+  title: 'Laurent Cazanove',
+  description: 'Writer, engineer, and gamer. Offering consulting services in esports, web development, and developer relations.',
+})
+
+const { navItems } = await usePosts()
 </script>
 
 <template>
   <div v-if="status === 'success' && data">
-    <ContentRenderer :value="data" />
-    <div>
-      👉 <NuxtLink
-        :href="data.actionUrl"
-        class="link"
-      >
-        {{ data.actionText }}
-      </NuxtLink>
+    <div class="home-content">
+      <ContentRenderer :value="data" />
+      <div>
+        👉 <NuxtLink
+          :href="data.actionUrl"
+        >
+          {{ data.actionText }}
+        </NuxtLink>
+      </div>
     </div>
     <div class="mt-6">
       <h2 class="heading-2 mb-6">
@@ -31,15 +37,3 @@ const { navItems } = await useArticles()
     </div>
   </div>
 </template>
-
-<style scoped>
-[data-content-id="content:home.md"] {
-  :deep(p) {
-    @apply mb-2 text-color leading-relaxed;
-  }
-
-  :deep(strong) {
-    @apply text-color-emphasis;
-  }
-}
-</style>
