@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ArticleNav, HomePageContent } from '~/types'
+import type { HomePageContent } from '~/types'
 
 const { data, status } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
 
@@ -35,7 +35,7 @@ const { navItems } = await useArticles()
 <style scoped>
 [data-content-id="content:home.md"] {
   :deep(p) {
-    @apply mb-2 text-color;
+    @apply mb-2 text-color leading-relaxed;
   }
 
   :deep(strong) {
