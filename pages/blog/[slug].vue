@@ -33,16 +33,7 @@ const components = {
 <template>
   <div>
     <div class="mb-6">
-      <NuxtLink
-        to="/"
-        class="flex items-center space-x-2 text-slate-500 hover:text-slate-700"
-      >
-        <Icon
-          name="heroicons:arrow-left"
-          class="w-5 h-5"
-        />
-        <span>Back</span>
-      </NuxtLink>
+      <BackButton />
     </div>
     <div v-if="data">
       <article class="blog-post-content">
