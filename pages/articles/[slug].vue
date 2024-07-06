@@ -1,11 +1,12 @@
 <script lang="ts" setup>
 import { BlogArticleImage, BlogOverwatchHighlight, BlogSulfuronAd } from '#components'
+import type { BlogPostContent } from '~/types'
 
 const route = useRoute()
 
 const { data } = await useAsyncData(
   `article-${route.params.slug}`,
-  () => queryContent('articles',
+  () => queryContent<BlogPostContent>('articles',
     Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug,
   ).findOne(),
 )
@@ -40,6 +41,9 @@ const components = {
           />
         </ContentRenderer>
       </article>
+      <div class="my-12 border rounded-lg px-4 py-2 text-color text-sm">
+        Last updated on {{ toLocaleDateString(data.date) }}.
+      </div>
       <BlogReadMore
         v-if="data._path"
         :current-path="data._path"

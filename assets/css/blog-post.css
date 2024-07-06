@@ -1,5 +1,5 @@
 .blog-post {
-  @apply text-color;
+  @apply text-color text-pretty;
 
   :deep(h1) {
     @apply font-title font-bold text-2xl mb-4 text-slate-900;
@@ -54,7 +54,11 @@
   }
 
   :deep(ul) {
-    @apply list-disc list-inside;
+    @apply list-disc pl-4;
+  }
+
+  :deep(ul > li) {
+    @apply mb-2 leading-loose;
   }
 
   :deep(hr) {
