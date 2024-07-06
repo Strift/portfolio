@@ -18,6 +18,11 @@ useServerSeoMeta({
   ogTitle: data.value?.title,
 })
 
+defineOgImageComponent('BlogPost', {
+  title: data.value?.title,
+  description: data.value?.description,
+})
+
 const components = {
   'article-image': BlogArticleImage,
   'sulfuron-ad': BlogSulfuronAd,
@@ -62,5 +67,3 @@ const components = {
     </div>
   </div>
 </template>
-
-<style src="~/assets/css/blog-post.css" />

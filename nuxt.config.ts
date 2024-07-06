@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/scripts',
     '@nuxt/icon',
+    'nuxt-og-image',
   ],
   compatibilityDate: '2024-07-05',
   eslint: {
@@ -33,6 +34,10 @@ export default defineNuxtConfig({
       theme: 'one-light',
     },
   },
+  // css: [
+  //   '~/assets/css/home.css',
+  //   '~/assets/css/blog-post.css',
+  // ],
   scripts: {
     globals: process.env.NODE_ENV === 'production'
       ? {
@@ -55,5 +60,18 @@ export default defineNuxtConfig({
         { name: 'format-detection', content: 'telephone=no' },
       ],
     },
+  },
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL,
+  },
+  ogImage: {
+    defaults: {
+      renderer: 'chromium',
+    },
+    fonts: [
+      'Poppins:800',
+      'Noto+Sans:400',
+      'Noto+Sans:700',
+    ],
   },
 })
