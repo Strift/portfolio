@@ -34,10 +34,6 @@ export default defineNuxtConfig({
       theme: 'one-light',
     },
   },
-  // css: [
-  //   '~/assets/css/home.css',
-  //   '~/assets/css/blog-post.css',
-  // ],
   scripts: {
     globals: process.env.NODE_ENV === 'production'
       ? {
@@ -73,5 +69,8 @@ export default defineNuxtConfig({
       'Noto+Sans:400',
       'Noto+Sans:700',
     ],
+  },
+  routeRules: {
+    '/articles': { redirect: '/' },
   },
 })
