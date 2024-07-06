@@ -1,6 +1,6 @@
 <template>
   <figure>
-    <img
+    <NuxtImg
       :src="props.src"
       :alt="props.alt"
       :title="props.title"

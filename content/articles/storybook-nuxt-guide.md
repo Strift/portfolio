@@ -61,7 +61,7 @@ And update our `app.vue` to use it:
 
 <template>
   <div>
-    <MyComponent />
+    <MyComponent/>
   </div>
 </template>
 ```

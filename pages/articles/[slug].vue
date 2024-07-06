@@ -46,7 +46,7 @@ const components = {
   }
 
   :deep(p) {
-    @apply mb-4 leading-relaxed text-gray-900;
+    @apply mb-4 leading-loose text-gray-900;
   }
 
   :deep(:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a) {
@@ -54,21 +54,18 @@ const components = {
   }
 
   :deep(figure) {
-    @apply my-6;
+    @apply my-8;
 
     & > img {
       @apply rounded-xl max-w-lg mx-auto;
-      box-shadow: inset 1 0 0 2px red;
-    }
-
-    & > img::before {
-      content: '';
-      @apply absolute inset-0 bg-black bg-opacity-50;
-        z-index: +1;
     }
 
     & > figcaption {
-      @apply text-center mt-2;
+      @apply text-center mt-4;
+
+      & > p {
+        @apply text-gray-700;
+      }
     }
   }
 
@@ -78,10 +75,6 @@ const components = {
     & code {
       padding-bottom: 0 !important;
     }
-  }
-
-  :depp() {
-    @apply pb-0 mb-0;
   }
 
   :deep(p > code) {
