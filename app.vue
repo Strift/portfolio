@@ -21,7 +21,7 @@
       <NuxtPage />
     </div>
     <footer class="px-4 mt-8 mb-16">
-      <h2 class="text-2xl font-title font-semibold mb-4">
+      <h2 class="heading-2">
         Get in touch
       </h2>
       <div>

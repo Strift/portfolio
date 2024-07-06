@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/fonts',
     '@nuxt/scripts',
+    "@nuxt/icon"
   ],
   compatibilityDate: '2024-07-05',
   eslint: {

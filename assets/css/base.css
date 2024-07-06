@@ -9,4 +9,11 @@
 }
 
 @layer utilities {
+  .text-color {
+    @apply text-slate-700;
+  }
+
+  .heading-2 {
+    @apply text-2xl font-title font-semibold mb-4;
+  }
 }
