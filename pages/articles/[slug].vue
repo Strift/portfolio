@@ -11,6 +11,13 @@ const { data } = await useAsyncData(
   ).findOne(),
 )
 
+useServerSeoMeta({
+  title: data.value?.title,
+  description: data.value?.description,
+  ogDescription: data.value?.description,
+  ogTitle: data.value?.title,
+})
+
 const components = {
   'article-image': BlogArticleImage,
   'sulfuron-ad': BlogSulfuronAd,
