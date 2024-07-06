@@ -3,10 +3,10 @@ import type { HomePageContent } from '~/types'
 
 const { data, status } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
 
-defineOgImageComponent('Default', {
-  title: 'Laurent Cazanove',
-  description: 'Writer, engineer, and gamer. Offering consulting services in esports, web development, and developer relations.',
-})
+// defineOgImageComponent('Default', {
+//   title: 'Laurent Cazanove',
+//   description: 'Writer, engineer, and gamer. Offering consulting services in esports, web development, and developer relations.',
+// })
 
 const { navItems } = await usePosts()
 </script>

@@ -18,10 +18,10 @@ useServerSeoMeta({
   ogTitle: data.value?.title,
 })
 
-defineOgImageComponent('BlogPost', {
-  title: data.value?.title,
-  description: data.value?.description,
-})
+// defineOgImageComponent('BlogPost', {
+//   title: data.value?.title,
+//   description: data.value?.description,
+// })
 
 const components = {
   'article-image': BlogArticleImage,
