@@ -61,9 +61,6 @@ export default defineNuxtConfig({
     url: process.env.NUXT_PUBLIC_SITE_URL,
   },
   ogImage: {
-    defaults: {
-      renderer: 'chromium',
-    },
     fonts: [
       'Poppins:800',
       'Noto+Sans:400',
