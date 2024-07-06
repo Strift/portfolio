@@ -48,6 +48,9 @@ importers:
       '@playwright/test':
         specifier: ^1.45.1
         version: 1.45.1
+      '@twicpics/components':
+        specifier: ^0.29.2
+        version: 0.29.2
       eslint:
         specifier: ^9.6.0
         version: 9.6.0
@@ -1631,6 +1634,9 @@ packages:
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
+
+  '@twicpics/components@0.29.2':
+    resolution: {integrity: sha512-BzvtOTDW+aylx/gEk9kYdReDlo5rbQhCgMcLly5THZcnvMOM6nuKHOiQl/kmZa/smM3fh3nKaDQjuU19gEI4Nw==}
 
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
@@ -7863,6 +7869,8 @@ snapshots:
       tslib: 2.6.3
 
   '@trysound/sax@0.2.0': {}
+
+  '@twicpics/components@0.29.2': {}
 
   '@types/debug@4.1.12':
     dependencies:

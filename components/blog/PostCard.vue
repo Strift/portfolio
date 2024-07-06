@@ -36,12 +36,14 @@ const getNuxtImgProps = (nav: ArticleNav) => {
     v-bind="getNuxtLinkProps(props.post)"
     class="group block sm:flex items-center"
   >
-    <NuxtImg
-      v-bind="getNuxtImgProps(props.post)"
-      width="256"
-      height="136"
-      class="w-64 rounded-lg mb-3 sm:mb-0"
-    />
+    <div class="w-[256px] h-[136px] mb-3 sm:mb-0 flex-shrink-0">
+      <div class="relative w-full h-full overflow-hidden rounded-lg">
+        <BaseImage
+          v-bind="getNuxtImgProps(props.post)"
+          aspect-ratio="256/136"
+        />
+      </div>
+    </div>
     <div class="px-2 sm:px-8">
       <div class="text-lg font-bold mb-1 sm:mb-2 leading-tight text-color-emphasis">
         {{ props.post.title }}

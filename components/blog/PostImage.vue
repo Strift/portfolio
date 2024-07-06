@@ -1,11 +1,11 @@
 <template>
   <figure>
-    <NuxtImg
+    <BaseImage
       :src="props.src"
       :alt="props.alt"
       :title="props.title"
-      :width="`${props.width}`"
-      :height="`${props.height}`"
+      :aspect-ratio="`${props.width}/${props.height}`"
+      class="rounded-lg mx-auto max-w-xs sm:max-w-full"
     />
     <figcaption v-if="$slots.default">
       <slot />
@@ -22,4 +22,11 @@ const props = defineProps<{
   width?: string | number
   height?: string | number
 }>()
+
+const styles = computed(() => {
+  return {
+    height: `${props.height}px`,
+    width: `${props.width}px`,
+  }
+})
 </script>

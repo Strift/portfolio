@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { BlogArticleImage, BlogOverwatchHighlight, BlogSulfuronAd } from '#components'
+import { BlogPostImage, BlogOverwatchHighlight, BlogSulfuronAd } from '#components'
 import type { BlogPostContent } from '~/types'
 
 const route = useRoute()
@@ -24,7 +24,7 @@ useServerSeoMeta({
 // })
 
 const components = {
-  'article-image': BlogArticleImage,
+  'article-image': BlogPostImage,
   'sulfuron-ad': BlogSulfuronAd,
   'highlight': BlogOverwatchHighlight,
 }
