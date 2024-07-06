@@ -107,3 +107,4 @@ functions/.service-account.json
 # Nuxt 3
 .nuxt
 .output
+.vercel
