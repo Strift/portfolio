@@ -9,7 +9,7 @@ const props = defineProps<{
 <template>
   <NuxtLayout>
     <h2 class="heading-2 mb-4">
-      Sorry, something went wrong.
+      Sorry, something went wrong
     </h2>
     <div class="mb-6">
       <BackButton>Go back home</BackButton>
