@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/fonts',
     '@nuxt/scripts',
-    "@nuxt/icon"
+    '@nuxt/icon',
   ],
   compatibilityDate: '2024-07-05',
   eslint: {
@@ -26,7 +26,7 @@ export default defineNuxtConfig({
     ],
   },
   tailwindcss: {
-    cssPath: '~/assets/css/base.css',
+    cssPath: ['~/assets/css/base.css', { injectPosition: 'first' }],
   },
   content: {
     highlight: {
@@ -43,5 +43,17 @@ export default defineNuxtConfig({
           },
         }
       : {},
+  },
+  app: {
+    head: {
+      title: 'Laurent Cazanove',
+      titleTemplate: '%s - Laurent Cazanove',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Laurent Cazanove' },
+        { name: 'format-detection', content: 'telephone=no' },
+      ],
+    },
   },
 })

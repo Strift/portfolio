@@ -8,7 +8,7 @@
   }
 }
 
-@layer utilities {
+@layer components {
   .text-color {
     @apply text-slate-700;
   }

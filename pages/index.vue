@@ -10,14 +10,13 @@ const { navItems } = await useArticles()
   <div v-if="status === 'success' && data">
     <div class="home-content">
       <ContentRenderer :value="data" />
-    </div>
-    <div>
-      👉 <NuxtLink
-        :href="data.actionUrl"
-        class="link"
-      >
-        {{ data.actionText }}
-      </NuxtLink>
+      <div>
+        👉 <NuxtLink
+          :href="data.actionUrl"
+        >
+          {{ data.actionText }}
+        </NuxtLink>
+      </div>
     </div>
     <div class="mt-6">
       <h2 class="heading-2 mb-6">
@@ -34,14 +33,4 @@ const { navItems } = await useArticles()
   </div>
 </template>
 
-<style scoped>
-.home-content {
-  :deep(p) {
-    @apply mb-2 text-color leading-relaxed;
-  }
-
-  :deep(strong) {
-    @apply text-color-emphasis;
-  }
-}
-</style>
+<style src="~/assets/css/home.css" />
