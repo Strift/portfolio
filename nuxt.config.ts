@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
     '@nuxt/fonts',
+    '@nuxt/scripts',
   ],
   compatibilityDate: '2024-07-05',
   eslint: {
@@ -30,5 +31,16 @@ export default defineNuxtConfig({
     highlight: {
       theme: 'one-light',
     },
+  },
+  scripts: {
+    globals: process.env.NODE_ENV === 'production'
+      ? {
+          myScript: {
+            'src': 'https://cloud.umami.is/script.js',
+            'defer': true,
+            'data-website-id': process.env.UMAMI_WEBSITE_ID,
+          },
+        }
+      : {},
   },
 })

@@ -43,7 +43,7 @@ const getNuxtImgProps = (nav: ArticleNav) => {
       <h2 class="text-2xl font-semibold font-title mb-6">
         Latest posts
       </h2>
-      <div class="space-y-6">
+      <div class="space-y-8">
         <div
           v-for="nav in navItems"
           :key="nav.title"
@@ -62,7 +62,10 @@ const getNuxtImgProps = (nav: ArticleNav) => {
               <div class="text-lg font-bold mb-1 sm:mb-2 leading-tight">
                 {{ nav.title }}
               </div>
-              <div v-if="'description' in nav">
+              <div
+                v-if="'description' in nav"
+                class="text-gray-900"
+              >
                 {{ nav.description }}
               </div>
             </div>
@@ -76,7 +79,7 @@ const getNuxtImgProps = (nav: ArticleNav) => {
 <style scoped>
 [data-content-id="content:home.md"] {
   :deep(p) {
-    @apply mb-2;
+    @apply mb-2 text-gray-900;
   }
 }
 </style>
