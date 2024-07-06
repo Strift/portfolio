@@ -8,7 +8,7 @@ defineOgImageComponent('Default', {
   description: 'Writer, engineer, and gamer. Offering consulting services in esports, web development, and developer relations.',
 })
 
-const { navItems } = await useArticles()
+const { navItems } = await usePosts()
 </script>
 
 <template>

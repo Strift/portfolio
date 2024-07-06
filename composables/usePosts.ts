@@ -1,9 +1,9 @@
 import type { ArticleNav, ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types'
 
-export const useArticles = async () => {
-  const { data: allContent, status } = await useAsyncData('articles', () => {
+export const usePosts = async () => {
+  const { data: allContent, status } = await useAsyncData('blog-posts', () => {
     return Promise.all([
-      queryContent<MarkdownArticleNav>('articles').only(['title', 'description', 'cover', 'coverAlt', '_path', 'date']).find(),
+      queryContent<MarkdownArticleNav>('blog').only(['title', 'description', 'cover', 'coverAlt', '_path', 'date']).find(),
       queryContent<ExternalArticleNavContent<MediumArticleNav>>('medium-articles').findOne(),
       queryContent<ExternalArticleNavContent<OgamingArticleNav>>('ogaming-articles').findOne(),
     ])

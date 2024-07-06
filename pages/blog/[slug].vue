@@ -5,8 +5,8 @@ import type { BlogPostContent } from '~/types'
 const route = useRoute()
 
 const { data } = await useAsyncData(
-  `article-${route.params.slug}`,
-  () => queryContent<BlogPostContent>('articles',
+  `post-${route.params.slug}`,
+  () => queryContent<BlogPostContent>('blog',
     Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug,
   ).findOne(),
 )

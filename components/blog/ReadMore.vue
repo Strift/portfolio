@@ -7,7 +7,7 @@ const props = defineProps<{
 
 const { data: navItems } = await useAsyncData(
   `read-more-${props.currentPath}`,
-  () => queryContent<MarkdownArticleNav>('articles')
+  () => queryContent<MarkdownArticleNav>('blog')
     .only(['title', 'description', 'cover', 'coverAlt', '_path', 'date'])
     .where({ _path: { $ne: props.currentPath } })
     .sort({

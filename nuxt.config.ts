@@ -72,5 +72,6 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/articles': { redirect: '/' },
+    '/articles/**': { redirect: '/blog/**' },
   },
 })
