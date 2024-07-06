@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/icon',
     'nuxt-og-image',
+    '@twicpics/components/nuxt3',
   ],
   compatibilityDate: '2024-07-05',
   eslint: {
@@ -66,6 +67,9 @@ export default defineNuxtConfig({
       'Noto+Sans:400',
       'Noto+Sans:700',
     ],
+  },
+  twicpics: {
+    domain: process.env.NUXT_PUBLIC_TWICPICS_DOMAIN,
   },
   routeRules: {
     '/articles': { redirect: '/' },
