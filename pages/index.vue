@@ -18,6 +18,7 @@ const { navItems } = await usePosts()
       <div>
         👉 <NuxtLink
           :href="data.actionUrl"
+          target="_blank"
         >
           {{ data.actionText }}
         </NuxtLink>
