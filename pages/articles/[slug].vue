@@ -40,10 +40,10 @@ const components = {
           />
         </ContentRenderer>
       </article>
-      <!-- <BlogReadMore
+      <BlogReadMore
         v-if="data._path"
         :current-path="data._path"
-      /> -->
+      />
     </div>
   </div>
 </template>

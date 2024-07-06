@@ -10,7 +10,9 @@
             <NuxtImg
               src="/images/me.jpg"
               alt="Laurent Cazanove"
-              class="h-10 w-auto rounded-full"
+              height="40"
+              width="40"
+              class="rounded-full"
             />
             <span>Laurent Cazanove</span>
           </NuxtLink>
@@ -21,33 +23,33 @@
       <NuxtPage />
     </div>
     <footer class="px-4 mt-8 mb-16">
-      <h2 class="heading-2">
+      <h2 class="heading-2 mb-4">
         Get in touch
       </h2>
-      <div>
+      <p class="text-color">
         Find me on
         <NuxtLink
           to="https://x.com/StriftCodes"
           target="_blank"
-          class="underline text-black"
+          class="link"
         >
           {{ 'X (formerly Twitter)' }}
         </NuxtLink>,
         <NuxtLink
           to="https://www.linkedin.com/in/laurentcazanove/"
           target="_blank"
-          class="underline text-black"
+          class="link"
         >
           {{ 'LinkedIn' }}
         </NuxtLink>, and
         <NuxtLink
           to="https://github.com/Strift"
           target="_blank"
-          class="underline text-black"
+          class="link"
         >
           {{ 'Github' }}
         </NuxtLink>.
-      </div>
+      </p>
     </footer>
   </div>
 </template>

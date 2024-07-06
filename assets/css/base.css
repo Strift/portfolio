@@ -13,7 +13,15 @@
     @apply text-slate-700;
   }
 
+  .text-color-emphasis {
+    @apply text-slate-900;
+  }
+
   .heading-2 {
-    @apply text-2xl font-title font-semibold mb-4;
+    @apply text-2xl font-title font-semibold;
+  }
+
+  .link {
+    @apply text-color-emphasis underline;
   }
 }
