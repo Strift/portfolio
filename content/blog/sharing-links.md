@@ -1,5 +1,5 @@
 ---
-title: 'Sharing Links'
+title: 'Sharing links'
 date: 2024-01-05
 description: Please don't share links without including a TL;DR.
 cover: /images/articles/covers/sharing-links.png
@@ -14,7 +14,7 @@ I work in software engineering, and there is always a lot of industry news to ke
 
 But too often, people share links in Slack without much comment. This has always been frustrating for me. In this age of information overload, sharing a link without so much as a TL;DR isn't helpful to me.
 
-If anything, I know have _more_ information to navigate, not less.
+**If anything, I know have _more_ information to navigate, not less.**
 
 I don’t know if it’s asking too much, but when someone shares a link, I expect them to tell me why it's interesting. (Also looking at you, my friends—dropping random YouTube links in my DMs!)
 
