@@ -103,6 +103,14 @@
     @apply mb-2 leading-loose;
   }
 
+  ol {
+    @apply list-decimal pl-4;
+  }
+
+  ol > li {
+    @apply mb-2 leading-loose;
+  }
+
   hr {
     @apply my-6;
   }
