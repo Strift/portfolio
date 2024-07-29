@@ -72,7 +72,12 @@ export default defineNuxtConfig({
     domain: process.env.NUXT_PUBLIC_TWICPICS_DOMAIN,
   },
   icon: {
-    serverBundle: 'remote',
+    clientBundle: {
+      icons: [
+        'heroicons:arrow-left',
+        'heroicons:pencil',
+      ],
+    },
   },
   routeRules: {
     '/articles': { redirect: '/' },
