@@ -71,6 +71,9 @@ export default defineNuxtConfig({
   twicpics: {
     domain: process.env.NUXT_PUBLIC_TWICPICS_DOMAIN,
   },
+  icon: {
+    serverBundle: 'remote',
+  },
   routeRules: {
     '/articles': { redirect: '/' },
     '/articles/**': { redirect: '/blog/**' },
