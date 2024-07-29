@@ -71,6 +71,14 @@ export default defineNuxtConfig({
   twicpics: {
     domain: process.env.NUXT_PUBLIC_TWICPICS_DOMAIN,
   },
+  icon: {
+    clientBundle: {
+      icons: [
+        'heroicons:arrow-left',
+        'heroicons:pencil',
+      ],
+    },
+  },
   routeRules: {
     '/articles': { redirect: '/' },
     '/articles/**': { redirect: '/blog/**' },
