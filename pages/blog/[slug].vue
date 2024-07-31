@@ -18,6 +18,11 @@ useServerSeoMeta({
   ogTitle: data.value?.title,
 })
 
+defineOgImage({
+  url: data.value?.cover,
+  alt: data.value?.coverAlt,
+})
+
 // defineOgImageComponent('BlogPost', {
 //   title: data.value?.title,
 //   description: data.value?.description,

@@ -48,4 +48,6 @@ export type BlogPostContent = ParsedContent & {
   title: string
   description: string
   date: string
+  cover: string
+  coverAlt: string
 }
