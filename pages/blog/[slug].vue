@@ -20,6 +20,7 @@ useServerSeoMeta({
 
 defineOgImage({
   url: data.value?.cover,
+  alt: data.value?.coverAlt,
 })
 
 // defineOgImageComponent('BlogPost', {
