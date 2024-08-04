@@ -1,3 +1,8 @@
+function isRunningOnVercelPreview() {
+  console.log('nitro preset', process.env.NITRO_PRESET, 'vercel env', process.env.VERCEL_ENV)
+  return process.env.NITRO_PRESET === 'vercel' && process.env.VERCEL_ENV === 'preview'
+}
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -36,7 +41,7 @@ export default defineNuxtConfig({
     },
   },
   scripts: {
-    globals: process.env.NODE_ENV === 'production'
+    globals: process.env.NODE_ENV === 'production' && !isRunningOnVercelPreview()
       ? {
           myScript: {
             'src': 'https://cloud.umami.is/script.js',
