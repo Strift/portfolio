@@ -20,7 +20,7 @@ const { data: posts, status: postsStatus } = await useAsyncData('blog-posts', ()
 })
 
 const navItems = computed(() => {
-  if (!(postsStatus.value === 'success' && posts.value)) {
+  if (!posts.value) {
     return []
   }
 
