@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ArticleNav, HomePageContent } from '~/types'
+import type { ArticleNav, HomePageContent, ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types'
 
 const { data: homeContent, status: homeContentStatus } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
 
@@ -8,7 +8,13 @@ const { data: homeContent, status: homeContentStatus } = await useAsyncData('hom
 //   description: 'Writer, engineer, and gamer. Offering consulting services in esports, web development, and developer relations.',
 // })
 
-const { data: posts, status: postsStatus } = await usePosts()
+const { data: posts, status: postsStatus } = await useAsyncData('blog-posts', () => {
+  return Promise.all([
+    queryContent<MarkdownArticleNav>('blog').only(['title', 'description', 'cover', 'coverAlt', '_path', 'date']).find(),
+    queryContent<ExternalArticleNavContent<MediumArticleNav>>('medium-articles').findOne(),
+    queryContent<ExternalArticleNavContent<OgamingArticleNav>>('ogaming-articles').findOne(),
+  ])
+})
 
 const navItems = computed(() => {
   if (!(postsStatus.value === 'success' && posts.value)) {
