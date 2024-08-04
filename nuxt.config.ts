@@ -1,6 +1,5 @@
 function isRunningOnVercelPreview() {
-  console.log('nitro preset', process.env.NITRO_PRESET, 'vercel env', process.env.VERCEL_ENV)
-  return process.env.NITRO_PRESET === 'vercel' && process.env.VERCEL_ENV === 'preview'
+  return process.env.VERCEL_ENV === 'preview'
 }
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
