@@ -1,7 +1,7 @@
 ---
 title: 'Sharing links'
 date: 2024-07-29
-description: Please don't share links without including a TL;DR.
+description: Why I think we should add context when sharing links.
 cover: /images/articles/covers/sharing-links.png
 coverAlt: Illustration of users sharing content online.
 lang: 'en'

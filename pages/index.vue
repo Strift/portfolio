@@ -11,10 +11,8 @@ import type { ArticleNav, HomePageContent, ExternalArticleNavContent, MarkdownAr
 // but the data is available.
 const { data: homeContent, status: homeContentStatus } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
 
-useHeadSafe({
-  meta: [
-    { name: 'description', content: homeContent.value?.metaDescription },
-  ],
+useSeoMeta({
+  description: homeContent.value!.metaDescription,
 })
 
 // Same remark as above regarding the 'idle' status.
