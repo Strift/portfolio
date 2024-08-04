@@ -52,7 +52,9 @@ const navItems = computed(() => {
       Loading...
     </div>
     <div v-else>
-      Error loading home page.
+      Error loading home page. <br>
+      Status: {{ homeContentStatus }} <br>
+      Data: {{ homeContent }}
     </div>
     <div class="mt-6">
       <h2 class="heading-2 mb-6">
@@ -72,7 +74,9 @@ const navItems = computed(() => {
         Loading...
       </div>
       <div v-else>
-        Error loading posts.
+        Error loading posts. <br>
+        Status: {{ postsStatus }} <br>
+        Data: {{ posts }}
       </div>
     </div>
   </div>
