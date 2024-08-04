@@ -1,12 +1,6 @@
 <script lang="ts" setup>
 import type { ArticleNav, HomePageContent, ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types'
 
-useHeadSafe({
-  meta: [
-    { name: 'description', content: 'Laurent Cazanove is a freelance content writer & DX engineer for developer tools. He also offers writing and consulting services in esports.' },
-  ],
-})
-
 // TODO: custom OG image
 // defineOgImageComponent('Default', {
 //   title: 'Laurent Cazanove',
@@ -16,6 +10,14 @@ useHeadSafe({
 // On the server, when we navigate to the home page with a client-side load, the status is 'idle'
 // but the data is available.
 const { data: homeContent, status: homeContentStatus } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
+
+useHeadSafe({
+  meta: [
+    { name: 'description', content: homeContent.value?.metaDescription },
+  ],
+})
+
+// Same remark as above regarding the 'idle' status.
 const { data: posts, status: postsStatus } = await useAsyncData('blog-posts', () => {
   return Promise.all([
     queryContent<MarkdownArticleNav>('blog').only(['title', 'description', 'cover', 'coverAlt', '_path', 'date']).find(),
