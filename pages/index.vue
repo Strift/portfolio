@@ -33,8 +33,11 @@ const navItems = computed(() => {
 </script>
 
 <template>
-  <div v-if="homeContentStatus === 'success' && homeContent">
-    <div class="home-content">
+  <div>
+    <div
+      v-if="homeContentStatus === 'success' && homeContent"
+      class="home-content"
+    >
       <ContentRenderer :value="homeContent" />
       <div>
         👉 <NuxtLink
@@ -45,16 +48,31 @@ const navItems = computed(() => {
         </NuxtLink>
       </div>
     </div>
+    <div v-else-if="homeContentStatus === 'pending'">
+      Loading...
+    </div>
+    <div v-else>
+      Error loading home page.
+    </div>
     <div class="mt-6">
       <h2 class="heading-2 mb-6">
         Latest posts
       </h2>
-      <div class="space-y-8">
+      <div
+        v-if="postsStatus === 'success' && posts"
+        class="space-y-8"
+      >
         <BlogPostCard
           v-for="nav in navItems"
           :key="nav.title"
           :post="nav"
         />
+      </div>
+      <div v-else-if="postsStatus === 'pending'">
+        Loading...
+      </div>
+      <div v-else>
+        Error loading posts.
       </div>
     </div>
   </div>
