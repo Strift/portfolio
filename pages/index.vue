@@ -1,26 +1,41 @@
 <script lang="ts" setup>
-import type { HomePageContent } from '~/types'
+import type { ArticleNav, HomePageContent } from '~/types'
 
-const { data, status } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
+const { data: homeContent, status: homeContentStatus } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
 
 // defineOgImageComponent('Default', {
 //   title: 'Laurent Cazanove',
 //   description: 'Writer, engineer, and gamer. Offering consulting services in esports, web development, and developer relations.',
 // })
 
-const { navItems } = await usePosts()
+const { data: posts, status: postsStatus } = await usePosts()
+
+const navItems = computed(() => {
+  if (!(postsStatus.value === 'success' && posts.value)) {
+    return []
+  }
+
+  return posts.value
+    .reduce<ArticleNav[]>((nav, content) => {
+      if (Array.isArray(content)) {
+        return nav.concat(content)
+      }
+      return nav.concat(content.articles)
+    }, [])
+    .sort((a, b) => compareFromString(a.date, b.date))
+})
 </script>
 
 <template>
-  <div v-if="status === 'success' && data">
+  <div v-if="homeContentStatus === 'success' && homeContent">
     <div class="home-content">
-      <ContentRenderer :value="data" />
+      <ContentRenderer :value="homeContent" />
       <div>
         👉 <NuxtLink
-          :href="data.actionUrl"
+          :href="homeContent.actionUrl"
           target="_blank"
         >
-          {{ data.actionText }}
+          {{ homeContent.actionText }}
         </NuxtLink>
       </div>
     </div>
