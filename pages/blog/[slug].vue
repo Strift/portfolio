@@ -11,18 +11,19 @@ const { data } = await useAsyncData(
   ).findOne(),
 )
 
-useServerSeoMeta({
-  title: data.value?.title,
-  description: data.value?.description,
-  ogDescription: data.value?.description,
-  ogTitle: data.value?.title,
+useSeoMeta({
+  title: data.value!.title,
+  description: data.value!.description,
+  ogDescription: data.value!.description,
+  ogTitle: data.value!.title,
 })
 
 defineOgImage({
-  url: data.value?.cover,
-  alt: data.value?.coverAlt,
+  url: data.value!.cover,
+  alt: data.value!.coverAlt,
 })
 
+// TODO: custom OG image
 // defineOgImageComponent('BlogPost', {
 //   title: data.value?.title,
 //   description: data.value?.description,

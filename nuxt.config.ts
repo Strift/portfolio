@@ -1,3 +1,7 @@
+function isRunningOnVercelPreview() {
+  return process.env.VERCEL_ENV === 'preview'
+}
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -36,7 +40,7 @@ export default defineNuxtConfig({
     },
   },
   scripts: {
-    globals: process.env.NODE_ENV === 'production'
+    globals: process.env.NODE_ENV === 'production' && !isRunningOnVercelPreview()
       ? {
           myScript: {
             'src': 'https://cloud.umami.is/script.js',
@@ -48,12 +52,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Laurent Cazanove',
-      titleTemplate: '%s - Laurent Cazanove',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'Laurent Cazanove' },
         { name: 'format-detection', content: 'telephone=no' },
       ],
     },
