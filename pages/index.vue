@@ -1,6 +1,9 @@
 <script lang="ts" setup>
 import type { ArticleNav, HomePageContent, ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types'
 
+// On the server, when we navigate to the home page with a client-side load, the status is 'idle'
+// but the data is available.
+
 const { data: homeContent, status: homeContentStatus } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
 
 // defineOgImageComponent('Default', {
@@ -35,7 +38,7 @@ const navItems = computed(() => {
 <template>
   <div>
     <div
-      v-if="homeContentStatus === 'success' && homeContent"
+      v-if="homeContent"
       class="home-content"
     >
       <ContentRenderer :value="homeContent" />
@@ -52,16 +55,14 @@ const navItems = computed(() => {
       Loading...
     </div>
     <div v-else>
-      Error loading home page. <br>
-      Status: {{ homeContentStatus }} <br>
-      Data: {{ homeContent }}
+      Error loading home page. Please try again later.
     </div>
     <div class="mt-6">
       <h2 class="heading-2 mb-6">
         Latest posts
       </h2>
       <div
-        v-if="postsStatus === 'success' && posts"
+        v-if="posts"
         class="space-y-8"
       >
         <BlogPostCard
@@ -74,9 +75,7 @@ const navItems = computed(() => {
         Loading...
       </div>
       <div v-else>
-        Error loading posts. <br>
-        Status: {{ postsStatus }} <br>
-        Data: {{ posts }}
+        Error loading posts. Please try again later.
       </div>
     </div>
   </div>
