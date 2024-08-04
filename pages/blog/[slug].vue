@@ -13,6 +13,7 @@ const { data } = await useAsyncData(
 
 useServerSeoMeta({
   title: data.value?.title,
+  titleTemplate: '%s - Laurent Cazanove',
   description: data.value?.description,
   ogDescription: data.value?.description,
   ogTitle: data.value?.title,
@@ -23,6 +24,7 @@ defineOgImage({
   alt: data.value?.coverAlt,
 })
 
+// TODO: custom OG image
 // defineOgImageComponent('BlogPost', {
 //   title: data.value?.title,
 //   description: data.value?.description,

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-useHead({
+useHeadSafe({
   htmlAttrs: {
     lang: 'en',
   },

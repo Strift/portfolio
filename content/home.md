@@ -5,4 +5,4 @@ actionUrl: https://calendly.com/laurent-cazanove/30min
 
 👋 Hey, I'm Laurent. People online call me **Strift**.
 
-I offer consulting services in esports, web development, and developer relations.
+I'm a freelance content writer & DX engineer for developer tools. I also offer writing and consulting services in esports.

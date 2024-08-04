@@ -49,7 +49,6 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Laurent Cazanove',
-      titleTemplate: '%s - Laurent Cazanove',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
