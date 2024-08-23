@@ -34,8 +34,6 @@ const components = {
   'sulfuron-ad': BlogSulfuronAd,
   'highlight': BlogOverwatchHighlight,
 }
-
-console.log(data)
 </script>
 
 <template>
