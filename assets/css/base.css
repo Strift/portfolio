@@ -35,8 +35,12 @@
     @apply text-color-emphasis;
   }
 
-  a {
+  :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a {
     @apply link;
+  }
+
+  h2 {
+    @apply mb-6 heading-2;
   }
 }
 
