@@ -40,8 +40,8 @@ console.log(data)
 
 <template>
   <div>
-    <div class="flex gap-x-8">
-      <div :class="{ 'w-3/4': data?.ad }">
+    <div class="sm:flex gap-x-8">
+      <div :class="{ 'sm:w-3/4': data?.ad }">
         <div class="mb-6">
           <BackButton />
         </div>
@@ -60,7 +60,7 @@ console.log(data)
       </div>
       <aside
         v-if="data && data.ad"
-        class="relative w-1/4"
+        class="relative hidden sm:block sm:w-1/4"
       >
         <div class="sticky p-5 bg-gray-100 rounded-lg top-[var(--header-height)]">
           <div class="mb-3 text-color">
