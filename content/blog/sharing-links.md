@@ -1,5 +1,5 @@
 ---
-title: 'Sharing links'
+title: 'On sharing links'
 date: 2024-07-29
 description: Why I think we should add context when sharing links.
 cover: /images/articles/covers/sharing-links.png
@@ -8,6 +8,8 @@ lang: 'en'
 tags:
   - knowledge management
 ---
+
+# On sharing links
 
 I work in software engineering. In this field, there is always a lot of industry news to keep up with. It's generally helpful to share what we have learned with colleagues, as it makes it easier for everyone to stay on top of things.
 
