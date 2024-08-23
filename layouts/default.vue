@@ -1,10 +1,10 @@
 <template>
-  <div class="max-w-2xl mx-auto font-sans">
-    <header class="mb-8 fixed top-0 left-0 right-0 z-10 bg-white">
-      <div class="max-w-2xl mx-auto px-4 py-8 ">
-        <div class="text-2xl font-title font-extrabold">
+  <div class="font-sans">
+    <header class="fixed top-0 left-0 right-0 z-10 mb-8 bg-white">
+      <div class="max-w-screen-md px-4 py-8 mx-auto ">
+        <div class="text-2xl font-extrabold font-title">
           <NuxtLink
-            class="flex space-x-4 items-center text-black no-underline"
+            class="flex items-center space-x-4 text-black no-underline"
             to="/"
           >
             <NuxtImg
@@ -19,11 +19,11 @@
         </div>
       </div>
     </header>
-    <div class="px-4 mt-30 mt-[var(--header-height)]">
+    <div class="max-w-screen-md mx-auto px-4 mt-30 mt-[var(--header-height)]">
       <slot />
     </div>
-    <footer class="px-4 mt-8 mb-16">
-      <h2 class="heading-2 mb-4">
+    <footer class="max-w-screen-md px-4 mx-auto mt-8 mb-16">
+      <h2 class="mb-4 heading-2">
         Get in touch
       </h2>
       <p class="text-color">

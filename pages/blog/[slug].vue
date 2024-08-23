@@ -34,33 +34,56 @@ const components = {
   'sulfuron-ad': BlogSulfuronAd,
   'highlight': BlogOverwatchHighlight,
 }
+
+console.log(data)
 </script>
 
 <template>
   <div>
-    <div class="mb-6">
-      <BackButton />
-    </div>
-    <div v-if="data">
-      <article class="blog-post-content">
-        <ContentRenderer :value="data">
-          <ContentRendererMarkdown
-            :value="data"
-            :components="components"
-          />
-        </ContentRenderer>
-      </article>
-      <div class="my-12 border rounded-lg px-4 py-2 text-slate-500 text-sm flex items-center space-x-2">
-        <Icon
-          name="heroicons:pencil"
-          class="w-4 h-4"
-        />
-        <span>Last updated on {{ toLocaleDateString(data.date) }}.</span>
+    <div class="flex gap-x-8">
+      <div :class="{ 'w-3/4': data?.ad }">
+        <div class="mb-6">
+          <BackButton />
+        </div>
+        <div v-if="data">
+          <div class="flex">
+            <article class="blog-post-content">
+              <ContentRenderer :value="data">
+                <ContentRendererMarkdown
+                  :value="data"
+                  :components="components"
+                />
+              </ContentRenderer>
+            </article>
+          </div>
+        </div>
       </div>
-      <BlogReadMore
-        v-if="data._path"
-        :current-path="data._path"
-      />
+      <aside
+        v-if="data && data.ad"
+        class="relative w-1/4"
+      >
+        <div class="sticky p-5 bg-gray-100 rounded-lg top-[var(--header-height)]">
+          <div class="mb-3 text-color">
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <span v-html="data.ad.text" />
+          </div>
+          <BlogAdButton>Discover</BlogAdButton>
+        </div>
+      </aside>
     </div>
+    <div
+      v-if="data"
+      class="flex items-center px-4 py-2 my-12 space-x-2 text-sm border rounded-lg text-slate-500"
+    >
+      <Icon
+        name="heroicons:pencil"
+        class="w-4 h-4"
+      />
+      <span>Last updated on {{ toLocaleDateString(data.date) }}.</span>
+    </div>
+    <BlogReadMore
+      v-if="data && data._path"
+      :current-path="data._path"
+    />
   </div>
 </template>

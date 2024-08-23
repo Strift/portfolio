@@ -5,6 +5,9 @@ description: Why I think we should add context when sharing links.
 cover: /images/articles/covers/sharing-links.png
 coverAlt: Illustration of users sharing content online.
 lang: 'en'
+ad:
+  text: '<strong>Scriv</strong> takes knowledge sharing to the next level.'
+  buttonText: Discover
 tags:
   - knowledge management
 ---
