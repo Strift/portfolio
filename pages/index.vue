@@ -37,6 +37,15 @@ const navItems = computed(() => {
     }, [])
     .sort((a, b) => compareFromString(a.date, b.date))
 })
+
+// Filter out the nav items that are not visible.
+const numVisibleNavItems = ref(10)
+const visibleNavItems = computed(() => {
+  if (numVisibleNavItems.value >= navItems.value.length) {
+    return navItems.value
+  }
+  return navItems.value.slice(0, numVisibleNavItems.value)
+})
 </script>
 
 <template>
@@ -62,7 +71,7 @@ const navItems = computed(() => {
       Error loading home page. Please try again later.
     </div>
     <div class="mt-6">
-      <h2 class="heading-2 mb-6">
+      <h2 class="mb-6 heading-2">
         Latest posts
       </h2>
       <div
@@ -70,10 +79,21 @@ const navItems = computed(() => {
         class="space-y-8"
       >
         <BlogPostCard
-          v-for="nav in navItems"
+          v-for="nav in visibleNavItems"
           :key="nav.title"
           :post="nav"
         />
+        <div
+          v-if="visibleNavItems.length < navItems.length"
+          class="flex justify-center"
+        >
+          <button
+            class="link"
+            @click="numVisibleNavItems += 10"
+          >
+            Show older posts
+          </button>
+        </div>
       </div>
       <div v-else-if="postsStatus === 'pending'">
         Loading...
