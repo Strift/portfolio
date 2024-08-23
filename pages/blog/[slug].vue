@@ -62,7 +62,9 @@ const components = {
             <!-- eslint-disable-next-line vue/no-v-html -->
             <span v-html="data.ad.text" />
           </div>
-          <BlogAdButton>Discover</BlogAdButton>
+          <BlogAdButton :to="data.ad.buttonLink">
+            {{ data.ad.buttonText }}
+          </BlogAdButton>
         </div>
       </aside>
     </div>

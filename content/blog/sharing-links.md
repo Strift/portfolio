@@ -8,6 +8,7 @@ lang: 'en'
 ad:
   text: '<strong>Scriv</strong> takes knowledge sharing to the next level.'
   buttonText: Discover
+  buttonLink: https://scriv.co?ref=laurentcazanove.com
 tags:
   - knowledge management
 ---

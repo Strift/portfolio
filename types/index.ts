@@ -53,5 +53,6 @@ export type BlogPostContent = ParsedContent & {
   ad?: {
     text: string
     buttonText: string
+    buttonLink: string
   }
 }
