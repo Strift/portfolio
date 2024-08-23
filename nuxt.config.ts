@@ -76,6 +76,7 @@ export default defineNuxtConfig({
     clientBundle: {
       icons: [
         'heroicons:arrow-left',
+        'heroicons:arrow-right',
         'heroicons:pencil',
       ],
     },

@@ -18,17 +18,17 @@
   }
 
   .heading-2 {
-    @apply text-2xl font-title font-semibold;
+    @apply text-2xl font-semibold font-title;
   }
 
   .link {
-    @apply text-color-emphasis underline;
+    @apply underline text-color-emphasis;
   }
 }
 
 .home-content {
   p {
-    @apply mb-2 text-color leading-relaxed;
+    @apply mb-2 leading-relaxed text-color;
   }
 
   strong {
@@ -44,15 +44,15 @@
   @apply text-color text-pretty;
 
   h1 {
-    @apply font-title font-bold text-2xl mb-4 text-slate-900;
+    @apply mb-4 text-2xl font-bold font-title text-slate-900;
   }
 
   h2 {
-    @apply font-title font-bold text-xl mt-4 mb-4 text-slate-900;
+    @apply mt-4 mb-4 text-xl font-bold font-title text-slate-900;
   }
 
   h3 {
-    @apply font-title font-bold text-lg mt-4 mb-4 text-slate-900;
+    @apply mt-4 mb-4 text-lg font-bold font-title text-slate-900;
   }
 
   strong {
@@ -71,20 +71,20 @@
     @apply my-8;
 
     & > img {
-      @apply rounded-xl max-w-lg mx-auto;
+      @apply max-w-lg mx-auto rounded-xl;
     }
 
     & > figcaption {
-      @apply text-center mt-4;
+      @apply mt-4 text-center;
 
       & > p {
-        @apply text-gray-700;
+        @apply text-slate-700;
       }
     }
   }
 
   pre {
-    @apply rounded-lg p-5 overflow-x-auto my-6 -m-5 bg-slate-100;
+    @apply p-5 my-6 -m-5 overflow-x-auto rounded-lg bg-slate-100;
 
     & code {
       padding-bottom: 0 !important;
@@ -92,11 +92,11 @@
   }
 
   p > code {
-    @apply border text-sm px-1 py-1 rounded-md text-nowrap;
+    @apply px-1 py-1 text-sm border rounded-md text-nowrap;
   }
 
   ul {
-    @apply list-disc pl-4;
+    @apply pl-4 list-disc;
   }
 
   ul > li {
@@ -104,7 +104,7 @@
   }
 
   ol {
-    @apply list-decimal pl-4;
+    @apply pl-4 list-decimal;
   }
 
   ol > li {
