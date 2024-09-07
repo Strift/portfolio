@@ -1,3 +1,6 @@
+import { readdirSync } from 'fs'
+import { join } from 'path'
+
 function isRunningOnVercelPreview() {
   return process.env.VERCEL_ENV === 'preview'
 }
@@ -84,5 +87,16 @@ export default defineNuxtConfig({
   routeRules: {
     '/articles': { redirect: '/' },
     '/articles/**': { redirect: '/blog/**' },
+  },
+  nitro: {
+    prerender: {
+      routes: (() => {
+        const blogDir = join(process.cwd(), 'content', 'blog')
+        const files = readdirSync(blogDir)
+        return files
+          .filter(file => file.endsWith('.md'))
+          .map(file => `/blog/${file.replace('.md', '')}`)
+      })(),
+    },
   },
 })
