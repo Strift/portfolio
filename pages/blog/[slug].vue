@@ -76,7 +76,7 @@ const components = {
         name="heroicons:pencil"
         class="w-4 h-4"
       />
-      <span>Last updated on {{ toLocaleDateString(data.date) }}.</span>
+      <span>Last updated on {{ toLocaleDateString(data.updatedAt || data.date) }}.</span>
     </div>
     <BlogAboutMe />
     <BlogReadMore

@@ -67,6 +67,11 @@
     @apply mb-4 leading-loose;
   }
 
+  br {
+    content: "";
+    @apply block mb-2;
+  }
+
   :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a {
     @apply link;
   }
@@ -117,5 +122,13 @@
 
   hr {
     @apply my-6;
+  }
+
+  blockquote {
+    @apply bg-slate-50 italic border-l-4 rounded-r-sm border-slate-200 pl-6 pr-4 py-2 my-6 text-slate-600;
+
+    & > p:last-child {
+      @apply mb-0;
+    }
   }
 }
