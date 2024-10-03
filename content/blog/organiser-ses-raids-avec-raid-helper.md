@@ -1,6 +1,7 @@
 ---
 title: Organiser ses raids avec Raid-Helper
 date: 2020-05-15
+updatedAt: 2021-08-19
 description: Notre guide pour organiser au mieux vos raids WoW Classic grâce au bot Discord Raid-Helper.
 cover: /images/articles/covers/raid-helper.png
 coverAlt: 'Screenshot of Raid-Helper'
@@ -11,8 +12,6 @@ tags:
 ---
 
 # Organiser ses raids avec Raid-Helper
-
-<span class="article-date">Mis à jour le 19 Août, 2021</span>
 
 Ce tutoriel a pour but de vous apprendre comment organiser au mieux vos raids sur WoW Classic grâce au bot Discord [Raid-Helper](https://raid-helper.com/index). Raid-Helper permet de créer des évènements auxquels les joueurs peuvent s'inscrire — le tout sans quitter le confort de votre serveur Discord. C'est parti !
 
@@ -45,8 +44,6 @@ Il est aussi possible de mettre à jour les inscriptions manuellement. Cette fon
 Imaginons qu'un membre de votre roster vous ait prévenu de son absence, mais n'ait pas mis à jour son inscription (😠). Grâce à la commande `!addUser ID Absence utilisateur`, vous pouvez mettre à jour son inscription à sa place (en remplaçant _ID_ par l'ID de l'évènement et _utilisateur_ par le nom approprié).
 
 Cette commande permet en réalité de simuler l'inscription d'un autre utilisateur Discord. Il est donc possible de remplacer _Absence_ par tous les types de réactions : celles liées aux classes mais aussi les autres, et donc le bench ! Pour _bencher_ un utilisateur, il suffit donc d'utiliser la commande `!addUser ID Bench utilisateur`.
-
-<SulfuronAd></SulfuronAd>
 
 ## Clôturer les inscriptions
 

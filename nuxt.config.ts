@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   },
   fonts: {
     families: [
-      { name: 'Noto Sans', weights: ['400', '700'] },
+      { name: 'Noto Sans', weights: ['400', '700'], styles: ['normal', 'italic'] },
       { name: 'Poppins', weights: ['600', '800'] },
     ],
   },
