@@ -89,6 +89,7 @@ export default defineNuxtConfig({
     '/articles/**': { redirect: '/blog/**' },
   },
   nitro: {
+    // Pre-render all pages in the content/blog directory
     prerender: {
       routes: (() => {
         const blogDir = join(process.cwd(), 'content', 'blog')
