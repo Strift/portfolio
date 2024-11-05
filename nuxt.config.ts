@@ -20,6 +20,12 @@ export default defineNuxtConfig({
     '@twicpics/components/nuxt3',
   ],
   compatibilityDate: '2024-07-05',
+  runtimeConfig: {
+    public: {
+      posthogPublicKey: 'phc_JbZN3sJGZfJaNZNDFv27SjkCtaKi0ehWAYDrNy0IbHu',
+      posthogHost: 'https://eu.i.posthog.com',
+    },
+  },
   eslint: {
     config: {
       stylistic: {
