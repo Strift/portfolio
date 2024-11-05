@@ -21,6 +21,7 @@
     "dayjs": "^1.11.12",
     "nuxt": "^3.12.4",
     "nuxt-og-image": "3.0.0-rc.53",
+    "posthog-js": "^1.180.1",
     "vue": "latest"
   },
   "devDependencies": {
