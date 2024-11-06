@@ -1,15 +1,18 @@
 <template>
-  <img
-    v-if="isLocalDevelopment"
-    :src="props.src"
-    :alt="props.alt"
-    :title="props.title"
-    :width="`${props.width}`"
-    :height="`${props.height}`"
-    :style="`aspect-ratio: ${props.aspectRatio}; object-fit: cover;`"
-  >
+  <div v-if="isLocalDevelopment">
+    <img
+      v-bind="$attrs"
+      :src="props.src"
+      :alt="props.alt"
+      :title="props.title"
+      :width="`${props.width}`"
+      :height="`${props.height}`"
+      :style="`aspect-ratio: ${props.aspectRatio}; object-fit: cover;`"
+    >
+  </div>
   <TwicImg
     v-else
+    v-bind="$attrs"
     :src="props.src"
     :alt="props.alt"
     :title="props.title"
@@ -20,6 +23,8 @@
 </template>
 
 <script lang="ts" setup>
+defineOptions({ inheritAttrs: false })
+
 const props = defineProps<{
   alt: string
   src: string
@@ -29,5 +34,5 @@ const props = defineProps<{
   aspectRatio?: string
 }>()
 
-const isLocalDevelopment = process.env.NODE_ENV === 'development'
+const isLocalDevelopment = import.meta.dev
 </script>
