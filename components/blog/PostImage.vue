@@ -5,7 +5,7 @@
       :alt="props.alt"
       :title="props.title"
       :aspect-ratio="`${props.width}/${props.height}`"
-      class="rounded-lg mx-auto max-w-xs sm:max-w-full"
+      class="rounded-lg mx-auto max-w-full"
     />
     <figcaption v-if="$slots.default">
       <slot />
