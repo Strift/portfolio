@@ -56,4 +56,5 @@ export type BlogPostContent = ParsedContent & {
     buttonText: string
     buttonLink: string
   }
+  showKitForm?: boolean
 }
