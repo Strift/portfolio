@@ -6,6 +6,12 @@
   :root {
     --header-height: 104px;
   }
+
+  @media (max-width: 640px) {
+    :root {
+      --header-height: 144px;
+    }
+  }
 }
 
 @layer components {
