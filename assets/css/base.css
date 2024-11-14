@@ -4,12 +4,12 @@
 
 @layer base {
   :root {
-    --header-height: 104px;
+    --header-height: calc(104px + 8px);
   }
 
   @media (max-width: 640px) {
     :root {
-      --header-height: 144px;
+      --header-height: calc(144px + 8px);
     }
   }
 }
