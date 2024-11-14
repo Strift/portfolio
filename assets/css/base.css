@@ -48,6 +48,10 @@
   h2 {
     @apply mb-6 heading-2;
   }
+
+  .home-cta {
+    @apply inline-flex items-center px-4 py-2 bg-slate-800 text-white rounded-md transition-colors duration-300 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 no-underline
+  }
 }
 
 .blog-post-content {
