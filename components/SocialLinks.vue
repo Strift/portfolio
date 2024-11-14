@@ -1,23 +1,25 @@
 <script lang="ts" setup>
+import { EXTERNAL_LINKS } from '~/constants'
+
 const links = [
   {
     name: 'Bluesky',
-    href: 'https://bsky.app/profile/laurentcazanove.com',
+    href: EXTERNAL_LINKS.bluesky,
     icon: 'ri:bluesky-fill',
   },
   {
     name: 'X (formerly Twitter)',
-    href: 'https://x.com/StriftCodes',
+    href: EXTERNAL_LINKS.twitter,
     icon: 'ri:twitter-fill',
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/laurentcazanove/',
+    href: EXTERNAL_LINKS.linkedin,
     icon: 'ri:linkedin-fill',
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/StriftCodes',
+    href: EXTERNAL_LINKS.github,
     icon: 'ri:github-fill',
   },
 ]

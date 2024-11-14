@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import { EXTERNAL_LINKS } from '~/constants'
+</script>
+
 <template>
   <div class="font-sans">
     <header class="fixed top-0 left-0 right-0 z-10 mb-8 bg-white">
@@ -30,28 +34,28 @@
       <p class="text-color mb-2">
         Find me on
         <NuxtLink
-          to="https://bsky.app/profile/laurentcazanove.com"
+          :to="EXTERNAL_LINKS.bluesky"
           target="_blank"
           class="link"
         >
           {{ 'Bluesky' }}
         </NuxtLink>,
         <NuxtLink
-          to="https://x.com/StriftCodes"
+          :to="EXTERNAL_LINKS.twitter"
           target="_blank"
           class="link"
         >
           {{ 'X (formerly Twitter)' }}
         </NuxtLink>,
         <NuxtLink
-          to="https://www.linkedin.com/in/laurentcazanove/"
+          :to="EXTERNAL_LINKS.linkedin"
           target="_blank"
           class="link"
         >
           {{ 'LinkedIn' }}
         </NuxtLink>, and
         <NuxtLink
-          to="https://github.com/Strift"
+          :to="EXTERNAL_LINKS.github"
           target="_blank"
           class="link"
         >
@@ -61,7 +65,7 @@
       <p class="text-color">
         You can also contact me via <a
           class="link"
-          href="mailto:lau.cazanove@gmail.com"
+          :href="EXTERNAL_LINKS.email"
         >email</a>.
       </p>
     </footer>
