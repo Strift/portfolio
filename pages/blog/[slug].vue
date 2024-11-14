@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-import { BlogPostImage, BlogOverwatchHighlight, BlogSulfuronAd } from '#components'
 import type { BlogPostContent } from '~/types'
+import { BlogPostImage, BlogOverwatchHighlight, BlogSulfuronAd } from '#components'
+import { ICONS } from '~/constants'
 
 const route = useRoute()
 
@@ -73,7 +74,7 @@ const components = {
       class="flex items-center px-4 py-2 space-x-2 text-sm border rounded-lg text-slate-500"
     >
       <Icon
-        name="heroicons:pencil"
+        :name="ICONS.PENCIL"
         class="w-4 h-4"
       />
       <span>Last updated on {{ toLocaleDateString(data.updatedAt || data.date) }}.</span>

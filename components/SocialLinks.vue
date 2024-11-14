@@ -1,24 +1,26 @@
 <script lang="ts" setup>
+import { ICONS } from '~/constants'
+
 const links = [
   {
     name: 'Bluesky',
     href: 'https://bsky.app/profile/laurentcazanove.com',
-    icon: 'ri:bluesky-fill',
+    icon: ICONS.BLUESKY,
   },
   {
     name: 'X (formerly Twitter)',
     href: 'https://x.com/StriftCodes',
-    icon: 'ri:twitter-fill',
+    icon: ICONS.TWITTER,
   },
   {
     name: 'LinkedIn',
     href: 'https://www.linkedin.com/in/laurentcazanove/',
-    icon: 'ri:linkedin-fill',
+    icon: ICONS.LINKEDIN,
   },
   {
     name: 'GitHub',
     href: 'https://github.com/StriftCodes',
-    icon: 'ri:github-fill',
+    icon: ICONS.GITHUB,
   },
 ]
 </script>

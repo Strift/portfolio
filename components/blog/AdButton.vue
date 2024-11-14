@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { ICONS } from '~/constants'
+
 defineProps<{
   to: string
 }>()
@@ -14,7 +16,7 @@ defineProps<{
       <slot name="default" />
     </span>
     <Icon
-      name="heroicons:arrow-right"
+      :name="ICONS.ARROW_RIGHT"
       class="w-5 h-5"
     />
   </NuxtLink>
