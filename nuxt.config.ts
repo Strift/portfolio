@@ -1,5 +1,6 @@
 import { readdirSync } from 'fs'
 import { join } from 'path'
+import { ICONS } from './constants'
 
 function isRunningOnVercelPreview() {
   return process.env.VERCEL_ENV === 'preview'
@@ -84,9 +85,9 @@ export default defineNuxtConfig({
   icon: {
     clientBundle: {
       icons: [
-        'heroicons:arrow-left',
-        'heroicons:arrow-right',
-        'heroicons:pencil',
+        ICONS.ARROW_BACK,
+        ICONS.ARROW_RIGHT,
+        ICONS.PENCIL,
       ],
     },
   },
