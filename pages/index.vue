@@ -77,7 +77,7 @@ const visibleNavItems = computed(() => {
     <div v-else>
       Error loading home page. Please try again later.
     </div>
-    <div class="mt-6">
+    <section class="mt-8">
       <h2 class="mb-6 heading-2">
         ✍️ Latest posts
       </h2>
@@ -108,6 +108,6 @@ const visibleNavItems = computed(() => {
       <div v-else>
         Error loading posts. Please try again later.
       </div>
-    </div>
+    </section>
   </div>
 </template>
