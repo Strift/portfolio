@@ -21,7 +21,7 @@ const { data: navItems } = await useAsyncData(
 <template>
   <div>
     <h2 class="heading-2 mb-4">
-      Latest posts
+      ✍️ Latest posts
     </h2>
     <div class="text-color mb-6">
       Read my other other articles.

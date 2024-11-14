@@ -54,6 +54,7 @@ const visibleNavItems = computed(() => {
       v-if="homeContent"
       class="home-content"
     >
+      <h2>👋 About me</h2>
       <ContentRenderer :value="homeContent" />
       <div>
         👉 <NuxtLink
@@ -72,7 +73,7 @@ const visibleNavItems = computed(() => {
     </div>
     <div class="mt-6">
       <h2 class="mb-6 heading-2">
-        Latest posts
+        ✍️ Latest posts
       </h2>
       <div
         v-if="posts"

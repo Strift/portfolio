@@ -24,7 +24,7 @@
     </div>
     <footer class="max-w-screen-md px-4 mx-auto mt-8 mb-16">
       <h2 class="mb-4 heading-2">
-        Get in touch
+        💌 Get in touch
       </h2>
       <p class="text-color">
         Find me on

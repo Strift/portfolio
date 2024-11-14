@@ -1,18 +1,21 @@
 <template>
   <div class="px-5 py-6 bg-slate-100 rounded-xl">
     <h2 class="mb-4 heading-2">
-      About Laurent Cazanove
+      👋 About the author
     </h2>
-    <div class="mb-4 text-color">
-      I'm Laurent, a freelance content writer & developer experience engineer for developer tools. I'm also offering  consulting services in esports for select clients.
+    <div class="mb-2 text-color">
+      I'm Laurent, a <strong>freelance developer experience engineer</strong> that helps dev tools build great onboarding experiences.
     </div>
+    <p class="mb-4 text-color">
+      I specialize in technical writing, UX writing, and full-stack development.
+    </p>
     <div>
       👉 <NuxtLink
-        href="https://dub.sh/meet-strift"
+        href="mailto:lau.cazanove@gmail.com"
         target="_blank"
         class="link"
       >
-        Let's talk
+        Work with me
       </NuxtLink>
     </div>
   </div>

@@ -1,11 +1,13 @@
 ---
-actionText: Let's talk
-actionUrl: https://dub.sh/meet-strift
-metaDescription: Freelance content writer, technical writer, and developer experience engineer for developer tools. Also offering writing and consulting services in esports.
+actionText: Work with me
+actionUrl: mailto:lau.cazanove@gmail.com
+metaDescription: Laurent is a freelance writer and full-stack developer. He helps devtools companies create documentation, SDKs, and marketing copy.
 ---
 
-## Hire me
+<!-- ## 👋 About me -->
 
-👋 Hey, I'm Laurent. People online call me **Strift**.
+I'm Laurent, but people online call me Strift. I'm a **freelance developer experience engineer**.
 
-I'm a freelance **content writer** & **developer experience engineer**. I also offer consulting services in esports for select clients.
+I help dev tools build great onboarding experiences. My primary skills are **technical writing**, **UX writing**, and **full-stack development**.
+
+I have openings for fractional clients and one-off projects starting in 2025.
