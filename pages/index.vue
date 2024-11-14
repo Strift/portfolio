@@ -57,7 +57,7 @@ const visibleNavItems = computed(() => {
     >
       <h2>👋 About me</h2>
       <ContentRenderer :value="homeContent" />
-      <div class="mt-4">
+      <div class="mt-6">
         <NuxtLink
           :href="homeContent.actionUrl"
           target="_blank"
@@ -77,7 +77,7 @@ const visibleNavItems = computed(() => {
     <div v-else>
       Error loading home page. Please try again later.
     </div>
-    <section class="mt-8">
+    <section class="mt-12">
       <h2 class="mb-6 heading-2">
         ✍️ Latest posts
       </h2>

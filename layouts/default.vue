@@ -1,6 +1,6 @@
 <template>
   <div class="font-sans">
-    <header class="fixed top-0 left-0 right-0 z-10 mb-8 bg-white">
+    <header class="fixed top-0 left-0 right-0 z-10 mb-12 bg-white">
       <div class="max-w-screen-md px-4 py-8 mx-auto md:flex md:justify-between space-y-4 md:space-y-0">
         <div class="text-2xl font-extrabold font-title">
           <NuxtLink
@@ -23,7 +23,7 @@
     <div class="max-w-screen-md mx-auto px-4 mt-30 mt-[var(--header-height)]">
       <slot />
     </div>
-    <footer class="max-w-screen-md px-4 mx-auto mt-8 mb-16">
+    <footer class="max-w-screen-md px-4 mx-auto mt-12 mb-16">
       <h2 class="mb-4 heading-2">
         💌 Get in touch
       </h2>
