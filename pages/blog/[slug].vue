@@ -59,7 +59,7 @@ const components = {
         class="relative hidden sm:block sm:w-1/4"
       >
         <div class="sticky p-5 bg-slate-100 rounded-lg top-[var(--header-height)]">
-          <div class="mb-3 text-color">
+          <div class="mb-4 text-color">
             <!-- eslint-disable-next-line vue/no-v-html -->
             <span v-html="data.ad.text" />
           </div>

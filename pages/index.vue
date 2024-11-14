@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { ArticleNav, HomePageContent, ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types'
+import { ICONS } from '~/constants'
 
 // TODO: custom OG image
 // defineOgImageComponent('Default', {
@@ -56,11 +57,16 @@ const visibleNavItems = computed(() => {
     >
       <h2>👋 About me</h2>
       <ContentRenderer :value="homeContent" />
-      <div>
-        👉 <NuxtLink
+      <div class="mt-6">
+        <NuxtLink
           :href="homeContent.actionUrl"
           target="_blank"
+          class="home-cta"
         >
+          <Icon
+            :name="ICONS.MAIL"
+            class="mr-2"
+          />
           {{ homeContent.actionText }}
         </NuxtLink>
       </div>
@@ -71,7 +77,7 @@ const visibleNavItems = computed(() => {
     <div v-else>
       Error loading home page. Please try again later.
     </div>
-    <div class="mt-6">
+    <section class="mt-12">
       <h2 class="mb-6 heading-2">
         ✍️ Latest posts
       </h2>
@@ -102,6 +108,6 @@ const visibleNavItems = computed(() => {
       <div v-else>
         Error loading posts. Please try again later.
       </div>
-    </div>
+    </section>
   </div>
 </template>

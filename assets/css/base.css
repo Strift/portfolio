@@ -4,12 +4,12 @@
 
 @layer base {
   :root {
-    --header-height: 104px;
+    --header-height: calc(104px + 8px);
   }
 
   @media (max-width: 640px) {
     :root {
-      --header-height: 144px;
+      --header-height: calc(144px + 8px);
     }
   }
 }
@@ -47,6 +47,10 @@
 
   h2 {
     @apply mb-6 heading-2;
+  }
+
+  .home-cta {
+    @apply inline-flex items-center px-4 py-2 text-slate-700 rounded-md border border-slate-700 transition-colors duration-300 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400 no-underline hover:text-white;
   }
 }
 
@@ -90,11 +94,7 @@
     }
 
     & > figcaption {
-      @apply mt-4 text-center;
-
-      & > p {
-        @apply text-slate-700;
-      }
+      @apply mt-4 text-center text-slate-700 italic;
     }
   }
 
