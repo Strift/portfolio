@@ -33,7 +33,7 @@ const links = [
       :to="social.href"
       :title="social.name"
       target="_blank"
-      class="inline-flex items-center space-x-2 text-slate-400 hover:text-slate-700"
+      class="inline-flex items-center space-x-2 text-slate-500 hover:text-slate-700"
     >
       <Icon
         :name="social.icon"
