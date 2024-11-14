@@ -94,11 +94,7 @@
     }
 
     & > figcaption {
-      @apply mt-4 text-center;
-
-      & > p {
-        @apply text-slate-700;
-      }
+      @apply mt-4 text-center text-slate-700 italic;
     }
   }
 
