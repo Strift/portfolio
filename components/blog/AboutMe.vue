@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import { EXTERNAL_LINKS } from '~/constants'
+</script>
+
 <template>
   <div class="px-5 py-6 bg-slate-100 rounded-xl">
     <h2 class="mb-4 heading-2">
@@ -11,7 +15,7 @@
     </p>
     <div>
       👉 <NuxtLink
-        href="mailto:lau.cazanove@gmail.com"
+        :href="EXTERNAL_LINKS.email"
         target="_blank"
         class="link"
       >
