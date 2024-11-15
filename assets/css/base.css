@@ -136,5 +136,9 @@
     & > p:last-child {
       @apply mb-0;
     }
+
+    & > p em {
+      @apply not-italic;
+    }
   }
 }

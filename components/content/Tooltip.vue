@@ -6,7 +6,7 @@ import { ICONS } from '~/constants'
   <div class="flex items-center space-x-2 ">
     <ContentSlot />
     <VTooltip
-      :triggers="['hover', 'touch', 'click']"
+      :triggers="['hover', 'touch']"
       class="inline-flex"
     >
       <Icon
