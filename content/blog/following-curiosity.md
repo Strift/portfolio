@@ -5,6 +5,7 @@ description: How following my curiosity led me out of my comfort zone and until 
 cover: /images/articles/2023/10-taiwan.jpeg
 coverAlt: Sunrise over the Yushan
 lang: 'en'
+showKitForm: true
 tags:
   - curiosity
 ---
