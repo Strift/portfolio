@@ -25,8 +25,8 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "@iconify-json/heroicons": "^1.1.23",
     "@iconify-json/ri": "^1.2.3",
+    "@iconify-json/tabler": "^1.2.8",
     "@nuxt/eslint": "^0.3.13",
     "@playwright/test": "^1.45.3",
     "@twicpics/components": "^0.29.3",
