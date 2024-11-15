@@ -19,6 +19,7 @@
     "@nuxt/scripts": "^0.6.4",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "dayjs": "^1.11.12",
+    "floating-vue": "^5.2.2",
     "nuxt": "^3.12.4",
     "nuxt-og-image": "3.0.0-rc.53",
     "posthog-js": "^1.180.1",
