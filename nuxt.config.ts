@@ -71,8 +71,10 @@ export default defineNuxtConfig({
   },
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL,
+    name: 'Laurent Cazanove',
   },
   ogImage: {
+    zeroRuntime: true,
     fonts: [
       'Poppins:800',
       'Noto+Sans:400',
