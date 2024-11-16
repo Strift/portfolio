@@ -68,8 +68,8 @@ I fell in love with the capital city, which blended modern architecture and back
 
 But more than anything, I was thrilled to see that my girlfriend too was in awe.
 
-<article-image src="/images/articles/following-curiosity/rosie.jpg" alt="A 75-day Duolingo streak achievement" title="My 75-day Duolingo streak" width="4624" height="2604">
-  Rosie writing in her diary
+<article-image src="/images/articles/following-curiosity/rosie.jpg" alt="A woman writing in a notebook" title="My girlfriend writing in her diary" width="4624" height="2604">
+  Drinking tea in Fenqihu (奮起湖)
 </article-image>
 
 One day, we were in Kaohsiung (高雄市), debating whether to visit the Fo Guang Shan Monastery (佛光山寺). Exhausted from nonstop exploring, I wanted to snooze this one out. But I wasn’t at peace with potentially missing out on another incredible experience.
