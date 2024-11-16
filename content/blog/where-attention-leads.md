@@ -26,7 +26,7 @@ When we were kids, my cousins and I were watching Bruce Lee’s movies on repeat
 
 But when a few years ago, I saw my yellow jumpsuit-wearing hero printed on 2-meter-wide billboards in the Parisian metro, my curiosity was piqued. There was an exhibition on Asian Martial Arts in the Quai Branly Museum. As my cousins and I were spending a weekend in the city, we went to the museum together.
 
-<article-image src="/images/articles/following-curiosity/ultime-combat-exhibition.jpg" alt="Ad for the Martial Arts exhibition in the Quai Branly Museum" title="The Ultime Combat exhibition" width="1134" height="1701">
+<article-image src="/images/articles/where-attention-leads/ultime-combat-exhibition.jpg" alt="Ad for the Martial Arts exhibition in the Quai Branly Museum" title="The Ultime Combat exhibition" width="1134" height="1701">
   Bruce Lee in his famous yellow jumpsuit
 </article-image>
 
@@ -42,7 +42,7 @@ As Shaolin (少林拳) and Tai Chi (太極拳) were starting to grow on me, I th
 
 I was wrong. Mandarin became an obsession.
 
-<article-image src="/images/articles/following-curiosity/duolingo-streak.png" alt="A 75-day Duolingo streak achievement" title="My 75-day Duolingo streak" width="1272" height="224">
+<article-image src="/images/articles/where-attention-leads/duolingo-streak.png" alt="A 75-day Duolingo streak achievement" title="My 75-day Duolingo streak" width="1272" height="224">
   RIP my 69-day Duolingo streak 🥲
 </article-image>
 
@@ -68,7 +68,7 @@ I fell in love with the capital city, which blended modern architecture and back
 
 But more than anything, I was thrilled to see that my girlfriend too was in awe.
 
-<article-image src="/images/articles/following-curiosity/rosie.jpg" alt="A woman writing in a notebook" title="My girlfriend writing in her diary" width="4624" height="2604">
+<article-image src="/images/articles/where-attention-leads/rosie.jpg" alt="A woman writing in a notebook" title="My girlfriend writing in her diary" width="4624" height="2604">
   Drinking tea in Fenqihu (奮起湖)
 </article-image>
 
