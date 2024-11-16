@@ -1,6 +1,6 @@
 ---
 title: 'Where attention leads'
-date: 2024-11-15
+date: 2024-11-16
 description: How following my curiosity led me out of my comfort zone and until the other side of the world.
 cover: /images/articles/2023/10-taiwan.jpeg
 coverAlt: Sunrise over the Yushan
