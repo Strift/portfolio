@@ -8,6 +8,7 @@
       :height="`${props.height}`"
       sizes="358px sm:640px"
       class="max-h-[50vh] sm:max-w-screen-sm w-full h-auto mx-auto rounded-md object-contain"
+      placeholder
     />
     <figcaption v-if="$slots.default">
       <slot />
