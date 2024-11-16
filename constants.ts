@@ -3,6 +3,7 @@ export const ICONS = {
   ARROW_RIGHT: 'tabler:arrow-right',
   PENCIL: 'tabler:pencil',
   MAIL: 'tabler:mail-filled',
+  TOOLTIP: 'tabler:info-circle',
   BLUESKY: 'ri:bluesky-fill',
   LINKEDIN: 'ri:linkedin-fill',
   TWITTER: 'ri:twitter-fill',

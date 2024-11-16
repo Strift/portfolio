@@ -1,7 +1,7 @@
 ---
-title: 'On sharing links'
+title: 'Why we should add context when sharing links'
 date: 2024-07-29
-description: Why I think we should add context when sharing links.
+description: How I'm trying to solve the problem of sharing links with Scriv.
 cover: /images/articles/covers/sharing-links.png
 coverAlt: Illustration of users sharing content online.
 lang: 'en'

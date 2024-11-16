@@ -47,11 +47,13 @@ const getNuxtImgProps = (nav: ArticleNav) => {
       <div class="text-lg font-bold mb-2 sm:mb-2 leading-tight text-color-emphasis">
         {{ props.post.title }}
       </div>
-      <div
-        v-if="'description' in props.post"
-        class="text-color"
-      >
-        {{ props.post.description }}
+      <div class="text-color-secondary">
+        <template v-if="'updatedAt' in props.post">
+          {{ toCalendarDateString(props.post.updatedAt || props.post.date) }}
+        </template>
+        <template v-else>
+          {{ toCalendarDateString(props.post.date) }}
+        </template>
       </div>
     </div>
   </NuxtLink>

@@ -19,6 +19,10 @@
     @apply text-slate-700;
   }
 
+  .text-color-secondary {
+    @apply text-slate-500;
+  }
+
   .text-color-emphasis {
     @apply text-slate-900;
   }
@@ -135,6 +139,22 @@
 
     & > p:last-child {
       @apply mb-0;
+    }
+
+    & > p em {
+      @apply not-italic;
+    }
+  }
+
+  .kit-form-wrapper {
+    @apply my-8;
+
+    & > hr {
+      @apply my-0;
+    }
+
+    & > hr:last-child {
+      @apply mt-3 mb-6;
     }
   }
 }

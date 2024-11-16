@@ -24,7 +24,7 @@ const { data: navItems } = await useAsyncData(
       ✍️ Latest posts
     </h2>
     <div class="text-color mb-6">
-      Read my other other articles.
+      Read my other articles.
     </div>
     <div class="space-y-8">
       <BlogPostCard

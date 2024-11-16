@@ -5,7 +5,7 @@
       :alt="props.alt"
       :title="props.title"
       :aspect-ratio="`${props.width}/${props.height}`"
-      class="rounded-lg mx-auto max-w-full"
+      class="rounded-lg mx-auto max-h-[50vh] sm:max-w-screen-sm"
     />
     <figcaption v-if="$slots.default">
       <slot />
@@ -22,11 +22,4 @@ const props = defineProps<{
   width?: string | number
   height?: string | number
 }>()
-
-const styles = computed(() => {
-  return {
-    height: `${props.height}px`,
-    width: `${props.width}px`,
-  }
-})
 </script>

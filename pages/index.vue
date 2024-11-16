@@ -18,7 +18,7 @@ defineOgImageComponent('OgImageDefault', {
 // Same remark as above regarding the 'idle' status.
 const { data: posts, status: postsStatus } = await useAsyncData('blog-posts', () => {
   return Promise.all([
-    queryContent<MarkdownArticleNav>('blog').only(['title', 'description', 'cover', 'coverAlt', '_path', 'date']).find(),
+    queryContent<MarkdownArticleNav>('blog').only(['title', 'description', 'cover', 'coverAlt', '_path', 'date', 'updatedAt']).find(),
     queryContent<ExternalArticleNavContent<MediumArticleNav>>('medium-articles').findOne(),
     queryContent<ExternalArticleNavContent<OgamingArticleNav>>('ogaming-articles').findOne(),
   ])
