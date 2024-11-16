@@ -24,7 +24,7 @@ const props = defineProps<{
       >
         <img
           class="h-16 w-16 rounded-full mr-10"
-          src="~/assets/images/me.jpg"
+          src="/images/me.jpg"
         >
         <div
           class="text-3xl text-slate-500 absolute left-24 top-4"

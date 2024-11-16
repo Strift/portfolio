@@ -24,7 +24,7 @@ defineOgImageComponent('OgImageBlogPost', {
   description: data.value?.description,
   coverSrc: data.value?.cover,
   coverAlt: data.value?.coverAlt,
-})
+}, { alt: `${data.value?.title} by Laurent Cazanove` })
 
 const components = {
   'article-image': BlogPostImage,

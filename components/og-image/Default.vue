@@ -12,7 +12,7 @@ const props = defineProps<{
         <div class="mb-16 relative">
           <img
             class="h-32 w-32 rounded-full mr-10"
-            src="~/assets/images/me.jpg"
+            src="/images/me.jpg"
           >
           <div
             class="text-[80px] text-left font-extrabold leading-none absolute left-44 top-6"

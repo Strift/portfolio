@@ -13,7 +13,7 @@ useSeoMeta({
 defineOgImageComponent('OgImageDefault', {
   title: 'Laurent Cazanove',
   description: homeContent.value!.metaDescription,
-})
+}, { alt: 'Laurent Cazanove\'s personal website' })
 
 // Same remark as above regarding the 'idle' status.
 const { data: posts, status: postsStatus } = await useAsyncData('blog-posts', () => {
