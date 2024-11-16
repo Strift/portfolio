@@ -54,7 +54,7 @@
   }
 
   .home-cta {
-    @apply inline-flex items-center px-4 py-2 text-slate-700 rounded-md border border-slate-700 transition-colors duration-300 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400 no-underline hover:text-white;
+    @apply inline-flex items-center px-4 py-2 no-underline transition-colors duration-300 border rounded-md text-slate-700 border-slate-700 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400 hover:text-white;
   }
 }
 
@@ -93,12 +93,8 @@
   figure {
     @apply my-8;
 
-    & > img {
-      @apply max-w-lg mx-auto rounded-xl;
-    }
-
     & > figcaption {
-      @apply mt-4 text-center text-slate-700 italic;
+      @apply mt-4 italic text-center text-slate-700;
     }
   }
 
@@ -135,7 +131,7 @@
   }
 
   blockquote {
-    @apply bg-slate-50 italic border-l-4 rounded-r-sm border-slate-200 pl-6 pr-4 py-2 my-6 text-slate-600;
+    @apply py-2 pl-6 pr-4 my-6 italic border-l-4 rounded-r-sm bg-slate-50 border-slate-200 text-slate-600;
 
     & > p:last-child {
       @apply mb-0;
