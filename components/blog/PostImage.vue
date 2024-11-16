@@ -1,11 +1,14 @@
 <template>
   <figure>
-    <BaseImage
+    <NuxtImg
       :src="props.src"
       :alt="props.alt"
       :title="props.title"
-      :aspect-ratio="`${props.width}/${props.height}`"
-      class="rounded-lg mx-auto max-h-[50vh] sm:max-w-screen-sm"
+      :width="`${props.width}`"
+      :height="`${props.height}`"
+      sizes="358px sm:640px"
+      class="max-h-[50vh] sm:max-w-screen-sm w-full h-auto mx-auto rounded-md object-contain"
+      placeholder
     />
     <figcaption v-if="$slots.default">
       <slot />
