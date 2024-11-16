@@ -68,7 +68,7 @@ I fell in love with the capital city, which blended modern architecture and back
 
 But more than anything, I was thrilled to see that my girlfriend too was in awe.
 
-<article-image src="/images/articles/where-attention-leads/rosie.jpg" alt="A woman writing in a notebook" title="My girlfriend writing in her diary" width="4624" height="2604">
+<article-image src="/images/articles/where-attention-leads/tea-in-fenqihu.jpg" alt="A woman writing in a notebook" title="My girlfriend writing in her diary" width="4624" height="2604">
   Drinking tea in Fenqihu (奮起湖)
 </article-image>
 
