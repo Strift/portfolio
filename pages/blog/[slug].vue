@@ -19,16 +19,12 @@ useSeoMeta({
   ogTitle: data.value!.title,
 })
 
-defineOgImage({
-  url: data.value!.cover,
-  alt: data.value!.coverAlt,
+defineOgImageComponent('OgImageBlogPost', {
+  title: data.value?.title,
+  description: data.value?.description,
+  coverSrc: data.value?.cover,
+  coverAlt: data.value?.coverAlt,
 })
-
-// TODO: custom OG image
-// defineOgImageComponent('BlogPost', {
-//   title: data.value?.title,
-//   description: data.value?.description,
-// })
 
 const components = {
   'article-image': BlogPostImage,

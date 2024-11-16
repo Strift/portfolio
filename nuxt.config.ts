@@ -74,6 +74,7 @@ export default defineNuxtConfig({
     name: 'Laurent Cazanove',
   },
   ogImage: {
+    zeroRuntime: true,
     fonts: [
       'Poppins:800',
       'Noto+Sans:400',
