@@ -18,7 +18,7 @@ const props = defineProps<{
   >
     <hr>
     <div class="text-center text-lg max-w-[400px] leading-0 mx-auto mt-6 -mb-6 text-slate-500 italic">
-      Want to join my friends and colleagues who read my occasional blog posts? <span class="not-italic">🤗</span>
+      You can join my friends and colleagues who receive my occasional blog posts by email <span class="not-italic">🤗</span>
     </div>
     <component
       :is="'script'"
