@@ -22,7 +22,7 @@ const props = defineProps<{
           </div>
         </div>
         <div
-          class="text-left text-4xl text-slate-700 leading-relaxed"
+          class="text-left text-4xl text-slate-500 leading-relaxed"
           style="font-family: 'Noto Sans'"
         >
           {{ props.description }}

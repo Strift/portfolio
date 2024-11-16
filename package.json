@@ -20,7 +20,7 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "dayjs": "^1.11.12",
     "nuxt": "^3.12.4",
-    "nuxt-og-image": "3.0.0-rc.53",
+    "nuxt-og-image": "3.0.8",
     "posthog-js": "^1.180.1",
     "vue": "latest"
   },

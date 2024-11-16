@@ -2,17 +2,16 @@
 import type { ArticleNav, HomePageContent, ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types'
 import { ICONS } from '~/constants'
 
-// TODO: custom OG image
-// defineOgImageComponent('Default', {
-//   title: 'Laurent Cazanove',
-//   description: 'Writer, engineer, and gamer. Offering consulting services in esports, web development, and developer relations.',
-// })
-
 // On the server, when we navigate to the home page with a client-side load, the status is 'idle'
 // but the data is available.
 const { data: homeContent, status: homeContentStatus } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
 
 useSeoMeta({
+  description: homeContent.value!.metaDescription,
+})
+
+defineOgImageComponent('OgImageDefault', {
+  title: 'Laurent Cazanove',
   description: homeContent.value!.metaDescription,
 })
 
