@@ -49,6 +49,9 @@ I was wrong. Mandarin became an obsession.
 The next Fall, I enrolled in the Saturday morning classes of the [Encrier Chinois](https://www.apprendre-le-chinois.fr/?ref=laurentcazanove.com). It’s crazy. A year ago, I had no particular interest in the Chinese culture or its language. And now, I found myself waking up earlier on weekends than any other day of the week to read, write, and speak Mandarin.
 
 But the best was yet to come.
+
+<blog-kit-form form="in-article"></blog-kit-form>
+
 ## Taiwan’s calling
 
 By sheer luck, it happened that the school I enrolled with was an official Taiwan center for Mandarin learning. At that time, I couldn’t even place Taiwan on the map lol. I only picked this school because my Mandarin-speaking acquaintances recommended it.

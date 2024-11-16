@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { BlogPostContent } from '~/types'
-import { BlogPostImage, BlogOverwatchHighlight, BlogSulfuronAd } from '#components'
+import { BlogPostImage, BlogOverwatchHighlight, BlogSulfuronAd, BlogKitForm } from '#components'
 import { ICONS } from '~/constants'
 
 const route = useRoute()
@@ -34,6 +34,7 @@ const components = {
   'article-image': BlogPostImage,
   'sulfuron-ad': BlogSulfuronAd,
   'highlight': BlogOverwatchHighlight,
+  'blog-kit-form': BlogKitForm,
 }
 </script>
 
@@ -79,7 +80,10 @@ const components = {
       />
       <span>Last updated on {{ toLocaleDateString(data.updatedAt || data.date) }}.</span>
     </div>
-    <BlogKitForm v-if="data && data.showKitForm" />
+    <BlogKitForm
+      v-if="data && data.showKitForm"
+      form="keep-in-touch"
+    />
     <BlogAboutMe />
     <BlogReadMore
       v-if="data && data._path"

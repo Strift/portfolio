@@ -141,4 +141,16 @@
       @apply not-italic;
     }
   }
+
+  .kit-form-wrapper {
+    @apply my-8;
+
+    & > hr {
+      @apply my-0;
+    }
+
+    & > hr:last-child {
+      @apply mt-3 mb-6;
+    }
+  }
 }
