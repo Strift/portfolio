@@ -22,6 +22,7 @@ export interface MarkdownArticleNav {
   coverAlt: string
   _path: string
   date: string
+  updatedAt?: string
 }
 
 export type ExternalArticleNavContent<T> = ParsedContent & {

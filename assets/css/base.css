@@ -19,6 +19,10 @@
     @apply text-slate-700;
   }
 
+  .text-color-secondary {
+    @apply text-slate-500;
+  }
+
   .text-color-emphasis {
     @apply text-slate-900;
   }
