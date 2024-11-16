@@ -8,6 +8,7 @@ lang: 'en'
 showKitForm: true
 tags:
   - curiosity
+  - taiwan
 ---
 
 # Where attention leads
@@ -25,6 +26,10 @@ When we were kids, my cousins and I were watching Bruce Lee’s movies on repeat
 
 But when a few years ago, I saw my yellow jumpsuit-wearing hero printed on 2-meter-wide billboards in the Parisian metro, my curiosity was piqued. There was an exhibition on Asian Martial Arts in the Quai Branly Museum. As my cousins and I were spending a weekend in the city, we went to the museum together.
 
+<article-image src="/images/articles/following-curiosity/ultime-combat-exhibition.jpg" alt="Ad for the Martial Arts exhibition in the Quai Branly Museum" title="The Ultime Combat exhibition" width="1134" height="1701">
+  Bruce Lee in his famous yellow jumpsuit
+</article-image>
+
 The exhibition was amazing. So great actually that my long-forgotten interest came rushing back. As soon as I got back home, I started researching Wushu (referred to as Kung-fu in the West) schools in Paris. I wanted a school that felt authentic—something that connected me to the rich tradition we’d glimpsed during the exhibition.
 
 ## The road to the East
@@ -36,6 +41,10 @@ One thing caught my attention. Aiming to be as traditional as possible, teachers
 As Shaolin (少林拳) and Tai Chi (太極拳) were starting to grow on me, I thought, why not learn to count in Mandarin? It’ll make remembering the forms easier. So I downloaded Duolingo, expecting it to be a quick detour—a complement to my Wushu classes.
 
 I was wrong. Mandarin became an obsession.
+
+<article-image src="/images/articles/following-curiosity/duolingo-streak.png" alt="A 75-day Duolingo streak achievement" title="My 75-day Duolingo streak" width="1272" height="224">
+  RIP my 69-day Duolingo streak 🥲
+</article-image>
 
 The next Fall, I enrolled in the Saturday morning classes of the [Encrier Chinois](https://www.apprendre-le-chinois.fr/?ref=laurentcazanove.com). It’s crazy. A year ago, I had no particular interest in the Chinese culture or its language. And now, I found myself waking up earlier on weekends than any other day of the week to read, write, and speak Mandarin.
 
@@ -55,6 +64,10 @@ In two weeks, I watched the sun rise behind the Yushan (玉山), marveled at the
 I fell in love with the capital city, which blended modern architecture and backstreet alley culture. Dining out in the bustling night markets was my daily joy and I quickly developed an addiction to bubble tea.
 
 But more than anything, I was thrilled to see that my girlfriend too was in awe.
+
+<article-image src="/images/articles/following-curiosity/rosie.jpg" alt="A 75-day Duolingo streak achievement" title="My 75-day Duolingo streak" width="4624" height="2604">
+  Rosie writing in her diary
+</article-image>
 
 One day, we were in Kaohsiung (高雄市), debating whether to visit the Fo Guang Shan Monastery (佛光山寺). Exhausted from nonstop exploring, I wanted to snooze this one out. But I wasn’t at peace with potentially missing out on another incredible experience.
 
