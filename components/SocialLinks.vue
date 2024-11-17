@@ -19,7 +19,7 @@ const links = [
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/StriftCodes',
+    href: 'https://github.com/Strift',
     icon: ICONS.GITHUB,
   },
 ]
