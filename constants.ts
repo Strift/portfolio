@@ -9,3 +9,5 @@ export const ICONS = {
   TWITTER: 'ri:twitter-fill',
   GITHUB: 'ri:github-fill',
 }
+
+export const SENTRY_DSN = 'https://961970e783a29ae28cf4bece55814757@o571625.ingest.us.sentry.io/4508317686038528'

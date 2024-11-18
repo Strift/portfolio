@@ -73,3 +73,9 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## PNPM dependencies
+
+When using `@sentry/nuxt` with PNPM, we need to manually install the following dependencies:
+
+`"import-in-the-middle": "^1.11.2"`
