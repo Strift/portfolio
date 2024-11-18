@@ -20,12 +20,16 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     '@twicpics/components/nuxt3',
     'floating-vue/nuxt',
+    '@sentry/nuxt/module',
   ],
   compatibilityDate: '2024-07-05',
   runtimeConfig: {
     public: {
       posthogPublicKey: 'phc_JbZN3sJGZfJaNZNDFv27SjkCtaKi0ehWAYDrNy0IbHu',
       posthogHost: 'https://eu.i.posthog.com',
+      sentry: {
+        dsn: 'https://961970e783a29ae28cf4bece55814757@o571625.ingest.us.sentry.io/4508317686038528',
+      },
     },
   },
   eslint: {
@@ -94,6 +98,13 @@ export default defineNuxtConfig({
       ],
     },
   },
+  sentry: {
+    sourceMapsUploadOptions: {
+      org: 'strift',
+      project: 'portfolio',
+      authToken: process.env.SENTRY_AUTH_TOKEN,
+    },
+  },
   routeRules: {
     '/articles': { redirect: '/' },
     '/articles/**': { redirect: '/blog/**' },
@@ -110,4 +121,7 @@ export default defineNuxtConfig({
       })(),
     },
   },
+  // Enable client source maps for Sentry, server source maps are enabled by default
+  // https://docs.sentry.io/platforms/javascript/guides/nuxt/#add-readable-stack-traces-to-errors
+  sourcemap: { client: true },
 })
