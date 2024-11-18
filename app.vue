@@ -11,7 +11,6 @@ useHeadSafe({
 
 <template>
   <NuxtLayout>
-    <ErrorButton />
     <NuxtPage />
   </NuxtLayout>
 </template>
