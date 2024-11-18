@@ -1,9 +1,17 @@
 import * as Sentry from '@sentry/nuxt'
-import { SENTRY_DSN } from './constants'
+import posthog from 'posthog-js'
+import { SENTRY_DSN, SENTRY_ENVIRONMENT, SENTRY_PROJECT_ID } from './constants'
 
 Sentry.init({
   dsn: SENTRY_DSN,
-  environment: process.env.SENTRY_ENVIRONMENT,
+  environment: SENTRY_ENVIRONMENT,
+
+  integrations: [
+    posthog.sentryIntegration({
+      organization: 'https://strift.sentry.io/',
+      projectId: SENTRY_PROJECT_ID,
+    }),
+  ],
 
   // We recommend adjusting this value in production, or using tracesSampler
   // for finer control
