@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     '@twicpics/components/nuxt3',
     'floating-vue/nuxt',
-    '@sentry/nuxt/module',
+    // '@sentry/nuxt/module',
   ],
   compatibilityDate: '2024-07-05',
   runtimeConfig: {
