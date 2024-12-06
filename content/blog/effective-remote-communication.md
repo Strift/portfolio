@@ -19,11 +19,11 @@ Working remotely across multiple companies —and running a World of Warcraft gu
 
 Access to information is key. Ensuring everyone has access to the right information when needed, will empower collaborators to be more autonomous. To achieve this, information should be as public as possible. Decisions, for instance, should be documented in public meeting notes, or shared in a public channel.
 
-Having a shared knowledge base like Notion is a must. It doesn’t have to be perfect or exhaustive, but it should be a somewhat accurate picture of how teams do things (processes) and why they do it (objectives). Public Slack channels or email groups allow for easy information sharing, don’t hide things intentionally.
+Having a shared knowledge base like Notion is a must. It doesn’t have to be perfect or exhaustive, but it should be a somewhat accurate picture of _how_ teams do things (processes) and _why_ they do it (objectives). Public Slack channels or email groups allow for easy information sharing, don’t hide things intentionally.
 
 ## Making async work the default
 
-It’s a common pain point for workers to spend too much time in meetings and not enough time actually working. But too often, instant messaging apps like Slack just turn into a day-long meeting. There are too many workplaces where the expectation is that someone should always answer messages ASAP.
+It’s a common pain point for workers to spend too much time in meetings and not enough time _actually_ working. But too often, instant messaging apps like Slack just turn into a day-long meeting. There are too many workplaces where the expectation is that someone should always answer messages ASAP.
 
 When people know where to find what they need, they can work independently without unnecessary bottlenecks. You avoid losing time in asynchronous requests for information, and everyone saves time. Autonomy starts with transparency, and transparency begins with writing things down for everyone to see.
 
@@ -38,9 +38,11 @@ When working in public, you want to avoid the opposite situation, where everyone
 
 ## Wrapping up
 
-In their recent newsletter about how product management, PostHog shared a graph of their communication tier list. As expected for a distributed company, the public communication channels are all at the top and the private ones at the bottom.
+In their [recent newsletter about how product management](https://newsletter.posthog.com/p/product-management-is-broken-engineers), PostHog shared a graph of their communication tier list. As expected for a distributed company, the public communication channels are all at the top and the private ones at the bottom.
 
-![PostHog communication tier list](/images/articles/posthog-communication-tier-list.png "PostHog communication tier list")
+<article-image src="/images/articles/posthog-communication-tier-list.png" alt="S tier: pull requests, A tier: request for comments, github issues, B tier: public slack channels, C tier: carrier pigeon, chemtrails, D tier: private slack DMs & channels, fax machine, E tier: email, F tier: tapping someone on the shoulder and sayin ‘hey, you got a minute?’" title="PostHog communication tier list">
+PostHog's communication tier list
+</article-image>
 
 I love that they literally have carrier pigeons, fax machines, and emails being preferred communication means than tapping someone on the shoulder. (Don’t do that.)
 
