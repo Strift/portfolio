@@ -13,7 +13,7 @@ tags:
 
 I recently [moved to Taiwan](/blog/where-attention-leads/). I arrived six days ago, actually. The timing couldn't be better because [Thor](https://x.com/thorwebdev) is organizing a HackerHouse event in Taiwan this week. This was also Supabase's Launch Week 13.
 
-## HackerHouse Taiwan
+## About HackerHouse Taiwan
 
 HackerHouse is an event where open-source developers meet to visit Taiwan and co-work together. It's a week trip, although everyone is welcome to join only when they want. The plan is to visit Taipei on the first weekend and then spend the week at Kaohsiung.
 
