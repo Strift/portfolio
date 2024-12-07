@@ -1,7 +1,7 @@
 ---
 title: 'My first tech meetup in Taipei'
 date: 2024-12-07
-description: Meeting Taipei local tech scene at the Supabase Launch Week community event.
+description: Meeting Taipei's local tech scene at the Supabase Launch Week community event.
 cover: /images/articles/covers/supabase.jpg
 coverAlt: Supabase logo
 lang: 'en'
