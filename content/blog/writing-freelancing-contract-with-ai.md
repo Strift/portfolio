@@ -1,6 +1,6 @@
 ---
 title: 'Writing a freelance contract with AI'
-date: 2024-12-07
+date: 2024-12-08
 description: Need a freelance contract but can’t afford a lawyer? Here’s how AI can help!
 cover: /images/articles/covers/legi-gpt.png
 coverAlt: LégitGPT logo
