@@ -1,5 +1,5 @@
 ---
-title: 'Writing a freelance contract with AI'
+title: 'Writing your first freelance contract'
 date: 2024-12-08
 description: Need a freelance contract but can’t afford a lawyer? Here’s how AI can help!
 cover: /images/articles/covers/legi-gpt.png
@@ -8,6 +8,8 @@ lang: 'en'
 tags:
   - freelancing
 ---
+
+# Writing your first freelance contract
 
 Need a freelance contract but can’t afford a lawyer? Here’s how you can use ChatGPT to help you.
 
