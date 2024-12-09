@@ -1,6 +1,6 @@
 ---
 title: 'Writing good first drafts with Obsidian'
-date: 2024-12-08
+date: 2024-12-09
 description: How I designed a process in Obsidian to write first drafts similar to longhand writing.
 cover: /images/articles/covers/obsidian.png
 coverAlt: Obsidian logo
