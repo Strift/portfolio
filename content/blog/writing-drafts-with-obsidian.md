@@ -13,7 +13,7 @@ tags:
 
 I learned from the [VeryGoodCopy](https://verygoodcopy.com/) newsletter that Barack Obama writes his first drafts longhand. He does this deliberately, allowing himself more time to think and avoiding the temptation of overly polished formatting features in software. In that newsletter, Eddie Shleyner shared:
 
-> “I only write longhand,” [Obama] explains, “computer word processors give the first draft too much polish, and more opportunity to make half-baked ideas tidy enough to appear passable.”
+> “I only write longhand,” \[Obama\] explains, “computer word processors give the first draft too much polish, and more opportunity to make half-baked ideas tidy enough to appear passable.”
 
 I agree. It’s often tempting to use editing software features to make a draft look good. And I think the “good look” can trick us into thinking that the _content_ is good enough.
 
