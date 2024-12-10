@@ -15,7 +15,7 @@ I learned from the [VeryGoodCopy](https://verygoodcopy.com/) newsletter that Bar
 
 > “I only write longhand,” \[Obama\] explains, “computer word processors give the first draft too much polish, and more opportunity to make half-baked ideas tidy enough to appear passable.”
 
-I agree. It’s often tempting to use editing software features to make a draft look good. And I think the “good look” can trick us into thinking that the _content_ is good enough.
+I agree. It’s often tempting to use an editing software's features to make a draft look better. And I think the “good look” can trick us into thinking that the _content_ is good enough.
 
 ## Focus mode
 
