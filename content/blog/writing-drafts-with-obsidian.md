@@ -7,6 +7,8 @@ coverAlt: Obsidian logo
 lang: 'en'
 tags:
   - writing
+components:
+  - 'advent-2024'
 ---
 
 # Writing good first drafts with Obsidian

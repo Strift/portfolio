@@ -4,6 +4,7 @@ export const ICONS = {
   PENCIL: 'tabler:pencil',
   MAIL: 'tabler:mail-filled',
   TOOLTIP: 'tabler:info-circle',
+  CALENDAR: 'tabler:calendar',
   BLUESKY: 'ri:bluesky-fill',
   LINKEDIN: 'ri:linkedin-fill',
   TWITTER: 'ri:twitter-fill',

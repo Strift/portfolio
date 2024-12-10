@@ -13,6 +13,10 @@ export function toLocaleDateString(date: string) {
   return dayjs(date).format('MMMM D, YYYY')
 }
 
+export function toLocaleShortDateString(date: string) {
+  return dayjs(date).format('D')
+}
+
 export function toCalendarDateString(date: string) {
   return dayjs(date).calendar(null, {
     sameDay: '[Today]',
@@ -22,4 +26,8 @@ export function toCalendarDateString(date: string) {
     lastWeek: '[Last] dddd',
     sameElse: 'MMMM D, YYYY',
   })
+}
+
+export function getDayFromDateString(date: string) {
+  return dayjs(date).format('D')
 }

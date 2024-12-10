@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { BlogPostContent } from '~/types'
-import { BlogPostImage, BlogOverwatchHighlight, BlogSulfuronAd, BlogKitForm } from '#components'
+import { BlogPostImage, BlogOverwatchHighlight, BlogSulfuronAd, BlogKitForm, BlogAdventCalendar } from '#components'
 import { ICONS } from '~/constants'
 
 const route = useRoute()
@@ -31,14 +31,22 @@ const components = {
   'sulfuron-ad': BlogSulfuronAd,
   'highlight': BlogOverwatchHighlight,
   'blog-kit-form': BlogKitForm,
+  'blog-advent-calendar': BlogAdventCalendar,
 }
 </script>
 
 <template>
   <div class="space-y-12">
-    <div class="sm:flex gap-x-8">
+    <div
+      :class="{ 'sm:flex sm:gap-x-8': data?.ad }"
+    >
       <div :class="{ 'sm:w-3/4': data?.ad }">
         <BackButton class="mb-6" />
+        <BlogAdventCalendar
+          v-if="data?.components?.includes('advent-2024')"
+          :day="Number(getDayFromDateString(data?.date))"
+          class="mb-6"
+        />
         <article
           v-if="data"
           class="blog-post-content"
@@ -50,6 +58,10 @@ const components = {
             />
           </ContentRenderer>
         </article>
+        <BlogAdventCalendar
+          v-if="data?.components?.includes('advent-2024')"
+          :day="Number(getDayFromDateString(data?.date))"
+        />
       </div>
       <aside
         v-if="data && data.ad"
