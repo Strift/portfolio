@@ -58,14 +58,10 @@ const components = {
             />
           </ContentRenderer>
         </article>
-        <div v-if="data?.components?.includes('advent-2024')">
-          <BlogAdventCalendar :day="Number(getDayFromDateString(data?.date))" />
-          <!-- <div class="flex justify-center space-x-2 my-10">
-            <div class="h-2 w-2 bg-slate-200 rounded-full" />
-            <div class="h-2 w-2 bg-slate-200 rounded-full" />
-            <div class="h-2 w-2 bg-slate-200 rounded-full" />
-          </div> -->
-        </div>
+        <BlogAdventCalendar
+          v-if="data?.components?.includes('advent-2024')"
+          :day="Number(getDayFromDateString(data?.date))"
+        />
       </div>
       <aside
         v-if="data && data.ad"
