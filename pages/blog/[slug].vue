@@ -43,6 +43,11 @@ const components = {
           v-if="data"
           class="blog-post-content"
         >
+          <BlogAdventCalendar
+            v-if="data?.components?.includes('advent-2024')"
+            :day="Number(getDayFromDateString(data?.date))"
+            class="mb-6"
+          />
           <ContentRenderer :value="data">
             <ContentRendererMarkdown
               :value="data"

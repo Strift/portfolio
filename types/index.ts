@@ -58,4 +58,5 @@ export type BlogPostContent = ParsedContent & {
     buttonLink: string
   }
   showKitForm?: boolean
+  components?: Array<string>
 }
