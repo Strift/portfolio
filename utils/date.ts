@@ -14,7 +14,7 @@ export function toLocaleDateString(date: string) {
 }
 
 export function toLocaleShortDateString(date: string) {
-  return dayjs(date).format('MMM D')
+  return dayjs(date).format('D')
 }
 
 export function toCalendarDateString(date: string) {
