@@ -23,11 +23,11 @@ I'm doing this to get in the habit of publishing more often. The benefit is for 
 
 But sometimes life gets in the way—and that's fine.
 
-Today, I spent a great night at the bar in Kaohsiung (高雄) with the people I met during **HackerHouse Taiwan** (I'll tell you more about it.)
+Today, I spent a great night at the bar in Kaohsiung (高雄) with the people I met during **HackerHouse Taiwan** (I'll tell you more in another post.)
 
 I tried to pull out my laptop to write the blog at the bar, but it just felt wrong. I wanted to be fully present in the moment, and enjoy my time with people I might not be able to see everyday. So I decided that it would be okay if I didn't publish a blog post today.
 
-But hey, I ended up writing this in the end. So, yeah. Whatever I guess.
+But hey, I ended up writing this in the end. So, yeah...
 
 I'm trying to learn to let go.
 
