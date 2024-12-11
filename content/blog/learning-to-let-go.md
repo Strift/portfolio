@@ -1,7 +1,7 @@
 ---
 title: 'Learning to let go'
 date: 2024-12-11
-description:
+description: Letting go of perfectionism and embracing a more positive mindset.
 cover: /images/articles/covers/letting-go.jpg
 coverAlt: A woman is flying a kite on a cloudy day
 lang: 'en'
