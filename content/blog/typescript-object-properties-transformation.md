@@ -13,6 +13,8 @@ components:
 
 # Applying a transformation to all object properties in TypeScript
 
+In this guide, we'll learn how to transform object properties in TypeScript when using `Object.entries()` and `reduce()`.
+
 Let’s consider the following JavaScript object:
 
 ```ts
