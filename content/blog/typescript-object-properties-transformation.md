@@ -2,8 +2,8 @@
 title: 'Applying a transformation to all object properties in TypeScript'
 date: 2024-12-12
 description: Learn how to transform object properties in TypeScript with a type-safe approach using Object.entries() and reduce().
-cover: /images/articles/covers/letting-go.jpg
-coverAlt: A woman is flying a kite on a cloudy day
+cover: /images/articles/covers/typescript.jpg
+coverAlt: The Typescript logo
 lang: 'en'
 tags:
   - engineering
