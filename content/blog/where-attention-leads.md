@@ -9,6 +9,8 @@ showKitForm: true
 tags:
   - curiosity
   - taiwan
+components:
+  - 'advent-2024'
 ---
 
 # Where attention leads

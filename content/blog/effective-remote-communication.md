@@ -7,6 +7,8 @@ coverAlt: Woman working in a cafe
 lang: 'en'
 tags:
   - remote work
+components:
+  - 'advent-2024'
 ---
 
 # How to enable effective communication in remote environments

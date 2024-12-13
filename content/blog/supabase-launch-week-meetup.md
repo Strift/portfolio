@@ -8,6 +8,8 @@ lang: 'en'
 tags:
   - engineering
   - taiwan
+components:
+  - 'advent-2024'
 ---
 
 

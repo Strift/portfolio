@@ -7,6 +7,8 @@ coverAlt: LégitGPT logo
 lang: 'en'
 tags:
   - freelancing
+components:
+  - 'advent-2024'
 ---
 
 # Writing your first freelance contract

@@ -8,6 +8,8 @@ lang: 'en'
 showKitForm: true
 tags:
   - engineering
+components:
+  - 'advent-2024'
 ---
 
 # How to use Vercel to configure DNS records for OVH emails
