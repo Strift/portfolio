@@ -2,8 +2,8 @@
 title: 'Implementing repository pattern with Vue composables'
 date: 2024-12-13
 description: Learn how to implement the repository pattern in Nuxt 3 using Vue composables.
-cover: /images/articles/covers/typescript.jpg
-coverAlt: TypeScript logo
+cover: /images/articles/covers/vuejs.jpg
+coverAlt: Vue.js logo
 lang: 'en'
 tags:
   - engineering
