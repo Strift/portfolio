@@ -108,6 +108,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/articles': { redirect: '/' },
     '/articles/**': { redirect: '/blog/**' },
+    '/blog/repository-pattern-in-composables': { redirect: '/blog/repository-pattern-with-vue-composables' },
   },
   nitro: {
     // Pre-render all pages in the content/blog directory
