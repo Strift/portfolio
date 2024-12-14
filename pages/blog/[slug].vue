@@ -2,6 +2,7 @@
 import type { BlogPostContent } from '~/types'
 import { BlogPostImage, BlogOverwatchHighlight, BlogSulfuronAd, BlogKitForm, BlogAdventCalendar } from '#components'
 import { ICONS } from '~/constants'
+import { useBlogPostStore } from '~/store/blog'
 
 const route = useRoute()
 
@@ -11,6 +12,11 @@ const { data } = await useAsyncData(
     Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug,
   ).findOne(),
 )
+
+const blogPostStore = useBlogPostStore()
+blogPostStore.$patch({
+  title: data.value!.title,
+})
 
 useSeoMeta({
   title: data.value!.title,
