@@ -1,7 +1,7 @@
 ---
-title: 'Implementing repository pattern with Vue composables'
-date: 2024-12-13
-description: Learn how to implement the repository pattern in Nuxt 3 using Vue composables.
+title: 'Simple UX: transforming social links into sharing buttons'
+date: 2024-12-14
+description: A Vue.js component that transforms links to social into sharing intent when reading a blog post.
 cover: /images/articles/covers/vuejs.jpg
 coverAlt: Vue.js logo
 lang: 'en'
@@ -43,11 +43,9 @@ const { title } = storeToRefs(useBlogPostStore())
 
 // Define intent URLs for sharing blog posts on different platforms
 const INTENT_LINKS = {
-  // Create a Twitter share intent URL with the current blog post title
   twitter: computed(() => {
     return `https://x.com/intent/tweet?text=${encodeURIComponent(title.value)}&url=${encodeURIComponent('https://laurentcazanove.com&via=StriftCodes')}`
   }),
-  // Create a Bluesky share intent URL with the current blog post title
   bluesky: computed(() => {
     return `https://bsky.app/intent/compose?text=${encodeURIComponent(title.value)} via @laurentcazanove.com`
   }),
@@ -80,6 +78,7 @@ The `<template>` section is just a list that renders the social media icons:
       target="_blank"
       class="inline-flex items-center space-x-2 text-slate-500 hover:text-slate-700"
     >
+      <!-- Using nuxt/icon -->
       <Icon
         :name="social.icon"
         class="text-2xl"
@@ -89,6 +88,6 @@ The `<template>` section is just a list that renders the social media icons:
 </template>
 ```
 
-Please note taht for better accessibility, you should also update the `title` attribute to a value like "Share on Bluesky", instead of simply "Bluesky".
+Please note that for better accessibility, you should also update the `title` attribute to a value like "Share on Bluesky", instead of simply "Bluesky".
 
 And you're done. Try pressing the social sharing buttons to see if it works. 👇
