@@ -1,5 +1,7 @@
 <script lang="ts" setup>
+import { storeToRefs } from 'pinia'
 import { ICONS } from '~/constants'
+import { useBlogPostStore } from '~/store/blog'
 
 const SOCIAL_LINKS = [
   {
@@ -26,12 +28,24 @@ const SOCIAL_LINKS = [
 
 const route = useRoute()
 const isBlog = computed(() => route.path.includes('blog/'))
-const { title } = useBlogMetadata()
+const { title } = storeToRefs(useBlogPostStore())
 
 const INTENT_LINKS = {
   twitter: computed(() => {
     return `https://x.com/intent/tweet?text=${encodeURIComponent(title.value)}&url=${encodeURIComponent('https://laurentcazanove.com&via=StriftCodes')}`
   }),
+  bluesky: computed(() => {
+    return `https://bsky.app/intent/compose?text=${encodeURIComponent(title.value)} via @laurentcazanove.com`
+  }),
+}
+
+const getSocialUrl = (social: typeof SOCIAL_LINKS[number]): string => {
+  if (!isBlog.value) return social.href
+
+  if (social.name === 'X (formerly Twitter)') return INTENT_LINKS.twitter.value
+  if (social.name === 'Bluesky') return INTENT_LINKS.bluesky.value
+
+  return social.href
 }
 </script>
 
@@ -40,7 +54,7 @@ const INTENT_LINKS = {
     <NuxtLink
       v-for="social in SOCIAL_LINKS"
       :key="social.name"
-      :to="isBlog ? INTENT_LINKS.twitter.value : social.href"
+      :to="getSocialUrl(social)"
       :title="social.name"
       target="_blank"
       class="inline-flex items-center space-x-2 text-slate-500 hover:text-slate-700"

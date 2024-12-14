@@ -19,8 +19,9 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     'nuxt-og-image',
     '@twicpics/components/nuxt3',
-    'floating-vue/nuxt',
     // '@sentry/nuxt/module',
+    'floating-vue/nuxt',
+    '@pinia/nuxt',
   ],
   compatibilityDate: '2024-07-05',
   runtimeConfig: {
