@@ -12,6 +12,10 @@ const { data } = await useAsyncData(
   ).findOne(),
 )
 
+const { title } = useBlogMetadata()
+title.value = data.value!.title
+console.log('set title', title.value)
+
 useSeoMeta({
   title: data.value!.title,
   description: data.value!.description,

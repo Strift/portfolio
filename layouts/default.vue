@@ -17,53 +17,58 @@
             <span>Laurent Cazanove</span>
           </NuxtLink>
         </div>
-        <SocialLinks class="" />
+        <SocialLinks class="md:block hidden" />
       </div>
     </header>
     <div class="max-w-screen-md mx-auto px-4 mt-[var(--header-height)]">
       <slot />
     </div>
-    <footer class="max-w-screen-md px-4 mx-auto mt-12 mb-16">
-      <h2 class="mb-4 heading-2">
-        💌 Get in touch
-      </h2>
-      <p class="text-color mb-2">
-        Find me on
-        <NuxtLink
-          to="https://bsky.app/profile/laurentcazanove.com"
-          target="_blank"
-          class="link"
-        >
-          {{ 'Bluesky' }}
-        </NuxtLink>,
-        <NuxtLink
-          to="https://x.com/StriftCodes"
-          target="_blank"
-          class="link"
-        >
-          {{ 'X (formerly Twitter)' }}
-        </NuxtLink>,
-        <NuxtLink
-          to="https://www.linkedin.com/in/laurentcazanove/"
-          target="_blank"
-          class="link"
-        >
-          {{ 'LinkedIn' }}
-        </NuxtLink>, and
-        <NuxtLink
-          to="https://github.com/Strift"
-          target="_blank"
-          class="link"
-        >
-          {{ 'Github' }}
-        </NuxtLink>.
-      </p>
-      <p class="text-color">
-        You can also contact me via <a
-          class="link"
-          href="mailto:lau.cazanove@gmail.com"
-        >email</a>.
-      </p>
+    <footer class="mt-12 mb-16">
+      <div class="max-w-screen-md px-4 mx-auto mb-[var(--header-height)] sm:mb-0">
+        <h2 class="mb-4 heading-2">
+          💌 Get in touch
+        </h2>
+        <p class="text-color mb-2">
+          Find me on
+          <NuxtLink
+            to="https://bsky.app/profile/laurentcazanove.com"
+            target="_blank"
+            class="link"
+          >
+            {{ 'Bluesky' }}
+          </NuxtLink>,
+          <NuxtLink
+            to="https://x.com/StriftCodes"
+            target="_blank"
+            class="link"
+          >
+            {{ 'X (formerly Twitter)' }}
+          </NuxtLink>,
+          <NuxtLink
+            to="https://www.linkedin.com/in/laurentcazanove/"
+            target="_blank"
+            class="link"
+          >
+            {{ 'LinkedIn' }}
+          </NuxtLink>, and
+          <NuxtLink
+            to="https://github.com/Strift"
+            target="_blank"
+            class="link"
+          >
+            {{ 'Github' }}
+          </NuxtLink>.
+        </p>
+        <p class="text-color">
+          You can also contact me via <a
+            class="link"
+            href="mailto:lau.cazanove@gmail.com"
+          >email</a>.
+        </p>
+      </div>
+      <div class=" px-4 py-8 z-10 md:hidden block fixed bottom-[var(--header-height)] bg-white left-0 right-0">
+        <SocialLinks class="" />
+      </div>
     </footer>
   </div>
 </template>
