@@ -21,16 +21,16 @@ Maintaining a clean and flexible data access layer is crucial for scalable appli
 
 In the `App.vue`, we set up the repository configuration by providing a centralized repository implementation:
 
-```ts
-<script setup>
-import { userRepositoryInjectionKey } from '~/constants'
+```vue
+<script lang="ts" setup>
 const config = useRuntimeConfig()
 const userRepository = {
   list: () => {
     // some implementation based on database driver
   }
 }
-provide(userRepositoryInjectionKey, userRepository)
+
+provide('user-repository', userRepository)
 </script>
 
 <template>
@@ -42,6 +42,7 @@ provide(userRepositoryInjectionKey, userRepository)
 ```
 
 > In practice, you might want to create a component dedicated to providing these injections, e.g. `ConfigurationProvider.vue`.
+> TypeScript users will also prefer to [add types to provide/inject](https://vuejs.org/guide/typescript/composition-api.html#typing-provide-inject).
 
 This approach allows for flexible dependency injection, enabling easy swapping of data sources based on the runtime configuration, as well as easy swapping for testing.
 
@@ -50,10 +51,8 @@ This approach allows for flexible dependency injection, enabling easy swapping o
 The `useUsers` composable encapsulates the repository logic, providing a clean interface for data retrieval:
 
 ```ts
-import { userRepositoryInjectionKey } from "~/constants"
-
 export function useUsers() {
-  const userRepository = inject(userRepositoryInjectionKey)
+  const userRepository = inject('user-repository')
 
   if (!userRepository) {
     throw new Error('No user repository provided')
@@ -75,8 +74,8 @@ By using dependency injection, we decouple the data fetching logic from the spec
 
 In the `UserList.vue`, we demonstrate how easily the composable can be used to fetch and display data:
 
-```ts
-<script setup>
+```vue
+<script lang="ts" setup>
 const { list } = useUsers()
 const { data: users } = await useAsyncData('users', list)
 </script>
