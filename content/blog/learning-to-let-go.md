@@ -31,5 +31,5 @@ But hey, I ended up writing this in the end. So, yeah...
 
 I'm trying to learn to let go.
 
-> Photo by <a href="https://unsplash.com/@stefaniejockschat?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Stefanie Jockschat</a> on <a href="https://unsplash.com/photos/a-woman-is-flying-a-kite-on-a-cloudy-day-Z_36UPzKFlc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+> Cover photo by <a href="https://unsplash.com/@stefaniejockschat?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Stefanie Jockschat</a> on <a href="https://unsplash.com/photos/a-woman-is-flying-a-kite-on-a-cloudy-day-Z_36UPzKFlc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 

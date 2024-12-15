@@ -111,4 +111,4 @@ The code of this site is open-source, so you can check out the final code here: 
 
 You can also see the component in action below this article. 👇
 
-> Photo by <a href="https://unsplash.com/@miracleday?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Elena Mozhvilo</a> on <a href="https://unsplash.com/photos/white-and-red-wooden-cube-LJ5ZYYZAOWo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+> Cover photo by <a href="https://unsplash.com/@miracleday?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Elena Mozhvilo</a> on <a href="https://unsplash.com/photos/white-and-red-wooden-cube-LJ5ZYYZAOWo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>

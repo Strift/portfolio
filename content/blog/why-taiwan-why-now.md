@@ -2,7 +2,7 @@
 title: 'Why Taiwan, why now?'
 date: 2024-12-15
 description: 'Why I decided to give a shot to my dream of living abroad.'
-cover: /images/articles/covers/fenqihu-trail.jpg
+cover: /images/articles/covers/why-taiwan-why-now.jpg
 coverAlt: Flight of stairs in Fenqihu, Taiwan
 lang: 'en'
 tags:
@@ -37,3 +37,5 @@ It all began in Paris, at an exhibition in the winter of 2021:
 
 ::blog-post-preview{path="where-attention-leads"}
 ::
+
+> Cover photo by <a href="https://unsplash.com/@joelft?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joel Fulgencio</a> on <a href="https://unsplash.com/photos/motorcycle-and-car-passing-through-road-beside-buildikng-MwUUzMwQwPw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
