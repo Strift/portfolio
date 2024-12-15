@@ -84,7 +84,7 @@
     @apply block mb-2;
   }
 
-  :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a {
+  :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a:not(.blog-post-preview) {
     @apply link;
   }
 
