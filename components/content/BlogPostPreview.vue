@@ -22,7 +22,7 @@ console.log(status, post)
   <NuxtLink
     v-if="post && status === 'success'"
     v-bind="getPostNuxtLinkProps(post)"
-    class="blog-post-preview shadow-lg rounded-md overflow-hidden my-8 mx-8 sm:max-w-screen-sm sm:mx-24 block"
+    class="blog-post-preview shadow-lg hover:shadow-xl rounded-md overflow-hidden my-10 mb-12 mx-8 sm:max-w-screen-sm sm:mx-24 block transition-all duration-300 hover:-translate-y-2"
   >
     <NuxtImg
       :src="post.cover"

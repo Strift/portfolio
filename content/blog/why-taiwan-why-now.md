@@ -1,19 +1,19 @@
 ---
 title: 'Why Taiwan, why now?'
 date: 2024-12-15
-description: 'I often get asked, why did I move to Taiwan?'
-cover: /images/articles/covers/vuejs.jpg
-coverAlt: Vue.js logo
+description: 'Why I decided to give a shot to my dream of living abroad.'
+cover: /images/articles/covers/fenqihu-trail.jpg
+coverAlt: Flight of stairs in Fenqihu, Taiwan
 lang: 'en'
 tags:
-  - engineering
+  - taiwan
 components:
   - 'advent-2024'
 ---
 
 # Why Taiwan, why now?
 
-As I approached 30, I started fearing one thing: what if I _never_ lived abroad?
+I often get ask, why did I decide to move to Taiwan? The truth is as I approached 30, I started fearing one thing: what if I _never_ lived abroad?
 
 I always [loved learning languages](/blog/arrete-de-parler-franglais). As I learned the words and discovered new expressions, it felt like opening a window into a new culture. And I always thought living abroad was the best way to experience foreign culture. A deep dive into the culture itself.
 
@@ -31,7 +31,9 @@ When looked at through this lens, the choice was obvious. So, the decision was m
 
 But why Taiwan?
 
-Well, I think this is another story. One about how following your curiosity can take you to unexpected places and lead to fascinating journeys. And it all began in Paris, at an exhibition in the winter of 2021:
+Well, this is another story. One about how following your curiosity can take you to unexpected places and lead to fascinating journeys.
+
+It all began in Paris, at an exhibition in the winter of 2021:
 
 ::blog-post-preview{path="where-attention-leads"}
 ::
