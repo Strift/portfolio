@@ -23,7 +23,7 @@
     <div class="max-w-screen-md mx-auto px-4 mt-[var(--header-height)]">
       <slot />
     </div>
-    <div class="mt-12 pb-16">
+    <div class="mt-12 mb-24 md:mb-12">
       <div class="max-w-screen-md px-4 mx-auto">
         <h2 class="mb-4 heading-2">
           💌 Get in touch
@@ -67,7 +67,7 @@
         </p>
       </div>
     </div>
-    <footer class="px-4 py-8 z-10 md:hidden block fixed bottom-[75px] left-0 right-0 bg-white">
+    <footer class="px-4 py-8 z-10 md:hidden block fixed bottom-0 left-0 right-0 bg-white">
       <SocialLinks />
     </footer>
   </div>
