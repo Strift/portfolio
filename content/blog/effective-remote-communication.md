@@ -50,4 +50,4 @@ I love that they literally have carrier pigeons, fax machines, and emails being 
 
 More seriously, I think this is a good way of summarizing the communication expectations in a company. It’s a great resource to share with newcomers to help learn your team’s principles to make remote work not only possible, but sustainable.
 
-> Photo by <a href="https://unsplash.com/@brookecagle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brooke Cagle</a> on <a href="https://unsplash.com/photos/woman-sitting-on-brown-wooden-chair-while-using-silver-laptop-computer-in-room-WHWYBmtn3_0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+> Cover photo by <a href="https://unsplash.com/@brookecagle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brooke Cagle</a> on <a href="https://unsplash.com/photos/woman-sitting-on-brown-wooden-chair-while-using-silver-laptop-computer-in-room-WHWYBmtn3_0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
