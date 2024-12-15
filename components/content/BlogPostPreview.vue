@@ -14,8 +14,6 @@ const { data: post, status } = await useAsyncData(
       .findOne()
   },
 )
-
-console.log(status, post)
 </script>
 
 <template>
