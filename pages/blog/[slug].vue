@@ -102,6 +102,7 @@ const components = {
     <BlogReadMore
       v-if="data && data._path"
       :current-path="data._path"
+      :tags="data.tags"
     />
   </div>
 </template>

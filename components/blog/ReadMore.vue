@@ -3,19 +3,44 @@ import type { MarkdownArticleNav } from '~/types'
 
 const props = defineProps<{
   currentPath: string
+  tags: string[]
 }>()
 
-const { data: navItems } = await useAsyncData(
+const POSTS_ATTRIBUTES = ['title', 'description', 'cover', 'coverAlt', '_path', 'date'] as (keyof MarkdownArticleNav)[]
+
+const { data: sameTagsPosts } = await useAsyncData(
   `read-more-${props.currentPath}`,
   () => queryContent<MarkdownArticleNav>('blog')
-    .only(['title', 'description', 'cover', 'coverAlt', '_path', 'date'])
-    .where({ _path: { $ne: props.currentPath } })
+    .only(POSTS_ATTRIBUTES)
+    .where({
+      _path: { $ne: props.currentPath },
+      tags: { $containsAny: props.tags },
+    })
     .sort({
       date: -1,
     })
     .limit(2)
     .find(),
 )
+
+const { data: latestPosts } = await useAsyncData(
+  `latest-posts`,
+  () => queryContent<MarkdownArticleNav>('blog')
+    .only(POSTS_ATTRIBUTES)
+    .where({
+      _path: { $ne: props.currentPath },
+    })
+    .sort({
+      date: -1,
+    })
+    .limit(2)
+    .find(),
+)
+
+const allPosts = computed(() => {
+  const posts = [...(sameTagsPosts.value || []), ...(latestPosts.value || [])]
+  return posts.slice(0, 2)
+})
 </script>
 
 <template>
@@ -28,7 +53,7 @@ const { data: navItems } = await useAsyncData(
     </div>
     <div class="space-y-8">
       <BlogPostCard
-        v-for="nav in navItems"
+        v-for="nav in allPosts"
         :key="nav.title"
         :post="nav"
       />
