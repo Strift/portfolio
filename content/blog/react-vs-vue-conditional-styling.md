@@ -15,7 +15,7 @@ components:
 
 I recently started learning about React again. This journey brought me to discover the `clsx` library. This allows to **conditionally applies classes**.
 
-Let's take the example of an InvoiceStatus component. This component accepts a `status` string as prop. Based on the value of status, it applies some CSS classes.
+Let's take the example of an InvoiceStatus component. This component accepts a `status` string as prop. I want the component to apply different CSS classes based on the value of `status`. Let's see how we can build it with the two frameworks.
 
 ## With React.js
 
