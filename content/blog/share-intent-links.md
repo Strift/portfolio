@@ -7,6 +7,7 @@ coverAlt: Vue.js logo
 lang: 'en'
 tags:
   - engineering
+  - user experience
 components:
   - 'advent-2024'
 ---

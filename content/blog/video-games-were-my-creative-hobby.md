@@ -9,7 +9,7 @@ edited: true
 lang: 'fr'
 tags:
   - video games
-  - creativity
+  - curiosity
 ---
 
 # Video Games Were My Creative Hobby
