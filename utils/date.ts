@@ -13,7 +13,7 @@ export function toLocaleDateString(date: string) {
   return dayjs(date).format('MMMM D, YYYY')
 }
 
-export function toLocaleShortDateString(date: string) {
+export function toDateNumber(date: string) {
   return dayjs(date).format('D')
 }
 

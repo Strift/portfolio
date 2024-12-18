@@ -88,10 +88,12 @@ const components = {
       v-if="data"
       class="flex items-center px-4 py-2 space-x-2 text-sm border rounded-lg text-slate-500"
     >
-      <Icon
-        :name="ICONS.PENCIL"
-        class="w-4 h-4"
-      />
+      <div class="w-6 shrink-0 flex items-center justify-center">
+        <Icon
+          :name="ICONS.PENCIL"
+          class="w-4 h-4"
+        />
+      </div>
       <span>Last updated on {{ toLocaleDateString(data.updatedAt || data.date) }}.</span>
     </div>
     <BlogKitForm
