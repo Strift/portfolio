@@ -1,5 +1,5 @@
 ---
-title: 'Search UX: Netflix empty results'
+title: 'UX review: Netflix empty search results'
 date: 2024-12-18
 description: "Why Netflix does not have an empty search results page"
 cover: /images/articles/covers/netflix.jpg
