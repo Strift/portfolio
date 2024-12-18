@@ -18,11 +18,9 @@ Since I started working at [Meilisearch](https://meilisearch.com?ref=laurentcaza
 
 ## Empty state page
 
-In most applications, it’s common to have a "empty state" design prepared. It is used when there is no content to show to the user, which in most SaaS usually means the user is just getting started. Products often take the opportunity to display some onboarding instructions to help the users get started.
+In most applications, it’s common to have a "empty state" design prepared. It is useful when there is no content to show to the user. In most SaaS, this usually means the user is just getting started. Products thus take the opportunity to display some onboarding instructions.
 
-However, sometimes the empty state page follows a user interaction, like a search. In this case, most apps simply display something like “no results found for this query” or similar. But that’s not what Netflix chooses to do.
-
-Instead, they also took this as an opportunity to **engage users**. Let’s see how.
+However, sometimes the empty state page follows a user interaction, like a search. In this case, most apps simply display something like “no results found for this query”. But that’s not what Netflix choose to do. But they also took the opportunity to **engage users**. Let’s see how.
 
 ## Displaying recommendations
 
