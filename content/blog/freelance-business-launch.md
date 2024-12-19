@@ -1,9 +1,9 @@
 ---
 title: 'Launching my Developer Experience consulting business'
 date: 2024-12-19
-description: Launching my consulting business to help companies build great docs, tools, and communities for developers.
+description: Helping companies build great docs, tools, and communities for developers.
 cover: /images/articles/covers/launch.jpg
-coverAlt: An advent calendar
+coverAlt: A rocket emoji
 lang: 'en'
 tags:
   - engineering
