@@ -1,8 +1,8 @@
 ---
 title: 'Launching my Developer Experience consulting business'
 date: 2024-12-19
-description: How I built a component to navigate content using Nuxt and the content module.
-cover: /images/articles/covers/advent-calendar.jpg
+description: Launching my consulting business to help companies build great docs, tools, and communities for developers.
+cover: /images/articles/covers/launch.jpg
 coverAlt: An advent calendar
 lang: 'en'
 tags:
