@@ -97,7 +97,6 @@ const components = {
       <span>Last updated on {{ toLocaleDateString(data.updatedAt || data.date) }}.</span>
     </div>
     <BlogKitForm
-      v-if="data && data.showKitForm"
       form="keep-in-touch"
     />
     <BlogAboutMe />
