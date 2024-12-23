@@ -13,6 +13,9 @@ components:
 
 # Implementing repository pattern with Vue composables
 
+> **Warning**
+> I need to update this article. I don't advise following its guidance anymore.
+
 In this guide, I'll explain how to implement the repository pattern with Vue composables in a Nuxt 3 application.
 
 Maintaining a clean and flexible data access layer is crucial for scalable applications. The repository pattern provides an abstraction between the data access logic and the rest of the application, making it easier to manage and switch between different data sources.

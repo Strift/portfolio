@@ -7,6 +7,7 @@ coverAlt: A rocket emoji
 lang: 'en'
 tags:
   - engineering
+  - devrel
 ---
 
 # Launching my Developer Experience consulting business 🚀
