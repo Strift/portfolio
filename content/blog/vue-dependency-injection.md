@@ -7,6 +7,8 @@ coverAlt: Vue.js logo
 lang: 'en'
 tags:
   - engineering
+components:
+  - 'advent-2024'
 ---
 
 # Implementing the Dependency Injection pattern in Vue 3
