@@ -56,7 +56,7 @@ const visibleNavItems = computed(() => {
     >
       <h2>👋 About me</h2>
       <ContentRenderer :value="homeContent" />
-      <div class="mt-6 flex flex-row gap-4">
+      <div class="mt-6 flex flex-row gap-4 sm:gap-6">
         <NuxtLink
           v-for="action in homeContent.actions"
           :key="action.text"
