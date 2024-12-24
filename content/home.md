@@ -12,7 +12,7 @@ metaDescription: Laurent is a software engineer specializing in developer experi
 <!-- ## 👋 About me -->
 
 I'm Laurent, but people online call me Strift. I'm a **freelance engineer** specializing in **developer experience**.
-
+<!--more-->
 I help dev tools build great onboarding experiences. My primary skills are **technical writing**, **UX writing**, and **full-stack development**.
 
 I have openings for fractional clients and one-off projects starting in 2025.

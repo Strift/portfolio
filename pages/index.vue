@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import type { ArticleNav, HomePageContent, ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types'
 import { ICONS } from '~/constants'
 
@@ -46,6 +47,16 @@ const visibleNavItems = computed(() => {
   }
   return navItems.value.slice(0, numVisibleNavItems.value)
 })
+
+// Show only the excerpt on mobile
+const breakpoints = useBreakpoints(
+  breakpointsTailwind,
+  { ssrWidth: 768 }, // Will enable SSR mode and render like if the screen was 768px wide
+)
+const showFullHomeContent = ref(false)
+const showOnlyExcerpt = computed(() => {
+  return breakpoints.smaller('sm').value && !showFullHomeContent.value
+})
 </script>
 
 <template>
@@ -55,7 +66,17 @@ const visibleNavItems = computed(() => {
       class="home-content"
     >
       <h2>👋 About me</h2>
-      <ContentRenderer :value="homeContent" />
+      <ContentRenderer
+        :value="homeContent"
+        :excerpt="showOnlyExcerpt"
+      />
+      <button
+        v-if="showOnlyExcerpt"
+        class="link"
+        @click="showFullHomeContent = true"
+      >
+        Read more
+      </button>
       <div class="mt-6 flex flex-row gap-4 sm:gap-6">
         <NuxtLink
           v-for="action in homeContent.actions"

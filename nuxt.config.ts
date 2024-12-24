@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     // '@sentry/nuxt/module',
     'floating-vue/nuxt',
     '@pinia/nuxt',
+    '@vueuse/nuxt',
   ],
   compatibilityDate: '2024-07-05',
   runtimeConfig: {
