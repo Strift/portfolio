@@ -90,7 +90,7 @@ app.use(containerPlugin);
 
 Now, the container is accessible throughout the entire application. Components and composables can leverage it without needing to know the details of how services are built or configured.
 
-> For smaller applications, you can simplify this approach by directly binding services to the Vue app instance, making the Vue app your IoC container.
+> For smaller applications, you can simplify this approach by directly binding services to the Vue app instance, effectively **using the Vue app as an IoC container**.
 
 ## Dependency injection in Vue composables
 
@@ -98,7 +98,7 @@ Dependency injection makes it easier to use services in Vue composables without 
 
 ### Using dependencies in a composable
 
-Here’s how we can define a composable that uses the _UserService_ to fetch and manage user data:
+Now let's use consume injected dependency (the user service) in one of our composable. Here’s how we can define a composable that uses the _UserService_ to fetch and manage user data:
 
 **src/composables/useUsers.ts**:
 
@@ -129,6 +129,8 @@ export function useUsers() {
 ```
 
 This composable uses the injected container to access the _UserService_. It provides methods to fetch all users (`list`) and fetch a user by ID (`getById`), abstracting the implementation details of the service.
+
+For brevity, we directly pulled the container from the Nuxt app. For better type safety and consistent error handling, I recommend [wrapping dependencies in a composable](/blog/dependency-helper-composable).
 
 ### Using the composable in a component
 
