@@ -46,7 +46,7 @@ const allPosts = computed(() => {
 <template>
   <div>
     <h2 class="heading-2 mb-4">
-      ✍️ Latest posts
+      ✍️ Related posts
     </h2>
     <div class="text-color mb-6">
       Read my other articles.

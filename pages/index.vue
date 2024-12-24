@@ -57,6 +57,13 @@ const showFullHomeContent = ref(false)
 const showOnlyExcerpt = computed(() => {
   return breakpoints.smaller('sm').value && !showFullHomeContent.value
 })
+
+// Popular post
+const popularPost = computed(() => {
+  return navItems.value?.find((post) => {
+    return post.title === 'Where attention leads'
+  })
+})
 </script>
 
 <template>
@@ -99,6 +106,18 @@ const showOnlyExcerpt = computed(() => {
     <div v-else>
       Error loading home page. Please try again later.
     </div>
+    <section class="mt-12">
+      <h2 class="mb-6 heading-2">
+        ✨ Most popular
+      </h2>
+      <BlogPostCard
+        v-if="popularPost"
+        :post="popularPost"
+      />
+      <div v-else>
+        Error loading popular post. Please try again later.
+      </div>
+    </section>
     <section class="mt-12">
       <h2 class="mb-6 heading-2">
         ✍️ Latest posts
