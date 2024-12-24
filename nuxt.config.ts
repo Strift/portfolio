@@ -2,10 +2,6 @@ import { readdirSync } from 'fs'
 import { join } from 'path'
 import { ICONS } from './constants'
 
-function isRunningOnVercelPreview() {
-  return process.env.VERCEL_ENV === 'preview'
-}
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -15,7 +11,6 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
     '@nuxt/fonts',
-    '@nuxt/scripts',
     '@nuxt/icon',
     'nuxt-og-image',
     '@twicpics/components/nuxt3',
@@ -55,17 +50,6 @@ export default defineNuxtConfig({
     highlight: {
       theme: 'one-light',
     },
-  },
-  scripts: {
-    globals: process.env.NODE_ENV === 'production' && !isRunningOnVercelPreview()
-      ? {
-          myScript: {
-            'src': 'https://cloud.umami.is/script.js',
-            'defer': true,
-            'data-website-id': process.env.UMAMI_WEBSITE_ID,
-          },
-        }
-      : {},
   },
   app: {
     head: {
