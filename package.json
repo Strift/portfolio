@@ -26,7 +26,7 @@
     "nuxt": "^3.14.1592",
     "nuxt-og-image": "3.0.8",
     "pinia": "^2.3.0",
-    "posthog-js": "^1.180.1",
+    "posthog-js": "^1.203.1",
     "vue": "latest"
   },
   "devDependencies": {
