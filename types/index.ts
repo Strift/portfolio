@@ -1,8 +1,12 @@
 import type { ParsedContent } from '@nuxt/content'
+import type { ICONS } from '~/constants'
 
 export type HomePageContent = ParsedContent & {
-  actionText: string
-  actionUrl: string
+  actions: Array<{
+    text: string
+    href: string
+    icon: keyof typeof ICONS
+  }>
 }
 
 export type ProjectsPageContent = ParsedContent & {

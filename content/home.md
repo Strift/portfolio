@@ -1,6 +1,11 @@
 ---
-actionText: Work with me
-actionUrl: mailto:lau.cazanove@gmail.com
+actions:
+  - text: Get in touch
+    href: mailto:lau.cazanove@gmail.com
+    icon: MAIL
+  - text: Book a call
+    href: https://dub.sh/meet-strift
+    icon: MEETING
 metaDescription: Laurent is a software engineer specializing in developer experience. He helps devtools companies create great experiences.
 ---
 

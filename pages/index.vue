@@ -56,17 +56,19 @@ const visibleNavItems = computed(() => {
     >
       <h2>👋 About me</h2>
       <ContentRenderer :value="homeContent" />
-      <div class="mt-6">
+      <div class="mt-6 flex flex-row gap-4">
         <NuxtLink
-          :href="homeContent.actionUrl"
+          v-for="action in homeContent.actions"
+          :key="action.text"
+          :href="action.href"
           target="_blank"
           class="home-cta"
         >
           <Icon
-            :name="ICONS.MAIL"
+            :name="ICONS[action.icon]"
             class="mr-2"
           />
-          {{ homeContent.actionText }}
+          {{ action.text }}
         </NuxtLink>
       </div>
     </div>
