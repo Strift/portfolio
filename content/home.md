@@ -1,7 +1,7 @@
 ---
 actionText: Work with me
 actionUrl: mailto:lau.cazanove@gmail.com
-metaDescription: Laurent is a freelance engineer specializing in developer experience. He helps devtools companies create great experiences.
+metaDescription: Laurent is a software engineer specializing in developer experience. He helps devtools companies create great experiences.
 ---
 
 <!-- ## 👋 About me -->
