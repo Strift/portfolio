@@ -17,8 +17,8 @@ const props = defineProps<{
     class="kit-form-wrapper"
   >
     <hr>
-    <div class="text-center text-lg max-w-[400px] leading-0 mx-auto mt-6 -mb-6 text-slate-500 italic">
-      You can join my friends and colleagues who receive my occasional blog posts by email <span class="not-italic">🤗</span>
+    <div class="text-center text-lg leading-0 mx-auto mt-6 -mb-6 text-slate-500 italic">
+      Join my newsletter to be notified of my occasional blog posts
     </div>
     <component
       :is="'script'"
