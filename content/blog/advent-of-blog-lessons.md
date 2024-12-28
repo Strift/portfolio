@@ -1,6 +1,6 @@
 ---
 title: 'Lessons from writing one blog post per day'
-date: 2024-12-13
+date: 2024-12-28
 description: What I learned about embracing intentionality when participating to Advent of Blog.
 cover: /images/articles/covers/advent-calendar.jpg
 coverAlt: An advent calendar
