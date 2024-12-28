@@ -28,7 +28,7 @@ Plus, I always love opportunities to build discipline, so the challenge was appe
 
 In the first days, I had articles ready in advance. I was on top of things. Then, I went to Kaohsiung for a week to participate in [HackerHouse Taiwan](https://x.com/HackerHouseTW), and balancing writing with a social life made things harder.
 
-I prioritized socializing. The event lasted for a week; I had to make the most of it. Plus I also moved to Taiwan to have a change of pace in my life. Sitting in bed late at night, typing frantically on my computer, wasn’t much of a change from my previous life.
+I prioritized socializing. The event lasted for a week; I had to make the most of it. Plus I also [moved to Taiwan](/blog/where-attention-leads) to have a change of pace in my life. Sitting in bed late at night, typing frantically on my computer, wasn’t much of a change from my previous life.
 
 But I wasn’t at ease with missing some days. This threw me back to my [fear of failure](/blog/can-i-really-do-this) when I started writing. I realized I shouldn’t have to feel like this. No one was forcing me to do this. I needed to [learn to let go](/blog/learning-to-let-go).
 
