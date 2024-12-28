@@ -7,6 +7,7 @@ coverAlt: An advent calendar
 lang: 'en'
 tags:
   - personal growth
+  - writing
 ---
 
 In December, I participated in an Advent of Blog challenge—writing 1 blog post every day until Christmas. Spoiler: I missed out 7 times. That’s 30% of misses.
