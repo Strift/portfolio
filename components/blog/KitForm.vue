@@ -18,7 +18,7 @@ const props = defineProps<{
   >
     <hr>
     <div class="text-center text-lg leading-0 mx-auto mt-6 -mb-6 text-slate-500 italic">
-      Join my newsletter to be notified of my occasional blog posts
+      Like what you read? Join my newsletter:
     </div>
     <component
       :is="'script'"
