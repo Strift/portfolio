@@ -12,6 +12,7 @@ components:
   - 'advent-2024'
 ---
 
+# My first tech meetup in Taipei
 
 I recently [moved to Taiwan](/blog/where-attention-leads/). I arrived six days ago, actually. The timing couldn't be better because [Thor](https://x.com/thorwebdev) is organizing a HackerHouse event in Taiwan this week. This was also Supabase's Launch Week 13.
 

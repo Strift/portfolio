@@ -12,6 +12,8 @@ components:
   - 'advent-2024'
 ---
 
+# Wrapping dependencies in a composable with Nuxt and Vue
+
 [Dependency injection](/blog/vue-dependency-injection) is a core pattern in Nuxt and Vue for managing shared services across your application. However, the consuming code cannot know if the dependency has been properly provided. So we need to check for its existence.
 
 Here’s a tip I always use to centralize dependency access and error handling to ensure consistency in my Nuxt 3 applications.
