@@ -42,11 +42,7 @@
 }
 
 .section {
-  @apply mt-8;
-
-  @screen sm {
-    @apply mt-12;
-  }
+  @apply mt-8 sm:mt-12;
 }
 
 .home-content {
