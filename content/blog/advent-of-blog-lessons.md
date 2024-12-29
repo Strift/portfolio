@@ -16,7 +16,7 @@ But I didn’t fail the challenge.
 
 In fact, I won.
 
-### Why would I want to write 24 blog posts anyway?
+## Why would I want to write 24 blog posts anyway?
 
 While scrolling Bluesky, I saw a post from [Cassidy Williams](https://cassidoo.co/) that came with a **#blogvent** hashtag. She wanted to prove that blogging wasn’t dead. For this, she would write a blog post a day. I _loved_ the idea.
 
@@ -24,7 +24,7 @@ As I recently [became a freelancer](/blog/freelance-business-launch), I needed t
 
 Plus, I always love opportunities to build discipline, so the challenge was appealing to me. To formalize my commitment, I tweeted at Cassidy—well, _skeeted_ lol—that I would participate in **#blogvent** the next day.
 
-### Of course, keeping up was hard
+## Of course, keeping up was hard
 
 In the first days, I had articles ready in advance. I was on top of things. Then, I went to Kaohsiung for a week to participate in [HackerHouse Taiwan](https://x.com/HackerHouseTW), and balancing writing with a social life made things harder.
 
@@ -32,7 +32,7 @@ I prioritized socializing. The event lasted for a week; I had to make the most o
 
 But I wasn’t at ease with missing some days. This threw me back to my [fear of failure](/blog/can-i-really-do-this) when I started writing. I realized I shouldn’t have to feel like this. No one was forcing me to do this. I needed to [learn to let go](/blog/learning-to-let-go).
 
-### Try this for a change
+## Try this for a change
 
 It felt wrong to beat myself up for not showing up. As I said earlier, my goal was to publish more often. And I did. I wrote 17 articles. That’s more than I usually do in an entire year.
 
@@ -49,7 +49,7 @@ Picking the wrong metrics to judge your life on is a good way to live miserably.
 ::newsletter-form
 ::
 
-### This is the new, mindful me
+## This is the new, mindful me
 
 This **Advent of Blog** turned out to be a great learning experience. As I wanted, I got into the habit of writing more, learning not to chase perfection, and being fine with “just shipping it.”
 
