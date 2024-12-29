@@ -23,7 +23,7 @@
     <div class="max-w-screen-md mx-auto px-4 mt-[var(--header-height)]">
       <slot />
     </div>
-    <section class="section mb-24 md:mb-12">
+    <section class="section mb-20 md:mb-12">
       <div class="max-w-screen-md px-4 mx-auto">
         <h2 class="mb-4 heading-2">
           💌 Get in touch
