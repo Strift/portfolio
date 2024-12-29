@@ -7,6 +7,7 @@ const props = defineProps<{
 }>()
 
 const POSTS_ATTRIBUTES = ['title', 'description', 'cover', 'coverAlt', '_path', 'date'] as (keyof MarkdownArticleNav)[]
+const MAX_POSTS = 3
 
 const { data: sameTagsPosts } = await useAsyncData(
   `read-more-${props.currentPath}`,
@@ -19,7 +20,7 @@ const { data: sameTagsPosts } = await useAsyncData(
     .sort({
       date: -1,
     })
-    .limit(2)
+    .limit(MAX_POSTS - 1)
     .find(),
 )
 
@@ -33,13 +34,13 @@ const { data: latestPosts } = await useAsyncData(
     .sort({
       date: -1,
     })
-    .limit(2)
+    .limit(MAX_POSTS)
     .find(),
 )
 
 const allPosts = computed(() => {
   const posts = [...(sameTagsPosts.value || []), ...(latestPosts.value || [])]
-  return posts.slice(0, 2)
+  return posts.slice(0, MAX_POSTS)
 })
 </script>
 
