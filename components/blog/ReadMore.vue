@@ -57,7 +57,7 @@ const allPosts = computed(() => {
           v-for="nav in allPosts"
           :key="nav.title"
           :post="nav"
-          class="max-w-[70vw] sm:max-w-full sm:w-full"
+          class="w-[70vw] sm:max-w-full sm:w-full"
         />
       </div>
     </div>
