@@ -51,13 +51,13 @@ const allPosts = computed(() => {
     <div class="text-color mb-6">
       Read my other articles.
     </div>
-    <div class="overflow-x-auto">
+    <div class="overflow-x-auto pb-4 -mb-4 sm:pb-0 sm:mb-0">
       <div class="flex flex-row min-w-max space-x-8 sm:block sm:space-x-0 sm:space-y-8">
         <BlogPostCard
           v-for="nav in allPosts"
           :key="nav.title"
           :post="nav"
-          class="max-w-[60vw] sm:max-w-full sm:w-full"
+          class="max-w-[70vw] sm:max-w-full sm:w-full"
         />
       </div>
     </div>
