@@ -34,11 +34,11 @@ But I wasn’t at ease with missing some days. This threw me back to my [fear of
 
 ### Try this for a change
 
-It felt wrong to flail myself for not showing up. As I said earlier, my goal was to publish more often. And I did. I wrote 17 articles. That’s more than I usually do in an entire year.
+It felt wrong to beat myself up for not showing up. As I said earlier, my goal was to publish more often. And I did. I wrote 17 articles. That’s more than I usually do in an entire year.
 
 So why was I conflicted?
 
-I guess I needed to be clearer with myself. I needed to look at things through the correct lens. Pick the right metric. Otherwise, there would always be opportunities to look at the glass half-full.
+I guess I needed to be clearer with myself. I needed to look at things through the correct lens. Pick the right metric. Otherwise, there would always be opportunities to look at the glass half-empty.
 
 Reading _The Subtle Art of Not Giving a Fuck_, I learned about Dave Mustaine, one of the most influential guitarists of his generation. He is the founder of Megadeth, which sold 50 million albums worldwide.
 
