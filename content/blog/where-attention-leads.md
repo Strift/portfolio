@@ -52,7 +52,8 @@ The next Fall, I enrolled in the Saturday morning classes of the [Encrier Chinoi
 
 But the best was yet to come.
 
-<blog-kit-form form="in-article"></blog-kit-form>
+::newsletter-form
+::
 
 ## Taiwan’s calling
 

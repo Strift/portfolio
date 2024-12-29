@@ -46,6 +46,9 @@ Yet, he revealed in an interview that he always saw himself as a failure. That�
 
 Picking the wrong metrics to judge your life on is a good way to live miserably.
 
+::newsletter-form
+::
+
 ### This is the new, mindful me
 
 This **Advent of Blog** turned out to be a great learning experience. As I wanted, I got into the habit of writing more, learning not to chase perfection, and being fine with “just shipping it.”

@@ -157,8 +157,6 @@
   }
 
   .kit-form-wrapper {
-    @apply my-8;
-
     & > hr {
       @apply my-0;
     }

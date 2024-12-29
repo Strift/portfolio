@@ -14,11 +14,11 @@ const props = defineProps<{
   />
   <div
     v-else-if="props.form === 'in-article'"
-    class="kit-form-wrapper"
+    class="kit-form-wrapper my-4 sm:my-8"
   >
     <hr>
-    <div class="text-center text-lg leading-0 mx-auto mt-6 -mb-6 text-slate-500 italic">
-      Like what you read? Join my newsletter:
+    <div class="text-center leading-0 mx-auto mt-6 -mb-6 text-color-secondary italic max-w-[240px]">
+      If you like what you're reading, consider joining my newsletter:
     </div>
     <component
       :is="'script'"
