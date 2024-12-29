@@ -1,7 +1,5 @@
 <script lang="ts" setup>
-import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import type { ArticleNav, HomePageContent, ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types'
-import { ICONS } from '~/constants'
 
 // On the server, when we navigate to the home page with a client-side load, the status is 'idle'
 // but the data is available.
@@ -48,16 +46,6 @@ const visibleNavItems = computed(() => {
   return navItems.value.slice(0, numVisibleNavItems.value)
 })
 
-// Show only the excerpt on mobile
-const breakpoints = useBreakpoints(
-  breakpointsTailwind,
-  { ssrWidth: 768 }, // Will enable SSR mode and render like if the screen was 768px wide
-)
-const showFullHomeContent = ref(false)
-const showOnlyExcerpt = computed(() => {
-  return breakpoints.smaller('sm').value && !showFullHomeContent.value
-})
-
 // Popular post
 const popularPost = computed(() => {
   return navItems.value?.find((post) => {
@@ -68,38 +56,10 @@ const popularPost = computed(() => {
 
 <template>
   <div>
-    <div
+    <HomeContent
       v-if="homeContent"
-      class="home-content"
-    >
-      <h2>👋 About me</h2>
-      <ContentRenderer
-        :value="homeContent"
-        :excerpt="showOnlyExcerpt"
-      />
-      <button
-        v-if="showOnlyExcerpt"
-        class="link"
-        @click="showFullHomeContent = true"
-      >
-        Read more
-      </button>
-      <div class="mt-6 flex flex-row gap-4 sm:gap-6">
-        <NuxtLink
-          v-for="action in homeContent.actions"
-          :key="action.text"
-          :href="action.href"
-          target="_blank"
-          class="home-cta"
-        >
-          <Icon
-            :name="ICONS[action.icon]"
-            class="mr-2"
-          />
-          {{ action.text }}
-        </NuxtLink>
-      </div>
-    </div>
+      :content="homeContent"
+    />
     <div v-else-if="homeContentStatus === 'pending'">
       Loading...
     </div>
