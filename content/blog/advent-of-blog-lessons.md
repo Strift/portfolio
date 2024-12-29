@@ -10,6 +10,8 @@ tags:
   - writing
 ---
 
+# Lessons from writing one blog post per day
+
 In December, I participated in an Advent of Blog challenge—writing 1 blog post every day until Christmas. Spoiler: I missed out 7 times. That’s 30% of misses.
 
 But I didn’t fail the challenge.
