@@ -50,14 +50,14 @@ const getSocialUrl = (social: typeof SOCIAL_LINKS[number]): string => {
 </script>
 
 <template>
-  <div class="flex justify-center space-x-2">
+  <div class="flex justify-center sm:space-x-2">
     <NuxtLink
       v-for="social in SOCIAL_LINKS"
       :key="social.name"
       :to="getSocialUrl(social)"
       :title="social.name"
       target="_blank"
-      class="inline-flex items-center space-x-2 text-slate-500 hover:text-slate-700"
+      class="inline-flex items-center text-slate-500 hover:text-slate-700 p-2 sm:p-0 active:bg-slate-200 rounded-md"
     >
       <Icon
         :name="social.icon"

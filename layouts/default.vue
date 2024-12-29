@@ -1,7 +1,7 @@
 <template>
   <div class="font-sans">
     <header class="fixed top-0 left-0 right-0 z-10 bg-white">
-      <div class="max-w-screen-md px-4 py-8 mx-auto md:flex md:justify-between space-y-4 md:space-y-0">
+      <div class="max-w-screen-md px-4 py-6 sm:py-8 mx-auto md:flex md:justify-between space-y-4 md:space-y-0">
         <div class="text-2xl font-extrabold font-title">
           <NuxtLink
             class="flex items-center space-x-4 text-black no-underline"
@@ -23,7 +23,7 @@
     <div class="max-w-screen-md mx-auto px-4 mt-[var(--header-height)]">
       <slot />
     </div>
-    <div class="mt-12 mb-24 md:mb-12">
+    <section class="section mb-20 md:mb-12">
       <div class="max-w-screen-md px-4 mx-auto">
         <h2 class="mb-4 heading-2">
           💌 Get in touch
@@ -66,8 +66,8 @@
           >email</a>.
         </p>
       </div>
-    </div>
-    <footer class="px-4 py-8 z-10 md:hidden block fixed bottom-0 left-0 right-0 bg-white">
+    </section>
+    <footer class="px-4 py-4 z-10 md:hidden block fixed bottom-0 left-0 right-0 bg-white">
       <SocialLinks />
     </footer>
   </div>

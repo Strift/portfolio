@@ -4,7 +4,7 @@ import { ICONS } from './constants'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
     '@nuxt/content',
     '@nuxt/image',
