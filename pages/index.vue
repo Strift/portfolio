@@ -106,7 +106,7 @@ const popularPost = computed(() => {
     <div v-else>
       Error loading home page. Please try again later.
     </div>
-    <section class="mt-12">
+    <section class="section">
       <h2 class="mb-6 heading-2">
         ✨ Most popular
       </h2>
@@ -118,7 +118,7 @@ const popularPost = computed(() => {
         Error loading popular post. Please try again later.
       </div>
     </section>
-    <section class="mt-12">
+    <section class="section">
       <h2 class="mb-6 heading-2">
         ✍️ Latest posts
       </h2>
