@@ -51,12 +51,15 @@ const allPosts = computed(() => {
     <div class="text-color mb-6">
       Read my other articles.
     </div>
-    <div class="space-y-8">
-      <BlogPostCard
-        v-for="nav in allPosts"
-        :key="nav.title"
-        :post="nav"
-      />
+    <div class="overflow-x-auto">
+      <div class="flex flex-row min-w-max space-x-8 sm:block sm:space-x-0 sm:space-y-8">
+        <BlogPostCard
+          v-for="nav in allPosts"
+          :key="nav.title"
+          :post="nav"
+          class="max-w-[60vw] sm:max-w-full sm:w-full"
+        />
+      </div>
     </div>
   </div>
 </template>
