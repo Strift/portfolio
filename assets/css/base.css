@@ -7,10 +7,10 @@
     --header-height: calc(88px + 8px);
   }
 
-  @media screen(sm) {
-  :root {
-    --header-height: calc(104px + 8px);
-  }
+  @screen sm {
+    :root {
+      --header-height: calc(104px + 8px);
+    }
   }
 
 }
@@ -44,7 +44,7 @@
 .section {
   @apply mt-8;
 
-  @media screen(sm) {
+  @screen sm {
     @apply mt-12;
   }
 }
@@ -157,6 +157,7 @@
   }
 
   .kit-form-wrapper {
+
     & > hr {
       @apply my-0;
     }
