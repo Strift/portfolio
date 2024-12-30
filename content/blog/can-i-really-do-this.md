@@ -50,5 +50,5 @@ Suddenly, I wasn’t fearing failure just as much. Now that I had a plan — a l
 **Read more**
 
 - I post all my writing and share this journey on [my Twitter](https://twitter.com/StriftCodes)
-- [Why I decided to build a daily writing habit](/blog/my-commitment-to-writing/)
+- [Why I decided to build a daily writing habit](/blog/my-commitment-to-writing)
 - [All my articles](/) — about writing, tech, or esports
