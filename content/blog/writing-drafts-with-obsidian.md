@@ -33,7 +33,7 @@ To recreate a similar experience to writing on paper, I also try to follow a cri
 
 For example, if I need to revisit something to add context, I’ll note it in parentheses instead of stopping to research. Treating the draft like an advanced outline helps me stay focused. I accept that some sections will need to move around or even be removed entirely later.
 
-As [Julian Shapiro](julian.com) shares in one his writing guides, writing is like opening a [creativity faucet](https://www.julian.com/blog/creativity-faucet). The metaphor is that you need to start writing to get the muddy water out. Only after that will the clear water emerge—the stuff you’re really looking for.
+As [Julian Shapiro](https://www.julian.com) shares in one his writing guides, writing is like opening a [creativity faucet](https://www.julian.com/blog/creativity-faucet). The metaphor is that you need to start writing to get the muddy water out. Only after that will the clear water emerge—the stuff you’re really looking for.
 
 This resonates deeply with me. My first draft is about clearing out my thoughts—the muddy water. Once the initial ideas are laid down—whether on paper or screen—it becomes much easier to reason through them. At that point, I can see connections, identify gaps, and remove what’s unnecessary.
 
