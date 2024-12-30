@@ -61,15 +61,15 @@ export default defineNuxtConfig({
       ],
     },
   },
-  scripts: {
-    globals: {
-      ahrefs: {
-        'src': 'https://analytics.ahrefs.com/analytics.js',
-        'data-key': 'cZa98cWJITtZzw+yVmMbhw',
-        'defer': true,
-      },
-    },
-  },
+  // scripts: {
+  //   globals: {
+  //     ahrefs: {
+  //       'src': 'https://analytics.ahrefs.com/analytics.js',
+  //       'data-key': 'cZa98cWJITtZzw+yVmMbhw',
+  //       'defer': true,
+  //     },
+  //   },
+  // },
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL,
     name: 'Laurent Cazanove',
