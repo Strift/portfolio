@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     'floating-vue/nuxt',
     '@pinia/nuxt',
     '@vueuse/nuxt',
+    '@nuxt/scripts',
   ],
   compatibilityDate: '2024-07-05',
   runtimeConfig: {
@@ -58,6 +59,15 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'format-detection', content: 'telephone=no' },
       ],
+    },
+  },
+  scripts: {
+    globals: {
+      ahrefs: {
+        'src': 'https://analytics.ahrefs.com/analytics.js',
+        'data-key': 'cZa98cWJITtZzw+yVmMbhw',
+        'defer': true,
+      },
     },
   },
   site: {
