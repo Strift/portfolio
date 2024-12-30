@@ -23,12 +23,12 @@ Let’s take the example of a simple function. This one is a simple function tha
 // api/listUsers.js
 
 const firebase = require('../services/firebase')
- 
+
 const PAGE_SIZE = 1000
- 
+
 module.exports = async function (data, context) {
  let allUsers = []
- 
+
  let { users, pageToken } = await firebase.auth().listUsers(PAGE_SIZE)
  do {
    allUsers = allUsers.concat(users.map(user => user.uid))
@@ -36,7 +36,7 @@ module.exports = async function (data, context) {
      ({ users, pageToken } = await firebase.auth().listUsers(PAGE_SIZE, pageToken))
    }
  } while (pageToken)
- 
+
  return { users: allUsers }
 }
 ```
@@ -51,7 +51,7 @@ We’ve got our function, now let’s set up our testing tools. For this example
 yarn add --dev jest # Or `npm install --save-dev jest`
 ```
 
-If you’re running on VS Code, you will want Intellisense to pick-up Jest global imports. Including Jest types as a development dependency will do the trick. 
+If you’re running on VS Code, you will want Intellisense to pick-up Jest global imports. Including Jest types as a development dependency will do the trick.
 
 ```sh
 yarn add --dev @types/jest # or `npm install --save-dev @types/jest`
@@ -65,28 +65,28 @@ Now that we’re all set, let’s actually write tests, shall we? First, let’s
 // test/api/listUsers.test.js
 
 const admin = require('firebase-admin')
- 
+
 process.env.FIREBASE_AUTH_EMULATOR_HOST = 'localhost:9099'
- 
+
 const test = require('firebase-functions-test')()
- 
+
 // Mock config values here
- 
+
 const functions = require('../../index.js') // import functions *after* initializing Firebase
- 
+
 describe('listUsers', () => {
  let wrapped
- 
+
  beforeAll(() => {
    wrapped = test.wrap(functions.listUsers)
  })
- 
+
  afterAll(() => {
    test.cleanup()
  })
- 
+
  // tests will go here
- 
+
 })
 ```
 
@@ -111,7 +111,7 @@ At this point, running the tests should fail because Firebase cannot connect to 
 Error while making request: connect ECONNREFUSED 127.0.0.1:9099. Error code: ECONNREFUSED```
 ```
 
-> If you don’t get this error, make sure you’ve updated the environment variable and initialized `firebase-functions-test` without configuration. Your app might be trying to connect to production. 
+> If you don’t get this error, make sure you’ve updated the environment variable and initialized `firebase-functions-test` without configuration. Your app might be trying to connect to production.
 
 So, how do we get this working? Well, we use the Firebase emulators suite. Like the name suggests, it allows you to emulate Firebase services locally. It’s perfect for local development, but also for testing. Install it by running the following command.
 
@@ -122,7 +122,7 @@ yarn add --dev firebase-tools # or `npm install -save-dev firebase-tools`
 We will use the emulator `emulators:exec` command to launch the Auth service emulator and run our tests. For convenience, I included it in my `package.json`.
 
 ```json
-// package.json 
+// package.json
 
 "scripts": {
    "test:run": "jest ./test/",
@@ -142,5 +142,5 @@ Until next time,
 **Read more**
 
 - [Handling schema evolution with Cloud Firestore](https://strift.medium.com/handling-schema-evolution-with-cloud-firestore-22d94fb9722f)
-- [All my articles](/articles/) about code, esports, and writing
+- [All my articles](/) about code, esports, and writing
 - I post my thoughts about code and other stuff [on my Twitter](https://twitter.com/StriftCodes)

@@ -37,8 +37,8 @@ If you're curious about this topic, make sure subscribe to [Esports Tech News](h
 
 Read More:
 - [Get ready for the VCT Champions with PandaScore Valorant post-game stats](https://medium.com/pandascore-stories/get-ready-for-the-vct-champions-with-pandascore-valorant-post-game-stats-cddad78f3923)
-- [Three Things To Fit Healthy Habits in Your Gamer Lifestyle](/articles/three-things-to-fit-healthy-habits-in-your-gamer-lifestyle)
-- [Video Games Were My Creative Hobby](/articles/video-games-were-my-creative-hobby)
+- [Three Things To Fit Healthy Habits in Your Gamer Lifestyle](/blog/three-things-to-fit-healthy-habits-in-your-gamer-lifestyle)
+- [Video Games Were My Creative Hobby](/blog/video-games-were-my-creative-hobby)
 
 Follow [@StriftCodes](https://twitter.com/StriftCodes) on Twitter for more.
 
