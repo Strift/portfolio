@@ -210,6 +210,6 @@ I'll see you there,
 PS. Thanks to Github user @lautr for their [Nuxt, Tailwind & Storybook starter](https://github.com/lautr/initium-nuxt)!
 
 Read more:
-- [Testing Firebase Functions with the emulators suite](/blog/testing-firebase-functions-with-emulators-suite/)
-- [Why League of Legends needs to step up its data game](/blog/why-league-of-legends-needs-to-step-up-its-data-game/)
-- [State of Vue 2022: Amsterdam recap](/blog/state-of-vue-2022-amsterdam-recap/)
+- [Testing Firebase Functions with the emulators suite](/blog/testing-firebase-functions-with-emulators-suite)
+- [Why League of Legends needs to step up its data game](/blog/why-league-of-legends-needs-to-step-up-its-data-game)
+- [State of Vue 2022: Amsterdam recap](/blog/state-of-vue-2022-amsterdam-recap)
