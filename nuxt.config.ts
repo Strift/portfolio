@@ -5,21 +5,11 @@ import { ICONS } from './constants'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: [
-    '@nuxt/content',
-    '@nuxt/image',
-    '@nuxt/eslint',
-    '@nuxtjs/tailwindcss',
-    '@nuxt/fonts',
-    '@nuxt/icon',
-    'nuxt-og-image',
-    '@twicpics/components/nuxt3',
-    // '@sentry/nuxt/module',
-    'floating-vue/nuxt',
-    '@pinia/nuxt',
-    '@vueuse/nuxt',
-    '@nuxt/scripts',
-  ],
+  modules: [/* Development-only modules */
+  '@nuxt/eslint', '@nuxtjs/tailwindcss', /* Build time modules */
+  '@nuxt/fonts', '@nuxt/icon', 'nuxt-og-image', '@nuxtjs/sitemap', // '@sentry/nuxt/module',
+  /* Runtime modules */
+  '@nuxt/content', '@nuxt/image', '@nuxt/scripts', '@pinia/nuxt', '@vueuse/nuxt', '@twicpics/components/nuxt3', 'floating-vue/nuxt', '@nuxtjs/robots'],
   compatibilityDate: '2024-07-05',
   runtimeConfig: {
     public: {
