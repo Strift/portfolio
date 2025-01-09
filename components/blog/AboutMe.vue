@@ -7,7 +7,7 @@ const { data: content } = await useAsyncData('home', () => queryContent<HomePage
 <template>
   <div
     v-if="content"
-    class="px-5 py-6 bg-slate-100 rounded-xl"
+    class="px-5 py-6 bg-slate-100 rounded-xl about-content"
   >
     <h2 class="mb-4 heading-2">
       👋 About the author
@@ -15,7 +15,7 @@ const { data: content } = await useAsyncData('home', () => queryContent<HomePage
     <ContentRenderer
       :value="content"
       :excerpt="false"
-      class="blog-post-content hidden sm:block"
+      class="hidden sm:block"
     />
     <ContentRenderer
       :value="content"

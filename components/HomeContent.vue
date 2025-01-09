@@ -13,7 +13,7 @@ const props = defineProps<{
 <template>
   <div
     v-if="content"
-    class="home-content"
+    class="about-content"
   >
     <h2>👋 About me</h2>
     <div class="sm:hidden">
@@ -36,7 +36,6 @@ const props = defineProps<{
     />
     <CTAButtons
       :actions="props.content.actions"
-      class="home-cta-buttons"
     />
   </div>
 </template>
