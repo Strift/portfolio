@@ -54,7 +54,7 @@ export default defineNuxtConfig({
   },
   content: {
     highlight: {
-      theme: 'one-light',
+      theme: 'github-light',
     },
   },
   app: {

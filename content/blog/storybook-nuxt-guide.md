@@ -201,15 +201,6 @@ From my understanding, this should be possible by building a Nuxt module. Using 
 
 If you have a working solution to this or a proof of concept, I’d love to hear from you. Also, feel free to report any issues or comments with this guide.
 
-The easiest way to reach me is via Twitter: [@StriftCodes](https://twitter.com/StriftCodes).
-
-I'll see you there,
-
 ---
 
-PS. Thanks to Github user @lautr for their [Nuxt, Tailwind & Storybook starter](https://github.com/lautr/initium-nuxt)!
-
-Read more:
-- [Testing Firebase Functions with the emulators suite](/blog/testing-firebase-functions-with-emulators-suite)
-- [Why League of Legends needs to step up its data game](/blog/why-league-of-legends-needs-to-step-up-its-data-game)
-- [State of Vue 2022: Amsterdam recap](/blog/state-of-vue-2022-amsterdam-recap)
+Thanks to Github user @lautr for their [Nuxt, Tailwind & Storybook starter](https://github.com/lautr/initium-nuxt) 🙌
