@@ -14,7 +14,7 @@ const props = defineProps<{
       :key="action.text"
       :href="action.href"
       target="_blank"
-      class="inline-flex items-center px-4 py-2 no-underline transition-colors duration-300 border rounded-md text-slate-700 border-slate-700 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400 hover:text-white min-w-36 grow justify-center"
+      class="inline-flex items-center px-4 py-2 no-underline transition-colors duration-300 border rounded-md text-slate-700 border-slate-700 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400 hover:text-white min-w-36 grow sm:grow-0 justify-center"
     >
       <Icon
         :name="ICONS[action.icon]"
