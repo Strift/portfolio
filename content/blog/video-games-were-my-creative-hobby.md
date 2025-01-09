@@ -30,6 +30,12 @@ Now, creating games is very time-consuming. So as an amateur, you’re essential
 
 That’s actually how I started spending so much time on computers in the first place. This video game-making hobby would eventually lead me to learn programming. Hadn't I did that, I don't think I would be a software engineer today. Talk about a _life-changing_ afternoon.
 
-I often come across people thinking that they haven't found “_their thing_.” My advice would be to try and pick something they like—art, games, sports, whatever makes you happy. But now, instead of only consuming it, try to create some of it (or to practice it, if it's a physical activity.)
+::callout{icon="✨" date="2024-01-09"}
+In my 30s, I’m once again experiencing the life-changing power of [following my curiosity](/blog/where-attention-leads).
+::
 
-You might like it. And I believe passion is not something you _choose_. It is something you'll _discover_ through experience.
+I often come across people thinking that they haven't found “_their thing_.” Sometimes they even feel bad for not having “a passion.” But I believe passion is not something we _choose_. It is something we _discover_ through experience.
+
+I think it starts with something we like. Art, games, sports, whatever makes us happy. But, instead of only consuming it, let's put in efforts to create something (or practice it, if it's physical.) Going from consumption to action is the first step.
+
+You might like it. And who knows where that might take you?

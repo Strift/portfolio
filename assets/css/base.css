@@ -20,6 +20,10 @@
     @apply text-slate-700;
   }
 
+  .text-color-subtle {
+    @apply text-slate-600;
+  }
+
   .text-color-secondary {
     @apply text-slate-500;
   }
@@ -160,6 +164,13 @@
 
     & > hr:last-child {
       @apply mt-3 mb-6;
+    }
+  }
+
+  .callout {
+    @apply my-8;
+    p {
+      @apply mb-0;
     }
   }
 }
