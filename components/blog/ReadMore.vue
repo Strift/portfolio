@@ -45,7 +45,7 @@ const allPosts = computed(() => {
 </script>
 
 <template>
-  <div>
+  <section>
     <h2 class="heading-2 mb-4">
       ✍️ Related posts
     </h2>
@@ -63,5 +63,5 @@ const allPosts = computed(() => {
       </div>
     </div>
     <BackButton>Back to the blog</BackButton>
-  </div>
+  </section>
 </template>

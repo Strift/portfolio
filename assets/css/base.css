@@ -49,7 +49,7 @@
   @apply mt-8 sm:mt-12;
 }
 
-.home-content {
+.about-content {
   p {
     @apply mb-2 leading-relaxed text-color;
   }
@@ -66,8 +66,8 @@
     @apply mb-6 heading-2;
   }
 
-  .home-cta {
-    @apply inline-flex items-center px-4 py-2 no-underline transition-colors duration-300 border rounded-md text-slate-700 border-slate-700 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400 hover:text-white;
+  .cta-buttons a {
+    @apply no-underline;
   }
 }
 
