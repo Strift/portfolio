@@ -20,11 +20,11 @@
         <SocialLinks class="md:block hidden" />
       </div>
     </header>
-    <div class="max-w-screen-md mx-auto px-4 mt-[var(--header-height)]">
+    <main class="max-w-screen-md mx-auto px-4 mt-[var(--header-height)]">
       <slot />
-    </div>
-    <section class="section mb-20 md:mb-12">
-      <div class="max-w-screen-md px-4 mx-auto">
+    </main>
+    <footer class="section mb-20 md:mb-12">
+      <div class="max-w-screen-md px-4 mx-auto mb-10">
         <h2 class="mb-4 heading-2">
           💌 Get in touch
         </h2>
@@ -66,9 +66,12 @@
           >email</a>.
         </p>
       </div>
-    </section>
-    <footer class="px-4 py-4 z-10 md:hidden block fixed bottom-0 left-0 right-0 bg-white">
-      <SocialLinks />
+      <BlogKitForm
+        form="keep-in-touch"
+      />
     </footer>
+    <div class="px-4 py-4 z-10 md:hidden block fixed bottom-0 left-0 right-0 bg-white">
+      <SocialLinks />
+    </div>
   </div>
 </template>

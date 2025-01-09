@@ -125,7 +125,6 @@ const components = {
       </aside>
     </div>
     <BlogAboutMe />
-    <BlogKitForm form="keep-in-touch" />
     <BlogReadMore
       v-if="markdownPost && markdownPost._path"
       :current-path="markdownPost._path"
