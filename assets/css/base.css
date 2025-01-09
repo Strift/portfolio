@@ -116,7 +116,7 @@
   }
 
   pre {
-    @apply p-5 my-6 -m-5 overflow-x-auto rounded-lg bg-slate-100;
+    @apply p-5 my-6 -m-5 overflow-x-auto rounded-lg border-slate-200 border bg-slate-50;
 
     & code {
       padding-bottom: 0 !important;
