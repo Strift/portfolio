@@ -2,6 +2,7 @@
 import type { MarkdownArticleNav } from '~/types'
 
 const props = defineProps<{
+  defaultTag: string
   selectedTag: string
 }>()
 
@@ -27,10 +28,9 @@ const sortedTags = computed(() => {
 })
 
 const emit = defineEmits(['update:selectedTag'])
-
 const updateSelected = (tag: string) => {
   if (props.selectedTag === tag) {
-    emit('update:selectedTag', '')
+    emit('update:selectedTag', props.defaultTag)
   }
   else {
     emit('update:selectedTag', tag)
@@ -41,10 +41,16 @@ const updateSelected = (tag: string) => {
 <template>
   <div class="flex gap-x-4">
     <button
+      class="text-color-muted hover:text-color-emphasis"
+      :class="{ 'text-color-emphasis': selectedTag === props.defaultTag }"
+      @click="updateSelected(props.defaultTag)"
+    >
+      All
+    </button>
+    <button
       v-for="[tag, count] in sortedTags"
       :key="tag"
       class="text-color-muted space-x-2 flex items-center shrink-0 hover:text-color-emphasis"
-      :class="{ '': selectedTag === tag }"
       @click="updateSelected(tag)"
     >
       <div :class="{ 'text-color-emphasis': selectedTag === tag }">

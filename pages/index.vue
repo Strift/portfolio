@@ -37,30 +37,25 @@ const navItems = computed(() => {
     .sort((a, b) => compareFromString(a.date, b.date))
 })
 
-// Filter out the nav items that are not visible.
-const numVisibleNavItems = ref(10)
-const visibleNavItems = computed(() => {
-  if (numVisibleNavItems.value >= navItems.value.length) {
-    return navItems.value
-  }
-  return navItems.value.slice(0, numVisibleNavItems.value)
-})
-
-// Popular post
-const popularPost = computed(() => {
-  return navItems.value?.find((post) => {
-    return post.title === 'Where attention leads'
-  })
-})
-
-const selectedTag = ref('')
-const filteredVisibleNavItems = computed(() => {
-  if (selectedTag.value === '') {
+const DEFAULT_TAG = 'all'
+const selectedTag = ref(DEFAULT_TAG)
+const filteredNavItems = computed(() => {
+  if (selectedTag.value === DEFAULT_TAG) {
     return navItems.value
   }
   return navItems.value.filter((post) => {
     return 'tags' in post && post.tags?.includes(selectedTag.value)
   })
+})
+
+// Filter out the nav items that are not visible.
+const PAGINATION_STEP = 5
+const numVisibleNavItems = ref(PAGINATION_STEP)
+const visibleNavItems = computed(() => {
+  if (numVisibleNavItems.value >= filteredNavItems.value.length) {
+    return filteredNavItems.value
+  }
+  return filteredNavItems.value.slice(0, numVisibleNavItems.value)
 })
 </script>
 
@@ -76,23 +71,12 @@ const filteredVisibleNavItems = computed(() => {
     <div v-else>
       Error loading home page. Please try again later.
     </div>
-    <!-- <section class="section">
-      <h2 class="mb-6 heading-2">
-        ✨ Most popular
-      </h2>
-      <BlogPostCard
-        v-if="popularPost"
-        :post="popularPost"
-      />
-      <div v-else>
-        Error loading popular post. Please try again later.
-      </div>
-    </section> -->
     <section class="section">
       <h2 class="mb-4 heading-2">
         ✍️ Latest posts
       </h2>
       <BlogCategories
+        :default-tag="DEFAULT_TAG"
         :selected-tag="selectedTag"
         class="mb-8"
         @update:selected-tag="selectedTag = $event.toLowerCase()"
@@ -102,19 +86,30 @@ const filteredVisibleNavItems = computed(() => {
         class="space-y-8"
       >
         <BlogPostCard
-          v-for="nav in filteredVisibleNavItems"
+          v-for="nav in visibleNavItems"
           :key="nav.title"
           :post="nav"
         />
         <div
-          v-if="visibleNavItems.length < navItems.length"
+          v-if="visibleNavItems.length < filteredNavItems.length"
           class="flex justify-center"
         >
           <button
             class="link"
-            @click="numVisibleNavItems += 10"
+            @click="numVisibleNavItems += PAGINATION_STEP"
           >
             Show older posts
+          </button>
+        </div>
+        <div
+          v-else-if="filteredNavItems.length < navItems.length"
+          class="flex justify-center"
+        >
+          <button
+            class="link"
+            @click="selectedTag = DEFAULT_TAG"
+          >
+            Show all posts
           </button>
         </div>
       </div>
