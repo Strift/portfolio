@@ -67,7 +67,7 @@
   }
 
   h2 {
-    @apply mb-6 heading-2;
+    @apply mb-4 heading-2;
   }
 
   .cta-buttons a {
