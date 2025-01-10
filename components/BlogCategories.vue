@@ -51,7 +51,7 @@ const updateSelected = (tag: string) => {
       <button
         v-for="[tag, count] in sortedTags"
         :key="tag"
-        class="text-color-muted space-x-2 flex items-center shrink-0 hover:text-color-emphasis active:bg-slate-200 rounded-md px-2 py-1 sm:p-0 active:text-color-emphasis"
+        class="text-color-muted space-x-2 flex items-baseline shrink-0 hover:text-color-emphasis active:bg-slate-200 rounded-md px-2 py-1 sm:p-0 active:text-color-emphasis"
         @click="updateSelected(tag)"
       >
         <div :class="{ 'text-color-emphasis': selectedTag === tag }">
