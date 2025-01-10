@@ -9,6 +9,7 @@ showKitForm: true
 tags:
   - curiosity
   - taiwan
+  - journaling
 components:
   - 'advent-2024'
 ---

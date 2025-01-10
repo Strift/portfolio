@@ -6,7 +6,8 @@ cover: /images/articles/covers/letting-go.jpg
 coverAlt: A woman is flying a kite on a cloudy day
 lang: 'en'
 tags:
-  - personal growth
+  - well-being
+  - journaling
 components:
   - 'advent-2024'
 ---

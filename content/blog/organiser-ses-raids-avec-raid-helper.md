@@ -8,7 +8,7 @@ coverAlt: 'Screenshot of Raid-Helper'
 source: https://raid-helper.com/
 highlight: true
 tags:
-  - video games
+  - gaming
 ---
 
 # Organiser ses raids avec Raid-Helper

@@ -5,7 +5,7 @@ date: 2018-02-14
 cover: /images/articles/covers/overwatch-pine.jpg
 coverAlt: Overwatch player Pine
 tags:
-  - esports
+  - gaming
 ---
 
 # Overwatch League highlights: Pine's McCree
@@ -17,9 +17,9 @@ Unlike our previous player, Do-Hyeon "**Pine**" Kim did not have that much hype 
 <figure>
     <iframe
         src="https://clips.twitch.tv/embed?clip=InnocentFilthyWatercressYouDontSay&autoplay=false&tt_medium=clips_embed&parent=laurentcazanove.com"
-        frameborder="0" 
-        allowfullscreen="true" 
-        height="390" 
+        frameborder="0"
+        allowfullscreen="true"
+        height="390"
         width="640"
     ></iframe>
     <figcaption>

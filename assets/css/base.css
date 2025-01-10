@@ -28,6 +28,10 @@
     @apply text-slate-500;
   }
 
+  .text-color-muted {
+    @apply text-slate-400;
+  }
+
   .text-color-emphasis {
     @apply text-slate-900;
   }
@@ -63,7 +67,7 @@
   }
 
   h2 {
-    @apply mb-6 heading-2;
+    @apply mb-4 heading-2;
   }
 
   .cta-buttons a {

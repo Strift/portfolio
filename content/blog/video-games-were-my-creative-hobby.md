@@ -8,7 +8,7 @@ highlight: true
 edited: true
 lang: 'fr'
 tags:
-  - video games
+  - gaming
   - curiosity
 ---
 

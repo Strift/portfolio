@@ -7,7 +7,7 @@ coverAlt: Players fighting against Onyxia, a WoW raid boss
 highlight: true
 tags:
   - engineering
-  - video games
+  - gaming
 ---
 
 # Launching a recruitment platform for Classic guilds
@@ -73,4 +73,4 @@ I'm an engineer & writer who loves video games. Follow [@StriftCodes](https://tw
 
 - How I built this website: [Optimizing Side-Projects Costs With Serverless and the Jamstack](/blog/my-go-to-stack-to-minimize-side-projects-costs/)
 - Why gaming changed my life: [Video Games Were My Creative Hobby](/blog/video-games-were-my-creative-hobby/)
-- [All my articles](/) about code, esports, and digital wellbeing
+- [All my articles](/) about code, esports, and digital well-being

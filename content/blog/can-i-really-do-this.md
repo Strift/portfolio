@@ -8,7 +8,8 @@ source: https://unsplash.com/photos/opNIQ-bx_4M
 highlight: true
 tags:
   - writing
-  - personal growth
+  - well-being
+  - journaling
 ---
 
 # Can I really do this?

@@ -8,6 +8,7 @@ lang: 'en'
 tags:
   - engineering
   - taiwan
+  - journaling
 components:
   - 'advent-2024'
 ---
