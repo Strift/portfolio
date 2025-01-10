@@ -6,8 +6,9 @@ cover: /images/articles/my-commitment-to-writing-header.jpeg
 coverAlt: An advent calendar
 lang: 'en'
 tags:
-  - personal growth
   - writing
+  - journaling
+  - well-being
 ---
 
 # Lessons from writing one blog post per day

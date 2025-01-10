@@ -28,6 +28,10 @@
     @apply text-slate-500;
   }
 
+  .text-color-muted {
+    @apply text-slate-400;
+  }
+
   .text-color-emphasis {
     @apply text-slate-900;
   }

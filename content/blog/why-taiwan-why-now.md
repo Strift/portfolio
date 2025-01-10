@@ -7,6 +7,7 @@ coverAlt: Flight of stairs in Fenqihu, Taiwan
 lang: 'en'
 tags:
   - taiwan
+  - journaling
 components:
   - 'advent-2024'
 ---

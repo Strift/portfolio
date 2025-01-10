@@ -6,7 +6,7 @@ cover: /images/articles/covers/seedling.jpg
 coverAlt: A French flag
 lang: 'en'
 tags:
-  - personal growth
+  - well-being
 ---
 
 # Three Things To Fit Healthy Habits in Your Gamer Lifestyle
@@ -25,7 +25,7 @@ You probably know it by know, physical health mainly relies on diet, exercise, a
 
 In other words, **sweating will literally get you a big brain.**
 
-The other brain-exploding moment for me happened when I internalized this: **what I eat is the _only_ fuel my body has to power everything I do**. My brain, every organ and every muscle I have, they only have whatever food I eat to work with. 
+The other brain-exploding moment for me happened when I internalized this: **what I eat is the _only_ fuel my body has to power everything I do**. My brain, every organ and every muscle I have, they only have whatever food I eat to work with.
 
 <figure>
   <img src="https://c.tenor.com/Oc4nf8N08jIAAAAd/mind-blow-galaxy.gif" alt="Mind Blow Galaxy GIF" title="Mind Blow Galaxy GIF" />
@@ -45,10 +45,10 @@ I hear it. You “don’t have time for X.” (Untrue, but it’s another topic!
 **Secondly, track things**. Feed into your completionist instincts to make new habits appealing. One thing that resonated with me as a WoW player was Josh “Xaryu” Lujan’s concept of _doing your dailies_. In WoW, dailies — short for “daily quests” — are repeatable quests. In the last expansions, they were so critical to your character growth that missing a day meant you were basically one day late on everyone else.
 
 <figure>
-  <img 
-    src="https://cdn.shopify.com/s/files/1/0301/4439/7448/files/Dailies_Twitch_Underlay_1024x1024.jpg" 
-    alt="Do your dailies" 
-    title="Do your dailies" 
+  <img
+    src="https://cdn.shopify.com/s/files/1/0301/4439/7448/files/Dailies_Twitch_Underlay_1024x1024.jpg"
+    alt="Do your dailies"
+    title="Do your dailies"
     width="480"
   />
   <figcaption>
@@ -56,7 +56,7 @@ I hear it. You “don’t have time for X.” (Untrue, but it’s another topic!
   </figcaption>
 </figure>
 
-**Finally, customize**. Adapt the principles to whatever methods work best for you. I use Trello at work, and I’m a bit of to-do list nerd. Making lists helps me stick to my plan. So I decided to implement Xaryu’s concept in Trello. 
+**Finally, customize**. Adapt the principles to whatever methods work best for you. I use Trello at work, and I’m a bit of to-do list nerd. Making lists helps me stick to my plan. So I decided to implement Xaryu’s concept in Trello.
 
 I setup an automation to add a “Do Your Dailies” card to my board everyday. It contains to-do lists items for things I want to build habits of, like “Practice Chinese”, “Eat one brain food”, or “Read”. At the end of the week, I love counting how many _Dones_ I have and get a percent rate of habits I stuck with.
 
@@ -78,7 +78,7 @@ In itself, feeling good is enough motivation to keep going.
 
 To get started, I selected a couple resources I recommend:
 - Watching [WoW streamer Xaryu](https://www.twitch.tv/xaryu), a strong advocate of healthy habits for gamers
-- Following [Edward Cleland’s](https://twitter.com/mindbodyesports/), who regularly tweets about health & performance in Esports  
+- Following [Edward Cleland’s](https://twitter.com/mindbodyesports/), who regularly tweets about health & performance in Esports
 - Reading _[The 4-Hour Body](https://www.amazon.com/Uncommon-Fat-Loss-Incredible-Becoming-Superhuman/dp/0091939526)_ to understand your body better and _[Atomic Habits](https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299)_ to learn about building habits
 
 I also write a bi-monthly newsletter on **Tech & Esports**, I always throw a little “something for your mind” in there. Subscribe below!

@@ -6,7 +6,7 @@ cover: /images/articles/covers/overwatch-fleta.jpg
 coverAlt: Overwatch player Fleta
 highlight: true
 tags:
-  - esports
+  - gaming
 ---
 
 # Overwatch League highlights: Fleta's Pharah
@@ -20,9 +20,9 @@ And what better way to start than watch him take a double kill?
 <figure>
     <iframe
         src="https://clips.twitch.tv/embed?clip=LuckyStrangeGuanacoTwitchRaid&autoplay=false&parent=laurentcazanove.com"
-        frameborder="0" 
-        allowfullscreen="true" 
-        height="390" 
+        frameborder="0"
+        allowfullscreen="true"
+        height="390"
         width="640"
     ></iframe>
     <figcaption>

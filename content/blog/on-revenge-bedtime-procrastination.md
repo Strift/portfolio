@@ -6,7 +6,7 @@ cover: /images/articles/covers/on-revenge-bedtime-procastination.jpg
 coverAlt: Someone watching at a computer screen at night
 lang: 'en'
 tags:
-  - personal growth
+  - well-being
 ---
 
 # Revenge Bedtime Procrastination Is F****ing Up Your Sleep Schedule

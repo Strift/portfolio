@@ -17,7 +17,7 @@ defineOgImageComponent('OgImageDefault', {
 // Same remark as above regarding the 'idle' status.
 const { data: posts, status: postsStatus } = await useAsyncData('blog-posts', () => {
   return Promise.all([
-    queryContent<MarkdownArticleNav>('blog').only(['title', 'description', 'cover', 'coverAlt', '_path', 'date', 'updatedAt']).find(),
+    queryContent<MarkdownArticleNav>('blog').only(['title', 'description', 'cover', 'coverAlt', '_path', 'date', 'tags', 'updatedAt']).find(),
     queryContent<ExternalArticleNavContent<MediumArticleNav>>('medium-articles').findOne(),
     queryContent<ExternalArticleNavContent<OgamingArticleNav>>('ogaming-articles').findOne(),
   ])
@@ -52,6 +52,16 @@ const popularPost = computed(() => {
     return post.title === 'Where attention leads'
   })
 })
+
+const selectedTag = ref('')
+const filteredVisibleNavItems = computed(() => {
+  if (selectedTag.value === '') {
+    return navItems.value
+  }
+  return navItems.value.filter((post) => {
+    return 'tags' in post && post.tags?.includes(selectedTag.value)
+  })
+})
 </script>
 
 <template>
@@ -66,7 +76,7 @@ const popularPost = computed(() => {
     <div v-else>
       Error loading home page. Please try again later.
     </div>
-    <section class="section">
+    <!-- <section class="section">
       <h2 class="mb-6 heading-2">
         ✨ Most popular
       </h2>
@@ -77,17 +87,22 @@ const popularPost = computed(() => {
       <div v-else>
         Error loading popular post. Please try again later.
       </div>
-    </section>
+    </section> -->
     <section class="section">
-      <h2 class="mb-6 heading-2">
+      <h2 class="mb-4 heading-2">
         ✍️ Latest posts
       </h2>
+      <BlogCategories
+        :selected-tag="selectedTag"
+        class="mb-8"
+        @update:selected-tag="selectedTag = $event.toLowerCase()"
+      />
       <div
         v-if="posts"
         class="space-y-8"
       >
         <BlogPostCard
-          v-for="nav in visibleNavItems"
+          v-for="nav in filteredVisibleNavItems"
           :key="nav.title"
           :post="nav"
         />

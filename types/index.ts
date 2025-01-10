@@ -27,6 +27,7 @@ export interface MarkdownArticleNav {
   _path: string
   date: string
   updatedAt?: string
+  tags?: Array<string>
 }
 
 export type ExternalArticleNavContent<T> = ParsedContent & {
@@ -37,6 +38,7 @@ export interface OgamingArticleNav {
   url: string
   image: string
   date: string
+  tags: Array<string>
 }
 
 export interface MediumArticleNav {

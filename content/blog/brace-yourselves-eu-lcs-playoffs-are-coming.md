@@ -6,7 +6,7 @@ cover: /images/articles/eulcs-2017-got-header.jpg
 coverAlt: Faces of EU LCS players in the style of Game of Thrones
 highlight: true
 tags:
-  - esports
+  - gaming
 ---
 
 # Brace yourselves, EU LCS playoffs are coming!

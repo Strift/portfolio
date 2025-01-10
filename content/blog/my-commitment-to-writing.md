@@ -7,7 +7,7 @@ coverAlt: 'Notebook and a pen'
 highlight: true
 tags:
   - writing
-  - personal growth
+  - journaling
 ---
 
 # My commitment to writing
