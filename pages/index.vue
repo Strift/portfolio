@@ -78,7 +78,7 @@ const visibleNavItems = computed(() => {
       <BlogCategories
         :default-tag="DEFAULT_TAG"
         :selected-tag="selectedTag"
-        class="mb-8"
+        class="mb-6 sm:mb-8"
         @update:selected-tag="selectedTag = $event.toLowerCase()"
       />
       <div
