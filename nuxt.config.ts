@@ -7,23 +7,12 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: [
     /* Development-only modules */
-    '@nuxt/eslint',
-    '@nuxtjs/tailwindcss',
+    '@nuxt/eslint', '@nuxtjs/tailwindcss',
     /* Build time modules */
-    '@nuxt/fonts',
-    '@nuxt/icon',
-    'nuxt-og-image',
-    '@nuxtjs/sitemap',
+    '@nuxt/fonts', '@nuxt/icon', 'nuxt-og-image', '@nuxtjs/sitemap',
     // '@sentry/nuxt/module',
     /* Runtime modules */
-    '@nuxt/content',
-    '@nuxt/image',
-    '@nuxt/scripts',
-    '@pinia/nuxt',
-    '@vueuse/nuxt',
-    '@twicpics/components/nuxt3',
-    'floating-vue/nuxt',
-    '@nuxtjs/robots',
+    '@nuxt/content', '@nuxt/image', '@nuxt/scripts', '@pinia/nuxt', '@vueuse/nuxt', '@twicpics/components/nuxt3', 'floating-vue/nuxt', '@nuxtjs/robots', '@nuxtjs/color-mode',
   ],
   compatibilityDate: '2024-07-05',
   runtimeConfig: {
@@ -51,6 +40,9 @@ export default defineNuxtConfig({
   },
   tailwindcss: {
     cssPath: ['~/assets/css/base.css', { injectPosition: 'first' }],
+  },
+  colorMode: {
+    classSuffix: '',
   },
   content: {
     highlight: {

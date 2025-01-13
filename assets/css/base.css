@@ -133,7 +133,7 @@
   }
 
   pre {
-    @apply p-5 my-6 -m-5 overflow-x-auto sm:rounded-lg border-slate-200 border bg-slate-50;
+    @apply p-5 my-6 -m-5 overflow-x-auto sm:rounded-lg border-slate-200 dark:border-slate-700 border bg-slate-50 dark:bg-slate-900;
 
     & code {
       padding-bottom: 0 !important;
