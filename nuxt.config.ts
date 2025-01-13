@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts', '@nuxt/icon', 'nuxt-og-image', '@nuxtjs/sitemap',
     // '@sentry/nuxt/module',
     /* Runtime modules */
-    '@nuxt/content', '@nuxt/image', '@nuxt/scripts', '@pinia/nuxt', '@vueuse/nuxt', '@twicpics/components/nuxt3', 'floating-vue/nuxt', '@nuxtjs/robots', '@nuxtjs/color-mode',
+    '@nuxt/content', '@nuxt/image', '@nuxt/scripts', '@pinia/nuxt', '@vueuse/nuxt', '@twicpics/components/nuxt3', 'floating-vue/nuxt', '@nuxtjs/robots', '@nuxtjs/color-mode', 'nuxt-seo-utils',
   ],
   compatibilityDate: '2024-07-05',
   runtimeConfig: {
@@ -73,6 +73,9 @@ export default defineNuxtConfig({
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL,
     name: 'Laurent Cazanove',
+  },
+  seo: {
+    canonicalQueryWhitelist: ['posts'],
   },
   ogImage: {
     zeroRuntime: true,
