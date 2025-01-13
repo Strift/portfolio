@@ -57,7 +57,7 @@ const getSocialUrl = (social: typeof SOCIAL_LINKS[number]): string => {
       :to="getSocialUrl(social)"
       :title="social.name"
       target="_blank"
-      class="inline-flex items-center text-slate-500 hover:text-slate-700 p-2 sm:p-0 active:bg-slate-200 rounded-md"
+      class="inline-flex items-center text-color-secondary hover:text-slate-700 hover:dark:text-slate-200 p-2 sm:p-0 active:bg-slate-200 active:dark:bg-slate-800 rounded-md"
     >
       <Icon
         :name="social.icon"

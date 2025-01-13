@@ -1,10 +1,10 @@
 <template>
   <div class="font-sans">
-    <header class="fixed top-0 left-0 right-0 z-10 bg-white">
+    <header class="fixed top-0 left-0 right-0 z-10 bg-white dark:bg-slate-950">
       <div class="max-w-screen-md px-4 py-6 sm:py-8 mx-auto md:flex md:justify-between space-y-4 md:space-y-0">
         <div class="text-2xl font-extrabold font-title">
           <NuxtLink
-            class="flex items-center space-x-4 text-black no-underline"
+            class="flex items-center space-x-4 text-color-title no-underline"
             to="/"
           >
             <NuxtImg
@@ -70,7 +70,7 @@
         form="keep-in-touch"
       />
     </footer>
-    <div class="px-4 py-4 z-10 md:hidden block fixed bottom-0 left-0 right-0 bg-white">
+    <div class="px-4 py-4 z-10 md:hidden block fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-950">
       <SocialLinks />
     </div>
   </div>

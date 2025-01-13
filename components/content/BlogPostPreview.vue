@@ -20,7 +20,7 @@ const { data: post, status } = await useAsyncData(
   <NuxtLink
     v-if="post && status === 'success'"
     v-bind="getPostNuxtLinkProps(post)"
-    class="blog-post-preview shadow-lg hover:shadow-xl rounded-md overflow-hidden my-10 mb-12 mx-8 sm:max-w-screen-sm sm:mx-32 block transition-all duration-300 hover:-translate-y-2"
+    class="blog-post-preview bg-white dark:bg-slate-950 shadow-lg hover:shadow-xl dark:shadow-slate-800 dark:hover:shadow-slate-700 rounded-md overflow-hidden my-10 mb-12 mx-8 sm:max-w-screen-sm sm:mx-32 block transition-all duration-300 hover:-translate-y-2"
   >
     <NuxtImg
       :src="post.cover"
