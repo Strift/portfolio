@@ -19,7 +19,7 @@ const props = defineProps<{
       />
     </div>
     <div class="sm:px-8">
-      <div class="text-lg font-bold mb-2 sm:mb-2 leading-tight text-color-emphasis">
+      <div class="text-lg font-bold mb-2 sm:mb-2 leading-tight text-color-emphasis group-hover:underline">
         {{ props.post.title }}
       </div>
       <div class="text-color-secondary">

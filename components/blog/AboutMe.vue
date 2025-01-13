@@ -7,7 +7,7 @@ const { data: content } = await useAsyncData('home', () => queryContent<HomePage
 <template>
   <section
     v-if="content"
-    class="px-5 py-6 bg-slate-100 rounded-xl about-content"
+    class="px-5 py-6 bg-slate-100 dark:bg-slate-900 rounded-xl about-content"
   >
     <h2 class="mb-4 heading-2">
       👋 About the author
