@@ -38,7 +38,12 @@ const navItems = computed(() => {
 })
 
 const DEFAULT_TAG = 'all'
-const selectedTag = ref(DEFAULT_TAG)
+const route = useRoute()
+const selectedTag = computed(() => {
+  return route.query.posts as string | undefined || DEFAULT_TAG
+})
+
+// Filter nav items by tag
 const filteredNavItems = computed(() => {
   if (selectedTag.value === DEFAULT_TAG) {
     return navItems.value
@@ -48,7 +53,7 @@ const filteredNavItems = computed(() => {
   })
 })
 
-// Filter out the nav items that are not visible.
+// Filter nav item by pagination
 const PAGINATION_STEP = 5
 const numVisibleNavItems = ref(PAGINATION_STEP)
 const visibleNavItems = computed(() => {
@@ -79,7 +84,6 @@ const visibleNavItems = computed(() => {
         :default-tag="DEFAULT_TAG"
         :selected-tag="selectedTag"
         class="mb-6 sm:mb-8"
-        @update:selected-tag="selectedTag = $event.toLowerCase()"
       />
       <div
         v-if="posts"

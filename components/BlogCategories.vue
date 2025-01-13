@@ -26,33 +26,25 @@ const sortedTags = computed(() => {
     .sort(([, a], [, b]) => b - a)
     .slice(0, 5)
 })
-
-const emit = defineEmits(['update:selectedTag'])
-const updateSelected = (tag: string) => {
-  if (props.selectedTag === tag) {
-    emit('update:selectedTag', props.defaultTag)
-  }
-  else {
-    emit('update:selectedTag', tag)
-  }
-}
 </script>
 
 <template>
   <div>
     <div class="flex gap-x-2 sm:gap-x-4 overflow-x-auto sm:overflow-x-hidden pb-3 -mb-2 sm:mb-0 sm:pb-0">
-      <button
+      <NuxtLink
         class="text-color-muted hover:text-color-emphasis active:bg-slate-200 rounded-md px-2 py-1 sm:p-0"
         :class="{ 'text-color-emphasis': selectedTag === props.defaultTag }"
-        @click="updateSelected(props.defaultTag)"
+        replace
+        :to="{ query: { posts: undefined } }"
       >
         All
-      </button>
-      <button
+      </NuxtLink>
+      <NuxtLink
         v-for="[tag, count] in sortedTags"
         :key="tag"
         class="text-color-muted space-x-2 flex items-baseline shrink-0 hover:text-color-emphasis active:bg-slate-200 rounded-md px-2 py-1 sm:p-0 active:text-color-emphasis"
-        @click="updateSelected(tag)"
+        :to="{ query: { posts: tag } }"
+        replace
       >
         <div :class="{ 'text-color-emphasis': selectedTag === tag }">
           {{ capitalize(tag) }}
@@ -63,7 +55,7 @@ const updateSelected = (tag: string) => {
         >
           {{ count }}
         </div>
-      </button>
+      </NuxtLink>
     </div>
   </div>
 </template>
