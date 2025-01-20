@@ -136,11 +136,3 @@ We will use the emulator `emulators:exec` command to launch the Auth service emu
 Ta-da! Your tests should now run without any connection issues. This example only uses the Auth service. You can use the same technique to emulate other Firebase services. Just update the `--only` parameter to include the other services you need.
 
 Until next time,
-
----
-
-**Read more**
-
-- [Handling schema evolution with Cloud Firestore](https://strift.medium.com/handling-schema-evolution-with-cloud-firestore-22d94fb9722f)
-- [All my articles](/) about code, esports, and writing
-- I post my thoughts about code and other stuff [on my Twitter](https://twitter.com/StriftCodes)

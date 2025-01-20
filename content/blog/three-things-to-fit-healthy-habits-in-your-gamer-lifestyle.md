@@ -81,8 +81,4 @@ To get started, I selected a couple resources I recommend:
 - Following [Edward Cleland’s](https://twitter.com/mindbodyesports/), who regularly tweets about health & performance in Esports
 - Reading _[The 4-Hour Body](https://www.amazon.com/Uncommon-Fat-Loss-Incredible-Becoming-Superhuman/dp/0091939526)_ to understand your body better and _[Atomic Habits](https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299)_ to learn about building habits
 
-I also write a bi-monthly newsletter on **Tech & Esports**, I always throw a little “something for your mind” in there. Subscribe below!
-
-If you like what you read, [share this article on Twitter]().
-
 Until next time,

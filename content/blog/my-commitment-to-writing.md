@@ -31,10 +31,3 @@ Stated like this, it sounded obvious. But I really _felt_ what he was saying. I 
 Like Boileau was saying in The Art of Poetry, “Whatever is well conceived is clearly said, and the words to say it flow with ease.” To put it bluntly: writing is thinking clearly. And who wouldn’t want to think clearly? Well, I know _I_ wanted to.
 
 I guess the documenting started as a way of reassuring me that writing was a hobby worthy of my time. Soon after, it just became the usual way of procrastinating in the sake of preparation. A dozen articles, newsletters and writing tips later, I was no closer to publishing.  Today, I am ending this. I want to build a habit of writing daily. Here’s a first blog post as a commitment to that.
-
----
-
-**Read more**
-
-- I post all my writing and share this journey on [my Twitter](https://twitter.com/StriftCodes)
-- [All my articles](/) — about writing, tech, or esports

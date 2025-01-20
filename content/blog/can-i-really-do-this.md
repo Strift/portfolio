@@ -45,11 +45,3 @@ Both of these topics could be articles of their own, so I will not linger — le
 Suddenly, I wasn’t fearing failure just as much. Now that I had a plan — a list of specific things to do — I was way less worried about the possibility of failure. Having a plan made me feel like *I* was in control. It was reassuring.
 
 **Preparation boosts confidence; and confidence helps fighting fear**. To be honest, becoming a writer still feels like I have a mountain to climb. But at least now I know the route for a couple stages ahead. Onward — the journey continues!
-
----
-
-**Read more**
-
-- I post all my writing and share this journey on [my Twitter](https://twitter.com/StriftCodes)
-- [Why I decided to build a daily writing habit](/blog/my-commitment-to-writing)
-- [All my articles](/) — about writing, tech, or esports

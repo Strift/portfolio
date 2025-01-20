@@ -1,5 +1,5 @@
 ---
-title: How To Display TwicPics Images When Working Offline With Nuxt.js 
+title: How To Display TwicPics Images When Working Offline With Nuxt.js
 date: 2022-06-02
 description: A guide detailing the usage of a wrapper component to default to local images when working offline.
 cover: /images/articles/covers/how-to-display-twicpics-images-when-working-offline-with-nuxt.jpg
@@ -11,7 +11,7 @@ tags:
 
 # How To Display TwicPics Images When Working Offline With Nuxt.js
 
-TwicPics is an image transformation and optimization SaaS. It works in the cloud, and front-end developers interact with the API via the JavaScript library. But when working in local, you might not want (or be able) to connect to the Internet. 
+TwicPics is an image transformation and optimization SaaS. It works in the cloud, and front-end developers interact with the API via the JavaScript library. But when working in local, you might not want (or be able) to connect to the Internet.
 
 This happened to me, so I wrote a wrapper component around TwicPics that allows me to fallback to local images when necessary. Obviously, this means skipping any image optimization or  transformation. But it provides a quick toggle for switching it off and on, which can be useful when working locally.
 
@@ -38,7 +38,7 @@ Now that we have a configuration toggle, let’s create an component that makes 
 ```html
 <!-- components/BaseImage.vue -->
 <template>
-	<img 
+	<img
 		v-if="$config.enableOptimization"
 		:src="src"
 	/>
@@ -58,7 +58,7 @@ export default {
 </script>
 ```
 
-And that’s it! 
+And that’s it!
 
 Your `BaseImage` component will load your local image whenever  `enableOptimization` is false. You don’t have to change your code to keep using TwicPics in production.
 

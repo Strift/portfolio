@@ -11,7 +11,7 @@ tags:
 
 # Optimizing Side-Projects Costs With Serverless & Jamstack
 
-I'm running a [recruitment platform](/blog/launching-a-recruitment-platform-for-classic-guilds/) for WoW guilds that has been online for more than a year. As with most side-projects, I knew my investment could change over time. So before starting, I tried envisioning what it would be like to maintain it six months later.
+I'm running a [recruitment platform](/blog/launching-a-recruitment-platform-for-classic-guilds) for WoW guilds that has been online for more than a year. As with most side-projects, I knew my investment could change over time. So before starting, I tried envisioning what it would be like to maintain it six months later.
 
 I realized that to make the project viable in the middle term, I needed to **optimize money & time costs**.
 
@@ -44,12 +44,3 @@ The best part? These third-party services fees often scale by usage too! So we'v
 
 ✅ Minimizing monthly fees <br>
 ✅ Maximizing time spent shipping features
-
----
-
-**Read more**
-
-- [Testing Firebase Functions with the emulators suite](/blog/testing-firebase-functions-with-emulators-suite)
-- [Handling schema evolution with Cloud Firestore](https://strift.medium.com/handling-schema-evolution-with-cloud-firestore-22d94fb9722f)
-
-You can also [read all articles](/), follow me [on Twitter](https://twitter.com/StriftCodes), or subscribe 💌 to the newsletter below for more.

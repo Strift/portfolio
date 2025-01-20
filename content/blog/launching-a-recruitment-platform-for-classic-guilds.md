@@ -64,13 +64,3 @@ The goal is to bring the most value to players looking for a guild. If it does, 
 PS. My Classic guild was [Astral](https://classic.warcraftlogs.com/guild/eu/sulfuron/astral). I'm now playing with [The Last Dance](https://classic.warcraftlogs.com/guild/eu/sulfuron/the%20last%20dance).
 
 PPS. June 2022 — The platform has been successfully running for 1.5 years now. 🎉
-
----
-
-I'm an engineer & writer who loves video games. Follow [@StriftCodes](https://twitter.com/StriftCodes) on Twitter for more tech & esports-related content!
-
-**Read more**
-
-- How I built this website: [Optimizing Side-Projects Costs With Serverless and the Jamstack](/blog/my-go-to-stack-to-minimize-side-projects-costs/)
-- Why gaming changed my life: [Video Games Were My Creative Hobby](/blog/video-games-were-my-creative-hobby/)
-- [All my articles](/) about code, esports, and digital well-being
