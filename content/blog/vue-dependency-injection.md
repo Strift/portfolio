@@ -98,7 +98,7 @@ Dependency injection makes it easier to use services in Vue composables without 
 
 ### Using dependencies in a composable
 
-Now let's use consume injected dependency (the user service) in one of our composable. Here’s how we can define a composable that uses the _UserService_ to fetch and manage user data:
+Now let's use our injected dependency (the user service) in one of our composable. Here’s how we can define a composable that uses the _UserService_ to fetch and manage user data:
 
 **src/composables/useUsers.ts**:
 
