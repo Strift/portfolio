@@ -5,7 +5,7 @@ import { ICONS } from '~/constants'
 <template>
   <NuxtLink
     to="/"
-    class="inline-flex items-center space-x-2 text-color-secondary hover:text-slate-700 hover:dark:text-slate-200"
+    class="inline-flex items-center space-x-2 text-color-secondary hover:text-slate-700 hover:dark:text-neutral-200"
   >
     <Icon
       :name="ICONS.ARROW_BACK"

@@ -11,7 +11,7 @@ import { ICONS } from '~/constants'
     >
       <Icon
         :name="ICONS.TOOLTIP"
-        class="text-slate-500 h-5 w-5"
+        class="text-color-secondary h-5 w-5"
       />
       <template #popper>
         <slot name="tooltip" />
