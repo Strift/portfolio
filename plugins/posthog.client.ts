@@ -2,7 +2,6 @@ import posthog from 'posthog-js'
 import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin(() => {
-  return
   const runtimeConfig = useRuntimeConfig()
   const posthogClient = posthog.init(runtimeConfig.public.posthogPublicKey, {
     api_host: runtimeConfig.public.posthogHost || 'https://eu.i.posthog.com',
