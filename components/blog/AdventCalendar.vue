@@ -25,7 +25,7 @@ const showAll = ref(false)
 </script>
 
 <template>
-  <div class="px-4 py-3 text-sm border border-slate-300 dark:border-slate-700 rounded-lg text-color-secondary">
+  <div class="px-4 py-3 text-sm border border-slate-300 dark:border-neutral-700 rounded-lg text-color-secondary">
     <div class="flex items-center space-x-2">
       <div class="w-6 shrink-0">
         <Icon
