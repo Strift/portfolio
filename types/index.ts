@@ -66,3 +66,7 @@ export type BlogPostContent = ParsedContent & {
   showKitForm?: boolean
   components?: Array<string>
 }
+
+export type MandarinTip = ParsedContent & {
+  title: string
+}

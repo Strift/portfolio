@@ -1,20 +1,22 @@
-# Modifiers precede modified
+---
+title: Modifiers precede modified
+---
 
 In Mandarin, modifier words always come _before_ the word they modify.
 
 <!--more-->
 
-Modifiers include adverbs, adjective, or possessives.
+Modifier words notably include adverbs, adjective, and possessives.
 
-For example,
+Consider these English examples:
+- the _red_ car — "red" is a modifier of "car"
+- eat _slowly_ — "slowly" is a modifier of "eat"
 
-"the red car", red is a modifier of car
-"eat slowly", slowly is a modifier of eat
-In English, they can be found sometimes before, sometimes after the subject they modify.
+In English, modifiers can be found both before and after the subject they modify. In Mandarin, they always come before.
 
-In Mandarin, they are always before.
+**Mandarin examples**
 
-台灣的水果
-慢慢來 Màn man lái (take it easy)
-紅茶
-我最喜歡吃的台灣的水果是芒果
+- 台灣的水果
+- 慢慢來
+- 紅茶
+- 我最喜歡吃的台灣的水果是芒果
