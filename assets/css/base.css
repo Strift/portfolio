@@ -48,6 +48,10 @@
     @apply text-2xl font-semibold font-title text-color-title;
   }
 
+  .heading-3 {
+    @apply text-xl font-semibold font-title text-color-title;
+  }
+
   .link {
     @apply underline text-color-emphasis;
   }
@@ -92,7 +96,7 @@
   @apply text-color text-pretty;
 
   h1 {
-    @apply mb-3 text-2xl md:text-3xl font-bold font-title text-color-emphasis;
+    @apply mb-3 text-2xl font-bold md:text-3xl font-title text-color-emphasis;
   }
 
   .last-updated {
@@ -100,11 +104,11 @@
   }
 
   h2 {
-    @apply mt-4 mb-4 text-xl md:text-2xl font-bold font-title text-color-emphasis;
+    @apply mt-4 mb-4 text-xl font-bold md:text-2xl font-title text-color-emphasis;
   }
 
   h3 {
-    @apply mt-4 mb-4 text-lg md:text-xl font-bold font-title text-color-emphasis;
+    @apply mt-4 mb-4 text-lg font-bold md:text-xl font-title text-color-emphasis;
   }
 
   strong {
@@ -193,5 +197,41 @@
     p {
       @apply mb-0;
     }
+  }
+}
+
+.page-content {
+  @apply text-color text-pretty;
+
+  h1 {
+    @apply mb-6 heading-2;
+  }
+
+  p {
+    @apply mb-2 leading-relaxed;
+  }
+
+  a {
+    @apply link;
+  }
+}
+
+.mandarin-tip-content {
+  @apply text-color text-pretty;
+
+  h2 {
+    @apply mb-4 heading-3;
+  }
+
+  p {
+    @apply mb-2 leading-relaxed;
+  }
+
+  ul {
+    @apply pl-4 mb-2 list-disc;
+  }
+
+  ul > li {
+    @apply leading-loose;
   }
 }
