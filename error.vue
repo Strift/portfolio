@@ -14,7 +14,7 @@ const props = defineProps<{
     <div class="mb-6">
       <BackButton>Go back home</BackButton>
     </div>
-    <div class="bg-slate-100 rounded-xl p-12 text-center">
+    <div class="bg-slate-100 dark:bg-neutral-900 rounded-xl p-12 text-center">
       <h1 class="font-title text-4xl mb-6">
         {{ props.error.statusCode }}
       </h1>

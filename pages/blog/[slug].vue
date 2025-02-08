@@ -113,7 +113,7 @@ const components = {
         v-if="markdownPost && markdownPost.ad"
         class="relative hidden sm:block sm:w-1/4"
       >
-        <div class="sticky p-5 bg-slate-100 rounded-lg top-[var(--header-height)]">
+        <div class="sticky p-5 bg-slate-100 dark:bg-neutral-900 rounded-lg top-[var(--header-height)]">
           <div class="mb-4 text-color">
             <!-- eslint-disable-next-line vue/no-v-html -->
             <span v-html="markdownPost.ad.text" />

@@ -6,7 +6,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="callout shadow-lg hover:shadow-xl rounded-md border border-slate-100 p-5">
+  <div class="callout shadow-lg hover:shadow-xl rounded-md border border-slate-100 dark:border-neutral-100 p-5">
     <div class="flex items-center space-x-3 mb-1">
       <div class="text-xl">
         {{ props.icon }}
