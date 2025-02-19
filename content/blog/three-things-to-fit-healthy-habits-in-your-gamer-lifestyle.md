@@ -1,7 +1,7 @@
 ---
 title: Three Things To Fit Healthy Habits in Your Gamer Lifestyle
 date: 2022-04-10
-description: There's a reason why esports pros start each day by hitting the gym. And it all starts with awareness.
+description: Boost your gamer lifestyle with healthy habits—learn how exercise, balanced diet, and sleep enhance focus and well-being. Try the healthy grind.
 cover: /images/articles/covers/seedling.jpg
 coverAlt: A French flag
 lang: 'en'

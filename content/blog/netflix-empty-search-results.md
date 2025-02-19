@@ -1,7 +1,7 @@
 ---
 title: 'UX review: Netflix empty search results'
 date: 2024-12-18
-description: "Why Netflix does not have an empty search results page"
+description: "Discover how Netflix turns empty search results into engaging recommendations using similarity search. Learn how this UX strategy boosts conversions today."
 cover: /images/articles/covers/netflix.jpg
 coverAlt: Netflix logo
 lang: 'en'

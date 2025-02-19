@@ -2,7 +2,7 @@
 title: Organiser ses raids avec Raid-Helper
 date: 2020-05-15
 updatedAt: 2021-08-19
-description: Notre guide pour organiser au mieux vos raids WoW Classic grâce au bot Discord Raid-Helper.
+description: Découvrez notre guide pour configurer Raid-Helper et organiser vos raids WoW Classic sur Discord. Lancez vos événements dès maintenant !
 cover: /images/articles/covers/raid-helper.png
 coverAlt: 'Screenshot of Raid-Helper'
 source: https://raid-helper.com/
@@ -10,6 +10,8 @@ highlight: true
 tags:
   - gaming
 ---
+
+> Article initialement publié sur le blog de la guilde [Astral](https://classic.warcraftlogs.com/guild/eu/sulfuron/astral). ✨
 
 # Organiser ses raids avec Raid-Helper
 
@@ -53,5 +55,3 @@ Pas d'inquiétude néanmoins, vous pouvez à tout moment ré-ouvrir les inscript
 
 
 J'espère que ce guide vous aura été utile. Pour les usages plus avancés, n'hésitez pas à consulter la [documentation officielle](https://raid-helper.com/commands) (en anglais). À bientôt !
-
-> Article initialement publié sur le blog de la guilde [Astral](https://classic.warcraftlogs.com/guild/eu/sulfuron/astral). ✨

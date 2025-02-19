@@ -1,7 +1,7 @@
 ---
 title: How To Display TwicPics Images When Working Offline With Nuxt.js
 date: 2022-06-02
-description: A guide detailing the usage of a wrapper component to default to local images when working offline.
+description: Discover how to switch from online TwicPics optimization to local fallback images in Nuxt.js for offline development. Enhance your workflow now!
 cover: /images/articles/covers/how-to-display-twicpics-images-when-working-offline-with-nuxt.jpg
 coverAlt: A computer with a black screen
 lang: 'en'

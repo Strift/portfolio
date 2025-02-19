@@ -1,7 +1,7 @@
 ---
 title: Why League of Legends needs to step up its data game
 date: 2022-07-02
-description: Lack of data access is hindering the growth of analytics. But some companies are working on tackling this issue.
+description: League of Legends needs better data access to boost performance and analytics. Discover how industry experts and platforms are advancing the game.
 cover: /images/articles/covers/why-league-of-legends-needs-to-step-up-its-data-game.jpg
 coverAlt: League of Legends Worlds Championship Cup
 lang: 'en'
