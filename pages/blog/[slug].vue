@@ -12,6 +12,13 @@ const { data: markdownPost } = await useAsyncData(
   ).findOne(),
 )
 
+if (!markdownPost.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Post not found',
+  })
+}
+
 const processedPost = computed(() => {
   if (!markdownPost.value) return null
   return getPostWithLastUpdated(markdownPost.value)
