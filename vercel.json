@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/articles",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/articles",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/:path*",
+      "destination": "/blog/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/blog/repository-pattern-in-composables",
+      "destination": "/blog/repository-pattern-with-vue-composables",
+      "permanent": false
+    }
+  ]
+}
