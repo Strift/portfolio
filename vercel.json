@@ -6,7 +6,7 @@
       "permanent": true
     },
     {
-      "source": "/articles",
+      "source": "/articles/",
       "destination": "/",
       "permanent": true
     },
