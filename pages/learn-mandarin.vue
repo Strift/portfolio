@@ -7,7 +7,7 @@ const { data: pageContent } = await useAsyncData('learn-mandarin-index',
 
 const { data: posts } = await useAsyncData(
   `learn-mandarin-posts`,
-  () => queryContent<MandarinTip>('learn-mandarin/').find(),
+  () => queryContent<MandarinTip>('learn-mandarin/').sort({ date: 1 }).find(),
   { default: () => [] },
 )
 
@@ -50,7 +50,7 @@ const toggleVisibility = (postId: string) => {
         <div class="flex justify-between align-baseline">
           <h2>{{ post.title }}</h2>
           <div class="text-sm text-color-secondary">
-            Tip {{ postIndex+1 }}/{{ posts.length }}
+            TIL {{ postIndex+1 }}/{{ posts.length }}
           </div>
         </div>
         <ContentRendererMarkdown

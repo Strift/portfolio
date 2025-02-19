@@ -1,5 +1,6 @@
 ---
 title: Modifiers precede modified
+date: 2025-02-08
 ---
 
 In Mandarin, modifier words always come _before_ the word they modify.
