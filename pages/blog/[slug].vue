@@ -56,6 +56,7 @@ blogPostStore.$patch({
 
 useSeoMeta({
   title: markdownPost.value!.title,
+  titleTemplate: '%s',
   description: markdownPost.value!.description,
   ogDescription: markdownPost.value!.description,
   ogTitle: markdownPost.value!.title,
