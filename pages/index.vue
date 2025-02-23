@@ -76,15 +76,16 @@ const visibleNavItems = computed(() => {
     <div v-else>
       Error loading home page. Please try again later.
     </div>
-    <section class="section">
-      <h2 class="mb-4 heading-2">
-        ✍️ Latest posts
-      </h2>
-      <BlogCategories
-        :default-tag="DEFAULT_TAG"
-        :selected-tag="selectedTag"
-        class="mb-6 sm:mb-8"
-      />
+    <section class="mt-8 sm:mt-12">
+      <div class="bg-white dark:bg-neutral-950 pb-6 sm:pb-8 sticky top-[var(--header-height)]">
+        <h2 class="mb-4 heading-2">
+          ✍️ Latest posts
+        </h2>
+        <BlogCategories
+          :default-tag="DEFAULT_TAG"
+          :selected-tag="selectedTag"
+        />
+      </div>
       <div
         v-if="posts"
         class="space-y-8"

@@ -1,7 +1,7 @@
 <template>
   <div class="font-sans">
-    <header class="fixed top-0 left-0 right-0 z-10 bg-white dark:bg-neutral-950">
-      <div class="max-w-screen-md px-4 py-6 sm:py-8 mx-auto md:flex md:justify-between space-y-4 md:space-y-0">
+    <header class="fixed top-0 left-0 right-0 z-10 bg-white dark:bg-neutral-950 h-[var(--header-height)] flex items-center">
+      <div class="max-w-screen-md w-full px-4 py-6 sm:py-8 mx-auto md:flex md:justify-between space-y-4 md:space-y-0">
         <div class="text-2xl font-extrabold font-title">
           <NuxtLink
             class="flex items-center space-x-4 text-color-title no-underline"
@@ -17,13 +17,13 @@
             <span>Laurent Cazanove</span>
           </NuxtLink>
         </div>
-        <SocialLinks class="md:block hidden" />
+        <SocialLinks class="md:flex hidden" />
       </div>
     </header>
     <main class="max-w-screen-md mx-auto px-4 mt-[var(--header-height)]">
       <slot />
     </main>
-    <footer class="section mb-20 md:mb-12">
+    <footer class="mt-8 sm:mt-12 mb-20 md:mb-12">
       <div class="max-w-screen-md px-4 mx-auto mb-10">
         <h2 class="mb-4 heading-2">
           💌 Get in touch
