@@ -110,12 +110,13 @@ const visibleNavItems = computed(() => {
           v-else-if="filteredNavItems.length < navItems.length"
           class="flex justify-center"
         >
-          <button
+          <NuxtLink
             class="link"
+            :to="{ query: { posts: undefined } }"
             @click="selectedTag = DEFAULT_TAG"
           >
             Show all posts
-          </button>
+          </NuxtLink>
         </div>
       </div>
       <div v-else-if="postsStatus === 'pending'">
