@@ -10,6 +10,7 @@ const { data: items } = await useAsyncData(
 const tags = computed(() => {
   return items.value.map(item => item.tags).flat()
     .filter((tag, index, self) => self.indexOf(tag) === index)
+    .sort()
 })
 </script>
 
@@ -36,40 +37,38 @@ const tags = computed(() => {
         target="_blank"
         class="group items-center"
       >
-        <div class="w-full sm:w-[350px] mb-5 sm:mb-0 flex-shrink-0">
-          <div class="bg-white dark:bg-neutral-950 rounded-lg border overflow-hidden border-neutral-200 dark:border-neutral-800">
-            <div
-              v-if="post.image && post.url.includes('github')"
-              class="p-4 bg-white"
-            >
-              <BaseImage
-                :src="post.image"
-                :alt="post.title"
-                aspect-ratio="289/163"
-                class="h-[163px] w-full object-cover"
-              />
-            </div>
+        <div class="bg-white dark:bg-neutral-950 rounded-lg border overflow-hidden border-neutral-200 dark:border-neutral-800">
+          <div
+            v-if="post.image && post.url.includes('github')"
+            class="p-4 bg-white"
+          >
             <BaseImage
-              v-else-if="post.image"
               :src="post.image"
               :alt="post.title"
-              :aspect-ratio="350/197"
+              aspect-ratio="289/163"
+              class="h-[163px] w-full object-cover"
             />
-            <YoutubeEmbed
-              v-else-if="post.url.includes('youtube')"
-              :src="post.url"
-            />
-            <div class="px-5 py-4">
-              <div class="text-lg font-bold mb-2 sm:mb-2 leading-tight text-color-emphasis group-hover:underline">
-                {{ post.title }}
-                <Icon
-                  :name="ICONS.EXTERNAL_LINK"
-                  class="w-4 h-4 text-color-secondary"
-                />
-              </div>
-              <div class="text-color-secondary">
-                {{ post.tags.join(' &bull; ') }}
-              </div>
+          </div>
+          <BaseImage
+            v-else-if="post.image"
+            :src="post.image"
+            :alt="post.title"
+            :aspect-ratio="350/197"
+          />
+          <YoutubeEmbed
+            v-else-if="post.url.includes('youtube')"
+            :src="post.url"
+          />
+          <div class="px-5 py-4">
+            <div class="text-lg font-bold mb-2 sm:mb-2 leading-tight text-color-emphasis group-hover:underline">
+              {{ post.title }}
+              <Icon
+                :name="ICONS.EXTERNAL_LINK"
+                class="w-4 h-4 text-color-secondary"
+              />
+            </div>
+            <div class="text-color-secondary">
+              {{ post.tags.join(' &bull; ') }}
             </div>
           </div>
         </div>
