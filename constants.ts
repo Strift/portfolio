@@ -2,6 +2,7 @@ export const ICONS = {
   ARROW_BACK: 'tabler:arrow-back-up',
   ARROW_RIGHT: 'tabler:arrow-right',
   CALENDAR: 'tabler:calendar',
+  EXTERNAL_LINK: 'tabler:external-link',
   MEETING: 'tabler:calendar-bolt',
   MAIL: 'tabler:mail',
   PENCIL: 'tabler:pencil',

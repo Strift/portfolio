@@ -32,4 +32,4 @@ I work closely with DevRel, Product Marketing, and Engineering teams to deliver:
 
 ## Let’s build together?
 
-I’m open for fractional clients and one-off projects starting in early 2025. If your company is looking to create exceptional experiences for app builders, let’s chat!
+I’m open for fractional clients and one-off projects. If your company is looking to create exceptional experiences for app builders, let’s chat!
