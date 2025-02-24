@@ -1,3 +1,8 @@
+<script lang="ts" setup>
+const route = useRoute()
+const isHomePage = computed(() => route.path === '/')
+</script>
+
 <template>
   <div class="font-sans">
     <header class="fixed top-0 left-0 right-0 z-10 bg-white dark:bg-neutral-950 h-[var(--header-height)] flex items-center">
@@ -14,7 +19,9 @@
               width="40"
               class="rounded-full"
             />
-            <span>Laurent Cazanove</span>
+            <component :is="isHomePage ? 'h1' : 'span'">
+              Laurent Cazanove
+            </component>
           </NuxtLink>
         </div>
         <SocialLinks class="md:flex hidden" />
