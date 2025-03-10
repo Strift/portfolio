@@ -1,7 +1,8 @@
 <script lang="ts" setup>
+// Also uses the HomePageContent type because it's the same structure
 import type { HomePageContent } from '~/types'
 
-const { data: content } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
+const { data: content } = await useAsyncData('about', () => queryContent<HomePageContent>('about').findOne())
 </script>
 
 <template>
