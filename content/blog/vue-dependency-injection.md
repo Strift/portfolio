@@ -154,7 +154,9 @@ This component fetches the user list using the `useUsers` composable and renders
 
 ## Writing tests
 
-> Sorry, this section is still under construction 😅 Come back soon!
+Sorry, I didn't get to write this yet. But I explained it in my [Vue.js Nation 2025 talk](https://www.youtube.com/watch?v=aki7mLNAgzk). You can watch it directly here:
+
+<iframe class="mx-auto" width="560" height="315" src="https://www.youtube-nocookie.com/embed/aki7mLNAgzk?si=SRgbyybJvIOd_ymo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Conclusion
 
