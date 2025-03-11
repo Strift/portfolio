@@ -20,7 +20,11 @@ const tags = computed(() => {
     <h2 class="heading-2 mb-4">
       Portfolio
     </h2>
-    <div class="flex gap-x-2 sm:gap-x-4 overflow-x-auto sm:overflow-x-hidden pb-3 -mb-2 sm:mb-0 sm:pb-0">
+    <div class="text-color-secondary">
+      A showcase of my previous work
+    </div>
+
+    <!-- <div class="flex gap-x-2 sm:gap-x-4 overflow-x-auto sm:overflow-x-hidden pb-3 -mb-2 sm:mb-0 sm:pb-0">
       <div
         v-for="tag in tags"
         :key="tag"
@@ -28,7 +32,7 @@ const tags = computed(() => {
       >
         {{ tag }}
       </div>
-    </div>
+    </div> -->
     <div class="grid grid-cols-2 gap-x-8 gap-y-8 mt-8">
       <NuxtLink
         v-for="post in items"
@@ -54,6 +58,8 @@ const tags = computed(() => {
             :src="post.image"
             :alt="post.title"
             :aspect-ratio="350/197"
+            height="197"
+            width="350"
           />
           <YoutubeEmbed
             v-else-if="post.url.includes('youtube')"
