@@ -77,7 +77,7 @@ const visibleNavItems = computed(() => {
       Error loading home page. Please try again later.
     </div>
     <section class="mt-8 sm:mt-12">
-      <div class="bg-white dark:bg-neutral-950 pb-6 sm:pb-8 sticky top-[var(--header-height)]">
+      <div class="bg-white dark:bg-neutral-950 pb-6 sm:pb-8 sticky top-[var(--header-height)] z-10">
         <h2 class="mb-4 heading-2">
           ✍️ Latest posts
         </h2>
