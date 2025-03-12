@@ -21,7 +21,7 @@ const tags = computed(() => {
       Portfolio
     </h2>
     <div class="text-color-secondary">
-      A showcase of my previous work
+      A showcase of my previous work (WIP 🚧)
     </div>
 
     <!-- <div class="flex gap-x-2 sm:gap-x-4 overflow-x-auto sm:overflow-x-hidden pb-3 -mb-2 sm:mb-0 sm:pb-0">
