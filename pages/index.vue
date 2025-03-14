@@ -92,7 +92,7 @@ const visibleNavItems = computed(() => {
       >
         <BlogPostCard
           v-for="nav in visibleNavItems"
-          :key="nav.title"
+          :key="`${selectedTag}-${nav.title}`"
           :post="nav"
         />
         <div
