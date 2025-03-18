@@ -3,7 +3,7 @@ title: 'Launching my Developer Experience consulting business'
 date: 2024-12-19
 description: Helping companies build great docs, tools, and communities for developers.
 cover: /images/articles/covers/working-in-cafe.jpg
-coverAlt: A rocket emoji
+coverAlt: Me working in a cafe
 lang: 'en'
 tags:
   - engineering
@@ -22,7 +22,7 @@ My mission is to help your company deliver exceptional experiences that resonate
 
 ## What I bring to the table
 
-With a background in full-stack web development and copywriting, I bridge the gap between technical precision and clear, engaging communication.
+With [prior experiences](/portfolio) in full-stack web development and copywriting, I bridge the gap between technical precision and clear, engaging communication.
 
 I work closely with DevRel, Product Marketing, and Engineering teams to deliver:
 - **Technical writing & Docs UX**: Enabling scalable developer learning and success

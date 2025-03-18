@@ -23,7 +23,7 @@ In fact, I won.
 
 While scrolling Bluesky, I saw a post from [Cassidy Williams](https://cassidoo.co/) that came with a **#blogvent** hashtag. She wanted to prove that blogging wasn’t dead. For this, she would write a blog post a day. I _loved_ the idea.
 
-As I recently [became a freelancer](/blog/freelance-business-launch), I needed to get better at building my own brand. This was a good opportunity to create content consistently: getting in the habit of balancing production and finding new clients.
+As I recently [became a freelancer](/blog/developer-experience-consulting), I needed to get better at building my own brand. This was a good opportunity to create content consistently: getting in the habit of balancing production and finding new clients.
 
 Plus, I always love opportunities to build discipline, so the challenge was appealing to me. To formalize my commitment, I tweeted at Cassidy—well, _skeeted_ lol—that I would participate in **#blogvent** the next day.
 

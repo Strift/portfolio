@@ -18,7 +18,12 @@
     {
       "source": "/blog/repository-pattern-in-composables",
       "destination": "/blog/repository-pattern-with-vue-composables",
-      "permanent": false
+      "permanent": true
+    },
+    {
+      "source": "/blog/freelance-business-launch",
+      "destination": "/blog/developer-experience-consulting",
+      "permanent": true
     }
   ]
 }
