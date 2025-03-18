@@ -33,7 +33,18 @@ const isHomePage = computed(() => route.path === '/')
     <footer class="mt-8 sm:mt-12 mb-20 md:mb-12">
       <div class="max-w-screen-md px-4 mx-auto mb-10">
         <h2 class="mb-4 heading-2">
-          💌 Get in touch
+          💌 Join my newsletter
+        </h2>
+        <p class="text-color mb-6">
+          Subscribe to my newsletter to get my latest articles and updates.
+        </p>
+        <div class="border shadow-lg dark:border-neutral-800 dark:shadow-neutral-800  border-neutral-200 rounded-md mb-10">
+          <BlogKitForm
+            form="keep-in-touch"
+          />
+        </div>
+        <h2 class="mb-4 heading-2">
+          🤙 Get in touch
         </h2>
         <p class="text-color mb-2">
           Find me on
@@ -73,9 +84,6 @@ const isHomePage = computed(() => route.path === '/')
           >email</a>.
         </p>
       </div>
-      <BlogKitForm
-        form="keep-in-touch"
-      />
     </footer>
     <div class="px-4 py-4 z-10 md:hidden block fixed bottom-0 left-0 right-0 bg-white dark:bg-neutral-950">
       <SocialLinks />
