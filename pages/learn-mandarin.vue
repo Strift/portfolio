@@ -7,7 +7,7 @@ const { data: pageContent } = await useAsyncData('learn-mandarin-index',
 
 const { data: posts } = await useAsyncData(
   `learn-mandarin-posts`,
-  () => queryContent<MandarinTip>('learn-mandarin/').sort({ date: 1 }).find(),
+  () => queryContent<MandarinTip>('learn-mandarin/').sort({ date: -1 }).find(),
   { default: () => [] },
 )
 
@@ -41,7 +41,7 @@ const toggleVisibility = (postId: string) => {
     <div
       v-for="(post, postIndex) in posts"
       :key="post._id"
-      class="block px-6 py-6 mx-8 my-10 mb-12 overflow-hidden transition-all duration-300 bg-white border rounded-md shadow-lg mandarin-tip-content border-slate-100 dark:bg-slate-950 hover:shadow-xl dark:shadow-slate-800 dark:hover:shadow-slate-700"
+      class="block px-6 py-6 my-10 mb-12 overflow-hidden transition-all duration-300 bg-white border rounded-md shadow-lg mandarin-tip-content border-neutral-100 dark:border-neutral-900 dark:bg-neutral-950 hover:shadow-xl dark:shadow-neutral-800 dark:hover:shadow-neutral-700"
     >
       <ContentRenderer
         v-if="post"
@@ -50,7 +50,7 @@ const toggleVisibility = (postId: string) => {
         <div class="flex justify-between align-baseline">
           <h2>{{ post.title }}</h2>
           <div class="text-sm text-color-secondary">
-            TIL {{ postIndex+1 }}/{{ posts.length }}
+            TIL {{ posts.length - postIndex }}/{{ posts.length }}
           </div>
         </div>
         <ContentRendererMarkdown
@@ -58,9 +58,10 @@ const toggleVisibility = (postId: string) => {
           :excerpt="showOnlyExcerpt(post._id)"
           class="inline-block"
         />
+        <span class="w-[4px] inline-block">&#32;</span>
         <button
           v-if="showOnlyExcerpt(post._id)"
-          class="ml-1 link"
+          class="link"
           @click="toggleVisibility(post._id)"
         >
           Read more
