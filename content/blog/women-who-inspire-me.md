@@ -44,7 +44,7 @@ When I wanted to work in Developer Experience, I learned a lot about the field f
 
 ## Kaleigh Moore
 
-I discovered her at an important moment in my life when I wanted to become a writer. She's a freelance writer and one of the few professionals whose blog and newsletter I consistently read. Her advice and guides were foundational in helping me learn to write—which played a big role in taking me where I am in life now. I'm grateful for her content.
+I discovered her at an important moment in my life when [I wanted to become a writer](/blog/my-commitment-to-writing). She's a freelance writer and one of the few professionals whose blog and newsletter I consistently read. Her advice and guides were foundational in helping me learn to write—which played a big role in taking me where I am in life now. I'm grateful for her content.
 
 <figure>
   <img src="https://pbs.twimg.com/profile_images/1839040399064645632/VLZpoCgC_400x400.jpg" alt="Kaleigh Moore" title="Kaleigh Moore" width="300" height="300" class="rounded mx-auto">
@@ -62,7 +62,7 @@ Yes, I know. But I'm not a revisionist. And pretending she didn't have a massive
 
 ## Anne-Laure Le Cunff
 
-She's a former tech girl turned neuroscientist who writes about creativity, wellness, and mindful productivity—all themes that resonate with me. So, reading her work is always a treat. I'm glad to see her winning with the release of her 'Tiny Experiments' book. She's a motivation for me to trust my English skills as a non-native speaker.
+She's a former tech girl turned neuroscientist who writes about creativity, wellness, and mindful productivity—all themes that [resonate with me](/blog/advent-of-blog-lessons). So, reading her work is always a treat. I'm glad to see her winning with the release of her 'Tiny Experiments' book. She's a motivation for me to trust my English skills as a non-native speaker.
 
 <figure>
   <img src="https://pbs.twimg.com/profile_images/1586431644663222278/DfT09lDH_400x400.jpg" alt="Anne-Laure Le Cunff" title="Anne-Laure Le Cunff" width="300" height="300" class="rounded mx-auto">
