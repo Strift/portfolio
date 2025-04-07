@@ -5,45 +5,45 @@ import { useBlogPostStore } from '~/store/blog'
 
 const SOCIAL_LINKS = [
   {
+    name: 'X (formerly Twitter)',
+    href: 'https://strift.dev/twitter',
+    icon: ICONS.TWITTER_X,
+  },
+  {
     name: 'Bluesky',
-    href: 'https://bsky.app/profile/laurentcazanove.com',
+    href: 'https://strift.dev/bluesky',
     icon: ICONS.BLUESKY,
   },
   {
-    name: 'X (formerly Twitter)',
-    href: 'https://x.com/StriftCodes',
-    icon: ICONS.TWITTER,
-  },
-  {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/laurentcazanove/',
+    href: 'https://strift.dev/linkedin',
     icon: ICONS.LINKEDIN,
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/Strift',
+    href: 'https://strift.dev/github',
     icon: ICONS.GITHUB,
   },
 ]
 
 const route = useRoute()
-const isBlog = computed(() => route.path.includes('blog/'))
+// const isBlog = computed(() => route.path.includes('blog/'))
 const { title } = storeToRefs(useBlogPostStore())
 
-const INTENT_LINKS = {
-  twitter: computed(() => {
-    return `https://x.com/intent/tweet?text=${encodeURIComponent(title.value)}&url=${encodeURIComponent('https://laurentcazanove.com&via=StriftCodes')}`
-  }),
-  bluesky: computed(() => {
-    return `https://bsky.app/intent/compose?text=${encodeURIComponent(title.value)} via @laurentcazanove.com`
-  }),
-}
+// const INTENT_LINKS = {
+//   twitter: computed(() => {
+//     return `https://x.com/intent/tweet?text=${encodeURIComponent(title.value)}&url=${encodeURIComponent('https://laurentcazanove.com&via=StriftCodes')}`
+//   }),
+//   bluesky: computed(() => {
+//     return `https://bsky.app/intent/compose?text=${encodeURIComponent(title.value)} via @laurentcazanove.com`
+//   }),
+// }
 
 const getSocialUrl = (social: typeof SOCIAL_LINKS[number]): string => {
-  if (!isBlog.value) return social.href
+  // if (!isBlog.value) return social.href
 
-  if (social.name === 'X (formerly Twitter)') return INTENT_LINKS.twitter.value
-  if (social.name === 'Bluesky') return INTENT_LINKS.bluesky.value
+  // if (social.name === 'X (formerly Twitter)') return INTENT_LINKS.twitter.value
+  // if (social.name === 'Bluesky') return INTENT_LINKS.bluesky.value
 
   return social.href
 }

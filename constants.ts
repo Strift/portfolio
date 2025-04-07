@@ -11,6 +11,7 @@ export const ICONS = {
   BLUESKY: 'ri:bluesky-fill',
   LINKEDIN: 'ri:linkedin-fill',
   TWITTER: 'ri:twitter-fill',
+  TWITTER_X: 'ri:twitter-x-fill',
   GITHUB: 'ri:github-fill',
 }
 
