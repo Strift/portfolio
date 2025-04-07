@@ -3,7 +3,7 @@ title: A shoutout to the women who inspire me
 date: 2025-03-31
 description: Celebrating a few of women across industries who inspired me in my personal and professional life.
 cover: /images/articles/covers/grl-pwr.jpg
-coverAlt: 'GRL PWR written on a way'
+coverAlt: 'GRL PWR written on a wall'
 lang: 'en'
 tags:
   - journaling
