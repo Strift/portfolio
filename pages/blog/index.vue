@@ -1,20 +1,6 @@
 <script lang="ts" setup>
-import type { ArticleNav, HomePageContent, ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types'
+import type { ArticleNav, ExternalArticleNavContent, MarkdownArticleNav, MediumArticleNav, OgamingArticleNav } from '~/types'
 
-// On the server, when we navigate to the home page with a client-side load, the status is 'idle'
-// but the data is available.
-const { data: homeContent, status: homeContentStatus } = await useAsyncData('home', () => queryContent<HomePageContent>('home').findOne())
-
-useSeoMeta({
-  description: homeContent.value!.metaDescription,
-})
-
-defineOgImageComponent('OgImageDefault', {
-  title: 'Laurent Cazanove',
-  description: homeContent.value!.metaDescription,
-}, { alt: 'Laurent Cazanove\'s personal website' })
-
-// Same remark as above regarding the 'idle' status.
 const { data: posts, status: postsStatus } = await useAsyncData('blog-posts', () => {
   return Promise.all([
     queryContent<MarkdownArticleNav>('blog').only(['title', 'description', 'cover', 'coverAlt', '_path', 'date', 'tags', 'updatedAt']).find(),
@@ -42,8 +28,6 @@ const route = useRoute()
 const selectedTag = computed(() => {
   return route.query.posts as string | undefined || DEFAULT_TAG
 })
-
-// Filter nav items by tag
 const filteredNavItems = computed(() => {
   if (selectedTag.value === DEFAULT_TAG) {
     return navItems.value
@@ -52,35 +36,16 @@ const filteredNavItems = computed(() => {
     return 'tags' in post && post.tags?.includes(selectedTag.value)
   })
 })
-
-// Filter nav item by pagination
-const PAGINATION_STEP = 5
-const numVisibleNavItems = ref(PAGINATION_STEP)
-const visibleNavItems = computed(() => {
-  if (numVisibleNavItems.value >= filteredNavItems.value.length) {
-    return filteredNavItems.value
-  }
-  return filteredNavItems.value.slice(0, numVisibleNavItems.value)
-})
 </script>
 
 <template>
   <div>
-    <HomeContent
-      v-if="homeContent"
-      :content="homeContent"
-    />
-    <div v-else-if="homeContentStatus === 'pending'">
-      Loading...
-    </div>
-    <div v-else>
-      Error loading home page. Please try again later.
-    </div>
-    <section class="mt-8 sm:mt-12">
+    <section class="mt-8 sm:mt-12 mb-6">
+      <BackButton class="mb-6" />
       <div class="bg-white dark:bg-neutral-950 pb-6 sm:pb-8 sticky top-[var(--header-height)] z-10">
-        <h2 class="mb-4 heading-2">
-          ✍️ Latest posts
-        </h2>
+        <h1 class="mb-4 heading-2">
+          ✍️ Blog
+        </h1>
         <BlogCategories
           :default-tag="DEFAULT_TAG"
           :selected-tag="selectedTag"
@@ -91,8 +56,8 @@ const visibleNavItems = computed(() => {
         class="space-y-8"
       >
         <BlogPostCard
-          v-for="nav in visibleNavItems"
-          :key="`${selectedTag}-${nav.title}`"
+          v-for="nav in filteredNavItems"
+          :key="nav.title"
           :post="nav"
         />
       </div>
@@ -102,14 +67,7 @@ const visibleNavItems = computed(() => {
       <div v-else>
         Error loading posts. Please try again later.
       </div>
-      <div class="text-center mt-8">
-        <NuxtLink
-          class="link"
-          to="/blog"
-        >
-          Show all posts
-        </NuxtLink>
-      </div>
     </section>
+    <BackButton />
   </div>
 </template>
