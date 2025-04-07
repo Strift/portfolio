@@ -1,10 +1,14 @@
 <script lang="ts" setup>
 import { ICONS } from '~/constants'
+
+const { to = '/' } = defineProps<{
+  to?: string
+}>()
 </script>
 
 <template>
   <NuxtLink
-    to="/"
+    :to="to"
     class="inline-flex items-center space-x-2 text-color-secondary hover:text-slate-700 hover:dark:text-neutral-200"
   >
     <Icon
