@@ -1,11 +1,8 @@
 ---
 actions:
   - text: Get in touch
-    href: mailto:lau.cazanove@gmail.com
-    icon: MAIL
-  - text: Book a call
-    href: https://strift.dev/meeting
-    icon: MEETING
+    href: /contact
+    icon: CONTACT
 ---
 
 <!-- ## 👋 About me -->

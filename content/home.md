@@ -1,6 +1,6 @@
 ---
 actions:
-  - text: Get in touch
+  - text: Send an email
     href: mailto:lau.cazanove@gmail.com
     icon: MAIL
   - text: Book a call

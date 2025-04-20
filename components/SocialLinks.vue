@@ -1,28 +1,5 @@
 <script lang="ts" setup>
-import { ICONS } from '~/constants'
-
-const SOCIAL_LINKS = [
-  {
-    name: 'X (formerly Twitter)',
-    href: 'https://strift.dev/twitter',
-    icon: ICONS.TWITTER_X,
-  },
-  {
-    name: 'Bluesky',
-    href: 'https://strift.dev/bluesky',
-    icon: ICONS.BLUESKY,
-  },
-  {
-    name: 'LinkedIn',
-    href: 'https://strift.dev/linkedin',
-    icon: ICONS.LINKEDIN,
-  },
-  {
-    name: 'GitHub',
-    href: 'https://strift.dev/github',
-    icon: ICONS.GITHUB,
-  },
-]
+import { SOCIAL_LINKS } from '~/constants'
 </script>
 
 <template>
