@@ -9,6 +9,14 @@ export type HomePageContent = ParsedContent & {
   }>
 }
 
+export type ContactPageContent = ParsedContent & {
+  actions: Array<{
+    text: string
+    href: string
+    icon: keyof typeof ICONS
+  }>
+}
+
 export type ProjectsPageContent = ParsedContent & {
   projects: Array<{
     name: string
