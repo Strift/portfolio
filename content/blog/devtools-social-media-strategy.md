@@ -13,14 +13,20 @@ tags:
 
 You’re not competing with other products. You’re competing for attention.
 
-People are not scrolling on social media and randomly going to sign up for a product trial.
+**You're competing against cat GIFs and ragebaits.**
 
-So before marketing to them, you want to engage them. You want to build brand awareness and create multiple touchpoints with your ICP. Eventually, one of your posts will spark enough curiosity for readers to want to know more and visit your website.
+People are _not_ going to stop doomscrolling and randomly sign up for a product trial. So before marketing to them, let's start with stopping the scroll and engaging them.
 
-But before that, you need to engage them. So you need to create content that matches the users’ expectations on the platform and adhere to its best practices. There is no shortcut to that.
+Because of this, I mainly see social medias as a way to build brand awareness. You want to create touchpoints with your ICP.
 
-X (formerly Twitter) and LinkedIn have become more like Reddit and Hackernews. Even with massive followings, your content needs to pass a “relevance test” before others can see it. Especially now that their algorithms now downrank posts with external links.
+Somewhere down the line, one of these posts will spark enough curiosity for readers to want to know more and visit your website.
 
-If you want to grow your website traffic, the time of simply posting links to your blog is over. To reach your audience, you need to create content that’s relevant to the audience on the platform.
+But before that, you need to generate curiosity. So you need to create content that matches the users’ expectations on the platform and adhere to its ”meta”. There is no shortcut around this.
 
-By doing so, you build awareness of your product and brand. Eventually, a part of this audience will start converting to your website and product. It is possible to acquire traffic via these platforms. Especially if your content goes viral, or really makes a hit. But it’s harder now than before.
+X (formerly Twitter) and LinkedIn have become more like Reddit and Hackernews in a sense. Your followers matter less. Your content now needs to pass a “relevance test” before others can see it.
+
+If you want to grow your website traffic, simply posting links to your blog won't do it. Especially now that the algorithms downrank posts with external links.
+
+To reach your ICP, you need to create content that’s relevant to platform audience. Only by doing so can you build awareness of your product.
+
+Eventually, a part of this audience will start converting to your website and product. It is still possible to acquire traffic via social medias. Especially when your content goes viral. But it’s harder now than before.
