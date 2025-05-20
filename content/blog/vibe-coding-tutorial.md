@@ -31,9 +31,7 @@ When working with LLMs, instructions and prompt engineering are the primary ways
 
 The same approach applies to vibe coding. In Cursor, these system prompts are written as Cursor rule files. Cursor loads these files as extra instructions for the model, based on file-matching patterns.
 
-For example, you can create a general rule for all files:
-
-**.cursor/rules/general.mdc:**
+For example, you can create a `.cursor/rules/general.mdc` rule that applies to all files:
 
 ```mdc
 ---
@@ -56,13 +54,13 @@ alwaysApply: false
 - Use concise, meaningful comments - only for complex logic.
 ```
 
-> “Run the shell commands yourself” is a favorite of mine lately—it ensures Cursor executes code in the integrated shell. This way, it can read the output and follow up!
+> 💡 “Run the shell commands yourself” is my latest favorite . It ensures Cursor executes code in the integrated shell. This way, it can read the output and follow up!
 
 File patterns, as you might expect, restrict when Cursor loads the given rules, and therefore when the model applies them.
 
-For example, here’s a rule that applies only to Vue components:
+For example, here’s a `.cursor/rules/frontend.mdc` rule that applies only to Vue components:
 
-```mdc
+```md
 ---
 description:
 globs: *.vue
@@ -83,7 +81,7 @@ Step into the PM role! Collaborate with an LLM to discuss the app you want to bu
 
 Personally, I prefer Claude due to its ability to generate diagrams. I often ask it to produce a diagram of the architecture to confirm I understand its proposal—and to check it understands my expectations.
 
-> Use standard LLM best practices here—edit and branch the conversation as necessary, keeping only the most relevant content.
+> 💡 Use standard LLM best practices here—edit and branch the conversation as necessary, keeping only the most relevant content.
 
 Once you have a clear discussion, ask the model to summarize a comprehensive description. Refine the summary as needed until it’s accurate.
 
@@ -95,7 +93,7 @@ Begin by scaffolding out the project’s architecture. This allows the model to 
 
 For this, you want models that produce natural, prose-like content that captures the intent of your plan. I currently use Gemini 2.5 Flash for its wide context window and cost-efficiency, but any concise model works (GPT 4.1, Claude 3.5 Sonnet, etc.).
 
-**Generating architecture file**
+#### Generating the project architecture
 
 ```md
 I’m building a [short description of the product] (description attached below). Use Nuxt 3 for frontend, Sqlite for database, Meilisearch for search.
@@ -108,9 +106,9 @@ Give me the full architecture:
 Format this entire document in Markdown.
 ```
 
-Save this as `architecture.md` in your project directory.
+Save the output as `architecture.md` in your project directory.
 
-**Generating tasks**
+#### Generating tasks
 
 Next, use the project description and architecture to generate a list of tasks for the LLM to execute.
 
@@ -127,7 +125,7 @@ Each task should:
 I’ll be passing this off to an engineering LLM that will be told to complete one task at a time, allowing me to test in between.
 ```
 
-Save this as `tasks.md` in your project folder, and you’re set.
+Save the output as `tasks.md` in your project folder, and you’re set.
 
 ## Building incrementally with your AI assistant
 
@@ -149,9 +147,11 @@ You've been given @architecture.md and @tasks.md.
 Proceed to implement task 1.1.
 ```
 
-If this process feels repetitive, you can create a Notepad in Cursor to streamline your prompts. I keep these instructions in a Notepad called ‘Consider architecture and tasks’ for easy access.
+If this process feels repetitive, you can create a Notepad in Cursor to streamline your prompts. I keep these instructions in a Notepad called ‘Consider architecture and tasks’ that I just reference in my prompts.
 
-![[Screenshot 2025-05-20 at 21.20.21.png]]
+<article-image src="/images/articles/vibe-coding-tutorial/cursor-notepad-example.png" alt="Screenshot of using a ’Consider architecture and tasks’ Notepad in Cursor AI chat" title="Leveraging Cursor Notepads to avoid repetition">
+Leveraging Cursor Notepads to avoid repetition
+</article-image>
 
 At this point, I prefer using Claude 3.7 Sonnet, as I’ve found it best for following instructions. 3.5 is faster and still performs well. For more complex challenges, though, I return to Sonnet 3.7 (without extended thinking mode).
 

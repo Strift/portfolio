@@ -148,6 +148,14 @@
     }
   }
 
+  pre.language-md {
+    @apply w-full max-w-full;
+
+    & code {
+      @apply break-words whitespace-pre-wrap;
+    }
+  }
+
   p code,
   li code {
     @apply inline-code;
