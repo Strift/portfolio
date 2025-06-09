@@ -1,7 +1,7 @@
 ---
-title: A structured approach to Vibe Coding
+title: A structured approach to Cursor vibe coding
 date: 2025-04-07
-description: Level up your LLM-assisted development. Discover a structured workflow to define specs, manage tasks, and provide your AI pair programming assistant with exactly the context it needs.
+description: Level up your LLM-assisted development with Cursor. Discover a structured workflow to define specs, manage tasks, and provide your AI pair programming assistant with exactly the context it needs.
 cover: /images/articles/covers/cursor.png
 coverAlt: 'Cursor logo'
 lang: 'en'
@@ -10,13 +10,15 @@ tags:
   - llm
 ---
 
+# A structured approach to Cursor vibe coding
+
 In this guide, you’ll learn my tips for setting up a good environment for vibe coding. I use Cursor, but you can likely achieve a similar workflow using other tools.
 
-## The problem—context
+## TL;DR: Context is king
 
-When coding by interacting with LLMs, we often encounter what’s commonly called “garbage in, garbage out.”
+When coding by interacting with LLMs, we often encounter what’s commonly called **“garbage in, garbage out.”**
 
-Put simply, context is essential. If you provide too little context, the LLM produces generic output; too much context makes it difficult for the model to determine what’s important.
+Put simply, **context is essential**. If you provide too little context, the LLM produces generic output; too much context makes it difficult for the model to determine what’s important.
 
 To address this, you should provide just enough information for the task at hand. In this context, that means giving the LLM what it needs to generate correct code. Not too much, so it doesn’t derail and start generating unrequested features.
 
@@ -24,6 +26,9 @@ In this guide, you’ll learn to
 - Give general instructions to your models
 - Provide enough context for your tasks
 - Develop by small iterations
+
+::ai-newsletter-form
+::
 
 ## Configuring system rules for your environment
 
@@ -177,6 +182,9 @@ The tasks.md and architecture.md files need to be updated accordingly.
 ```
 
 This approach helps keep your architecture and task files consistent with your code at all times.
+
+::ai-newsletter-form
+::
 
 ## Wrapping up
 

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const props = defineProps<{
-  form: 'keep-in-touch' | 'in-article'
+  form: 'keep-in-touch' | 'in-article' | 'ai-in-article'
 }>()
 </script>
 
@@ -25,6 +25,19 @@ const props = defineProps<{
       async
       data-uid="502bd49c93"
       src="https://strift.kit.com/502bd49c93/index.js"
+    />
+    <hr>
+  </div>
+  <div v-else-if="props.form === 'ai-in-article'">
+    <hr>
+    <div class="text-center leading-0 mx-auto mt-6 -mb-6 text-color-secondary italic max-w-[240px]">
+      Get more actionable tips to leverage AI as a developer:
+    </div>
+    <component
+      :is="'script'"
+      async
+      data-uid="a7fbc6f428"
+      src="https://strift.kit.com/a7fbc6f428/index.js"
     />
     <hr>
   </div>
