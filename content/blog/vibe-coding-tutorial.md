@@ -1,5 +1,5 @@
 ---
-title: A structured approach to Vibe Coding with Cursor
+title: A structured approach to Cursor vibe coding
 date: 2025-04-07
 description: Level up your LLM-assisted development with Cursor. Discover a structured workflow to define specs, manage tasks, and provide your AI pair programming assistant with exactly the context it needs.
 cover: /images/articles/covers/cursor.png
@@ -10,13 +10,13 @@ tags:
   - llm
 ---
 
-# A structured approach to Vibe Coding with Cursor
+# A structured approach to Cursor vibe coding
 
 In this guide, you’ll learn my tips for setting up a good environment for vibe coding. I use Cursor, but you can likely achieve a similar workflow using other tools.
 
 ## The problem—context
 
-When coding by interacting with LLMs, we often encounter what’s commonly called “garbage in, garbage out.”
+When coding by interacting with LLMs, we often encounter what’s commonly called **“garbage in, garbage out.”**
 
 Put simply, context is essential. If you provide too little context, the LLM produces generic output; too much context makes it difficult for the model to determine what’s important.
 
