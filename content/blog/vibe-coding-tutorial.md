@@ -1,7 +1,7 @@
 ---
-title: A structured approach to Vibe Coding
+title: A structured approach to Vibe Coding with Cursor
 date: 2025-04-07
-description: Level up your LLM-assisted development. Discover a structured workflow to define specs, manage tasks, and provide your AI pair programming assistant with exactly the context it needs.
+description: Level up your LLM-assisted development with Cursor. Discover a structured workflow to define specs, manage tasks, and provide your AI pair programming assistant with exactly the context it needs.
 cover: /images/articles/covers/cursor.png
 coverAlt: 'Cursor logo'
 lang: 'en'
@@ -9,6 +9,8 @@ tags:
   - engineering
   - llm
 ---
+
+# A structured approach to Vibe Coding with Cursor
 
 In this guide, you’ll learn my tips for setting up a good environment for vibe coding. I use Cursor, but you can likely achieve a similar workflow using other tools.
 
@@ -24,6 +26,9 @@ In this guide, you’ll learn to
 - Give general instructions to your models
 - Provide enough context for your tasks
 - Develop by small iterations
+
+::ai-newsletter-form
+::
 
 ## Configuring system rules for your environment
 
@@ -177,6 +182,9 @@ The tasks.md and architecture.md files need to be updated accordingly.
 ```
 
 This approach helps keep your architecture and task files consistent with your code at all times.
+
+::ai-newsletter-form
+::
 
 ## Wrapping up
 
