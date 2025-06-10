@@ -12,7 +12,7 @@ const props = defineProps<{
       Sorry, something went wrong
     </h2>
     <div class="mb-6">
-      <BackButton>Go back home</BackButton>
+      <BackButton>Back to the home page</BackButton>
     </div>
     <div class="bg-slate-100 dark:bg-neutral-900 rounded-xl p-12 text-center">
       <h1 class="font-title text-4xl mb-6">

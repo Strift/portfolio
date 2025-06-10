@@ -108,3 +108,9 @@ functions/.service-account.json
 .nuxt
 .output
 .vercel
+
+# Fetched content
+content/awesome-esports.json
+
+# Local vector database
+.vector-db/

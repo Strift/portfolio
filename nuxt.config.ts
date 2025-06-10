@@ -1,6 +1,7 @@
 import { readdirSync } from 'fs'
-import { join } from 'path'
+import path, { join } from 'path'
 import { ICONS } from './constants'
+import fetchAwesomeEsports from './scripts/fetch-awesome-esports'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -45,6 +46,13 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
   content: {
+    sources: {
+      awesome: {
+        driver: 'fs',
+        prefix: '/awesome',
+        base: path.resolve(__dirname, 'content'),
+      },
+    },
     highlight: {
       theme: {
         default: 'github-light',
@@ -59,6 +67,11 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'format-detection', content: 'telephone=no' },
       ],
+    },
+  },
+  hooks: {
+    'build:before': async () => {
+      await fetchAwesomeEsports()
     },
   },
   // scripts: {
