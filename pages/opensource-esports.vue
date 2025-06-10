@@ -16,11 +16,11 @@ function getGitHubOgImage(url: string) {
 <template>
   <div class="">
     <header class="py-12 text-center">
-      <h1 class="text-4xl font-bold mb-4 text-color">
-        Open Source Esports Repositories
+      <h1 class="text-4xl font-bold mb-4 text-color-emphasis">
+        Open-source Esports Repositories
       </h1>
-      <p class="text-gray-600 max-w-2xl mx-auto text-color-secondary">
-        A curated list of esports open source repositories on GitHub.
+      <p class="max-w-2xl mx-auto text-color-muted">
+        A curated list of open-source esports-related repositories on GitHub.
       </p>
     </header>
     <div
