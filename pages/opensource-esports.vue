@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import type { MarkdownArticleNav } from '~/types'
 
+useSeoMeta({
+  title: 'Open-source esports repositories',
+  titleTemplate: '%s',
+  description: 'A curated list of open-source esports-related repositories on GitHub.',
+  ogDescription: 'A curated list of open-source esports-related repositories on GitHub.',
+  ogTitle: 'Open-source esports repositories',
+})
+
 const { data: awesomeEsports } = await useAsyncData('awesome-esports', () =>
   queryContent('/awesome/awesome-esports').findOne(),
 )
