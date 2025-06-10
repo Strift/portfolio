@@ -17,10 +17,10 @@ function getGitHubOgImage(url: string) {
   <div class="">
     <header class="py-12 text-center">
       <h1 class="text-4xl font-bold mb-4 text-color">
-        Awesome Esports Resources
+        Open Source Esports Repositories
       </h1>
       <p class="text-gray-600 max-w-2xl mx-auto text-color-secondary">
-        Curated list of esports resources from GitHub
+        A curated list of esports open source repositories on GitHub.
       </p>
     </header>
     <div
@@ -60,5 +60,14 @@ function getGitHubOgImage(url: string) {
         </div>
       </div>
     </div>
+    <footer class="py-12 text-center">
+      <div class="text-color-secondary">
+        Repositories curated from the <a
+          href="https://github.com/Strift/awesome-esports/blob/main/README.md"
+          target="_blank"
+          class="link"
+        >Awesome Esports</a> project.
+      </div>
+    </footer>
   </div>
 </template>
