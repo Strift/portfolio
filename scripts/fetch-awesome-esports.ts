@@ -57,6 +57,11 @@ export default async () => {
   }
   catch (error) {
     console.error('❌ Error fetching awesome-esports:', error)
-    process.exit(1)
+    if (process.env.NODE_ENV === 'development') {
+      console.warn('Local development detected, using local cache...')
+    }
+    else {
+      process.exit(1)
+    }
   }
 }

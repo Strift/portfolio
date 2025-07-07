@@ -24,6 +24,11 @@
       "source": "/blog/freelance-business-launch",
       "destination": "/blog/developer-experience-consulting",
       "permanent": true
+    },
+    {
+      "source": "/opensource-esports",
+      "destination": "/open-source-esports-repositories",
+      "permanent": true
     }
   ]
 }
