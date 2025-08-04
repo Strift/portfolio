@@ -17,11 +17,23 @@
     }
   }
 
+  @screen lg {
+    :root {
+      --header-height: calc(112px + 8px);
+    }
+  }
+
+  @screen xl {
+    :root {
+      --header-height: calc(144px + 8px);
+    }
+  }
+
 }
 
 @layer components {
   .text-color {
-    @apply text-slate-700 dark:text-neutral-300;
+    @apply text-slate-700 lg:text-slate-600 dark:text-neutral-300;
   }
 
   .text-color-subtle {
@@ -45,7 +57,7 @@
   }
 
   .heading-2 {
-    @apply text-2xl font-semibold font-title text-color-title;
+    @apply text-2xl lg:text-3xl xl:text-4xl font-semibold font-title text-color-title;
   }
 
   .heading-3 {
@@ -76,7 +88,7 @@
 
 .about-content {
   p {
-    @apply mb-2 leading-relaxed text-color;
+    @apply mb-2 lg:mb-4 xl:mb-6 leading-relaxed text-color lg:text-lg xl:text-xl;
   }
 
   strong {
@@ -88,7 +100,7 @@
   }
 
   h2 {
-    @apply mb-4 heading-2;
+    @apply mb-4 lg:mb-6 xl:mb-8 heading-2;
   }
 
   .cta-buttons a {
@@ -215,12 +227,8 @@
 .page-content {
   @apply text-color text-pretty;
 
-  h1 {
-    @apply mb-6 heading-2;
-  }
-
   p {
-    @apply mb-2 leading-relaxed;
+    @apply mb-2 lg:mb-4 xl:mb-6 leading-relaxed lg:text-lg xl:text-xl;
   }
 
   a {

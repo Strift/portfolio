@@ -32,7 +32,7 @@ const toggleVisibility = (postId: string) => {
 
 <template>
   <div>
-    <BackButton class="mb-6" />
+    <BackButton class="mb-6 lg:mb-8 xl:mb-10" />
     <ContentRenderer
       v-if="pageContent"
       :value="pageContent"

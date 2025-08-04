@@ -92,7 +92,7 @@ const components = {
       :class="{ 'sm:flex sm:gap-x-8': markdownPost?.ad }"
     >
       <div :class="{ 'sm:w-3/4': markdownPost?.ad }">
-        <BackButton class="mb-6" />
+        <BackButton class="mb-6 lg:mb-8 xl:mb-10" />
         <BlogAdventCalendar
           v-if="markdownPost?.components?.includes('advent-2024')"
           :day="Number(getDayFromDateString(markdownPost?.date))"

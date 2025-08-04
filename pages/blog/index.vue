@@ -41,7 +41,7 @@ const filteredNavItems = computed(() => {
 <template>
   <div>
     <section class="mt-8 sm:mt-12 mb-6">
-      <BackButton class="mb-6" />
+      <BackButton class="mb-6 lg:mb-8 xl:mb-10" />
       <div class="bg-white dark:bg-neutral-950 pb-6 sm:pb-8 sticky top-[var(--header-height)] z-10">
         <h1 class="mb-4 heading-2">
           ✍️ Blog

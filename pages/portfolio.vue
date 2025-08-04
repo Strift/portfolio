@@ -16,7 +16,7 @@ const tags = computed(() => {
 
 <template>
   <div class="">
-    <BackButton class="mb-6" />
+    <BackButton class="mb-6 lg:mb-8 xl:mb-10" />
     <h2 class="heading-2 mb-4">
       Portfolio
     </h2>
