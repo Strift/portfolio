@@ -26,7 +26,7 @@ const { data: sameTagsPosts } = await useAsyncData(
 </script>
 
 <template>
-  <section>
+  <div>
     <h2 class="heading-2 mb-4">
       ✍️ Related posts
     </h2>
@@ -46,5 +46,5 @@ const { data: sameTagsPosts } = await useAsyncData(
     <BackButton to="/blog">
       Back to the blog
     </BackButton>
-  </section>
+  </div>
 </template>

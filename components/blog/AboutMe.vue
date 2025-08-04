@@ -6,7 +6,7 @@ const { data: content } = await useAsyncData('about', () => queryContent<HomePag
 </script>
 
 <template>
-  <section
+  <div
     v-if="content"
     class="p-5 sm:p-8 bg-slate-100 dark:bg-neutral-900 rounded-xl about-content sm:-mx-5"
   >
@@ -24,5 +24,5 @@ const { data: content } = await useAsyncData('about', () => queryContent<HomePag
       class="sm:hidden"
     />
     <CTAButtons :actions="content.actions" />
-  </section>
+  </div>
 </template>

@@ -98,19 +98,21 @@ const components = {
           :day="Number(getDayFromDateString(markdownPost?.date))"
           class="mb-6"
         />
-        <article
-          v-if="markdownPost"
-          class="blog-post-content"
-        >
-          <ContentRenderer
-            v-if="processedPost"
-            :value="processedPost"
+        <article>
+          <div
+            v-if="markdownPost"
+            class="blog-post-content"
           >
-            <ContentRendererMarkdown
+            <ContentRenderer
+              v-if="processedPost"
               :value="processedPost"
-              :components="components"
-            />
-          </ContentRenderer>
+            >
+              <ContentRendererMarkdown
+                :value="processedPost"
+                :components="components"
+              />
+            </ContentRenderer>
+          </div>
         </article>
         <BlogAdventCalendar
           v-if="markdownPost?.components?.includes('advent-2024')"
@@ -132,11 +134,15 @@ const components = {
         </div>
       </aside>
     </div>
-    <BlogAboutMe />
-    <BlogReadMore
-      v-if="markdownPost && markdownPost._path"
-      :current-path="markdownPost._path"
-      :tags="markdownPost.tags"
-    />
+    <aside>
+      <BlogAboutMe />
+    </aside>
+    <aside>
+      <BlogReadMore
+        v-if="markdownPost && markdownPost._path"
+        :current-path="markdownPost._path"
+        :tags="markdownPost.tags"
+      />
+    </aside>
   </div>
 </template>

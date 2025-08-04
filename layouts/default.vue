@@ -46,56 +46,62 @@ const isContactPage = computed(() => route.path === '/contact')
     <footer>
       <div class="mt-8 sm:mt-12 mb-20">
         <div class="max-w-screen-md px-4 mx-auto mb-10">
-          <h2 class="mb-4 heading-2">
-            💌 Join my newsletter
-          </h2>
-          <p class="text-color mb-6">
-            Subscribe to my newsletter to get my latest articles and updates.
-          </p>
-          <div class="border shadow-lg dark:border-neutral-800 dark:shadow-neutral-800  border-neutral-200 rounded-md mb-10">
-            <BlogKitForm
-              form="keep-in-touch"
-            />
-          </div>
-          <h2 class="mb-4 heading-2">
-            🤙 Get in touch
-          </h2>
-          <p class="text-color mb-2">
-            Find me on
-            <span
-              v-for="(social, index) in SOCIAL_LINKS"
-              :key="social.name"
-            >
-              <NuxtLink
-                :to="social.href"
-                target="_blank"
-                class="link"
+          <section>
+            <h2 class="mb-4 heading-2">
+              💌 Join my newsletter
+            </h2>
+            <p class="text-color mb-6">
+              Subscribe to my newsletter to get my latest articles and updates.
+            </p>
+            <div class="border shadow-lg dark:border-neutral-800 dark:shadow-neutral-800  border-neutral-200 rounded-md mb-10">
+              <BlogKitForm
+                form="keep-in-touch"
+              />
+            </div>
+          </section>
+          <section>
+            <h2 class="mb-4 heading-2">
+              🤙 Get in touch
+            </h2>
+            <p class="text-color mb-2">
+              Find me on
+              <span
+                v-for="(social, index) in SOCIAL_LINKS"
+                :key="social.name"
               >
-                {{ social.name }}
-              </NuxtLink>
-              <span v-if="index < SOCIAL_LINKS.length - 2">, </span>
-              <span v-if="index === SOCIAL_LINKS.length - 2">, and </span>
-            </span>.
-          </p>
-          <p
-            v-if="!isContactPage"
-            class="text-color"
-          >
-            For business inquiries, visit the <NuxtLink
-              to="/contact"
-              class="link"
-            >contact page</NuxtLink>.
-          </p>
-          <p
-            v-else
-            class="text-color"
-          >
-            For business inquiries, please book a meeting or send an email.
-          </p>
+                <NuxtLink
+                  :to="social.href"
+                  target="_blank"
+                  class="link"
+                >
+                  {{ social.name }}
+                </NuxtLink>
+                <span v-if="index < SOCIAL_LINKS.length - 2">, </span>
+                <span v-if="index === SOCIAL_LINKS.length - 2">, and </span>
+              </span>.
+            </p>
+            <p
+              v-if="!isContactPage"
+              class="text-color"
+            >
+              For business inquiries, visit the <NuxtLink
+                to="/contact"
+                class="link"
+              >contact page</NuxtLink>.
+            </p>
+            <p
+              v-else
+              class="text-color"
+            >
+              For business inquiries, please book a meeting or send an email.
+            </p>
+          </section>
         </div>
       </div>
       <div class="px-4 py-4 z-10 fixed bottom-0 left-0 right-0 bg-white dark:bg-neutral-950">
-        <SocialLinks />
+        <section>
+          <SocialLinks />
+        </section>
       </div>
     </footer>
   </div>
