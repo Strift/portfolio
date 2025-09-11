@@ -21,11 +21,11 @@ People are _not_ going to stop doomscrolling and randomly sign up for a product 
 
 So before marketing your product, you want to start a conversation. You build brand awareness by creating multiple touchpoints with your ICP (Ideal Customer Profile). Somewhere down the line, one of these posts will spark enough curiosity for readers to want to know more and visit your website.
 
-It is still possible to acquire traffic via these platforms. Especially if your content goes viral. But it’s harder now than before. So your best bet is creating content that matches the users’ expectations and adheres to the platform’s best practices — its “meta”.
+<!-- It is still possible to acquire traffic via these platforms. Especially if your content goes viral. But it’s harder now than before. So your best bet is creating content that matches the users’ expectations and adheres to the platform’s best practices — its “meta”. -->
 
-In a way, X (formerly Twitter) and LinkedIn have become more like Reddit and Hackernews. Your followers matter less. Your content now needs to pass a “relevance test” before others can see it.
+In a way, X (formerly Twitter) and LinkedIn have become more like Reddit and Hackernews. Your followers matter less. Your content now needs to pass a “relevance test” before others can see it. So your best bet is creating content that matches the users’ expectations and adheres to the platform’s best practices — its “meta”.
 
-If you want to grow your website traffic, simply posting links to your blog won't do it. Especially now that the algorithms downrank posts with external links.
+To grow your website traffic, simply posting links to your blog won't do it. Especially now that the algorithms downrank posts with external links.
 
 ## Create engaging content
 
