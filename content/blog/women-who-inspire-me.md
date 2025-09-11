@@ -17,12 +17,15 @@ Here's to them.
 
 ## Efjee ‘Sjokz’ Deportere
 
-She's the face of League of Legends esports broadcasts. She gets the culture so right, and her stellar hosting and interviewing skills are a treat to any broadcast she works. Although she started as a writer and shyly transitioned to on-camera work, she has now become a role model and standard to match for everyone in the industry.
+She's the face of League of Legends esports broadcasts. She gets the culture so right, and her stellar hosting and interviewing skills are a treat to any broadcast she works. Although she started as a writer and shyly transitioned to on-camera work, she has now become a role model and standard to match for everyone in the industry. She received the [Esports On-Air Talent of the Decade](https://x.com/esportsawards/status/1959727839965794396) award.
 
 <figure>
   <img src="https://pbs.twimg.com/profile_images/1856440263364796416/l_pfsqKq_400x400.jpg" alt="Sjokz" title="Sjokz" width="300" height="300" class="rounded mx-auto">
   <figcaption>Twitter: <a href="https://x.com/sjokz" target="_blank">@sjokz</a></figcaption>
 </figure>
+
+Shout-outs:
+- [On woman health](https://www.tiktok.com/@eefjeuh/video/7548466715273792791?lang=en)
 
 ## Cassidy Williams
 
@@ -53,12 +56,15 @@ I discovered her at an important moment in my life when [I wanted to become a wr
 
 ## J.K. Rowling
 
-Yes, I know. But I'm not a revisionist. And pretending she didn't have a massive impact on me would be dishonest. First through her humorous, inspired, and relatable writing—and later through her Harvard speech on imagination and empathy. The speech was somewhat of a revelation to me and still inspires me to this day.
+Yes, I know. But I'm not a revisionist. And pretending the author of Harry Potter didn't have a massive impact on me would be dishonest. First through her humorous, inspired, and relatable writing—and later through her Harvard speech on imagination and empathy. The speech was somewhat of a revelation to me and still inspires me to this day.
 
 <figure>
   <img src="https://pbs.twimg.com/profile_images/1883231711762292736/g9rnxUNC_400x400.jpg" alt="J.K. Rowling" title="J.K. Rowling" width="300" height="300" class="rounded mx-auto">
   <figcaption>(Read Harry Potter instead)</figcaption>
 </figure>
+
+Shout-outs:
+- [J.K. Rowling speaks at Harvard Commencement](https://www.youtube.com/watch?v=wHGqp8lz36c)
 
 ## Anne-Laure Le Cunff
 
@@ -70,5 +76,3 @@ She's a former tech girl turned neuroscientist who writes about creativity, well
 </figure>
 
 What about you? Do you have any role models?
-
-Let me know on X/Bluesky!

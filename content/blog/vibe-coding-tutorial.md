@@ -1,6 +1,6 @@
 ---
 title: A structured approach to Cursor vibe coding
-date: 2025-04-07
+date: 2025-05-20
 description: Level up your LLM-assisted development by providing Cursor with defined specs, tasks, and necessary context.
 cover: /images/articles/covers/cursor.png
 coverAlt: 'Cursor logo'
