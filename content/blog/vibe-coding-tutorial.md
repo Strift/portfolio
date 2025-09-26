@@ -7,7 +7,7 @@ coverAlt: 'Cursor logo'
 lang: 'en'
 tags:
   - engineering
-  - llm
+  - ai
 ---
 
 # A structured approach to Cursor vibe coding
