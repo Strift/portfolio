@@ -88,52 +88,76 @@ const components = {
 
 <template>
   <div class="space-y-12">
-    <div
-      :class="{ 'sm:flex sm:gap-x-8': markdownPost?.ad }"
-    >
-      <div :class="{ 'sm:w-3/4': markdownPost?.ad }">
-        <BackButton class="mb-6" />
-        <BlogAdventCalendar
-          v-if="markdownPost?.components?.includes('advent-2024')"
-          :day="Number(getDayFromDateString(markdownPost?.date))"
-          class="mb-6"
-        />
-        <article>
-          <div
-            v-if="markdownPost"
-            class="blog-post-content"
-          >
-            <ContentRenderer
-              v-if="processedPost"
-              :value="processedPost"
-            >
-              <ContentRendererMarkdown
-                :value="processedPost"
-                :components="components"
+    <!-- Desktop layout with TOC on the right -->
+    <div class="lg:flex lg:gap-x-8">
+      <!-- Main content area -->
+      <div class="lg:flex-1 lg:max-w-4xl">
+        <div
+          :class="{ 'sm:flex sm:gap-x-8': markdownPost?.ad }"
+        >
+          <div :class="{ 'sm:w-3/4': markdownPost?.ad }">
+            <BackButton class="mb-6" />
+            <!-- TOC for mobile - show above content on small screens -->
+            <aside class="lg:hidden px-4 py-3 border border-slate-300 dark:border-neutral-700 rounded-lg mb-6">
+              <BlogTOC
+                v-if="markdownPost?._path"
+                :current-path="markdownPost?._path"
               />
-            </ContentRenderer>
+            </aside>
+            <BlogAdventCalendar
+              v-if="markdownPost?.components?.includes('advent-2024')"
+              :day="Number(getDayFromDateString(markdownPost?.date))"
+              class="mb-6"
+            />
+            <article>
+              <div
+                v-if="markdownPost"
+                class="blog-post-content"
+              >
+                <ContentRenderer
+                  v-if="processedPost"
+                  :value="processedPost"
+                >
+                  <ContentRendererMarkdown
+                    :value="processedPost"
+                    :components="components"
+                  />
+                </ContentRenderer>
+              </div>
+            </article>
+            <BlogAdventCalendar
+              v-if="markdownPost?.components?.includes('advent-2024')"
+              :day="Number(getDayFromDateString(markdownPost?.date))"
+            />
           </div>
-        </article>
-        <BlogAdventCalendar
-          v-if="markdownPost?.components?.includes('advent-2024')"
-          :day="Number(getDayFromDateString(markdownPost?.date))"
-        />
+          <aside
+            v-if="markdownPost && markdownPost.ad"
+            class="relative hidden sm:block sm:w-1/4"
+          >
+            <div class="sticky p-5 bg-slate-100 dark:bg-neutral-900 rounded-lg top-[var(--header-height)]">
+              <div class="mb-4 text-color">
+                <!-- eslint-disable-next-line vue/no-v-html -->
+                <span v-html="markdownPost.ad.text" />
+              </div>
+              <BlogAdButton :to="markdownPost.ad.buttonLink">
+                {{ markdownPost.ad.buttonText }}
+              </BlogAdButton>
+            </div>
+          </aside>
+        </div>
       </div>
-      <aside
-        v-if="markdownPost && markdownPost.ad"
-        class="relative hidden sm:block sm:w-1/4"
-      >
-        <div class="sticky p-5 bg-slate-100 dark:bg-neutral-900 rounded-lg top-[var(--header-height)]">
-          <div class="mb-4 text-color">
-            <!-- eslint-disable-next-line vue/no-v-html -->
-            <span v-html="markdownPost.ad.text" />
-          </div>
-          <BlogAdButton :to="markdownPost.ad.buttonLink">
-            {{ markdownPost.ad.buttonText }}
-          </BlogAdButton>
+
+      <!-- TOC sidebar for desktop - sticky to the right edge of viewport -->
+      <aside class="hidden lg:block">
+        <div class="fixed right-0 top-1/2 -translate-y-1/2 z-10">
+          <BlogTOC
+            v-if="markdownPost?._path"
+            :current-path="markdownPost?._path"
+          />
         </div>
       </aside>
     </div>
+
     <aside>
       <BlogAboutMe />
     </aside>

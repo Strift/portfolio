@@ -4,6 +4,7 @@ export const ICONS = {
   CALENDAR: 'tabler:calendar',
   CONTACT: 'tabler:message',
   EXTERNAL_LINK: 'tabler:external-link',
+  LIST: 'tabler:list',
   MEETING: 'tabler:calendar-bolt',
   MAIL: 'tabler:mail',
   PENCIL: 'tabler:pencil',
