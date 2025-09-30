@@ -19,8 +19,6 @@ const tocItems = computed(() => {
 })
 
 const showAll = ref(false)
-
-console.log('TOC items:', tocItems.value)
 </script>
 
 <template>
