@@ -18,7 +18,7 @@ const tocItems = computed(() => {
   return pageContent.value?.body?.toc?.links || []
 })
 
-const showAll = ref(false)
+const showAll = ref(true)
 </script>
 
 <template>
