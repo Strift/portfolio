@@ -19,43 +19,54 @@ const tocItems = computed(() => {
 })
 
 const showAll = ref(false)
+
+console.log('TOC items:', tocItems.value)
 </script>
 
 <template>
   <div class="">
-    <div class="flex items-center space-x-2 text-color-secondary">
+    <button
+      class="flex items-center space-x-2 text-color-secondary group"
+      title="Toggle Table of Contents"
+      @click="showAll = !showAll"
+    >
       <Icon
         :name="ICONS.LIST"
-        class="w-4 h-4"
+        class="w-4 h-4 group-hover:text-color-emphasis"
       />
-      <div class="text-sm">
-        Table of Contents
+      <div class="text-sm group-hover:text-color-emphasis">
+        On this page
       </div>
-    </div>
+    </button>
     <nav
-      v-show="tocItems.length > 0"
+      v-show="showAll && tocItems.length > 0"
       class="mt-3"
     >
       <ul class="space-y-1">
         <li
           v-for="item in tocItems"
           :key="item.id"
-          :class="[
-            'flex items-start',
-            item.depth === 2 && 'ml-0',
-            item.depth === 3 && 'ml-4',
-            item.depth === 4 && 'ml-8',
-            item.depth === 5 && 'ml-12',
-            item.depth === 6 && 'ml-16',
-          ]"
         >
           <a
             :href="`#${item.id}`"
-            class="link hover:text-primary transition-colors"
-            @click="showAll = false"
+            class="text-sm transition-colors link"
           >
             {{ item.text }}
           </a>
+          <ul
+            v-if="item.children"
+            class="ml-4 space-y-1 mt-1"
+          >
+            <li
+              v-for="child in item.children"
+              :key="child.id"
+            >
+              <a
+                :href="`#${child.id}`"
+                class="text-sm transition-colors link"
+              >{{ child.text }}</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>

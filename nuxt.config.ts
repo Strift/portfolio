@@ -59,6 +59,12 @@ export default defineNuxtConfig({
         dark: 'github-dark',
       },
     },
+    markdown: {
+      toc: {
+        depth: 5, // Include headings up to h5
+        searchDepth: 5, // Search depth for nested tags
+      },
+    },
   },
   app: {
     head: {

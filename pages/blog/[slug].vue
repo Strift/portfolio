@@ -148,8 +148,8 @@ const components = {
       </div>
 
       <!-- TOC sidebar for desktop - sticky to the right edge of viewport -->
-      <aside class="hidden lg:block">
-        <div class="fixed right-0 top-1/2 -translate-y-1/2 z-10">
+      <aside class="hidden lg:block desktop-toc">
+        <div class="fixed top-[var(--header-height)] z-10 pl-5">
           <BlogTOC
             v-if="markdownPost?._path"
             :current-path="markdownPost?._path"
