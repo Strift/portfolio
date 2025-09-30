@@ -1,5 +1,5 @@
 ---
-title: Building a retrieval API to search Obsidian
+title: Building a retrieval API to search my Obsidian vault
 date: 2025-09-30
 description: How I built a Retrieval-Augmented Generation API query my Obsidian vault from LibreChat.
 cover: /images/articles/covers/obsidian.png
