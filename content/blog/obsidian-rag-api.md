@@ -65,7 +65,7 @@ async function ingest() {
 
 ### Technical choices
 
-**Chunking**: I used `llm-text-splitter` with markdown-aware splitting to preserve document structure:
+**Chunking**: I used [`llm-text-splitter`](https://www.npmjs.com/package/llm-text-splitter) with markdown-aware splitting to preserve document structure:
 
 ```typescript
 // src/lib/splitter.ts
@@ -98,9 +98,9 @@ export async function generateDocumentsEmbeddings(chunks: string[][]) {
 
 The nested array structure (`string[][]`) allows VoyageAI to understand that chunks belong to the same document, improving embedding quality.
 
-**Vector database**: I’m using Meilisearch because it’s the search engine I know best. It allows easy and fast retrieval with hybrid search (semantic + full-text) and metadata filtering.
+**Vector database**: I’m using Meilisearch because it’s the search engine I know best. It allows easy and fast retrieval with hybrid search (semantic + full-text) and metadata filtering, which makes [a good fit for RAG](https://www.meilisearch.com/blog/mastering-rag).
 
-The `src/lib/database.ts` file mentioned above is a thin wrapper around [meilisearch JS SDK](https://github.com/meilisearch/meilisearch-js).
+The `src/lib/database.ts` file used by the code above simply is a thin wrapper around [meilisearch JS SDK](https://github.com/meilisearch/meilisearch-js) methods to index documents.
 
 ## The search server
 
@@ -193,7 +193,7 @@ examples:
 
 ### Connecting to LibreChat
 
-I created an Agent in LibreChat with a prompt tailored for searching the vault. I also added an [action](https://www.librechat.ai/docs/features/agents#actions) that allows interacting with the API.
+I created an Agent in LibreChat with a prompt tailored for searching the vault. I also added an [Agent Action](https://www.librechat.ai/docs/features/agents#actions) that allows interacting with the API.
 
 **Prompt**: Make sure that the agent reliably uses the API to search for information.
 
@@ -218,6 +218,7 @@ servers:
 ### Running the system
 
 **Ingestion**: run `bun src/ingest.ts` as needed to process the files from the Vault
+
 **API Server**: run `bun src/server.ts` to start the search API server on port 4000
 
 ## Wrapping up
@@ -233,8 +234,8 @@ Check out the repository for more information: https://github.com/Strift/obsidia
 3. **Minimal API Surface**: Single endpoint keeps complexity low and makes the OpenAPI spec simple for LLMs to understand
 4. **No Authentication**: For personal use with LibreChat, complexity wasn't justified
 
-### Improving retrieval accuracy
+### Next steps
 
+Improving retrieval accuracy:
 - Adding metadata to documents based on Obsidian folders & properties
 - Generating Meilisearch filters based on query
-
